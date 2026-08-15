@@ -25,6 +25,12 @@ ENV/
 .env.local
 .env.*.local
 
+# GCP service account keys -- never commit these
+project-*.json
+*service-account*.json
+*-sa-key.json
+credentials.json
+
 # Database
 *.db
 *.sqlite3
@@ -47,3 +53,7 @@ Thumbs.db
 
 # Alembic
 alembic/versions/__pycache__/
+install.log
+
+# Serena (AI coding tool config/cache — local, not part of the project)
+.serena/

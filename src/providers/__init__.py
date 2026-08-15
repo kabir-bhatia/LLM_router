@@ -6,7 +6,6 @@ Provides unified access to different LLM backends.
 
 from src.providers.base import (
     BaseProvider,
-    OllamaProvider,
     ProviderError,
     ProviderModelNotFoundError,
     ProviderRateLimitError,
@@ -25,7 +24,6 @@ __all__ = [
     "ProviderRateLimitError",
     "ProviderModelNotFoundError",
     # Implementations
-    "OllamaProvider",
     "GeminiProvider",
     # Manager
     "ProviderManager",

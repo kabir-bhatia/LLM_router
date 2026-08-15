@@ -1,0 +1,488 @@
+[
+  {
+    "id": "dup-01",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "What is the capital of France?",
+    "prompt_b": "what is the capital of france?",
+    "note": "case only",
+    "similarity": 1.0000001102522282
+  },
+  {
+    "id": "dup-02",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "How do I reset my password?",
+    "prompt_b": "How do I reset my password?  ",
+    "note": "trailing whitespace",
+    "similarity": 1.0000000416120882
+  },
+  {
+    "id": "dup-03",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "Translate 'hello' to Spanish.",
+    "prompt_b": "Translate \"hello\" to Spanish.",
+    "note": "quote style",
+    "similarity": 0.9958626833970258
+  },
+  {
+    "id": "dup-04",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "Summarize this email in one sentence.",
+    "prompt_b": "Summarize this email in 1 sentence.",
+    "note": "numeral vs word",
+    "similarity": 0.9884110148519192
+  },
+  {
+    "id": "dup-05",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "What does HTTP 404 mean?",
+    "prompt_b": "What does the HTTP 404 status code mean?",
+    "note": "minor wording addition, same ask",
+    "similarity": 0.9199908324582431
+  },
+  {
+    "id": "dup-06",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "List three benefits of remote work.",
+    "prompt_b": "List 3 benefits of remote work.",
+    "note": "numeral",
+    "similarity": 0.9922559429906955
+  },
+  {
+    "id": "dup-07",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "Fix the grammar in this sentence: 'He go to school every day.'",
+    "prompt_b": "Fix the grammar in this sentence: 'He go to school every day'.",
+    "note": "punctuation",
+    "similarity": 0.9966202794331964
+  },
+  {
+    "id": "dup-08",
+    "category": "exact_duplicate",
+    "should_cache_hit": true,
+    "prompt_a": "What's the time complexity of binary search?",
+    "prompt_b": "What is the time complexity of binary search?",
+    "note": "contraction",
+    "similarity": 0.9980246623109366
+  },
+  {
+    "id": "para-01",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "How do I reset my password?",
+    "prompt_b": "What are the steps to change my account password?",
+    "note": "",
+    "similarity": 0.7854765132929338
+  },
+  {
+    "id": "para-02",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Translate this sentence into French: 'Good morning'",
+    "prompt_b": "Please give me the French translation of 'Good morning'",
+    "note": "",
+    "similarity": 0.913965968395269
+  },
+  {
+    "id": "para-03",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "What is a load balancer?",
+    "prompt_b": "Can you explain what a load balancer does?",
+    "note": "",
+    "similarity": 0.9417996814446539
+  },
+  {
+    "id": "para-04",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Summarize this support thread in two sentences.",
+    "prompt_b": "Give me a two-sentence summary of this support conversation.",
+    "note": "",
+    "similarity": 0.6830744925369894
+  },
+  {
+    "id": "para-05",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "List three pros and three cons of using Kubernetes.",
+    "prompt_b": "What are three advantages and three disadvantages of Kubernetes?",
+    "note": "",
+    "similarity": 0.8538983052856793
+  },
+  {
+    "id": "para-06",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Write a Python function that checks if a string is a palindrome.",
+    "prompt_b": "Write me a function in Python to determine whether a given string reads the same backwards.",
+    "note": "",
+    "similarity": 0.6076955200998153
+  },
+  {
+    "id": "para-07",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "What is the difference between authentication and authorization?",
+    "prompt_b": "How do authentication and authorization differ from each other?",
+    "note": "",
+    "similarity": 0.9554335092651413
+  },
+  {
+    "id": "para-08",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Define 'idempotency' in the context of API design.",
+    "prompt_b": "What does idempotency mean when we talk about API design?",
+    "note": "",
+    "similarity": 0.9358652312274216
+  },
+  {
+    "id": "para-09",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "What does HTTP 429 mean?",
+    "prompt_b": "Explain the meaning of a 429 HTTP status code.",
+    "note": "",
+    "similarity": 0.8681760598260665
+  },
+  {
+    "id": "para-10",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Explain what a race condition is, with a simple example.",
+    "prompt_b": "Can you describe what a race condition is and give a basic example?",
+    "note": "",
+    "similarity": 0.9533818848160638
+  },
+  {
+    "id": "para-11",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Compare REST and GraphQL for building APIs.",
+    "prompt_b": "What are the tradeoffs between REST and GraphQL when building an API?",
+    "note": "",
+    "similarity": 0.8878441089648382
+  },
+  {
+    "id": "para-12",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "What's the difference between `let`, `const`, and `var` in JavaScript?",
+    "prompt_b": "In JavaScript, how do `let`, `const`, and `var` differ?",
+    "note": "",
+    "similarity": 0.9809023426927971
+  },
+  {
+    "id": "para-13",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "Categorize these customer complaints as 'billing', 'technical', or 'product feedback'.",
+    "prompt_b": "Sort these customer complaints into the categories 'billing', 'technical', or 'product feedback'.",
+    "note": "",
+    "similarity": 0.8938674995278403
+  },
+  {
+    "id": "para-14",
+    "category": "paraphrase",
+    "should_cache_hit": true,
+    "prompt_a": "What is database sharding?",
+    "prompt_b": "Could you explain the concept of database sharding?",
+    "note": "",
+    "similarity": 0.9545186821845594
+  },
+  {
+    "id": "trap-01",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What is the capital of France?",
+    "prompt_b": "What is the capital of Germany?",
+    "note": "same template, different answer -- the classic embedding-cache trap",
+    "similarity": 0.663238357378293
+  },
+  {
+    "id": "trap-02",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Is 17 a prime number?",
+    "prompt_b": "Is 21 a prime number?",
+    "note": "same template, opposite correct answer",
+    "similarity": 0.7951853774442735
+  },
+  {
+    "id": "trap-03",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Translate 'hello' to French.",
+    "prompt_b": "Translate 'goodbye' to French.",
+    "note": "same template, different word to translate",
+    "similarity": 0.7042093798694554
+  },
+  {
+    "id": "trap-04",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What's the time complexity of binary search?",
+    "prompt_b": "What's the time complexity of linear search?",
+    "note": "same template, different algorithm, different answer",
+    "similarity": 0.8103674905463365
+  },
+  {
+    "id": "trap-05",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What does HTTP 404 mean?",
+    "prompt_b": "What does HTTP 429 mean?",
+    "note": "same template, different status code",
+    "similarity": 0.6083860342563876
+  },
+  {
+    "id": "trap-06",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What is the capital of Australia?",
+    "prompt_b": "What is the capital of Austria?",
+    "note": "near-identical country names, different answer",
+    "similarity": 0.7103620112549676
+  },
+  {
+    "id": "trap-07",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Summarize this refund policy: Refunds are issued within 5 business days.",
+    "prompt_b": "Summarize this refund policy: Refunds are issued within 30 business days, no exceptions.",
+    "note": "same template, different policy content -- caching would silently serve the wrong policy",
+    "similarity": 0.9599588170668976
+  },
+  {
+    "id": "trap-08",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What's 15% of 240?",
+    "prompt_b": "What's 15% of 480?",
+    "note": "same template, different number, different answer",
+    "similarity": 0.7450597599600036
+  },
+  {
+    "id": "trap-09",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Design a rate limiter for a single-region API with 1,000 requests/second.",
+    "prompt_b": "Design a rate limiter for a multi-region API with 100,000 requests/second.",
+    "note": "same template, very different constraints and correct design",
+    "similarity": 0.9838998775847735
+  },
+  {
+    "id": "trap-10",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Write a SQL query that returns the top 5 customers by total order value.",
+    "prompt_b": "Write a SQL query that returns the bottom 5 customers by total order value.",
+    "note": "one word (top/bottom) flips the correct query",
+    "similarity": 0.9199535980964548
+  },
+  {
+    "id": "trap-11",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "What year did World War II end?",
+    "prompt_b": "What year did World War I end?",
+    "note": "near-identical wording, different factual answer",
+    "similarity": 0.8816001071731893
+  },
+  {
+    "id": "trap-12",
+    "category": "narrower_or_broader",
+    "should_cache_hit": false,
+    "prompt_a": "Explain why a company might choose a direct listing over an IPO.",
+    "prompt_b": "Explain why a company might choose an IPO over a direct listing.",
+    "note": "swapped preference, opposite argument required",
+    "similarity": 0.9935990969360389
+  },
+  {
+    "id": "rel-01",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What is a load balancer?",
+    "prompt_b": "What is a reverse proxy used for?",
+    "note": "",
+    "similarity": 0.3649758895257551
+  },
+  {
+    "id": "rel-02",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What is database sharding?",
+    "prompt_b": "What is database replication?",
+    "note": "",
+    "similarity": 0.5770156144336743
+  },
+  {
+    "id": "rel-03",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "Compare REST and GraphQL for building APIs.",
+    "prompt_b": "Compare SQL and NoSQL databases for a high-write workload.",
+    "note": "",
+    "similarity": 0.45497506223362694
+  },
+  {
+    "id": "rel-04",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "Explain what a race condition is, with a simple example.",
+    "prompt_b": "Explain what a deadlock is, with a simple example.",
+    "note": "",
+    "similarity": 0.3082423267666121
+  },
+  {
+    "id": "rel-05",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What's the difference between authentication and authorization?",
+    "prompt_b": "What's the difference between encryption and hashing?",
+    "note": "",
+    "similarity": 0.3990999120005915
+  },
+  {
+    "id": "rel-06",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "Design a rate limiter that survives regional failover.",
+    "prompt_b": "Design a caching strategy that survives regional failover.",
+    "note": "",
+    "similarity": 0.584698448066659
+  },
+  {
+    "id": "rel-07",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What does HTTP 429 mean?",
+    "prompt_b": "What does HTTP 401 mean?",
+    "note": "",
+    "similarity": 0.6455237213499899
+  },
+  {
+    "id": "rel-08",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "Write a Python function that checks if a string is a palindrome.",
+    "prompt_b": "Write a Python function that reverses a linked list.",
+    "note": "",
+    "similarity": 0.35825715655436663
+  },
+  {
+    "id": "rel-09",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What are the pros and cons of remote work?",
+    "prompt_b": "What are the pros and cons of a four-day work week?",
+    "note": "",
+    "similarity": 0.4582455212819513
+  },
+  {
+    "id": "rel-10",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "How do I reset my password?",
+    "prompt_b": "How do I enable two-factor authentication?",
+    "note": "",
+    "similarity": 0.3268061554109911
+  },
+  {
+    "id": "rel-11",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "What is the CAP theorem?",
+    "prompt_b": "What is the difference between eventual consistency and strong consistency?",
+    "note": "",
+    "similarity": 0.12720544640809778
+  },
+  {
+    "id": "rel-12",
+    "category": "related_topic_different_ask",
+    "should_cache_hit": false,
+    "prompt_a": "Define 'idempotency' in the context of API design.",
+    "prompt_b": "Define 'opportunity cost' with a simple example.",
+    "note": "",
+    "similarity": 0.0868483131587551
+  },
+  {
+    "id": "unrel-01",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "What is the capital of France?",
+    "prompt_b": "Write a Python function that checks if a string is a palindrome.",
+    "note": "",
+    "similarity": 0.0814658104157759
+  },
+  {
+    "id": "unrel-02",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "How do I reset my password?",
+    "prompt_b": "What year did World War II end?",
+    "note": "",
+    "similarity": 0.030613064847359192
+  },
+  {
+    "id": "unrel-03",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "Summarize this email in one sentence.",
+    "prompt_b": "Design a rate limiter for a multi-region API.",
+    "note": "",
+    "similarity": 0.029453829263878087
+  },
+  {
+    "id": "unrel-04",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "What is a load balancer?",
+    "prompt_b": "What's 15% of 240?",
+    "note": "",
+    "similarity": 0.14076956856159792
+  },
+  {
+    "id": "unrel-05",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "Translate 'hello' to French.",
+    "prompt_b": "What is the CAP theorem?",
+    "note": "",
+    "similarity": 0.06394757621013278
+  },
+  {
+    "id": "unrel-06",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "Is 17 a prime number?",
+    "prompt_b": "Write a SQL query that returns the top 5 customers by total order value.",
+    "note": "",
+    "similarity": 0.03829188304848319
+  },
+  {
+    "id": "unrel-07",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "What does HTTP 404 mean?",
+    "prompt_b": "What are the pros and cons of remote work?",
+    "note": "",
+    "similarity": 0.040567374705595294
+  },
+  {
+    "id": "unrel-08",
+    "category": "unrelated",
+    "should_cache_hit": false,
+    "prompt_a": "Fix the grammar in this sentence: 'He go to school every day.'",
+    "prompt_b": "Design a threat model for a fintech API that handles wire transfers.",
+    "note": "",
+    "similarity": -0.04648297343331711
+  }
+]

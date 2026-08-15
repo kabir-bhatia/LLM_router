@@ -103,7 +103,7 @@ class CompletionResponse(BaseModel):
     model_used: str = Field(
         ...,
         description="The model that processed this request",
-        examples=["granite4:350m", "gemini-2.0-flash-exp", "gemini-1.5-pro"],
+        examples=["gemini-2.0-flash-lite", "gemini-2.0-flash", "gemini-2.5-pro"],
     )
     difficulty_tag: Literal["simple", "medium", "complex"] = Field(
         ...,

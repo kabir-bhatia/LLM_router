@@ -52,31 +52,39 @@ class SemanticCacheService:
     
     INDEX_NAME = "smr_semantic_idx"
     PREFIX = "smr:semantic:"
-    EMBEDDING_DIM = 768  # nomic-embed-text dimension
-    SIMILARITY_THRESHOLD = 0.92  # Minimum similarity for cache hit
-    
+
     def __init__(
         self,
         redis_url: Optional[str] = None,
         ttl_seconds: Optional[int] = None,
-        similarity_threshold: float = 0.92,
+        similarity_threshold: Optional[float] = None,
     ):
         """
         Initialize semantic cache.
-        
+
         Args:
             redis_url: Redis connection URL
             ttl_seconds: TTL for cached entries
-            similarity_threshold: Minimum cosine similarity for match
+            similarity_threshold: Minimum cosine similarity for match.
+                Defaults to settings.semantic_similarity_threshold rather than
+                a hardcoded constant, so the value validated by the threshold
+                sweep is the value actually used in production.
         """
         settings = get_settings()
         self.redis_url = redis_url or settings.redis_url
         self.ttl_seconds = ttl_seconds or settings.cache_ttl_seconds
-        self.similarity_threshold = similarity_threshold
+        self.similarity_threshold = (
+            similarity_threshold
+            if similarity_threshold is not None
+            else settings.semantic_similarity_threshold
+        )
+        self.embedding_dim = settings.embedding_dim
+        self.enabled = settings.enable_redis_cache
         self._client: Optional[redis.Redis] = None
         self._index_created = False
+        self._unavailable = False  # Latches on first failure; stops retry storms
         self._embeddings = get_embeddings_service()
-    
+
     async def connect(self):
         """Establish Redis connection."""
         if self._client is None:
@@ -85,6 +93,18 @@ class SemanticCacheService:
                 encoding="utf-8",
                 decode_responses=True,
             )
+
+    def _available(self) -> bool:
+        """
+        Whether cache operations should be attempted at all.
+
+        The vector index requires the RediSearch module (Redis Stack), not
+        plain Redis. Rather than raising on every request when that is absent,
+        the cache reports itself unavailable and the router runs uncached --
+        a cache is an optimization, so its absence should cost latency and
+        money, never correctness.
+        """
+        return self.enabled and not self._unavailable
     
     async def _ensure_index(self):
         """Create vector search index if not exists."""
@@ -106,7 +126,7 @@ class SemanticCacheService:
                 "SCHEMA",
                 "embedding", "VECTOR", "HNSW", "6",
                     "TYPE", "FLOAT32",
-                    "DIM", str(self.EMBEDDING_DIM),
+                    "DIM", str(self.embedding_dim),
                     "DISTANCE_METRIC", "COSINE",
                 "response_json", "TEXT",
                 "prompt_hash", "TAG",
@@ -131,9 +151,12 @@ class SemanticCacheService:
         Returns:
             SemanticCachedResponse if similar prompt found, None otherwise
         """
+        if not self._available():
+            return None
+
         try:
             await self._ensure_index()
-            
+
             # Generate embedding for query
             query_embedding = await self._embeddings.embed(prompt)
             
@@ -174,7 +197,8 @@ class SemanticCacheService:
             return None
             
         except Exception as e:
-            print(f"⚠️ Semantic cache get error: {e}")
+            self._unavailable = True
+            print(f"⚠️ Semantic cache unavailable, serving uncached: {e}")
             return None
     
     async def set(
@@ -194,9 +218,12 @@ class SemanticCacheService:
         Returns:
             True if cached successfully
         """
+        if not self._available():
+            return False
+
         try:
             await self._ensure_index()
-            
+
             # Generate embedding
             embedding = await self._embeddings.embed(prompt)
             
@@ -222,7 +249,8 @@ class SemanticCacheService:
             return True
             
         except Exception as e:
-            print(f"⚠️ Semantic cache set error: {e}")
+            self._unavailable = True
+            print(f"⚠️ Semantic cache unavailable, skipping write: {e}")
             return False
     
     async def clear_all(self) -> int:

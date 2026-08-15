@@ -195,10 +195,22 @@ class TestCompletionEndpoint:
 
 class TestCaching:
     """Test Redis caching behavior."""
-    
+
     @pytest.mark.asyncio
     async def test_cache_miss_then_hit(self, client, api_key, clear_cache):
-        """First request is cache miss, second is hit."""
+        """First request is cache miss, second is hit.
+
+        Requires Redis Stack (RediSearch) reachable at REDIS_URL and
+        ENABLE_REDIS_CACHE=true. Both are off by default for local dev
+        (see .env.example) since the project deliberately deferred live Redis
+        setup in favor of offline threshold analysis (eval/threshold_sweep.py)
+        -- so this test skips rather than failing when the cache is off.
+        """
+        from src.config import get_settings
+
+        if not get_settings().enable_redis_cache:
+            pytest.skip("ENABLE_REDIS_CACHE is false; semantic cache is a no-op by design")
+
         prompt = "What is caching? (test unique prompt)"
         headers = {"X-API-Key": api_key}
         

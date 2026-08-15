@@ -230,7 +230,7 @@ async def create_structured_output(
     settings = get_settings()
     
     # Always use Gemini Flash for structured output
-    model = settings.gemini_flash_model
+    model = settings.tier_medium_model
     
     # Initialize Gemini provider
     provider = GeminiProvider()

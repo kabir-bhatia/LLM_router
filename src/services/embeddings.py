@@ -1,114 +1,110 @@
 """
 Embeddings Service.
 
-Generates text embeddings using Ollama's embedding models.
-Used for semantic similarity caching.
+Generates text embeddings locally with sentence-transformers.
+
+Why local rather than an API: embeddings are on the hot path of every cache
+lookup, and the threshold sweep in eval/ re-embeds the whole prompt corpus on
+every run. A network round-trip per prompt would make that analysis slow and
+rate-limited. all-MiniLM-L6-v2 is 384-dim, ~80MB, and runs fine on CPU.
+
+The model is loaded lazily on first use so that importing this module (which
+the FastAPI app does at startup) stays cheap.
 """
 
+import asyncio
 from typing import Optional
-import httpx
+
+import numpy as np
 
 from src.config import get_settings
 
 
 class EmbeddingsService:
     """
-    Generates embeddings using Ollama.
-    
-    Uses the nomic-embed-text model by default.
+    Generates normalized sentence embeddings on the local CPU.
+
+    Vectors are L2-normalized at encode time, which means cosine similarity
+    between any two of them is just a dot product. The semantic cache and the
+    threshold sweep both rely on that.
     """
-    
-    # Default embedding model for Ollama
-    DEFAULT_MODEL = "nomic-embed-text"
-    
-    def __init__(
-        self,
-        base_url: Optional[str] = None,
-        model: Optional[str] = None,
-    ):
+
+    def __init__(self, model_name: Optional[str] = None):
         """
-        Initialize embeddings service.
-        
+        Initialize the embeddings service.
+
         Args:
-            base_url: Ollama API URL (defaults to settings)
-            model: Embedding model to use (defaults to nomic-embed-text)
+            model_name: sentence-transformers model id (defaults to settings)
         """
         settings = get_settings()
-        self.base_url = base_url or settings.ollama_base_url
-        self.model = model or self.DEFAULT_MODEL
-        self._client: Optional[httpx.AsyncClient] = None
-    
-    async def _get_client(self) -> httpx.AsyncClient:
-        """Get or create HTTP client."""
-        if self._client is None:
-            self._client = httpx.AsyncClient(timeout=60)
-        return self._client
-    
+        self.model_name = model_name or settings.embedding_model
+        self._model = None
+
+    def _load_model(self):
+        """Load the transformer model, once, on first use."""
+        if self._model is None:
+            from sentence_transformers import SentenceTransformer
+
+            self._model = SentenceTransformer(self.model_name)
+        return self._model
+
+    @property
+    def dimension(self) -> int:
+        """Embedding dimensionality of the loaded model."""
+        return self._load_model().get_sentence_embedding_dimension()
+
+    def embed_sync(self, text: str) -> list[float]:
+        """
+        Synchronous single-text embedding.
+
+        Used directly by offline analysis scripts, which have no event loop
+        and no reason to pay for one.
+        """
+        model = self._load_model()
+        vector = model.encode(text, normalize_embeddings=True)
+        return vector.tolist()
+
+    def embed_batch_sync(self, texts: list[str]) -> np.ndarray:
+        """
+        Synchronous batch embedding.
+
+        Returns:
+            (n_texts, dim) float32 array of L2-normalized row vectors, so that
+            `matrix @ matrix.T` is the full pairwise cosine similarity matrix.
+        """
+        model = self._load_model()
+        return model.encode(
+            texts,
+            normalize_embeddings=True,
+            batch_size=32,
+            show_progress_bar=len(texts) > 100,
+        )
+
     async def embed(self, text: str) -> list[float]:
         """
-        Generate embedding for text.
-        
-        Args:
-            text: Text to embed
-            
-        Returns:
-            Embedding vector as list of floats
+        Generate an embedding without blocking the event loop.
+
+        Encoding is CPU-bound, so it runs in a worker thread; awaiting it
+        directly on the loop would stall every other in-flight request.
         """
-        client = await self._get_client()
-        
-        response = await client.post(
-            f"{self.base_url}/api/embed",
-            json={
-                "model": self.model,
-                "input": text,
-            },
-        )
-        response.raise_for_status()
-        data = response.json()
-        
-        # Ollama returns embeddings in data["embeddings"][0]
-        embeddings = data.get("embeddings", [[]])[0]
-        return embeddings
-    
+        return await asyncio.to_thread(self.embed_sync, text)
+
     async def embed_batch(self, texts: list[str]) -> list[list[float]]:
-        """
-        Generate embeddings for multiple texts.
-        
-        Args:
-            texts: List of texts to embed
-            
-        Returns:
-            List of embedding vectors
-        """
-        # Ollama's embed API supports batch input
-        client = await self._get_client()
-        
-        response = await client.post(
-            f"{self.base_url}/api/embed",
-            json={
-                "model": self.model,
-                "input": texts,
-            },
-        )
-        response.raise_for_status()
-        data = response.json()
-        
-        return data.get("embeddings", [])
-    
+        """Generate embeddings for multiple texts off the event loop."""
+        result = await asyncio.to_thread(self.embed_batch_sync, texts)
+        return result.tolist()
+
     async def health_check(self) -> bool:
-        """Check if embedding model is available."""
+        """Check that the model loads and produces a non-empty vector."""
         try:
-            # Try to embed a simple text
             embedding = await self.embed("test")
             return len(embedding) > 0
         except Exception:
             return False
-    
+
     async def close(self):
-        """Close HTTP client."""
-        if self._client:
-            await self._client.aclose()
-            self._client = None
+        """No network resources to release; kept for interface symmetry."""
+        return None
 
 
 # Singleton instance

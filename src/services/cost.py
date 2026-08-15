@@ -39,37 +39,54 @@ class ModelPricing:
 # Prices based on public API pricing (as of Dec 2024)
 # Local models have electricity/GPU cost approximated
 
+# IMPORTANT: these figures drive every savings number this project reports, so
+# they are the one input worth re-checking by hand against
+# https://ai.google.dev/gemini-api/docs/pricing before publishing results.
+# Values below are paid-tier, per 1M tokens, prompts under the 200k context
+# break point, checked Aug 2026. Verify before quoting these numbers anywhere --
+# and note gemini-3.6-flash/3.7-flash carry promotional pricing through
+# 2026-12-31 that roughly doubles on 2027-01-01.
+
 MODEL_PRICING: dict[str, ModelPricing] = {
-    # Local Ollama Models (minimal cost - just electricity/GPU time)
-    "granite4:350m": ModelPricing(
-        model_name="granite4:350m",
-        input_cost_per_million=0.01,   # ~$0.01 per 1M tokens (electricity)
-        output_cost_per_million=0.01,
-        is_local=True,
-    ),
-    
-    # Google Gemini Models
-    "gemini-2.0-flash-exp": ModelPricing(
-        model_name="gemini-2.0-flash-exp",
-        input_cost_per_million=0.075,   # $0.075 per 1M input tokens
-        output_cost_per_million=0.30,   # $0.30 per 1M output tokens
+    # SIMPLE tier
+    "gemini-3.1-flash-lite": ModelPricing(
+        model_name="gemini-3.1-flash-lite",
+        input_cost_per_million=0.25,
+        output_cost_per_million=1.50,
         is_local=False,
     ),
-    "gemini-1.5-pro": ModelPricing(
-        model_name="gemini-1.5-pro",
-        input_cost_per_million=1.25,    # $1.25 per 1M input tokens
-        output_cost_per_million=5.00,   # $5.00 per 1M output tokens
+    # MEDIUM tier (promotional pricing through 2026-12-31; ~2x after)
+    "gemini-3.6-flash": ModelPricing(
+        model_name="gemini-3.6-flash",
+        input_cost_per_million=0.75,
+        output_cost_per_million=3.75,
         is_local=False,
     ),
+    # COMPLEX tier -- and the baseline every saving is measured against.
+    # The only GA Pro-tier model. 404'd as deprecated-for-new-users through the
+    # AI Studio API key on this project; works cleanly through Vertex AI with
+    # a service account (settings.use_vertex_ai) -- confirmed with concurrent
+    # bursts (10/10 succeeded, no throttling). If you're on the API-key path
+    # and hit the same 404, gemini-3.5-flash is a working GA stand-in that
+    # preserves the tier cost ordering (kept below for that fallback).
     "gemini-2.5-pro": ModelPricing(
         model_name="gemini-2.5-pro",
-        input_cost_per_million=1.25,    # Using same as 1.5-pro (update when pricing available)
-        output_cost_per_million=10.00,  # Higher output cost for latest model
+        input_cost_per_million=1.25,
+        output_cost_per_million=10.00,
+        is_local=False,
+    ),
+    # Fallback COMPLEX model if gemini-2.5-pro is unavailable on your account.
+    "gemini-3.5-flash": ModelPricing(
+        model_name="gemini-3.5-flash",
+        input_cost_per_million=1.50,
+        output_cost_per_million=9.00,
         is_local=False,
     ),
 }
 
-# Baseline model for savings calculation (most expensive option)
+# Baseline model for savings calculation (most expensive option in active use).
+# "Savings" throughout this project means: what this request cost, versus what
+# it would have cost had every request gone to this model instead.
 BASELINE_MODEL = "gemini-2.5-pro"
 
 
@@ -114,23 +131,28 @@ class CostCalculator:
     def get_pricing(self, model: str) -> ModelPricing:
         """
         Get pricing for a model.
-        
-        Falls back to baseline pricing if model not found.
+
+        Exact match only, then loud failure. Upstream this fell back to a
+        prefix match and then silently to baseline pricing, which is unsafe
+        for cost analysis in two distinct ways:
+
+        1. Prefix matching is wrong here. "gemini-2.0-flash-lite" starts with
+           "gemini-2.0-flash", so a lite request could be billed at the more
+           expensive flash rate purely on dict ordering.
+        2. Silently substituting baseline pricing for an unknown model makes a
+           misconfigured model name look like zero savings rather than an
+           error -- the failure hides inside a plausible-looking number.
+
+        Since every reported savings figure depends on this table, an unknown
+        model is a bug to surface, not a value to guess.
         """
         if model in self.pricing:
             return self.pricing[model]
-        
-        # Try partial match (e.g., "granite4:350m" matches "granite4")
-        for key, pricing in self.pricing.items():
-            if model.startswith(key.split(":")[0]):
-                return pricing
-        
-        # Default to baseline pricing (conservative estimate)
-        return self.pricing.get(self.baseline_model, ModelPricing(
-            model_name=model,
-            input_cost_per_million=1.25,
-            output_cost_per_million=5.00,
-        ))
+
+        raise KeyError(
+            f"No pricing entry for model {model!r}. Add it to MODEL_PRICING in "
+            f"src/services/cost.py. Known models: {sorted(self.pricing)}"
+        )
     
     def calculate_cost(
         self,

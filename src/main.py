@@ -16,6 +16,9 @@ from fastapi.responses import JSONResponse
 from src.config import get_settings
 from src.db import close_db, init_db
 
+# UTF-8 stdout/stderr is set up in src/__init__.py, which this import chain
+# already triggers -- see that file for why it's centralized there.
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -31,7 +34,7 @@ async def lifespan(app: FastAPI):
     # === Startup ===
     print("🚀 Starting Smart Model Router...")
     print(f"   Log Level: {settings.log_level}")
-    print(f"   Ollama URL: {settings.ollama_base_url}")
+    print(f"   Tiers: {settings.tier_simple_model} / {settings.tier_medium_model} / {settings.tier_complex_model}")
     print(f"   Database: {settings.database_url.split('@')[-1]}")  # Hide credentials
     
     # Initialize database connection

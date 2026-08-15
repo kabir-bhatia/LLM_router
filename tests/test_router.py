@@ -203,10 +203,21 @@ class TestRouterSingleton:
     """Tests for router singleton."""
     
     def test_get_router_returns_instance(self):
-        """get_router() returns a router instance."""
+        """get_router() returns the router implementation settings selected.
+
+        This previously asserted RuleBasedRouter unconditionally, which never
+        held: use_llm_router defaults to True, so the factory returns an
+        LLMRouter. The real contract is that the factory honours the setting.
+        """
+        from src.config import get_settings
+        from src.core.router import BaseRouter, LLMRouter
+
         router = get_router()
-        assert isinstance(router, RuleBasedRouter)
-        
+        assert isinstance(router, BaseRouter)
+
+        expected = LLMRouter if get_settings().use_llm_router else RuleBasedRouter
+        assert isinstance(router, expected)
+
     def test_get_router_returns_same_instance(self):
         """get_router() returns the same instance."""
         router1 = get_router()

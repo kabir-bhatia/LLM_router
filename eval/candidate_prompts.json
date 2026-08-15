@@ -1,0 +1,866 @@
+[
+  {
+    "id": "sup-001",
+    "prompt": "Translate this support reply into Spanish: \"Thanks for reaching out! Your refund has been processed and should appear in 3-5 business days.\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-002",
+    "prompt": "A customer says: \"I was charged twice for my subscription this month and I want both charges reversed and my account credited for the inconvenience, but I still want to keep using the service without interruption, and I need this resolved before my next billing cycle in 4 days.\" Draft a reply that addresses all of their asks.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-003",
+    "prompt": "What's our standard response time SLA for tier-1 support tickets?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-004",
+    "prompt": "Rewrite this in a friendlier tone: \"Your request was denied. Read the terms of service.\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-005",
+    "prompt": "Summarize this support thread in two sentences for a handoff to the billing team: [Customer: my invoice shows $49 but I signed up for the $29 plan. Agent: checking now. Customer: also I was never emailed a receipt. Agent: I see you're on a legacy plan that was migrated incorrectly during our March pricing update, I'll flag this for billing. Customer: how long will that take? Agent: usually 2-3 business days, I'll email you once it's resolved.]",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-006",
+    "prompt": "Yes or no: does our free tier include API access?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-007",
+    "prompt": "A user is threatening to leave a 1-star public review unless we refund a purchase that's outside our 30-day return window by 6 days, and they're citing a competitor's more lenient policy, and they mention they're a long-time customer with 4 prior orders. Design a response strategy that weighs brand risk against policy consistency, including what I should actually say to them and what internal exception process (if any) I should escalate to.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-008",
+    "prompt": "Extract the order number, issue type, and requested resolution from this message into JSON: \"Hi, order #48213, the item arrived damaged, I'd like a replacement not a refund.\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-009",
+    "prompt": "Proofread this canned response for grammar errors: \"Thank you for you're patience while we looking into this issue, we apologize for any inconvenients caused.\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-010",
+    "prompt": "We're seeing a pattern where enterprise customers on the annual plan churn at 3x the rate of monthly customers in their second year, but only in accounts with fewer than 5 seats. Walk through what root causes you'd investigate and in what order, and what data you'd need from each team to confirm or rule out each hypothesis.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-011",
+    "prompt": "Convert this list of FAQ bullet points into a numbered list: - reset password via email link - contact support if link expired - passwords must be 8+ characters",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-012",
+    "prompt": "Explain to a non-technical customer why their exported CSV file shows dates in the wrong format after they changed their timezone setting.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-013",
+    "prompt": "What is the difference between a refund and store credit in our system?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-014",
+    "prompt": "A GDPR data deletion request came in for a user who also has an active dispute with our billing team over a contested charge, and separately their account is linked to a business account they're an admin on but don't own. Explain step by step how to handle the deletion request given these constraints, including what can and cannot be deleted and why.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-015",
+    "prompt": "Fix the grammar in this internal note: \"customer say the app crash everytime they open settings, ask them for device model and os version\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-016",
+    "prompt": "TL;DR this policy paragraph for a support macro: \"Refunds are issued to the original payment method within 5-10 business days of approval. If the original payment method is no longer valid, store credit will be issued instead. Refunds for annual plans are prorated based on unused months, minus a 10% early cancellation fee unless cancellation is due to a documented service outage exceeding 24 hours.\"",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-017",
+    "prompt": "Design an escalation policy for support tickets that accounts for customer tier (free/pro/enterprise), issue severity, and time-of-day, such that enterprise P0 issues always reach an on-call engineer within 15 minutes even outside business hours, without burning out the on-call rotation.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-018",
+    "prompt": "List the steps a customer needs to take to enable two-factor authentication.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-019",
+    "prompt": "Translate our privacy policy summary into French, Spanish, and German, and flag any terms (like 'data processor' vs 'data controller') where a direct translation could create legal ambiguity in each language's jurisdiction.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-020",
+    "prompt": "What does error code ERR_402_PAYMENT_REQUIRED mean in our system?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-021",
+    "prompt": "Format this raw agent notes into a clean ticket summary: user cant login. tried reset. still fails. browser is safari. cleared cache didnt help. maybe cookie issue?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-022",
+    "prompt": "Our support macros are inconsistent across three regional teams (US, EU, APAC), each having independently drifted in tone and policy interpretation over 2 years, and a recent audit found that 15% of EU responses cite an outdated refund window. Propose a plan to unify them without a support team revolt, given they're proud of their region-specific customizations.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-023",
+    "prompt": "Define 'chargeback' in one sentence for a new support hire.",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "sup-024",
+    "prompt": "A customer's account was auto-suspended by our fraud detection system for unusual login patterns, but they say they were just traveling and used airport wifi in three countries in one week, and now their business (which relies on our API) is down and they're demanding immediate reinstatement plus SLA credit, but our fraud team flagged the same IP range in an unrelated active investigation. What do you tell the customer, and what internal process do you follow?",
+    "domain": "support",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-001",
+    "prompt": "Write a Python function that checks if a string is a palindrome.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-002",
+    "prompt": "Convert this JSON object into a CSV row: {\"name\": \"Alice\", \"age\": 30, \"city\": \"Boston\"}",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-003",
+    "prompt": "Design a rate limiter that needs to work correctly across three regional datacenters with active-active writes, tolerate a full regional outage without blocking traffic in the surviving regions, and stay within 5ms added latency at p99, while accepting slight quota overshoot during network partitions rather than false-rejecting legitimate requests.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-004",
+    "prompt": "I have this Python code and it's throwing a KeyError, can you fix it:\n```python\nconfig = {\"host\": \"localhost\"}\nport = config[\"port\"]\n```",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-005",
+    "prompt": "My distributed lock (built on Redis SETNX with a TTL) occasionally releases early under load, causing two workers to briefly hold the same lock and corrupt a shared counter, but only under high concurrency and never in staging. Walk through what's likely happening and how to fix it.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-006",
+    "prompt": "What does the `git rebase -i` command do?",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-007",
+    "prompt": "Write a SQL query that returns the top 5 customers by total order value from an `orders` table with columns `customer_id`, `amount`.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-008",
+    "prompt": "Explain what a race condition is, with a simple example.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-009",
+    "prompt": "Design the database schema for a multi-tenant SaaS app where tenants can have custom fields on their records, some tenants need row-level data residency in specific regions for compliance, and query performance can't degrade as the number of tenants grows into the tens of thousands.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-010",
+    "prompt": "Convert this function from synchronous to async in Python:\n```python\ndef fetch_user(user_id):\n    response = requests.get(f\"/users/{user_id}\")\n    return response.json()\n```",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-011",
+    "prompt": "What's the time complexity of binary search?",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-012",
+    "prompt": "We need to migrate a 200M-row Postgres table to add a new NOT NULL column with a computed default, without taking the table offline, on a system that does 3,000 writes/second and can't tolerate more than 50ms of added write latency during the migration.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-013",
+    "prompt": "Format this minified JSON so it's readable: {\"a\":1,\"b\":{\"c\":2,\"d\":[1,2,3]}}",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-014",
+    "prompt": "Write a function to reverse a linked list.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-015",
+    "prompt": "Our authentication service issues JWTs with a 24-hour expiry, but we just discovered that a since-fixed bug let attackers mint tokens with an arbitrary `exp` claim for about 3 weeks before we caught it, and we don't have full logs of which tokens were minted. Design a remediation plan that invalidates the compromised window without forcing every user to re-authenticate, if that's possible, and explain the tradeoffs if it isn't.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-016",
+    "prompt": "What's the difference between `let`, `const`, and `var` in JavaScript?",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-017",
+    "prompt": "Rename all instances of `userId` to `user_id` in this snippet:\n```javascript\nfunction getUser(userId) {\n  return db.find({ userId: userId });\n}\n```",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-018",
+    "prompt": "Design an algorithm to detect cycles in a dependency graph of microservices, where the graph can have tens of thousands of nodes, edges are added and removed at runtime as services deploy, and the check needs to run incrementally on each edge addition rather than recomputing from scratch, without missing cycles introduced by concurrent updates.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-019",
+    "prompt": "Write a regex that matches valid US phone numbers in the format (XXX) XXX-XXXX.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-020",
+    "prompt": "Compare REST and GraphQL for a public API that will be consumed by both a mobile app with strict bandwidth constraints and third-party developers who need predictable, cacheable endpoints, and recommend which to use along with concrete tradeoffs for this specific use case.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-021",
+    "prompt": "What does `HTTP 429` mean?",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-022",
+    "prompt": "Build a script that pulls the last 100 commits from a git repo and outputs the top 3 most frequently changed files.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-023",
+    "prompt": "We're seeing intermittent 3-5 second latency spikes on a service that normally responds in 50ms, happening roughly every 45 minutes regardless of traffic volume, with no corresponding CPU, memory, or GC pause spike in our metrics, and the pattern started after we added a sidecar for log shipping. Walk through your debugging approach.",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "code-024",
+    "prompt": "Extract all function names from this Python file into a list: [imagine a 40-line file with 6 function definitions]",
+    "domain": "codegen",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-001",
+    "prompt": "What is a load balancer?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-002",
+    "prompt": "List the components typically found in a three-tier web application.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-003",
+    "prompt": "Design the system architecture for a real-time collaborative document editor (like Google Docs) supporting 50 concurrent editors per document, sub-100ms perceived latency for local edits, and conflict resolution that never loses a keystroke, including how you'd handle a client reconnecting after a 30-second network drop.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-004",
+    "prompt": "Compare monolith and microservices architectures.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-005",
+    "prompt": "We're migrating a 15-year-old monolith serving 40M requests/day to microservices, but the monolith's core module has circular business logic dependencies that were never cleanly separated, the team has never operated distributed systems before, and the migration budget assumes zero downtime and no feature freeze. Propose a phased migration strategy that accounts for all three constraints, including what you'd tackle first and why.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-006",
+    "prompt": "What's the difference between vertical and horizontal scaling?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-007",
+    "prompt": "Design a threat model for a fintech API that handles wire transfers, considering insider threats from engineers with production database access, supply-chain compromise of a third-party KYC vendor, and a scenario where an attacker gains read-only access to logs that inadvertently contain partial account numbers.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-008",
+    "prompt": "Convert this list of services into a simple architecture diagram description: API gateway, auth service, user service, database, cache.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-009",
+    "prompt": "What is the CAP theorem?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-010",
+    "prompt": "Design a notification system that needs to deliver push, email, and SMS notifications to 20M users, respecting per-user channel preferences and quiet hours across time zones, deduplicating notifications from multiple triggering events within a 5-minute window, and guaranteeing at-least-once delivery without duplicate sends becoming a support burden.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-011",
+    "prompt": "Why would you use a message queue instead of direct API calls between services?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-012",
+    "prompt": "Our API gateway needs to support both synchronous request/response for mobile clients and long-running async jobs for batch exports, using the same auth layer, without the sync path's latency being affected by load on the async path, and while giving batch job clients a way to poll status without hammering the gateway. Design this.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-013",
+    "prompt": "Define 'idempotency' in the context of API design.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-014",
+    "prompt": "What is database sharding?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-015",
+    "prompt": "Design a disaster recovery plan for a system with a 4-hour RTO and 15-minute RPO, spanning a primary region and a warm standby, that also needs to handle a scenario where the failure is a slow data-corrupting bug (not a hard outage) that has already been silently replicating bad data to the standby for an unknown period before detection.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-016",
+    "prompt": "List three pros and three cons of using Kubernetes.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-017",
+    "prompt": "We need to design multi-region active-active architecture for an inventory system where overselling a physical product (two regions both confirm the last unit) is unacceptable, but the business also wants sub-50ms checkout latency in every region, and network partitions between regions happen roughly weekly for a few minutes at a time. Walk through your design and explicitly state which of the two constraints (latency or strict consistency) you'd relax, and how you'd contain the blast radius when it happens.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-018",
+    "prompt": "What's a reverse proxy used for?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-019",
+    "prompt": "Explain the producer-consumer pattern with a simple analogy.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-020",
+    "prompt": "Design the access control model for an internal admin tool where support agents need to view but not edit customer PII, senior agents can issue refunds up to $500 without approval, and any single admin action affecting more than 1,000 accounts at once needs a documented, revocable second approval, while keeping an audit trail that can reconstruct exactly who could see what and when for a compliance investigation 18 months later.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-021",
+    "prompt": "What does 'eventual consistency' mean?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-022",
+    "prompt": "Format this list of architecture decision record titles into a numbered index: Use Postgres over MySQL, Adopt event sourcing for orders, Retire the legacy SOAP API",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-023",
+    "prompt": "Design a caching strategy for a product catalog page that needs fresh pricing (updated within seconds during flash sales) but can tolerate stale product descriptions for up to an hour, served from a CDN, where cache invalidation is currently causing a thundering-herd problem on the origin during high-traffic sale events.",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "arch-024",
+    "prompt": "What's the difference between authentication and authorization?",
+    "domain": "architecture",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-001",
+    "prompt": "Summarize this paragraph in one sentence: \"The quarterly report shows revenue grew 12% year over year, driven primarily by enterprise contract renewals, while churn in the SMB segment increased slightly due to a competitor's aggressive pricing campaign launched in Q2.\"",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-002",
+    "prompt": "TL;DR this email thread: [Manager: can we move the launch to next Friday? Engineer: that conflicts with the infra freeze starting Thursday. PM: what if we do a soft launch Wednesday and full launch the following Monday after the freeze lifts? Manager: works for me, engineer can you confirm the soft launch scope by EOD tomorrow?]",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-003",
+    "prompt": "Read this 40-page vendor security audit and produce an executive summary that (a) ranks the three most severe findings by business risk rather than CVSS score, (b) flags which findings overlap with our existing known-risk register so leadership doesn't think they're new, and (c) gives a one-line recommendation per finding that a non-technical exec can act on.",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-004",
+    "prompt": "Give me the bullet points from this changelog entry: \"v2.3.0 - Fixed a bug where exports would time out for files over 50MB. Added support for CSV delimiter customization. Improved dashboard load time by 30%. Deprecated the legacy /v1/export endpoint, removal planned for v3.0.\"",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-005",
+    "prompt": "Summarize the plot of a mystery novel in two sentences without spoiling the ending, given this synopsis: [a detective investigates a locked-room murder in a manor house, suspects include the butler with a hidden debt, the heir with a forged will, and a guest with a false identity, and the actual killer turns out to be the victim's twin sibling thought dead for 20 years]",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-006",
+    "prompt": "Condense this meeting transcript into action items only, one line each: [30 minutes of back-and-forth ending with: Sarah will own the API spec by Friday, Tom will set up the staging environment, and the team agreed to revisit the launch date in next week's standup pending Sarah's spec]",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-007",
+    "prompt": "What's this sentence about: \"The cat sat on the mat.\"",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-008",
+    "prompt": "Synthesize three conflicting internal reports on why a product launch underperformed -- one blaming marketing spend timing, one blaming a late-discovered onboarding bug, and one blaming a competitor's simultaneous launch -- into a single narrative that identifies which factors were likely compounding versus independent, and what evidence would settle the disagreement.",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-009",
+    "prompt": "Summarize this customer review in one line: \"I've used this product for six months now and honestly it does what it says, setup was a bit confusing at first but support helped me through it, and I'd recommend it to a small team but not sure how it scales for larger orgs.\"",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-010",
+    "prompt": "Turn this wall of release notes spanning 8 versions into a single 'what's new since your last login' summary for a user who hasn't opened the app in 6 months, prioritizing changes that affect their daily workflow over internal/backend changes they'd never notice.",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-011",
+    "prompt": "Shorten this sentence: \"Due to the fact that the server was experiencing an unusually high volume of requests, the response time was negatively impacted.\"",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "summ-012",
+    "prompt": "Summarize the key differences between two competing vendor proposals (each 20 pages) for a data warehouse migration, structured as a comparison table covering cost, migration timeline, vendor lock-in risk, and support SLA, and flag any claim in either proposal that seems inconsistent with the other's stated assumptions.",
+    "domain": "summarization",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-001",
+    "prompt": "Is 17 a prime number?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-002",
+    "prompt": "Compare Python and JavaScript for backend development.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-003",
+    "prompt": "We have two years of A/B test data showing a new checkout flow increases conversion by 4% overall, but a deeper look shows it decreases conversion by 9% for users on mobile Safari specifically, which is 22% of our traffic, and we can't tell from the current data whether that's a real effect or the flow's date-picker component silently failing on that browser. Design an analysis plan to distinguish these two explanations, and recommend whether to ship, hold, or ship with a Safari-specific fallback.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-004",
+    "prompt": "What are the pros and cons of remote work?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-005",
+    "prompt": "Three separate teams each independently concluded, from the same underlying support ticket dataset, that a different root cause explains a 15% spike in cancellations last quarter -- pricing, a specific bug, and a competitor promotion. Evaluate each team's argument for logical soundness (not just plausibility), identify what confound each analysis failed to rule out, and propose the minimum additional analysis needed to arbitrate between them.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-006",
+    "prompt": "What's 15% of 240?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-007",
+    "prompt": "Evaluate whether we should build our own feature-flagging system in-house versus buying a vendor solution, given we currently have 40 engineers, expect to double headcount in 18 months, already have burned budget on two abandoned in-house infra projects in the past 3 years, and one senior engineer is strongly advocating for build because 'we understand our exact needs better than any vendor.'",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-008",
+    "prompt": "List three advantages of a subscription pricing model over one-time purchases.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-009",
+    "prompt": "True or false: correlation implies causation.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-010",
+    "prompt": "We're deciding between two hiring strategies for scaling a support team: hiring 10 generalists who can be trained across all product areas, or hiring 3 specialists per product area (9 total) who ramp faster but create coverage gaps during vacations and attrition. Model out the tradeoffs across ticket resolution time, onboarding cost, and resilience to a specialist quitting, and make a recommendation given we're a 24/7 operation with uneven ticket volume across product areas.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-011",
+    "prompt": "What's the capital of Australia?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-012",
+    "prompt": "Explain why a company might choose to go public via direct listing instead of a traditional IPO.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-013",
+    "prompt": "A pricing experiment shows that raising prices 10% increased revenue per user but total revenue stayed flat because of higher churn, and a separate team argues the churn is actually seasonal and unrelated to the price change based on a year-over-year comparison, but that comparison uses a different user cohort than the pricing test. Assess whether the seasonal explanation is valid given that mismatch, and propose how to re-run the comparison correctly.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-014",
+    "prompt": "Define 'opportunity cost' with a simple example.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-015",
+    "prompt": "Categorize these five customer complaints as 'billing', 'technical', or 'product feedback': 1) charged twice 2) app crashes on launch 3) wish there was a dark mode 4) invoice has wrong tax rate 5) export button does nothing",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-016",
+    "prompt": "We need to decide whether to sunset a legacy product used by 200 loyal customers generating $80K/year but costing an estimated $300K/year in maintenance engineering time (a figure the engineering team disputes as overstated), against the reputational risk of abandoning long-term customers and the possibility that 30 of those customers are also evaluating our flagship product as a potential upsell. Lay out the decision framework and what you'd need to know to actually resolve the engineering cost dispute before deciding.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-017",
+    "prompt": "What year did World War II end?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-018",
+    "prompt": "Explain the difference between leading and lagging indicators, with one business example of each.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-019",
+    "prompt": "Two internal surveys measuring employee satisfaction, run one month apart using different question wording, show opposite trends -- one says satisfaction is rising, the other says it's falling -- and HR wants a single number to report to the board next week. Assess whether these results are actually reconcilable given the methodology differences, and recommend what HR should tell the board given the real uncertainty, rather than picking whichever number is more convenient.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-020",
+    "prompt": "List the countries that border Germany.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-021",
+    "prompt": "Compare the total cost of ownership of running our own Kubernetes cluster versus using a managed service, accounting for engineer time spent on cluster upgrades and incident response over the past 12 months, and the risk that our current on-call engineer who knows the cluster's quirks best is planning to leave within the year.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-022",
+    "prompt": "Is this a valid syllogism: all engineers like coffee, Sam likes coffee, therefore Sam is an engineer?",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-023",
+    "prompt": "Format this list of quarterly revenue figures into a simple table: Q1 $1.2M, Q2 $1.4M, Q3 $1.1M, Q4 $1.8M",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  },
+  {
+    "id": "anal-024",
+    "prompt": "A stakeholder is citing a statistic that '73% of users prefer the new design' from a survey with 40 respondents drawn entirely from our power-user Discord community, to justify a redesign that internal usability testing with a more representative sample found confusing for new users. Assess the validity of the stakeholder's evidence and write a response that pushes back on the decision without dismissing their data outright.",
+    "domain": "analysis",
+    "true_tier": null,
+    "borderline": false,
+    "note": ""
+  }
+]

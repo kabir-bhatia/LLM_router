@@ -17,9 +17,9 @@ from src.config import get_settings
 
 class DifficultyTier(str, Enum):
     """Difficulty tiers that map to different models."""
-    SIMPLE = "simple"    # Local model (Granite 4.0 Nano)
-    MEDIUM = "medium"    # Gemini Flash
-    COMPLEX = "complex"  # Gemini Pro
+    SIMPLE = "simple"    # Cheapest tier  (gemini-2.0-flash-lite)
+    MEDIUM = "medium"    # Mid tier       (gemini-2.0-flash)
+    COMPLEX = "complex"  # Strongest tier (gemini-2.5-pro)
 
 
 @dataclass
@@ -54,6 +54,19 @@ class PromptAnalysis:
     has_simple_keywords: bool
     question_count: int
     instruction_complexity: int  # 1-5 scale
+
+
+# Phrases that force COMPLEX regardless of which router mode is active.
+# Originally lived only inside RuleBasedRouter.classify, so it silently did
+# nothing whenever use_llm_router=True (the default) -- a user explicitly
+# asking for "the best model" got whatever the LLM classifier guessed instead.
+BEST_MODEL_TRIGGERS = ("best model", "highest quality", "most accurate", "gpt-4", "most capable")
+
+
+def _best_model_override(prompt: str) -> bool:
+    """Whether the prompt explicitly asks for the top-tier model."""
+    text_lower = prompt.lower()
+    return any(trigger in text_lower for trigger in BEST_MODEL_TRIGGERS)
 
 
 class BaseRouter(ABC):
@@ -156,9 +169,9 @@ class RuleBasedRouter(BaseRouter):
         
         # Model mapping
         self.model_map = {
-            DifficultyTier.SIMPLE: self.settings.ollama_model,
-            DifficultyTier.MEDIUM: self.settings.gemini_flash_model,
-            DifficultyTier.COMPLEX: self.settings.gemini_pro_model,
+            DifficultyTier.SIMPLE: self.settings.tier_simple_model,
+            DifficultyTier.MEDIUM: self.settings.tier_medium_model,
+            DifficultyTier.COMPLEX: self.settings.tier_complex_model,
         }
     
     def _count_tokens(self, text: str) -> int:
@@ -257,16 +270,14 @@ class RuleBasedRouter(BaseRouter):
             )
         
         # 2. Check for "best model" override
-        text_lower = prompt.lower()
-        best_model_triggers = ["best model", "highest quality", "most accurate", "gpt-4", "most capable"]
-        if any(trigger in text_lower for trigger in best_model_triggers):
+        if _best_model_override(prompt):
             return RoutingDecision(
                 tier=DifficultyTier.COMPLEX,
                 model=self.model_map[DifficultyTier.COMPLEX],
                 reason="User requested best/highest quality model",
                 confidence=0.95,
             )
-        
+
         # 3. Analyze prompt
         analysis = self.analyze_prompt(prompt)
         
@@ -338,10 +349,14 @@ _rule_router: Optional[RuleBasedRouter] = None
 
 class LLMRouter(BaseRouter):
     """
-    LLM-based router using Granite for classification.
-    
-    Uses the local Granite model to analyze prompt complexity.
-    Falls back to rule-based routing if LLM fails.
+    LLM-based router that asks a cheap model to grade prompt complexity.
+
+    Classification runs on every request, so the classifier must be far cheaper
+    than the tier spread it is choosing between -- otherwise the classification
+    call costs more than the routing saves. It uses the cheapest tier model
+    (settings.classifier_model) and caps output at a handful of tokens.
+
+    Falls back to RuleBasedRouter if the LLM call fails for any reason.
     """
     
     # Classification prompt template
@@ -364,43 +379,48 @@ Example: SIMPLE|This is a basic translation request"""
         """Initialize with fallback router."""
         self.settings = get_settings()
         self._fallback_router = RuleBasedRouter()
-        self._client = None
-        
+        self._provider = None
+        self.last_used_fallback = False  # Set per-call; read by the eval harness
+        self.last_response = None  # ProviderResponse from the most recent LLM call, if any -- lets callers (e.g. the eval harness) cost out classification itself
+        self.last_error = None  # Exception from the most recent failed LLM call, if any -- lets callers distinguish e.g. rate limits (worth a long backoff) from other failures
+
         # Model mapping
         self.model_map = {
-            DifficultyTier.SIMPLE: self.settings.ollama_model,
-            DifficultyTier.MEDIUM: self.settings.gemini_flash_model,
-            DifficultyTier.COMPLEX: self.settings.gemini_pro_model,
+            DifficultyTier.SIMPLE: self.settings.tier_simple_model,
+            DifficultyTier.MEDIUM: self.settings.tier_medium_model,
+            DifficultyTier.COMPLEX: self.settings.tier_complex_model,
         }
     
-    async def _get_client(self):
-        """Get or create HTTP client."""
-        if self._client is None:
-            import httpx
-            self._client = httpx.AsyncClient(timeout=30)
-        return self._client
-    
+    def _get_provider(self):
+        """Get or create the Gemini provider used for classification."""
+        if self._provider is None:
+            from src.providers.gemini import GeminiProvider
+
+            self._provider = GeminiProvider()
+        return self._provider
+
     def analyze_prompt(self, prompt: str) -> PromptAnalysis:
         """Delegate to rule-based router for analysis."""
         return self._fallback_router.analyze_prompt(prompt)
-    
+
     async def _call_llm(self, prompt: str) -> str:
-        """Call Granite for classification."""
-        client = await self._get_client()
-        
-        classification_prompt = self.CLASSIFICATION_PROMPT.format(prompt=prompt[:1000])  # Limit prompt size
-        
-        response = await client.post(
-            f"{self.settings.ollama_base_url}/api/generate",
-            json={
-                "model": self.settings.ollama_model,
-                "prompt": classification_prompt,
-                "stream": False,
-            },
+        """
+        Ask the cheap model to grade this prompt.
+
+        The prompt under classification is truncated to 1000 characters. The
+        opening of a prompt is almost always enough to judge its difficulty,
+        and truncating bounds the classification cost for very long inputs.
+        """
+        provider = self._get_provider()
+
+        classification_prompt = self.CLASSIFICATION_PROMPT.format(prompt=prompt[:1000])
+
+        response = await provider.generate(
+            classification_prompt,
+            self.settings.classifier_model,
         )
-        response.raise_for_status()
-        data = response.json()
-        return data.get("response", "")
+        self.last_response = response
+        return response.text
     
     def _parse_classification(self, llm_response: str) -> tuple[DifficultyTier, str]:
         """Parse LLM response into tier and reason."""
@@ -437,12 +457,26 @@ Example: SIMPLE|This is a basic translation request"""
                 reason=f"Forced to {force_tier} tier by request",
                 confidence=1.0,
             )
-        
+
+        # Check for "best model" override before spending an API call on
+        # classification -- this used to only exist in RuleBasedRouter, so it
+        # was dead whenever use_llm_router=True (the default).
+        if _best_model_override(prompt):
+            self.last_used_fallback = False
+            return RoutingDecision(
+                tier=DifficultyTier.COMPLEX,
+                model=self.model_map[DifficultyTier.COMPLEX],
+                reason="User requested best/highest quality model",
+                confidence=0.95,
+            )
+
         try:
             # Call LLM for classification
             llm_response = await self._call_llm(prompt)
             tier, reason = self._parse_classification(llm_response)
-            
+
+            self.last_used_fallback = False
+            self.last_error = None
             return RoutingDecision(
                 tier=tier,
                 model=self.model_map[tier],
@@ -450,7 +484,11 @@ Example: SIMPLE|This is a basic translation request"""
                 confidence=0.85,
             )
         except Exception as e:
-            # Fallback to rule-based on any error
+            # Fallback to rule-based on any error. This is flagged rather than
+            # silent: an eval run where the LLM quietly errored on every prompt
+            # would otherwise report rule-based accuracy as the LLM's.
+            self.last_used_fallback = True
+            self.last_error = e
             print(f"⚠️ LLM classification failed, using rules: {e}")
             return await self._fallback_router.classify(prompt, force_tier)
 

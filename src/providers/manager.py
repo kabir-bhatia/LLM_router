@@ -14,7 +14,6 @@ from src.config import get_settings
 from src.core.router import DifficultyTier
 from src.providers.base import (
     BaseProvider,
-    OllamaProvider,
     ProviderError,
     ProviderModelNotFoundError,
     ProviderRateLimitError,
@@ -27,39 +26,37 @@ from src.providers.gemini import GeminiProvider
 class ProviderManager:
     """
     Manages LLM providers and handles routing, retries, and fallback.
-    
-    Provider Mapping:
-    - SIMPLE → Ollama (Granite 4.0 Nano)
-    - MEDIUM → Gemini Flash
-    - COMPLEX → Gemini Pro
-    
+
+    Provider Mapping (all Gemini -- one provider, one auth path):
+    - SIMPLE  → gemini-2.0-flash-lite
+    - MEDIUM  → gemini-2.0-flash
+    - COMPLEX → gemini-2.5-pro
+
     Fallback Chain:
-    - If local model fails → escalate to Gemini Flash
-    - If Gemini Flash fails → escalate to Gemini Pro
+    - If the simple model fails → escalate to the medium model
+    - If the medium model fails → escalate to the complex model
+
+    Note that fallback escalates *upward* in cost. That is deliberate: a
+    failed cheap call should still produce an answer, and the more capable
+    model is the one most likely to succeed. The tier actually used is
+    returned alongside the response so cost accounting reflects the escalation
+    rather than the original routing decision.
     """
-    
+
     def __init__(self):
         """Initialize providers."""
         self.settings = get_settings()
-        
+
         # Initialize providers lazily
-        self._ollama: Optional[OllamaProvider] = None
         self._gemini: Optional[GeminiProvider] = None
-        
+
         # Tier to model mapping
         self._tier_models = {
-            DifficultyTier.SIMPLE: self.settings.ollama_model,
-            DifficultyTier.MEDIUM: self.settings.gemini_flash_model,
-            DifficultyTier.COMPLEX: self.settings.gemini_pro_model,
+            DifficultyTier.SIMPLE: self.settings.tier_simple_model,
+            DifficultyTier.MEDIUM: self.settings.tier_medium_model,
+            DifficultyTier.COMPLEX: self.settings.tier_complex_model,
         }
-        
-        # Tier to provider mapping
-        self._tier_providers = {
-            DifficultyTier.SIMPLE: "ollama",
-            DifficultyTier.MEDIUM: "gemini",
-            DifficultyTier.COMPLEX: "gemini",
-        }
-        
+
         # Fallback chain: tier → next tier to try
         self._fallback_chain = {
             DifficultyTier.SIMPLE: DifficultyTier.MEDIUM,
@@ -68,27 +65,22 @@ class ProviderManager:
         }
     
     @property
-    def ollama(self) -> OllamaProvider:
-        """Get or create Ollama provider."""
-        if self._ollama is None:
-            self._ollama = OllamaProvider()
-        return self._ollama
-    
-    @property
     def gemini(self) -> GeminiProvider:
         """Get or create Gemini provider."""
         if self._gemini is None:
             self._gemini = GeminiProvider()
         return self._gemini
-    
+
     def get_provider(self, tier: DifficultyTier) -> BaseProvider:
-        """Get the appropriate provider for a tier."""
-        provider_name = self._tier_providers[tier]
-        if provider_name == "ollama":
-            return self.ollama
-        else:
-            return self.gemini
-    
+        """
+        Get the provider for a tier.
+
+        Every tier is Gemini right now, but the indirection is kept: adding a
+        second provider (e.g. Fireworks for the cheap tier) should be a change
+        to this method alone.
+        """
+        return self.gemini
+
     def get_model(self, tier: DifficultyTier) -> str:
         """Get the model name for a tier."""
         return self._tier_models[tier]
@@ -131,7 +123,7 @@ class ProviderManager:
                 except ProviderModelNotFoundError:
                     # No point retrying if model doesn't exist
                     last_error = ProviderError(
-                        f"Model {model} not found. Run: ollama run {model}",
+                        f"Model {model} not available from {provider.name}",
                         provider.name,
                         retriable=False,
                     )
@@ -175,14 +167,11 @@ class ProviderManager:
     async def health_check(self) -> dict[str, bool]:
         """Check health of all providers."""
         return {
-            "ollama": await self.ollama.health_check(),
             "gemini": await self.gemini.health_check(),
         }
-    
+
     async def close(self):
         """Close all provider connections."""
-        if self._ollama:
-            await self._ollama.close()
         if self._gemini:
             await self._gemini.close()
 
