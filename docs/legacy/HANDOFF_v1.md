@@ -1,8 +1,8 @@
 # Handoff — Smart LLM Router extension project
 
 Read this first. `PROJECT_LOG.md` has the full detailed history of every phase;
-this file is the fast-orientation summary plus the one thing actively blocking
-progress right now.
+this file is the fast-orientation summary. Nothing is blocking progress as of
+2026-11-19; the next work is Phase 6 (optional) and Phase 7.
 
 ## Status at a glance
 
@@ -16,91 +16,21 @@ progress right now.
 | 6 — Stretch (live eval endpoint / multi-turn demo) | Not started |
 | 7 — Write-up & positioning (README rewrite, CV line, push to own repo) | Not started |
 
-## The one thing blocking you right now
+## Torch import hang -- RESOLVED (2026-11-19)
 
-`import sentence_transformers` (which pulls in `torch`) hangs indefinitely on
-this machine — **not slow, actually stuck**: confirmed via `time timeout 60
-python -c "import sentence_transformers"` showing 60s wall-clock but only
-**0.07s of actual CPU time**. That signature (long wall time, near-zero CPU)
-means the process is blocked waiting on something external, not computing.
+The `import torch` / `import sentence_transformers` hang described below is
+gone. After a restart, `import torch` returns in ~3.8s (`torch ok 2.13.0+cpu`),
+which supports the leaked-kernel-object theory: killing processes, freeing RAM
+and the Defender exclusion did not fix it, and only a restart did.
 
-Ruled out, in this order, each with real evidence:
-1. **Low RAM** — machine has 16GB total; was down to ~3GB free, user freed it
-   back up to ~6.3GB free. Still hung identically. Not (purely) this.
-2. **Antivirus scanning torch's large DLLs** — added a Windows Defender
-   exclusion for `D:\LLM_Router\.venv`. Still hung identically. Not this either.
+Phase 5 was re-run on the healthy environment with
+`.venv/Scripts/python.exe -m eval.threshold_sweep`. Output matches the
+committed results exactly (`git diff eval/results/` is empty), so the result
+is deterministic and reproducible.
 
-**Confirmed this session (not a theory anymore), by direct experiment:**
+**If it ever comes back:** restart the machine. Don't reinstall torch.
 
-1. **It's `torch`, not `sentence_transformers`.** `import torch` hangs with
-   the same blocked-wait signature (30s wall, ~0.015s CPU — blocked on an
-   external wait, not computing); `import numpy` returns instantly. So the
-   hang is in torch's native C++/OpenMP runtime init, not the Python layer on
-   top. `torch 2.13.0` is installed in the venv (verified via `pip show`).
-
-2. **Killing the stuck holder processes does NOT release it.** There were 5
-   orphaned `python.exe` processes at ~102MB working set each (torch's DLLs
-   loaded partway, then blocked on the named mutex — `timeout` can't reap a
-   process blocked inside a native DLL, so my repeated import tests had piled
-   them up). I killed all 5 specifically (working-set > 50MB, unmistakably
-   torch-loaded zombies, not harmless stubs). `import torch` **still hung
-   identically afterward.** That rules out "a live zombie is holding the
-   mutex" and confirms it's a *truly leaked* kernel named object (or torch's
-   OpenMP runtime deadlocking on its own internal state) — i.e. the handoff's
-   original "only a reboot releases it" conclusion holds, now backed by
-   evidence rather than assumption.
-
-3. **Implication for the secondary fix:** `pip install --force-reinstall
-   torch --no-cache-dir` is a *long shot*. The signature is a blocked kernel
-   wait, not a DLL load error — a corrupted DLL would error or crash, not
-   block silently with ~0 CPU. Replacing the DLLs won't change the leaked
-   kernel-object state. Don't burn the ~2GB download unless a clean reboot
-   *also* fails to fix it (which would point to a genuinely different cause).
-
-### Immediate next step
-
-**The user has already been told to fully restart the machine** (this
-session's background job ends at reboot, so the next session picks this up).
-After a clean reboot, verify torch imports. Use bash for this — a PowerShell
-`Start-Process ... -c` call mangled the quoting into a syntax error when I
-tried it, but `bash`'s `timeout` around a `-c` one-liner is reliable:
-
-```bash
-cd /d/LLM_Router
-time timeout 30 .venv/Scripts/python.exe -c "import torch; print('torch ok', torch.__version__)"
-```
-
-Expect `torch ok 2.13.0` in a few seconds. (It did, reliably, earlier in the
-project before the segfaults broke the environment.)
-
-Once that prints, Phase 5 is a one-command finish — **the script and data are
-verified ready, no code changes needed** (read this session: `eval/threshold_sweep.py`
-is complete and correct — F0.5 precision-weighting, a 97%-precision-floor
-strategy, a per-category sanity check; `eval/cache_pairs.json` is 54
-well-labeled pairs with the crucial `narrower_or_broader` trap category):
-
-```bash
-cd /d/LLM_Router
-.venv/Scripts/python.exe -m eval.threshold_sweep
-```
-
-Pure local computation (no API calls, no Redis), runs in well under a minute
-once imports work. Outputs `eval/results/threshold_sweep_report.md` +
-`threshold_sweep_pairs.json` + two PNGs. Read the script's own docstring for
-the full picture; short version: embeds 54 hand-labeled prompt pairs with the
-production embedding model, sweeps the cache-similarity threshold, reports
-precision/recall, and recommends whether 0.92 should change.
-
-**One thing to check once it runs**: `eval/threshold_sweep.py`'s
-`compute_similarities()` currently embeds one prompt at a time via
-`embed_sync` in a loop (see the docstring on that function) — this was a
-workaround for the *original* batch-encode segfault, made **before** the
-Defender/RAM investigation ruled those out as the root cause of the *later*
-hang. It's possible the single-embed workaround is unnecessary now and the
-batch path (`embed_batch_sync`, faster) works fine post-reboot. Not urgent to
-change — the current code works correctly either way, just marginally slower
-for ~100 prompts (a few seconds either way) — but worth knowing it's there
-and why.
+The history below is kept for context only.
 
 ## What actually happened (for context on the above)
 

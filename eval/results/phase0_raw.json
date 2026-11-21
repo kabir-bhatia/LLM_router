@@ -1,0 +1,489 @@
+{
+  "gemini": {
+    "vertex": {
+      "model": "gemini-3.1-flash-lite",
+      "works": false,
+      "error": "FileNotFoundError: [Errno 2] No such file or directory: './project-0bfd279e-1899-43a5-9de-17a0df95b9e5.json'"
+    },
+    "ai_studio": {
+      "model": "gemini-3.1-flash-lite",
+      "single": {
+        "ok": true,
+        "ms": 3945,
+        "pt": 17,
+        "ct": 3,
+        "thoughts": null,
+        "text": "391"
+      },
+      "burst5_ok": 5,
+      "burst5_errors": [],
+      "works": true
+    }
+  },
+  "_updated": "2026-11-20 02:54:21",
+  "tags": {
+    "qwen2.5:0.5b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 0.4
+    },
+    "qwen2.5:1.5b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 0.99
+    },
+    "qwen2.5:3b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 1.93
+    },
+    "qwen3:1.7b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 1.36
+    },
+    "qwen3:4b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 2.5
+    },
+    "llama3.2:1b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 1.32
+    },
+    "llama3.2:3b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 2.02
+    },
+    "gemma3:1b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 0.81
+    },
+    "gemma3:4b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 3.35
+    },
+    "gemma3n:e2b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 7.84
+    },
+    "gemma3n:e4b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 9.77
+    },
+    "phi3.5:latest": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 2.18
+    },
+    "phi3.5:3.8b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 2.18
+    },
+    "qwen2.5-coder:1.5b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 0.99
+    },
+    "granite4:350m": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 0.71
+    },
+    "smollm2:1.7b": {
+      "exists": true,
+      "http": 200,
+      "size_gb": 1.82
+    }
+  },
+  "hyde": {
+    "base_url": "https://inference.hyde.tech/v1",
+    "chat": [
+      {
+        "model": "hyde/glm-5.3-flash",
+        "works": true,
+        "latency_ms": 534,
+        "text": "391",
+        "has_reasoning_content": true,
+        "finish": "stop",
+        "prompt_tokens": 26,
+        "completion_tokens": 30,
+        "reasoning_tokens": 29,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 1.89e-05,
+        "max_tokens_8": {
+          "ok": true,
+          "ms": 460,
+          "finish": "length",
+          "text": "",
+          "prompt_tokens": 26,
+          "completion_tokens": 8,
+          "reasoning_tokens": 7,
+          "usage_keys": [
+            "completion_tokens",
+            "completion_tokens_details",
+            "prompt_tokens",
+            "prompt_tokens_details",
+            "total_tokens"
+          ]
+        },
+        "json_mode": {
+          "ok": true,
+          "ms": 439,
+          "finish": "stop",
+          "text": "{\"answer\": 391}",
+          "prompt_tokens": 22,
+          "completion_tokens": 8,
+          "reasoning_tokens": 0,
+          "usage_keys": [
+            "completion_tokens",
+            "completion_tokens_details",
+            "prompt_tokens",
+            "prompt_tokens_details",
+            "total_tokens"
+          ]
+        },
+        "reasoning_effort_low": {
+          "ok": true,
+          "ms": 475,
+          "finish": "stop",
+          "text": "391",
+          "prompt_tokens": 26,
+          "completion_tokens": 6,
+          "reasoning_tokens": 3,
+          "usage_keys": [
+            "completion_tokens",
+            "completion_tokens_details",
+            "prompt_tokens",
+            "prompt_tokens_details",
+            "total_tokens"
+          ]
+        },
+        "reasoning_effort_high": {
+          "ok": true,
+          "ms": 452,
+          "finish": "stop",
+          "text": "391",
+          "prompt_tokens": 26,
+          "completion_tokens": 12,
+          "reasoning_tokens": 9,
+          "usage_keys": [
+            "completion_tokens",
+            "completion_tokens_details",
+            "prompt_tokens",
+            "prompt_tokens_details",
+            "total_tokens"
+          ]
+        },
+        "burst5": {
+          "ok": 5,
+          "errors": [],
+          "median_ms": 684
+        }
+      },
+      {
+        "model": "hyde/kimi-k3",
+        "works": false,
+        "error": "ProviderError: HTTP 403: {\"error\":{\"message\":\"key not allowed to access model. This key can only access models=['hyde/glm-5.3-flash']. Tried to access hyde/kimi-k3\",\"type\":\"key_model_access_denied\",\"param\":\"model\",\"code\":\"403\"}}"
+      },
+      {
+        "model": "hyde/kimi-k3.1-pro",
+        "works": false,
+        "error": "ProviderError: HTTP 403: {\"error\":{\"message\":\"key not allowed to access model. This key can only access models=['hyde/glm-5.3-flash']. Tried to access hyde/kimi-k3.1-pro\",\"type\":\"key_model_access_denied\",\"param\":\"model\",\"code\":\"403\"}}"
+      }
+    ],
+    "embeddings": [
+      {
+        "model": "hyde/qwen3-embedding-8b",
+        "works": false,
+        "error": "ProviderError: HTTP 403: {\"error\":{\"message\":\"key not allowed to access model. This key can only access models=['hyde/glm-5.3-flash']. Tried to access hyde/qwen3-embedding-8b\",\"type\":\"key_model_access_denied\",\"param\":\"model\",\"code\":\"403\"}}"
+      },
+      {
+        "model": "hyde/nemotron-3.5-embed-8b",
+        "works": false,
+        "error": "ProviderError: HTTP 403: {\"error\":{\"message\":\"key not allowed to access model. This key can only access models=['hyde/glm-5.3-flash']. Tried to access hyde/nemotron-3.5-embed-8b\",\"type\":\"key_model_access_denied\",\"param\":\"model\",\"code\":\"403\"}}"
+      }
+    ],
+    "models_listed": [
+      "hyde/glm-5.3-flash"
+    ]
+  },
+  "fireworks": {
+    "models": [
+      {
+        "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+        "works": true,
+        "latency_ms": 1037,
+        "params": "reasoning_effort=low",
+        "text": "",
+        "finish": "length",
+        "prompt_tokens": 32,
+        "completion_tokens": 256,
+        "reasoning_tokens": 256,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 5.28e-05
+      },
+      {
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "works": true,
+        "latency_ms": 1071,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 86,
+        "completion_tokens": 22,
+        "reasoning_tokens": 11,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 2.61e-05
+      },
+      {
+        "model": "accounts/fireworks/models/glm-5p3-flash",
+        "works": true,
+        "latency_ms": 512,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 26,
+        "completion_tokens": 6,
+        "reasoning_tokens": 2,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 6.9e-06
+      },
+      {
+        "model": "accounts/fireworks/models/minimax-m3p1-flash",
+        "works": true,
+        "latency_ms": 610,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 214,
+        "completion_tokens": 12,
+        "reasoning_tokens": 8,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 3.93e-05
+      },
+      {
+        "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+        "works": true,
+        "latency_ms": 855,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 44,
+        "completion_tokens": 21,
+        "reasoning_tokens": 18,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 3.84e-05
+      },
+      {
+        "model": "accounts/fireworks/models/minimax-m3",
+        "works": true,
+        "latency_ms": 690,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 138,
+        "completion_tokens": 51,
+        "reasoning_tokens": 48,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 0.0001026
+      },
+      {
+        "model": "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+        "works": true,
+        "latency_ms": 598,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 32,
+        "completion_tokens": 33,
+        "reasoning_tokens": 28,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 9.84e-05
+      },
+      {
+        "model": "accounts/fireworks/models/glm-5p3",
+        "works": true,
+        "latency_ms": 708,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 26,
+        "completion_tokens": 10,
+        "reasoning_tokens": 6,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 8.04e-05
+      },
+      {
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "works": true,
+        "latency_ms": 824,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 56,
+        "completion_tokens": 62,
+        "reasoning_tokens": 56,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "output_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 0.000484
+      },
+      {
+        "model": "accounts/fireworks/models/kimi-k3p1-pro",
+        "works": true,
+        "latency_ms": 883,
+        "params": "reasoning_effort=low",
+        "text": "391",
+        "finish": "stop",
+        "prompt_tokens": 103,
+        "completion_tokens": 31,
+        "reasoning_tokens": 17,
+        "usage_keys": [
+          "completion_tokens",
+          "completion_tokens_details",
+          "prompt_tokens",
+          "prompt_tokens_details",
+          "total_tokens"
+        ],
+        "cost_usd": 0.000516
+      }
+    ],
+    "spent_usd": 0.0014449,
+    "cap_usd": 0.2,
+    "models_available": [
+      "accounts/fireworks/routers/glm-5p2-fast",
+      "accounts/fireworks/models/minimax-m3",
+      "accounts/fireworks/models/gpt-oss-120b",
+      "accounts/fireworks/routers/spot-deepseek-v4-flash",
+      "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "accounts/fireworks/models/qwen3-reranker-8b",
+      "accounts/fireworks/models/qwen3-embedding-8b",
+      "accounts/fireworks/models/kimi-k3",
+      "accounts/fireworks/routers/kimi-k3-fast",
+      "accounts/fireworks/routers/kimi-k3-spot",
+      "accounts/fireworks/models/qwen3p8-max",
+      "accounts/fireworks/models/glm-5p3",
+      "accounts/fireworks/routers/glm-5p3-fast",
+      "accounts/fireworks/routers/glm-5p3-spot",
+      "accounts/fireworks/models/glm-5p3-flash",
+      "accounts/fireworks/models/deepseek-v4p1-flash",
+      "accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+      "accounts/fireworks/models/ember-1",
+      "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "accounts/fireworks/models/inkling",
+      "accounts/fireworks/models/muse-spark-open",
+      "accounts/fireworks/models/deepseek-v4p1-flash-1017",
+      "accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
+      "accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
+      "accounts/fireworks/models/minimax-m3p1-flash",
+      "accounts/fireworks/routers/rune",
+      "accounts/fireworks/models/kimi-k3p1-pro",
+      "auto",
+      "firerouter/auto",
+      "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+      "accounts/fireworks/models/rune"
+    ]
+  },
+  "ollama": {
+    "model": "qwen2.5:0.5b",
+    "runs": [
+      {
+        "mode": "gpu",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      },
+      {
+        "mode": "gpu",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      },
+      {
+        "mode": "gpu",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      },
+      {
+        "mode": "cpu_2threads",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      },
+      {
+        "mode": "cpu_2threads",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      },
+      {
+        "mode": "cpu_2threads",
+        "error": "ProviderError: Ollama HTTP error: 500"
+      }
+    ],
+    "server_up": true
+  }
+}

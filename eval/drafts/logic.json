@@ -1,0 +1,1038 @@
+[
+ {
+  "prompt": "Four talks - Ads, Bots, Cloud and Data - are given one per day from Monday to Thursday. Bots is not on Monday or Thursday. Ads is on an earlier day than Cloud. Data is exactly two days after Ads. Cloud is not on a day adjacent to Bots. Which talk is on Thursday?",
+  "gold": {
+   "answer": "Cloud"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_scheduling",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is Cloud. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-001",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three runners - Gus, Kofi and Jia - finished a race with no ties. Kofi did not finish first. Kofi did not finish second. Jia did not finish first.\n\nWho finished first?",
+  "gold": {
+   "answer": "Gus",
+   "choices": [
+    "Gus",
+    "Kofi",
+    "Jia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Gus.",
+  "id": "logic-002",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four runners - Fay, Omar, Pia and Uma - finished a race with no ties. Fay did not finish fourth. Omar finished ahead of Fay. Uma finished third.\n\nWho finished fourth?",
+  "gold": {
+   "answer": "Pia",
+   "choices": [
+    "Fay",
+    "Omar",
+    "Pia",
+    "Uma"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Pia.",
+  "id": "logic-003",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five runners - Hana, Dia, Ben, Fay and Lena - finished a race with no ties.\n\n1. Hana did not finish second.\n2. Dia finished somewhere between Hana and Ben.\n3. Lena did not finish third.\n4. Lena did not finish second.\n5. Fay beat Ben.\n6. Ben did not finish fourth.\n7. Dia did not finish third.\n8. Fay did not finish second.\n\nWho finished first?",
+  "gold": {
+   "answer": "Hana",
+   "choices": [
+    "Hana",
+    "Dia",
+    "Ben",
+    "Fay",
+    "Lena"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "hard",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 8 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Hana.",
+  "id": "logic-004",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "On an island, knights always tell the truth and knaves always lie. Amit says: \"Bina is a knave.\" Bina says: \"Amit and I are both knights.\" Is Bina a knight or a knave?",
+  "gold": {
+   "answer": "knave"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "puzzle_story",
+  "template_set": "hand",
+  "note": "If Amit were a knave, Bina would be a knight, but then her claim that Amit is a knight would be false: contradiction. So Amit is a knight, Bina a knave. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-005",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five runners - Cy, Raj, Kofi, Fay and Pia - finished a race with no ties.\n\n- Kofi finished somewhere between Cy and Pia.\n- Raj beat Fay.\n- Raj did not finish third.\n- Pia finished immediately after Fay.\n- Kofi finished ahead of Pia.\n- Raj did not finish second.\n\nWho finished fourth?",
+  "gold": {
+   "answer": "Fay",
+   "choices": [
+    "Cy",
+    "Raj",
+    "Kofi",
+    "Fay",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Fay.",
+  "id": "logic-006",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has four staff - Noor, Dia, Jia and Lena - and each sits in a different coloured room (white, yellow, green, red).\n\n- The yellow room is Jia's.\n- The red room is occupied by Dia or Jia (not by anyone else).\n- The white room is occupied by Noor or Jia (not by anyone else).\n\nWhose is the white room?",
+  "gold": {
+   "answer": "Noor",
+   "choices": [
+    "Noor",
+    "Dia",
+    "Jia",
+    "Lena"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Noor.",
+  "id": "logic-007",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "A building project has four jobs: Plumbing, Painting, Decorating and Cleaning, done one after another. Plumbing must come before Painting. Painting must come before Decorating. Cleaning is the last job. Which job is second?",
+  "gold": {
+   "answer": "Painting"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "puzzle_scheduling",
+  "template_set": "hand",
+  "note": "Order is Plumbing, Painting, Decorating, Cleaning. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-008",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five runners - Kofi, Ben, Ana, Raj and Pia - finished a race with no ties.\n\n- Exactly one runner finished between Ana and Raj.\n- Kofi finished ahead of Raj.\n- Raj did not finish fourth.\n- Kofi did not finish first.\n- Raj finished ahead of Pia.\n- Ana did not finish first.\n\nWho finished second?",
+  "gold": {
+   "answer": "Kofi",
+   "choices": [
+    "Kofi",
+    "Ben",
+    "Ana",
+    "Raj",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Kofi.",
+  "id": "logic-009",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five friends - Maya, Raj, Jia, Sara and Pia - each own a different pet: cat, dog, rabbit, fish, parrot. Sara does not own the parrot. The rabbit belongs to either Maya or Pia. The fish belongs to either Jia or Pia. The cat belongs to either Sara or Pia. Raj does not own the parrot. The fish belongs to either Jia or Sara. The rabbit belongs to either Maya or Raj.\n\nWho owns the rabbit?",
+  "gold": {
+   "answer": "Maya",
+   "choices": [
+    "Maya",
+    "Raj",
+    "Jia",
+    "Sara",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "hard",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Maya.",
+  "id": "logic-010",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four runners - Raj, Fay, Lena and Cy - finished a race with no ties. Lena finished third. Cy did not finish fourth. Fay finished second.\n\nWho finished first?",
+  "gold": {
+   "answer": "Cy",
+   "choices": [
+    "Raj",
+    "Fay",
+    "Lena",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Cy.",
+  "id": "logic-011",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four friends - Ivan, Eli, Ben and Kofi - each own a different pet: dog, rabbit, cat, fish.\n\n- Kofi is not the owner of the fish.\n- The fish belongs to either Ben or Kofi.\n- Kofi does not own the cat.\n- Eli owns the rabbit.\n\nWho owns the cat?",
+  "gold": {
+   "answer": "Ivan",
+   "choices": [
+    "Ivan",
+    "Eli",
+    "Ben",
+    "Kofi"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 24 arrangements satisfies all 4 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ivan.",
+  "id": "logic-012",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four people queue at a counter: Kia, Lal, Mia and Ned. Lal is not first. Mia is directly behind Kia. Lal and Ned do not stand next to each other. Ned is not last. Who is third in the queue?",
+  "gold": {
+   "answer": "Mia"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_ordering",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is Mia. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-013",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five runners - Lena, Omar, Hana, Cy and Noor - finished a race with no ties.\n\n- Cy did not finish fourth.\n- Lena finished ahead of Cy.\n- Lena beat Noor.\n- Noor did not finish fourth.\n- Hana beat Lena.\n- Omar finished somewhere between Lena and Cy.\n\nWho finished first?",
+  "gold": {
+   "answer": "Hana",
+   "choices": [
+    "Lena",
+    "Omar",
+    "Hana",
+    "Cy",
+    "Noor"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Hana.",
+  "id": "logic-014",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five people - Pia, Cy, Uma, Fay and Ana - stand in a single queue at a ticket counter.\n\n- Uma is in the queue between Pia and Ana.\n- Fay is in the queue between Pia and Ana.\n- Pia is behind Fay in the queue.\n- Ana is not second in line.\n- Fay is behind Cy in the queue.\n- Cy is not second in line.\n\nWho is third in line?",
+  "gold": {
+   "answer": "Cy",
+   "choices": [
+    "Pia",
+    "Cy",
+    "Uma",
+    "Fay",
+    "Ana"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Cy.",
+  "id": "logic-015",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five runners - Omar, Raj, Gus, Fay and Cy - finished a race with no ties.\n\n- Omar did not finish fourth.\n- Exactly one runner finished between Raj and Gus.\n- Cy did not finish first.\n- Raj finished somewhere between Gus and Cy.\n- Fay did not finish second.\n- Fay beat Omar.\n\nWho finished fifth?",
+  "gold": {
+   "answer": "Cy",
+   "choices": [
+    "Omar",
+    "Raj",
+    "Gus",
+    "Fay",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Cy.",
+  "id": "logic-016",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three runners - Ivan, Uma and Ana - finished a race with no ties. Ivan beat Ana. Ivan beat Uma. Uma did not finish second.\n\nWho finished first?",
+  "gold": {
+   "answer": "Ivan",
+   "choices": [
+    "Ivan",
+    "Uma",
+    "Ana"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ivan.",
+  "id": "logic-017",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four people - Ivan, Eli, Cy and Kofi - stand in a single queue at a ticket counter.\n\n- Ivan and Eli have exactly one person between them.\n- Cy stands somewhere ahead of Eli.\n- Kofi is in the queue between Eli and Cy.\n\nWho is third in line?",
+  "gold": {
+   "answer": "Kofi",
+   "choices": [
+    "Ivan",
+    "Eli",
+    "Cy",
+    "Kofi"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Kofi.",
+  "id": "logic-018",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five people - Kofi, Uma, Noor, Fay and Ben - stand in a single queue at a ticket counter.\n\n- Fay is behind Kofi in the queue.\n- Kofi is in the queue between Uma and Ben.\n- Fay is not fourth in line.\n- Noor is in the queue between Kofi and Fay.\n- Ben is not first in line.\n- Noor is not fourth in line.\n\nWho is third in line?",
+  "gold": {
+   "answer": "Noor",
+   "choices": [
+    "Kofi",
+    "Uma",
+    "Noor",
+    "Fay",
+    "Ben"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Noor.",
+  "id": "logic-019",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "On the same island (knights always tell the truth, knaves always lie), three people speak. Dara says: \"Eshan and Farid are the same type.\" Eshan says: \"Dara is a knave.\" Farid says: \"Eshan is a knight.\" Is Farid a knight or a knave?",
+  "gold": {
+   "answer": "knave"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_story",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is knave. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-020",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five friends - Raj, Ivan, Lena, Ben and Sara - each own a different pet: fish, cat, rabbit, parrot, dog. Raj is not the owner of the dog. Raj is not the owner of the rabbit. Ivan does not own the rabbit. The fish belongs to either Ben or Sara. Sara is not the owner of the rabbit. The fish belongs to either Ivan or Ben. The cat belongs to either Lena or Sara.\n\nWho owns the parrot?",
+  "gold": {
+   "answer": "Raj",
+   "choices": [
+    "Raj",
+    "Ivan",
+    "Lena",
+    "Ben",
+    "Sara"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "hard",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Raj.",
+  "id": "logic-021",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Ria is older than Sam. Sam is older than Tom. Uma is younger than Tom but older than Vik. Of the five, who is the middle one in age (third oldest)?",
+  "gold": {
+   "answer": "Tom"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "puzzle_ordering",
+  "template_set": "hand",
+  "note": "Chain Ria > Sam > Tom > Uma > Vik; the third is Tom. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-022",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has three staff - Maya, Ana and Raj - and each sits in a different coloured room (red, white, blue). The white room isn't Maya's. The white room is occupied by Maya or Ana (not by anyone else). The blue room isn't Raj's.\n\nWhose is the blue room?",
+  "gold": {
+   "answer": "Maya",
+   "choices": [
+    "Maya",
+    "Ana",
+    "Raj"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "B",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Maya.",
+  "id": "logic-023",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three friends - Hana, Gus and Cy - each own a different pet: parrot, fish, rabbit.\n\n1. Gus is not the owner of the parrot.\n2. The rabbit belongs to either Gus or Cy.\n3. Gus does not own the rabbit.\n\nWho owns the parrot?",
+  "gold": {
+   "answer": "Hana",
+   "choices": [
+    "Hana",
+    "Gus",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "easy",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Hana.",
+  "id": "logic-024",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Pia, Raj, Jia, Eli and Ivan each picked up a different book from a shelf holding a diary, atlas, manual, novel or cookbook.\n\n1. Jia did not pick the atlas.\n2. Pia did not pick the diary.\n3. The manual went to one of Eli and Ivan.\n4. Raj did not pick the diary.\n5. Pia did not pick the novel.\n6. The atlas went to one of Jia and Eli.\n\nWho ended up with the novel?",
+  "gold": {
+   "answer": "Raj",
+   "choices": [
+    "Pia",
+    "Raj",
+    "Jia",
+    "Eli",
+    "Ivan"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_books",
+  "difficulty": "hard",
+  "phrasing": "numbered_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Raj.",
+  "id": "logic-025",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "At a cafe, four people - Fay, Omar, Noor and Eli - each ordered a different drink: coffee, juice, milk, lassi.\n\n1. Either Fay or Eli ordered the coffee.\n2. Eli ordered the lassi.\n3. Noor did not order the juice.\n\nWho ordered the coffee?",
+  "gold": {
+   "answer": "Fay",
+   "choices": [
+    "Fay",
+    "Omar",
+    "Noor",
+    "Eli"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_drinks",
+  "difficulty": "easy",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Fay.",
+  "id": "logic-026",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Exactly one of three suspects took the cookie. Exactly one of their three statements is true. Xena says: \"Yusuf took it.\" Yusuf says: \"I did not take it.\" Zane says: \"Xena is lying.\" Who took the cookie?",
+  "gold": {
+   "answer": "Yusuf"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_story",
+  "template_set": "hand",
+  "note": "Unique solution by brute force; answer Yusuf. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-027",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four chairs stand in a row, numbered 1 to 4 from the left. Dev, Eli, Fay and Gia each sit on one. Dev is not on either end chair. Eli sits on the chair immediately to the right of Dev. Fay is on chair 1. Gia does not sit next to Fay. Who is on chair 4?",
+  "gold": {
+   "answer": "Gia"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "puzzle_seating",
+  "template_set": "hand",
+  "note": "Dev=2, Eli=3, Gia=4 is the only seating that keeps Gia away from Fay. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-028",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three boxes are labelled \"Apples\", \"Oranges\" and \"Mixed\". Each box really contains one of: only apples, only oranges, or a mix of both, and every label is wrong. You take one fruit out of the box labelled \"Mixed\" and it is an apple. What does the box labelled \"Oranges\" contain? (answer: apples, oranges or mixed)",
+  "gold": {
+   "answer": "mixed"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "puzzle_story",
+  "template_set": "hand",
+  "note": "Mixed-labelled box is wrong so it is pure, and an apple came out, so it is apples; Oranges-labelled box cannot be oranges or apples, so it is mixed. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-029",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has four staff - Fay, Ben, Ivan and Maya - and each sits in a different coloured room (red, blue, yellow, white).\n\n- Ivan is not in the red room.\n- The red room is occupied by Ben or Ivan (not by anyone else).\n- The white room is occupied by Ben or Maya (not by anyone else).\n- The blue room is occupied by Fay or Maya (not by anyone else).\n\nWhose is the red room?",
+  "gold": {
+   "answer": "Ben",
+   "choices": [
+    "Fay",
+    "Ben",
+    "Ivan",
+    "Maya"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 24 arrangements satisfies all 4 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ben.",
+  "id": "logic-030",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four people - Noor, Ivan, Dia and Pia - stand in a single queue at a ticket counter.\n\n- Ivan is behind Noor in the queue.\n- Pia is second in line.\n- Ivan is in the queue between Noor and Dia.\n\nWho is first in line?",
+  "gold": {
+   "answer": "Noor",
+   "choices": [
+    "Noor",
+    "Ivan",
+    "Dia",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Noor.",
+  "id": "logic-031",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five colleagues - Ravi, Sia, Tej, Uday and Vera - live on different floors (1 to 5) of a building. Ravi lives neither on the top floor nor on the ground floor. Sia lives higher than Ravi. Tej lives exactly two floors below Sia. Uday lives on floor 1. Vera lives higher than Sia. Who lives on floor 3?",
+  "gold": {
+   "answer": "Ravi"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_floors",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is Ravi. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-032",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five people - Kofi, Raj, Omar, Dia and Sara - stand in a single queue at a ticket counter. Raj is in the queue between Kofi and Dia. Kofi stands somewhere ahead of Omar. Sara is not fifth in line. Raj is in the queue between Kofi and Sara. Sara is behind Dia in the queue. Kofi is not fourth in line.\n\nWho is fifth in line?",
+  "gold": {
+   "answer": "Omar",
+   "choices": [
+    "Kofi",
+    "Raj",
+    "Omar",
+    "Dia",
+    "Sara"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "hard",
+  "phrasing": "paragraph",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Omar.",
+  "id": "logic-033",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three neighbours - Hari, Isha and Jay - each keep a different pet (cat, dog or fish) and each drink a different beverage (milk, tea or soda). Hari keeps the cat. The dog owner drinks tea. Isha drinks soda. Jay does not keep the fish. Who keeps the fish and what do they drink? Answer with the person's name only.",
+  "gold": {
+   "answer": "Isha"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_two_attribute",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is Isha. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-034",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five people - Ana, Lena, Gus, Pia and Sara - stand in a single queue at a ticket counter.\n\n- Gus is not fourth in line.\n- Gus is not first in line.\n- Pia is not first in line.\n- Gus stands somewhere ahead of Ana.\n- Sara is not fourth in line.\n- Sara is in the queue between Gus and Pia.\n- Pia is not fourth in line.\n\nWho is fifth in line?",
+  "gold": {
+   "answer": "Pia",
+   "choices": [
+    "Ana",
+    "Lena",
+    "Gus",
+    "Pia",
+    "Sara"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Pia.",
+  "id": "logic-035",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has five staff - Sara, Fay, Jia, Eli and Ben - and each sits in a different coloured room (green, white, yellow, red, blue).\n\n1. The green room is occupied by Sara or Eli (not by anyone else).\n2. The white room isn't Sara's.\n3. The white room isn't Ben's.\n4. The red room is occupied by Fay or Ben (not by anyone else).\n5. The red room is occupied by Sara or Fay (not by anyone else).\n6. The blue room is occupied by Sara or Jia (not by anyone else).\n7. The blue room isn't Sara's.\n\nWhose is the blue room?",
+  "gold": {
+   "answer": "Jia",
+   "choices": [
+    "Sara",
+    "Fay",
+    "Jia",
+    "Eli",
+    "Ben"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "hard",
+  "phrasing": "numbered_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Jia.",
+  "id": "logic-036",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Four people - Ben, Gus, Uma and Maya - stand in a single queue at a ticket counter.\n\n- Ben is behind Uma in the queue.\n- Ben and Uma have exactly one person between them.\n- Gus is in the queue between Ben and Maya.\n\nWho is fourth in line?",
+  "gold": {
+   "answer": "Ben",
+   "choices": [
+    "Ben",
+    "Gus",
+    "Uma",
+    "Maya"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ben.",
+  "id": "logic-037",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "At a cafe, three people - Eli, Fay and Gus - each ordered a different drink: lassi, juice, tea. Either Fay or Gus ordered the tea. Either Eli or Fay ordered the lassi. Either Fay or Gus ordered the lassi.\n\nWho ordered the tea?",
+  "gold": {
+   "answer": "Gus",
+   "choices": [
+    "Eli",
+    "Fay",
+    "Gus"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_drinks",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Gus.",
+  "id": "logic-038",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three people - Tomas, Omar and Ana - stand in a single queue at a ticket counter. Omar is not third in line. Omar is not first in line. Tomas is not third in line.\n\nWho is third in line?",
+  "gold": {
+   "answer": "Ana",
+   "choices": [
+    "Tomas",
+    "Omar",
+    "Ana"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "B",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ana.",
+  "id": "logic-039",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "At a cafe, five people - Lena, Gus, Tomas, Eli and Omar - each ordered a different drink: coffee, tea, milk, lassi, juice.\n\n1. Omar did not order the lassi.\n2. Tomas did not order the coffee.\n3. Lena did not order the coffee.\n4. Either Gus or Eli ordered the milk.\n5. Lena did not order the tea.\n6. Eli did not order the coffee.\n7. Omar did not order the coffee.\n8. Omar did not order the tea.\n\nWho ordered the lassi?",
+  "gold": {
+   "answer": "Lena",
+   "choices": [
+    "Lena",
+    "Gus",
+    "Tomas",
+    "Eli",
+    "Omar"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_drinks",
+  "difficulty": "hard",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 8 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Lena.",
+  "id": "logic-040",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has five staff - Ivan, Sara, Eli, Maya and Cy - and each sits in a different coloured room (white, blue, red, yellow, green).\n\n- The green room isn't Sara's.\n- The blue room isn't Ivan's.\n- The red room is occupied by Eli or Cy (not by anyone else).\n- The green room is occupied by Sara or Maya (not by anyone else).\n- The yellow room is occupied by Eli or Cy (not by anyone else).\n- The red room is occupied by Ivan or Cy (not by anyone else).\n\nWhose is the blue room?",
+  "gold": {
+   "answer": "Sara",
+   "choices": [
+    "Ivan",
+    "Sara",
+    "Eli",
+    "Maya",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Sara.",
+  "id": "logic-041",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five friends - Lena, Ben, Noor, Ivan and Maya - each own a different pet: rabbit, fish, parrot, cat, dog.\n\n- The cat belongs to either Ben or Maya.\n- The fish belongs to either Lena or Noor.\n- The parrot belongs to either Ivan or Maya.\n- Ivan is not the owner of the rabbit.\n- Lena is not the owner of the rabbit.\n- The parrot belongs to either Ben or Maya.\n\nWho owns the fish?",
+  "gold": {
+   "answer": "Lena",
+   "choices": [
+    "Lena",
+    "Ben",
+    "Noor",
+    "Ivan",
+    "Maya"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 6 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Lena.",
+  "id": "logic-042",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Ana, Ben and Cy each chose a different drink: tea, coffee or juice. If Ana chose tea, then Ben chose coffee. Ana did not choose coffee. Ben did not choose juice. Cy did not choose tea. If Ben chose tea, then Cy chose juice. Who chose juice?",
+  "gold": {
+   "answer": "Cy"
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "puzzle_conditional",
+  "template_set": "hand",
+  "note": "Brute force over every assignment finds exactly one consistent solution; the answer is Cy. (Unique solution confirmed by exhaustive search.)",
+  "id": "logic-043",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three runners - Lena, Fay and Cy - finished a race with no ties.\n\n1. Fay did not finish second.\n2. Lena beat Cy.\n3. Fay did not finish first.\n\nWho finished first?",
+  "gold": {
+   "answer": "Lena",
+   "choices": [
+    "Lena",
+    "Fay",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:order_race",
+  "difficulty": "easy",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Lena.",
+  "id": "logic-044",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "At a cafe, three people - Sara, Cy and Ivan - each ordered a different drink: coffee, lassi, milk. Either Sara or Cy ordered the milk. Sara did not order the milk. Either Cy or Ivan ordered the lassi.\n\nWho ordered the lassi?",
+  "gold": {
+   "answer": "Ivan",
+   "choices": [
+    "Sara",
+    "Cy",
+    "Ivan"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_drinks",
+  "difficulty": "easy",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ivan.",
+  "id": "logic-045",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five friends - Raj, Ben, Eli, Ana and Pia - each own a different pet: cat, fish, rabbit, dog, parrot. The cat belongs to either Raj or Ben. Raj does not own the parrot. Pia is not the owner of the fish. Ana does not own the fish. Pia does not own the rabbit. The parrot belongs to either Raj or Eli. Raj is not the owner of the cat.\n\nWho owns the cat?",
+  "gold": {
+   "answer": "Ben",
+   "choices": [
+    "Raj",
+    "Ben",
+    "Eli",
+    "Ana",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "hard",
+  "phrasing": "paragraph",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ben.",
+  "id": "logic-046",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "At a cafe, four people - Jia, Uma, Ben and Gus - each ordered a different drink: tea, milk, lassi, juice.\n\n1. Either Jia or Gus ordered the lassi.\n2. Jia ordered the milk.\n3. Ben did not order the tea.\n\nWho ordered the juice?",
+  "gold": {
+   "answer": "Ben",
+   "choices": [
+    "Jia",
+    "Uma",
+    "Ben",
+    "Gus"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_drinks",
+  "difficulty": "easy",
+  "phrasing": "numbered_list",
+  "template_set": "A",
+  "note": "Exactly one of the 24 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Ben.",
+  "id": "logic-047",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Three people - Tomas, Omar and Pia - stand in a single queue at a ticket counter.\n\n- Omar is not second in line.\n- Tomas is not second in line.\n- Omar is behind Pia in the queue.\n\nWho is first in line?",
+  "gold": {
+   "answer": "Tomas",
+   "choices": [
+    "Tomas",
+    "Omar",
+    "Pia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:order_queue",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Tomas.",
+  "id": "logic-048",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "An office has three staff - Sara, Maya and Dia - and each sits in a different coloured room (white, blue, green).\n\n- The blue room is occupied by Sara or Dia (not by anyone else).\n- The blue room is occupied by Maya or Dia (not by anyone else).\n- Maya is not in the green room.\n\nWhose is the blue room?",
+  "gold": {
+   "answer": "Dia",
+   "choices": [
+    "Sara",
+    "Maya",
+    "Dia"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:B:assign_rooms",
+  "difficulty": "easy",
+  "phrasing": "bullet_list",
+  "template_set": "B",
+  "note": "Exactly one of the 6 arrangements satisfies all 3 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Dia.",
+  "id": "logic-049",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ },
+ {
+  "prompt": "Five friends - Hana, Pia, Eli, Uma and Cy - each own a different pet: cat, parrot, rabbit, fish, dog.\n\n- Cy does not own the parrot.\n- Cy is not the owner of the dog.\n- Uma does not own the parrot.\n- The rabbit belongs to either Hana or Uma.\n- The rabbit belongs to either Hana or Pia.\n- The cat belongs to either Pia or Eli.\n- Pia is not the owner of the parrot.\n\nWho owns the dog?",
+  "gold": {
+   "answer": "Uma",
+   "choices": [
+    "Hana",
+    "Pia",
+    "Eli",
+    "Uma",
+    "Cy"
+   ]
+  },
+  "grader": "exact",
+  "category": "logic",
+  "source": "generated:A:assign_pets",
+  "difficulty": "hard",
+  "phrasing": "bullet_list",
+  "template_set": "A",
+  "note": "Exactly one of the 120 arrangements satisfies all 7 clues (brute force, re-confirmed by a second solver parsing the text); the answer is Uma.",
+  "id": "logic-050",
+  "split": "unsplit",
+  "gold_checks": "unique solution, 2 solvers"
+ }
+]

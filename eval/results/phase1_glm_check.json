@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "sent-001",
+  "category": "sentiment",
+  "glm_answer": "The customer expresses anger and frustration over a double charge and lack of support, with no positive elements.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-002",
+  "category": "sentiment",
+  "glm_answer": "The review only states factual specifications without expressing any opinion or emotion.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-003",
+  "category": "sentiment",
+  "glm_answer": "The review lists only complaints—cold food, rude service, and a long wait—with no redeeming remarks, making it clearly negative.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-004",
+  "category": "sentiment",
+  "glm_answer": "The review objectively describes the film's subject matter without expressing any opinion or evaluation.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-005",
+  "category": "sentiment",
+  "glm_answer": "The review starts with past disappointment but concludes with praise for the flawless product and early delivery. ANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-006",
+  "category": "sentiment",
+  "glm_answer": "The reviewer praises the ramen as the best they've had outside Japan, which is clearly favorable despite the understated opening.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-007",
+  "category": "sentiment",
+  "glm_answer": "The message reports an average rating of 3/5 stars, which is a factual statistic without positive or negative language. ANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-008",
+  "category": "sentiment",
+  "glm_answer": "The review praises the chair's design but criticizes its comfort, expressing both positive and negative feelings.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-009",
+  "category": "sentiment",
+  "glm_answer": "The entry praises the support team's friendliness but expresses frustration that the problem remains unresolved, combining positive and negative elements.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-011",
+  "category": "sentiment",
+  "glm_answer": "The review praises the screen and sound but criticizes the battery life, combining positive and negative points.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-012",
+  "category": "sentiment",
+  "glm_answer": "The review praises the product (four stars) while criticizing the courier's damaged delivery (one star), expressing both positive and negative sentiment.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-013",
+  "category": "sentiment",
+  "glm_answer": "The review praises the camera and display but criticizes the speaker and software, containing both positive and negative points.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-014",
+  "category": "sentiment",
+  "glm_answer": "The tweet uses sarcasm (\"Oh great,\" \"Exactly what I needed\") to express frustration about a software update, making it negative.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-015",
+  "category": "sentiment",
+  "glm_answer": "The tweet enthusiastically praises the album and notes repeated listening, showing clear enjoyment.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-016",
+  "category": "sentiment",
+  "glm_answer": "The review sarcastically criticizes the service as completely absent, expressing clear dissatisfaction. ANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-017",
+  "category": "sentiment",
+  "glm_answer": "The message is a purely factual scheduling announcement with no emotional language. ANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-018",
+  "category": "sentiment",
+  "glm_answer": "The entry praises the pizza but complains about slow service, containing both positive and negative elements.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-019",
+  "category": "sentiment",
+  "glm_answer": "The message simply states factual store hours without any emotional language or opinion.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-020",
+  "category": "sentiment",
+  "glm_answer": "The message is a factual statement about bus frequency with no emotional language. \n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-021",
+  "category": "sentiment",
+  "glm_answer": "The customer expresses gratitude and praise for a quick refund, with no complaints. \n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-022",
+  "category": "sentiment",
+  "glm_answer": "The review praises cleanliness, staff, and breakfast with no complaints, making it entirely favorable.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-023",
+  "category": "sentiment",
+  "glm_answer": "The reviewer exceeded expectations and reports no complaints after a month, expressing clear satisfaction. \n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-024",
+  "category": "sentiment",
+  "glm_answer": "The review complains that the jacket's seams ripped on first wear and calls the quality awful, expressing clear dissatisfaction. ANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-025",
+  "category": "sentiment",
+  "glm_answer": "The review praises the acting and cinematography but criticizes the story as pointless, combining strong positives and negatives. ANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-026",
+  "category": "sentiment",
+  "glm_answer": "The review praises both the price and the sound quality with no complaints, making it clearly favorable.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-027",
+  "category": "sentiment",
+  "glm_answer": "The review complains about product failure, unresponsive support, and wasted money with no redeeming remarks.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-028",
+  "category": "sentiment",
+  "glm_answer": "The review expresses strong dissatisfaction, criticizing the plot and calling it the worst movie of the year.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-029",
+  "category": "sentiment",
+  "glm_answer": "The message expresses frustration and sarcasm about poor customer service and an unresolved refund.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-030",
+  "category": "sentiment",
+  "glm_answer": "The review expresses disappointment and frustration over a product failing quickly and poor customer service. \n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-031",
+  "category": "sentiment",
+  "glm_answer": "The review praises both performance and ease of cleaning with no complaints, making it clearly positive.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-032",
+  "category": "sentiment",
+  "glm_answer": "The tweet uses sarcasm (\"Truly a new record\") to complain about slow delivery, expressing frustration rather than genuine praise.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-033",
+  "category": "sentiment",
+  "glm_answer": "The review praises the update enthusiastically with no complaints, expressing clear satisfaction.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-034",
+  "category": "sentiment",
+  "glm_answer": "The review praises the course content while criticizing the platform's technical issues, so it contains both positive and negative sentiment.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-035",
+  "category": "sentiment",
+  "glm_answer": "The review expresses neither satisfaction nor dissatisfaction, just an unremarkable, indifferent assessment.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-036",
+  "category": "sentiment",
+  "glm_answer": "The message is enthusiastic praise, highlighting the crew's dedication, quality work, and tidiness with no criticism.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-037",
+  "category": "sentiment",
+  "glm_answer": "The review praises the location and host but criticizes the noise and room size, balancing good and bad points.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-038",
+  "category": "sentiment",
+  "glm_answer": "The customer complains about a late delivery and damaged packaging with no redeeming remarks, making the sentiment clearly negative.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-039",
+  "category": "sentiment",
+  "glm_answer": "The tweet complains that the update broke the app with constant crashes, expressing clear dissatisfaction.\n\nANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-040",
+  "category": "sentiment",
+  "glm_answer": "The tweet expresses clear satisfaction and excitement about the new phone's camera, with no negative elements.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-041",
+  "category": "sentiment",
+  "glm_answer": "The message is a factual statement about an order and delivery with no emotional language or evaluation.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-042",
+  "category": "sentiment",
+  "glm_answer": "The reviewer starts sceptical but is won over by the product's impressive stain-removing results. ANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-043",
+  "category": "sentiment",
+  "glm_answer": "The message expresses strong satisfaction and praise for the quick, effective service.\n\nANSWER: positive",
+  "agree": true,
+  "detail": "GLM label=positive, gold=positive"
+ },
+ {
+  "id": "sent-044",
+  "category": "sentiment",
+  "glm_answer": "The sarcastic tone mocks the misleading \"sea view\" claim, expressing clear dissatisfaction. ANSWER: negative",
+  "agree": true,
+  "detail": "GLM label=negative, gold=negative"
+ },
+ {
+  "id": "sent-045",
+  "category": "sentiment",
+  "glm_answer": "The review states the phone is merely average and functional without expressing praise or criticism, indicating a neutral stance.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-046",
+  "category": "sentiment",
+  "glm_answer": "The review praises the food highly but criticizes the staff's attitude, expressing both positive and negative sentiments.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-047",
+  "category": "sentiment",
+  "glm_answer": "The review expresses both enjoyment of the first half and disappointment with the ending, combining positive and negative sentiment.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-048",
+  "category": "sentiment",
+  "glm_answer": "The entry contains both a complaint (price) and praise (quality), making it mixed.\n\nANSWER: mixed",
+  "agree": true,
+  "detail": "GLM label=mixed, gold=mixed"
+ },
+ {
+  "id": "sent-049",
+  "category": "sentiment",
+  "glm_answer": "The message is a purely factual statement with no emotional language or evaluative tone.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-050",
+  "category": "sentiment",
+  "glm_answer": "The message expresses uncertainty without leaning toward either a favorable or unfavorable judgment. \n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "sent-010",
+  "category": "sentiment",
+  "glm_answer": "The entry states the tool works as documented but withholds judgment on value, expressing neither clear praise nor complaint.\n\nANSWER: neutral",
+  "agree": true,
+  "detail": "GLM label=neutral, gold=neutral"
+ },
+ {
+  "id": "fact-001",
+  "category": "factual",
+  "glm_answer": "The Peace of Westphalia (1648) ended the Thirty Years' War in the Holy Roman Empire and the Eighty Years' War between Spain and the Dutch Republic. It is known for:\n\n- **Recognizing Dutch and Swiss independence** from Spain and the Holy Roman Empire, respectively.\n- **Establishing state sovereignty** as a core principle—each state's right to govern its own territory and religious affairs without external interference.\n- **Granting religious toleration** to Calvinists alongside Catholics and Lutherans, extending the Peace of Augsburg (1555).\n- **Weakening the Holy Roman Emperor** by strengthening the autonomy of German princes.\n\nIt's often cited as the foundation of the modern international system of sovereign states, sometimes called the \"Westphalian system.\"",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe candidate correctly states that the Peace of Westphalia ended the Thirty Years' War and adds accurate details about sovereignty and related outcomes.",
+  "judge_raw": "VERDICT: PASS\nThe candidate correctly states that the Peace of Westphalia ended the Thirty Years' War and adds accurate details about sovereignty and related outcomes."
+ },
+ {
+  "id": "fact-002",
+  "category": "factual",
+  "glm_answer": "The Western Roman Empire ended in 476 CE. That year, the Germanic leader Odoacer deposed the young emperor Romulus Augustulus (often called the last Western emperor) and declared himself ruler of Italy. Rather than installing a new puppet emperor, Odoacer sent the imperial regalia to Constantinople, effectively signaling that the Western Empire no longer existed.\n\nIt's worth noting this was more a symbolic endpoint than a sudden collapse—by 476, Western imperial authority had already eroded through decades of invasions, economic decline, and Germanic kingdoms controlling former Roman territories. The Eastern (Byzantine) Empire, centered on Constantinople, continued for nearly another thousand years, until 1453.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (476 CE, Odoacer deposing Romulus Augustulus) are present, and all added detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (476 CE, Odoacer deposing Romulus Augustulus) are present, and all added detail is accurate."
+ },
+ {
+  "id": "fact-003",
+  "category": "factual",
+  "glm_answer": "GDP (Gross Domestic Product) measures the total monetary value of all final goods and services produced within a country's borders during a specific period, usually a quarter or year.\n\nKey points:\n- It covers only **final** goods and services, avoiding double-counting of intermediate goods.\n- It's measured within a country's **borders**, regardless of who owns the production.\n- It can be calculated three ways: production (value added), income, or expenditure (C + I + G + net exports), all yielding the same total.\n\nGDP is used to gauge the size of an economy, compare economic performance across countries or over time, and indicate whether an economy is growing or contracting. However, it doesn't measure well-being, income distribution, informal economic activity, or environmental costs.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and the added detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present and the added detail is accurate."
+ },
+ {
+  "id": "fact-004",
+  "category": "factual",
+  "glm_answer": "The difference is inflation adjustment:\n\n- **Nominal interest rate**: the stated rate on a loan or investment, not adjusted for inflation.\n- **Real interest rate**: the nominal rate minus inflation, reflecting actual purchasing power gained or lost.\n\n**Formula**: Real rate ≈ Nominal rate − Inflation rate\n\n**Example**: If a savings account pays 5% (nominal) and inflation is 3%, your real return is about 2% — your money buys only 2% more goods per year.\n\nReal rates matter because they show the true cost of borrowing and true return on saving. If inflation exceeds the nominal rate, the real rate is negative — you lose purchasing power even while earning interest.",
+  "agree": true,
+  "detail": "VERDICT: PASS — Both required key points are present and correct, with accurate supporting detail.",
+  "judge_raw": "VERDICT: PASS — Both required key points are present and correct, with accurate supporting detail."
+ },
+ {
+  "id": "fact-005",
+  "category": "factual",
+  "glm_answer": "Opportunity cost is the value of the next best alternative you give up when making a choice.\n\nExample: If you spend $20 on a movie, your opportunity cost is whatever else you could have done with that $20 (and the time) — like buying a book or saving it.\n\nIt's a core economics concept because resources (money, time, effort) are limited, so every decision involves trade-offs. It includes both explicit costs (money spent) and implicit costs (benefits forgone, like wages lost while attending school).",
+  "agree": true,
+  "detail": "VERDICT: PASS — The candidate correctly states the value of the next best alternative forgone, with accurate supporting detail.",
+  "judge_raw": "VERDICT: PASS — The candidate correctly states the value of the next best alternative forgone, with accurate supporting detail."
+ },
+ {
+  "id": "fact-006",
+  "category": "factual",
+  "glm_answer": "A black hole is a region of spacetime where gravity is so intense that nothing—not even light—can escape once it crosses the event horizon, the boundary beyond which escape is impossible.\n\nBlack holes typically form when massive stars (roughly 20+ times the Sun's mass) collapse at the end of their lives. They come in several types: stellar-mass black holes, supermassive black holes (millions to billions of solar masses, found at galaxy centers, like Sagittarius A* in the Milky Way), and possibly intermediate ones.\n\nThough invisible, black holes can be detected by their effects: stars orbiting them, gas spiraling in and heating up, and gravitational waves from mergers. The first direct image of a black hole's shadow was captured by the Event Horizon Telescope in 2019.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe required key point (gravity so strong light cannot escape) is present, and all added details are correct.",
+  "judge_raw": "VERDICT: PASS\nThe required key point (gravity so strong light cannot escape) is present, and all added details are correct."
+ },
+ {
+  "id": "fact-007",
+  "category": "factual",
+  "glm_answer": "The Dust Bowl resulted from a combination of drought and poor land management on the Great Plains:\n\n1. **Drought**: Severe, multi-year droughts (especially 1934 and 1936) dried out the soil.\n\n2. **Overplowing**: Farmers had converted vast grasslands to wheat fields, particularly during WWI's high wheat prices. Native prairie grasses, which held soil in place, were destroyed.\n\n3. **Poor farming practices**: Practices like deep plowing and leaving fields bare exposed loose topsoil.\n\n4. **Wind**: When drought killed crops, the dry, exposed topsoil blew away in massive \"black blizzard\" dust storms.\n\n5. **Economic pressures**: The Great Depression pushed farmers to cultivate marginal land intensively.\n\nThe result was the loss of millions of tons of topsoil, ruined farms, and mass migration (notably to California), prompting later soil conservation programs.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (severe drought and poor farming practices/removal of native grasses) are present, and all added details are accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (severe drought and poor farming practices/removal of native grasses) are present, and all added details are accurate."
+ },
+ {
+  "id": "fact-008",
+  "category": "factual",
+  "glm_answer": "A hash function takes input data of any size and produces a fixed-size output (the hash) that appears random. Key properties: it's deterministic (same input → same output), infeasible to reverse, and small input changes drastically change the output.\n\nFor passwords, you store only the hash, never the plaintext. When a user logs in, you hash their entered password and compare it to the stored hash. Benefits:\n\n- **Breach protection**: If the database is stolen, attackers get hashes, not passwords.\n- **No plaintext access**: Even admins can't see actual passwords.\n- **Verification without exposure**: You can check correctness without knowing the secret.\n\nIn practice, use slow, salted hash functions designed for passwords (bcrypt, scrypt, Argon2), not fast ones like SHA-256, to resist brute-force attacks.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll required points are present (fixed-size deterministic output, one-way/infeasible to reverse, storing hashes instead of plaintext), and the extra details are correct.",
+  "judge_raw": "VERDICT: PASS\nAll required points are present (fixed-size deterministic output, one-way/infeasible to reverse, storing hashes instead of plaintext), and the extra details are correct."
+ },
+ {
+  "id": "fact-009",
+  "category": "factual",
+  "glm_answer": "A recession is a significant decline in economic activity—falling GDP, rising unemployment, reduced spending—typically lasting a few months to a couple of years. A depression is a more severe, prolonged downturn: much deeper GDP contraction (often 10%+), unemployment reaching 20-25%, and lasting years rather than months.\n\nThere's no precise technical definition of a depression; it's generally recognized by severity and duration. The Great Depression (1929–1939, with ~25% unemployment) is the classic example, while the 2008–2009 crisis and 2020 pandemic downturn were recessions.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (recession as milder/shorter decline, depression as severe and prolonged), and the added details are accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (recession as milder/shorter decline, depression as severe and prolonged), and the added details are accurate."
+ },
+ {
+  "id": "fact-010",
+  "category": "factual",
+  "glm_answer": "The Moon's phases result from its orbit around Earth and the changing angles at which we see its sunlit half.\n\nThe Sun always illuminates half of the Moon, but as the Moon circles Earth (about every 29.5 days), we see varying amounts of that lit portion:\n\n- **New moon**: The Moon sits between Earth and Sun, so its lit side faces away from us.\n- **First quarter**: We see half the lit side.\n- **Full moon**: Earth is between Sun and Moon, so the fully lit side faces us.\n- **Last quarter**: We again see half, on the opposite side.\n\nImportantly, phases are *not* caused by Earth's shadow on the Moon—that only happens during lunar eclipses. Phases are simply a matter of viewing geometry.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer correctly explains that we see different portions of the sunlit half as the Moon orbits, and even includes the optional point about Earth's shadow.",
+  "judge_raw": "VERDICT: PASS\nThe answer correctly explains that we see different portions of the sunlit half as the Moon orbits, and even includes the optional point about Earth's shadow."
+ },
+ {
+  "id": "fact-011",
+  "category": "factual",
+  "glm_answer": "Correlation means two variables move together — when one changes, the other tends to change too. Causation means one variable actually *causes* the change in the other.\n\nThe key difference: correlation doesn't tell you *why* things move together. Ice cream sales and drowning deaths are correlated, but ice cream doesn't cause drowning — hot weather drives both.\n\nTwo correlated variables could have:\n- A direct causal link (A causes B)\n- Reverse causation (B causes A)\n- A third factor causing both (confounding variable)\n- Pure coincidence\n\nEstablishing causation requires more than observing a relationship — typically controlled experiments (like randomized trials) where you isolate variables and rule out alternative explanations.\n\nIn short: correlation is a pattern; causation is a mechanism.",
+  "agree": true,
+  "detail": "VERDICT: PASS — Both required key points are present and correct, with accurate optional detail on confounders and coincidence.",
+  "judge_raw": "VERDICT: PASS — Both required key points are present and correct, with accurate optional detail on confounders and coincidence."
+ },
+ {
+  "id": "fact-012",
+  "category": "factual",
+  "glm_answer": "**Bacteria** are single-celled living organisms. They have their own cellular machinery, metabolize, grow, and reproduce independently. Many are beneficial (e.g., gut bacteria), and bacterial infections can be treated with antibiotics.\n\n**Viruses** are much smaller and not truly \"alive.\" They're essentially genetic material (DNA or RNA) in a protein coat. They can't reproduce on their own—they must hijack a host cell's machinery to replicate. Antibiotics don't work on viruses; antiviral drugs or vaccines are used instead.\n\nKey differences:\n- **Size:** Viruses are 10–100x smaller\n- **Reproduction:** Bacteria divide independently; viruses need host cells\n- **Treatment:** Antibiotics vs. antivirals/vaccines\n- **Structure:** Bacteria have cell walls and organelles; viruses don't",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (bacteria reproduce independently; viruses need a host cell), and all added details are correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (bacteria reproduce independently; viruses need a host cell), and all added details are correct."
+ },
+ {
+  "id": "fact-013",
+  "category": "factual",
+  "glm_answer": "Because special relativity is built on two postulates: the laws of physics are the same in all inertial frames, and light travels at the same speed *c* in all inertial frames regardless of the motion of the source or observer.\n\nThat second postulate is radical. In everyday physics, speeds add — throw a ball from a moving train and the ground sees a faster ball. But light doesn't work that way: whether you chase a light beam or run toward it, you measure the same *c*.\n\nTo keep *c* constant for everyone, something else has to give — and that's our notions of space and time. Time dilation, length contraction, and relativity of simultaneity all follow from requiring *c* to be invariant. So *c* isn't just a speed limit; it's the conversion factor between space and time, unifying them into spacetime.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer explicitly states light's speed is constant for all inertial observers and that this implies time dilation and length contraction, matching both required key points with no errors.",
+  "judge_raw": "VERDICT: PASS\nThe answer explicitly states light's speed is constant for all inertial observers and that this implies time dilation and length contraction, matching both required key points with no errors."
+ },
+ {
+  "id": "fact-014",
+  "category": "factual",
+  "glm_answer": "The 2008 crisis stemmed from several interlocking causes:\n\n1. **Housing bubble and subprime lending**: Loose lending standards, including mortgages to borrowers with poor credit, fueled a housing boom.\n\n2. **Securitization**: Mortgages were bundled into mortgage-backed securities and collateralized debt obligations (CDOs), spreading risky loans throughout the global financial system. Rating agencies gave these products inflated ratings.\n\n3. **Excessive leverage**: Banks and households took on enormous debt, leaving little buffer when losses hit.\n\n4. **Regulatory failures**: Inadequate oversight of shadow banking, derivatives, and lending practices; the repeal of Glass-Steagall also blurred risk boundaries.\n\n5. **Low interest rates**: The Fed's post-2001 rates encouraged borrowing and risk-taking.\n\n6. **Misaligned incentives**: Brokers, bankers, and executives were rewarded for short-term volume, not long-term soundness.\n\nWhen housing prices fell and defaults surged, the interconnected system collapsed, triggering the Lehman Brothers failure and global panic.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (subprime lending/housing bubble and securitization/leverage spreading risk) are present, and all added detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (subprime lending/housing bubble and securitization/leverage spreading risk) are present, and all added detail is accurate."
+ },
+ {
+  "id": "fact-015",
+  "category": "factual",
+  "glm_answer": "The Industrial Revolution was a period of major economic and technological transformation, beginning in Britain around 1760 and spreading to Europe and North America through the 1800s. It marked the shift from agrarian, handcraft-based economies to industrialized manufacturing powered by machines.\n\nKey developments included the steam engine, mechanized textile production, iron and steel manufacturing, and later railroads and electricity. Production moved from homes and small workshops into factories, driving urbanization as people migrated to cities for work.\n\nThe revolution brought enormous economic growth and rising living standards over time, but also harsh early conditions: long hours, child labor, pollution, and crowded slums. It reshaped social structures, giving rise to an industrial working class and modern capitalism, and laid the foundations of the modern world economy.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (began in Britain around 1760; machines, factories, steam power), and the extra detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (began in Britain around 1760; machines, factories, steam power), and the extra detail is accurate."
+ },
+ {
+  "id": "fact-016",
+  "category": "factual",
+  "glm_answer": "TCP (Transmission Control Protocol) is connection-oriented and reliable — it establishes a connection, guarantees delivery, orders packets, and retransmits lost ones. Used for web browsing, email, file transfers.\n\nUDP (User Datagram Protocol) is connectionless and fast — no handshake, no delivery guarantees, no ordering. Used for streaming, gaming, VoIP, DNS, where speed matters more than reliability.\n\nIn short: TCP = reliable but slower; UDP = fast but \"best effort.\"",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and correct: TCP is connection-oriented, reliable, and ordered; UDP is connectionless with no guarantees and lower latency.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present and correct: TCP is connection-oriented, reliable, and ordered; UDP is connectionless with no guarantees and lower latency."
+ },
+ {
+  "id": "fact-017",
+  "category": "factual",
+  "glm_answer": "The Magna Carta, sealed by King John in June 1215 at Runnymede, was a peace treaty between the king and rebellious barons. Its significance lies in establishing the principle that the monarch's power was not absolute and was subject to the law.\n\nKey provisions included protections against unlawful imprisonment (the origin of due process ideas), limits on royal taxation without consent, and guarantees of justice \"to no one will we sell, deny, or delay right or justice.\"\n\nThough initially annulled and largely a failure as a peace deal, reissues in 1216, 1217, and 1225 gave it lasting force. It became a foundational symbol of constitutional government, cited by reformers, parliamentarians, and the American founders as evidence that rulers must be bound by law.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (barons forcing King John in 1215; king subject to law/limited power), and the extra detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (barons forcing King John in 1215; king subject to law/limited power), and the extra detail is accurate."
+ },
+ {
+  "id": "fact-018",
+  "category": "factual",
+  "glm_answer": "A CPU cache is a small, fast memory located on or near the processor that stores copies of frequently used data and instructions from main memory (RAM).\n\nIt exists because of a speed gap: CPUs operate far faster than RAM. Without a cache, the CPU would sit idle waiting for data on every memory access. The cache exploits locality—programs tend to reuse the same data (temporal locality) and nearby data (spatial locality)—so keeping that data close lets the CPU run at full speed.\n\nModern CPUs have multiple levels (L1, L2, L3), trading size for speed: L1 is smallest and fastest, L3 is larger and shared among cores. Cache hits are dramatically faster than RAM accesses, often by 10–100x.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll required key points are present (small fast memory near CPU, stores frequently used data, reduces slow main-memory accesses), and the extra detail is correct.",
+  "judge_raw": "VERDICT: PASS\nAll required key points are present (small fast memory near CPU, stores frequently used data, reduces slow main-memory accesses), and the extra detail is correct."
+ },
+ {
+  "id": "fact-019",
+  "category": "factual",
+  "glm_answer": "Central banks raise interest rates to make borrowing more expensive and saving more attractive. This reduces spending by consumers and investment by businesses, cooling demand for goods and services. With weaker demand, businesses face less pressure to raise prices, and inflation slows. Higher rates can also strengthen the currency, making imports cheaper.\n\nThe main trade-off is slower economic growth and higher unemployment. Restrained demand means businesses may cut production and lay off workers, and recessions can occur if rates rise too much or too fast. Higher rates also increase debt-servicing costs for households, firms, and governments.\n\nSo central banks must balance bringing inflation down against the pain of reduced output and employment—essentially trading short-term economic hardship for long-term price stability.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll required points are present (higher borrowing costs reduce demand, lowers inflation pressure, trade-off of slower growth/higher unemployment), and extra details are correct.",
+  "judge_raw": "VERDICT: PASS\nAll required points are present (higher borrowing costs reduce demand, lowers inflation pressure, trade-off of slower growth/higher unemployment), and extra details are correct."
+ },
+ {
+  "id": "fact-020",
+  "category": "factual",
+  "glm_answer": "Earth's seasons are caused by the tilt of its rotational axis, about 23.5° relative to its orbit around the Sun. As Earth orbits, each hemisphere alternately tilts toward and away from the Sun. When your hemisphere tilts toward the Sun, sunlight strikes more directly and days are longer, producing summer; when tilted away, sunlight is more spread out and days are shorter, producing winter.\n\nImportantly, seasons are not caused by distance from the Sun—Earth is actually closest to the Sun (perihelion) in early January, during the Northern Hemisphere's winter.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer correctly states Earth's axial tilt (~23.5°) and its effect on sunlight angle and day length, and correctly adds that distance from the Sun is not the cause.",
+  "judge_raw": "VERDICT: PASS\nThe answer correctly states Earth's axial tilt (~23.5°) and its effect on sunlight angle and day length, and correctly adds that distance from the Sun is not the cause."
+ },
+ {
+  "id": "fact-021",
+  "category": "factual",
+  "glm_answer": "The greenhouse effect is the natural process by which certain gases in Earth's atmosphere trap heat, warming the planet. Sunlight passes through the atmosphere and warms Earth's surface, which then radiates heat back toward space. Greenhouse gases—mainly water vapor, carbon dioxide, methane, and nitrous oxide—absorb and re-emit some of this heat, keeping the surface about 33°C (59°F) warmer than it would otherwise be.\n\nThis effect is essential for life, since without it Earth would be largely frozen. However, human activities—especially burning fossil fuels, deforestation, and agriculture—have increased greenhouse gas concentrations, intensifying the effect and causing global warming and climate change.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (gases trap heat radiated by Earth; keeps the planet warm) are present, and all added detail is correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (gases trap heat radiated by Earth; keeps the planet warm) are present, and all added detail is correct."
+ },
+ {
+  "id": "fact-022",
+  "category": "factual",
+  "glm_answer": "A heat pump moves heat rather than generating it. It uses a refrigerant that evaporates at low temperature, absorbing heat from a source (outside air, ground, or water). A compressor then pressurizes the refrigerant vapor, raising its temperature so it can release that heat indoors as it condenses. An expansion valve drops the pressure, and the cycle repeats.\n\nIt can deliver more heat energy than the electricity it consumes because most of the heat is harvested from the environment—only the work of moving the heat (compression) requires electrical input. Efficiency is measured by the coefficient of performance (COP): a COP of 4 means 1 kWh of electricity delivers 4 kWh of heat. This doesn't violate thermodynamics because the system isn't creating energy, just transferring it from a colder to a warmer place using work.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required points are present (transfers rather than creates heat; output exceeds electrical input with COP explanation), and all added detail is correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required points are present (transfers rather than creates heat; output exceeds electrical input with COP explanation), and all added detail is correct."
+ },
+ {
+  "id": "fact-023",
+  "category": "factual",
+  "glm_answer": "The sky is blue because of Rayleigh scattering. Sunlight contains all colors, and as it passes through the atmosphere, air molecules scatter shorter wavelengths (blue and violet) much more strongly than longer ones (red, orange). Our eyes are also less sensitive to violet, so the scattered light we see is predominantly blue.\n\nAt sunset, light travels through more atmosphere, so most blue is scattered away before reaching you, leaving reds and oranges.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (Rayleigh scattering by air molecules and stronger scattering of shorter/blue wavelengths) are present, and the added details are correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (Rayleigh scattering by air molecules and stronger scattering of shorter/blue wavelengths) are present, and the added details are correct."
+ },
+ {
+  "id": "fact-024",
+  "category": "factual",
+  "glm_answer": "Mitochondria are the cell's powerhouses — they generate most of the cell's ATP (energy) through cellular respiration, converting nutrients like glucose and oxygen into usable energy.\n\nThey also:\n- Regulate metabolism\n- Store calcium\n- Play a role in cell signaling and apoptosis (programmed cell death)\n- Generate heat in some tissues\n\nThey contain their own DNA, inherited maternally, hinting they evolved from ancient bacteria.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe candidate correctly states that mitochondria produce ATP through cellular respiration, covering the required key point, and all extra details are accurate.",
+  "judge_raw": "VERDICT: PASS\nThe candidate correctly states that mitochondria produce ATP through cellular respiration, covering the required key point, and all extra details are accurate."
+ },
+ {
+  "id": "fact-025",
+  "category": "factual",
+  "glm_answer": "A bond is a debt security in which an investor lends money to an issuer—typically a government, municipality, or corporation—for a defined period. In return, the issuer pays periodic interest (called coupons) and repays the principal (face value) at maturity.\n\nKey features:\n- **Face value (par):** Amount repaid at maturity, often $1,000\n- **Coupon rate:** The interest rate paid, fixed or floating\n- **Maturity:** When the principal is due\n- **Yield:** The effective return, which varies with the bond's market price\n\nBonds are generally considered lower-risk than stocks, though they carry risks like default (credit risk), interest rate risk (prices fall when rates rise), and inflation risk. Governments and companies issue bonds to raise capital for projects, operations, or refinancing debt.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points (loan by investor, coupon interest, principal at maturity) are present and correct.",
+  "judge_raw": "VERDICT: PASS\nAll three required points (loan by investor, coupon interest, principal at maturity) are present and correct."
+ },
+ {
+  "id": "fact-026",
+  "category": "factual",
+  "glm_answer": "Vaccines train your immune system to recognize a pathogen without making you sick. They introduce a harmless version or piece of it—an inactivated virus, a protein fragment, or instructions (like mRNA) for your cells to make one protein. Your immune system responds by producing antibodies and memory cells. If you're later exposed to the real pathogen, those memory cells recognize it quickly and mount a fast defense, preventing illness or reducing its severity.\n\nKey points for your explainer:\n- Vaccines stimulate natural immune processes; they don't \"inject\" immunity directly.\n- Protection takes days to weeks to develop, which is why some vaccines require multiple doses.\n- They protect individuals and, when enough people are vaccinated, slow disease spread in communities (herd immunity).",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (harmless antigen/piece of pathogen and immune memory) are present, and all added details are accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (harmless antigen/piece of pathogen and immune memory) are present, and all added details are accurate."
+ },
+ {
+  "id": "fact-027",
+  "category": "factual",
+  "glm_answer": "mRNA vaccines deliver lab-made messenger RNA instructions to your cells, usually encased in lipid nanoparticles for protection and delivery.\n\nOnce inside cells, ribosomes read the mRNA and build a harmless piece of the pathogen—typically the spike protein of SARS-CoV-2. Your immune system recognizes this protein as foreign, producing antibodies and training T cells against it.\n\nThe mRNA itself degrades within days and never enters the cell nucleus or alters DNA. If you later encounter the real virus, your immune system responds quickly, preventing severe illness.\n\nKey advantages: they can be developed rapidly (no need to grow virus in labs), and the same platform can be adapted to new targets by simply changing the mRNA sequence.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (mRNA instructs cells to make spike protein antigen; immune system responds and remembers), and all added details are correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (mRNA instructs cells to make spike protein antigen; immune system responds and remembers), and all added details are correct."
+ },
+ {
+  "id": "fact-028",
+  "category": "factual",
+  "glm_answer": "The sky is blue because air molecules scatter sunlight, and shorter wavelengths scatter much more strongly (Rayleigh scattering, ~1/λ⁴). Violet light scatters even more than blue, so why isn't the sky violet?\n\nThree reasons:\n\n1. **The sun emits less violet than blue light**, so there's less violet to begin with.\n2. **Our eyes are less sensitive to violet.** Cone cells respond most strongly to blue, green, and red; violet sits at the edge of our vision.\n3. **Some violet is absorbed** in the upper atmosphere.\n\nThe mix of scattered wavelengths, weighted by solar output and our eyes' sensitivity, peaks in perception as blue — so we see a blue sky rather than violet.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (less violet emitted/absorbed, eyes less sensitive to violet) are present, and the added Rayleigh scattering detail is correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (less violet emitted/absorbed, eyes less sensitive to violet) are present, and the added Rayleigh scattering detail is correct."
+ },
+ {
+  "id": "fact-029",
+  "category": "factual",
+  "glm_answer": "Encryption is the process of converting readable information (plaintext) into a scrambled, unreadable format (ciphertext) so that only authorized parties can access it. It uses mathematical algorithms and a key—a secret value that determines how the data is transformed. Anyone without the correct key sees only gibberish.\n\nThere are two main types:\n\n- **Symmetric encryption**: the same key encrypts and decrypts (e.g., AES). Fast, but both parties must share the key securely.\n- **Asymmetric encryption**: uses a public key to encrypt and a private key to decrypt (e.g., RSA). This underpins secure websites (HTTPS) and digital signatures.\n\nEncryption protects data in transit (like messages) and at rest (like files on a device), and it's the foundation of online banking, messaging apps, and password storage.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required points—conversion to unreadable form and the need for a key to decrypt—are clearly present, and all added detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required points—conversion to unreadable form and the need for a key to decrypt—are clearly present, and all added detail is accurate."
+ },
+ {
+  "id": "fact-030",
+  "category": "factual",
+  "glm_answer": "A race condition occurs when a program's behavior depends on the timing or ordering of concurrent operations, such as multiple threads accessing shared data simultaneously. When at least two operations run concurrently and can interleave in different ways, the outcome may vary between runs—sometimes producing correct results, sometimes incorrect ones.\n\nA classic example: two threads both increment a shared counter. Each reads the value, adds one, and writes it back. If they interleave badly, both read the same value, and one increment is lost.\n\nRace conditions are notoriously hard to debug because they may appear rarely and only under specific timing. They're typically prevented using synchronization mechanisms like locks, mutexes, atomic operations, or by designing code to avoid shared mutable state.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (timing-dependent outcome of concurrent operations and shared mutable state) are clearly present, with correct extra detail.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (timing-dependent outcome of concurrent operations and shared mutable state) are clearly present, with correct extra detail."
+ },
+ {
+  "id": "fact-031",
+  "category": "factual",
+  "glm_answer": "**Weather** is the atmospheric conditions at a specific place and time—today's rain, tomorrow's temperature, this week's storm. It changes hour to hour and day to day.\n\n**Climate** is the average pattern of weather over a long period—typically 30 years or more—including averages, ranges, and extremes of temperature, precipitation, and other conditions for a region.\n\nA common analogy: weather is what you get, climate is what you expect. So a cold snap doesn't disprove global warming any more than one warm day proves it—climate describes long-term trends, not individual events.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present: weather as short-term conditions and climate as the long-term average (30+ years), with no incorrect statements.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present: weather as short-term conditions and climate as the long-term average (30+ years), with no incorrect statements."
+ },
+ {
+  "id": "fact-032",
+  "category": "factual",
+  "glm_answer": "Attention lets each token weigh the relevance of every other token when building its representation.\n\n1. **Queries, Keys, Values**: Each token's embedding is projected into three vectors — a query (what I'm looking for), a key (what I contain), and a value (what I pass along).\n2. **Scores**: Each query is dot-multiplied with all keys, producing similarity scores.\n3. **Scaling & softmax**: Scores are divided by √(key dimension) and passed through softmax, turning them into weights that sum to 1.\n4. **Weighted sum**: Each token's output is the weighted sum of all value vectors, so it absorbs information from relevant tokens.\n\nMultiple attention \"heads\" run in parallel, each learning different relationships (syntax, coreference, etc.), and their outputs are concatenated and projected. This happens in every layer, letting the model build increasingly abstract contextual representations.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (tokens weigh relevance of others; output is a weighted sum of value vectors), and all added detail is correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (tokens weigh relevance of others; output is a weighted sum of value vectors), and all added detail is correct."
+ },
+ {
+  "id": "fact-033",
+  "category": "factual",
+  "glm_answer": "An API (Application Programming Interface) is a set of rules that lets different software programs communicate with each other.\n\nThink of it like a waiter in a restaurant: you (the client) don't go into the kitchen (the server/system) yourself. Instead, you give your order to the waiter (the API), who takes it to the kitchen and brings back your food. The API defines *what* you can request and *how* to ask for it.\n\nKey points:\n- **Abstraction**: It hides internal complexity—you use features without knowing how they're implemented.\n- **Standardization**: It provides a consistent, documented way to interact with a system.\n- **Common examples**: Weather apps pulling data from a weather service, apps accepting \"Log in with Google,\" or code libraries with functions you can call.\n\nIn short, APIs let developers build on other systems' capabilities without reinventing them.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer covers both required points—software communication and defined requests (\"what you can request and how to ask for it\")—and correctly adds the optional implementation-hiding point.",
+  "judge_raw": "VERDICT: PASS\nThe answer covers both required points—software communication and defined requests (\"what you can request and how to ask for it\")—and correctly adds the optional implementation-hiding point."
+ },
+ {
+  "id": "fact-034",
+  "category": "factual",
+  "glm_answer": "No. The Coriolis effect is far too weak at bathtub scale to determine drain direction. It does influence large-scale systems like hurricanes, but in a sink, the water's rotation is dominated by residual motion from filling, how the drain is shaped, and small asymmetries in the basin. Water can spin either direction in either hemisphere.\n\nThat said, the effect is real and measurable: under carefully controlled conditions—water left still for days, a large symmetric tank, a slow, controlled drain—experiments have shown counterclockwise draining in the Northern Hemisphere and clockwise in the Southern Hemisphere. But in an ordinary bathtub, it's essentially random.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer correctly states the Coriolis effect is too weak at bathtub scale, includes all required points, and the added experimental detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nThe answer correctly states the Coriolis effect is too weak at bathtub scale, includes all required points, and the added experimental detail is accurate."
+ },
+ {
+  "id": "fact-035",
+  "category": "factual",
+  "glm_answer": "The French Revolution (1789–1799) was a period of radical political and social upheaval in France that overthrew the monarchy, ended feudal privileges, and reshaped modern politics.\n\nCauses included financial crisis, heavy taxation, inequality between estates, Enlightenment ideas, and food shortages. It began with the storming of the Bastille on July 14, 1789, followed by the abolition of feudalism and the Declaration of the Rights of Man and of the Citizen.\n\nThe monarchy was abolished in 1792, King Louis XVI was executed in 1793, and the radical Jacobin phase under Robespierre brought the Reign of Terror, with thousands executed. It ended in 1799 when Napoleon Bonaparte seized power in a coup.\n\nIts ideals—liberty, equality, fraternity—profoundly influenced democracy and human rights worldwide.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (began in 1789, monarchy overthrown) are present, and all added details are accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (began in 1789, monarchy overthrown) are present, and all added details are accurate."
+ },
+ {
+  "id": "fact-036",
+  "category": "factual",
+  "glm_answer": "Leap years exist because Earth's orbit around the Sun takes about 365.2422 days, not exactly 365. Without correction, the calendar would drift about a day every four years, eventually putting seasons in the wrong months.\n\nWe add a day every four years (Feb 29), but that slightly overcorrects—three leap days per 400 years is too many. So the Gregorian rule adds an exception: century years (1800, 1900, 2100) are *not* leap years, unless divisible by 400 (1600, 2000, 2400 are). This makes the average calendar year 365.2425 days—very close to the true value, with only about a day of drift every 3,000+ years.",
+  "agree": true,
+  "detail": "VERDICT: PASS — All required points present (365.2422 days, extra day every four years, century rule divisible by 400) and the added detail is accurate.",
+  "judge_raw": "VERDICT: PASS — All required points present (365.2422 days, extra day every four years, century rule divisible by 400) and the added detail is accurate."
+ },
+ {
+  "id": "fact-037",
+  "category": "factual",
+  "glm_answer": "Machine learning is a branch of artificial intelligence where computers learn patterns from data rather than being explicitly programmed with rules. Instead of writing step-by-step instructions, you feed an algorithm examples, and it adjusts itself to make predictions or decisions.\n\nCommon types include:\n- **Supervised learning**: learning from labeled examples (e.g., spam vs. not spam)\n- **Unsupervised learning**: finding patterns in unlabeled data (e.g., customer clustering)\n- **Reinforcement learning**: learning through trial and error with rewards\n\nEveryday examples include recommendation systems, voice assistants, fraud detection, and image recognition. The core idea: performance improves with experience (more data), without needing manual reprogramming.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (learning patterns from data, instead of explicit programming), and the extra detail is correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (learning patterns from data, instead of explicit programming), and the extra detail is correct."
+ },
+ {
+  "id": "fact-038",
+  "category": "factual",
+  "glm_answer": "Inflation is the general rise in prices of goods and services over time, which reduces the purchasing power of money—meaning each dollar buys less than before.\n\nIt's typically measured by indexes like the Consumer Price Index (CPI), which tracks the cost of a basket of common goods. Moderate inflation (around 2% annually) is considered normal and healthy for economies. It's caused by factors like increased demand, rising production costs, or expansion of the money supply. Central banks, such as the Federal Reserve, manage inflation through interest rates and monetary policy. When inflation is too high, savings lose value and living costs rise; when it's negative (deflation), economic activity can slow dangerously.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present (general rise in prices, reduced purchasing power), and the extra detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present (general rise in prices, reduced purchasing power), and the extra detail is accurate."
+ },
+ {
+  "id": "fact-039",
+  "category": "factual",
+  "glm_answer": "The Cold War (roughly 1947–1991) was a period of geopolitical tension between the United States and the Soviet Union, along with their respective allies. Rather than direct large-scale fighting between the two superpowers, the conflict played out through:\n\n- **Ideological rivalry**: capitalism and liberal democracy vs. communism\n- **Arms race**: nuclear weapons buildup and the space race\n- **Proxy wars**: conflicts in Korea, Vietnam, Afghanistan, and elsewhere\n- **Espionage and propaganda**: intelligence operations and influence campaigns\n- **Alliances**: NATO vs. the Warsaw Pact\n\nThe division was symbolized by the \"Iron Curtain\" separating Eastern and Western Europe, most famously the Berlin Wall. The Cold War ended with the collapse of the Soviet Union in 1991, leaving the U.S. as the world's dominant superpower.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (US–Soviet post-WWII rivalry and no direct war, via arms race/proxy wars) are present, and the added details are accurate.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (US–Soviet post-WWII rivalry and no direct war, via arms race/proxy wars) are present, and the added details are accurate."
+ },
+ {
+  "id": "fact-040",
+  "category": "factual",
+  "glm_answer": "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse (the side opposite the right angle) equals the sum of the squares of the other two sides:\n\n**a² + b² = c²**\n\nwhere *c* is the hypotenuse and *a* and *b* are the legs.",
+  "agree": true,
+  "detail": "VERDICT: PASS — Both required key points (right triangle context and a² + b² = c² with c as hypotenuse) are correctly stated.",
+  "judge_raw": "VERDICT: PASS — Both required key points (right triangle context and a² + b² = c² with c as hypotenuse) are correctly stated."
+ },
+ {
+  "id": "fact-041",
+  "category": "factual",
+  "glm_answer": "Public-key cryptography uses a matched pair of keys: a public key anyone can see and a private key kept secret. If Alice wants to send Bob a secure message, she encrypts it with Bob's public key. Only Bob's private key can decrypt it, so even though strangers, they don't need to share a secret in advance.\n\nThe catch: Alice must be sure the public key really is Bob's. That's solved by digital certificates from trusted certificate authorities, or by comparing key fingerprints out-of-band.\n\nIn practice (like TLS/HTTPS), public-key crypto is used once to authenticate and establish a shared secret; the actual data is then encrypted with faster symmetric encryption. So strangers get authentication, confidentiality, and integrity without ever meeting.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points (key pair; encrypt with public, decrypt with private) are present, and the extra details about certificates and TLS are correct.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points (key pair; encrypt with public, decrypt with private) are present, and the extra details about certificates and TLS are correct."
+ },
+ {
+  "id": "fact-042",
+  "category": "factual",
+  "glm_answer": "The CAP theorem states that a distributed data system can only guarantee two of the following three properties simultaneously:\n\n1. **Consistency (C)** – Every read receives the most recent write (all nodes see the same data).\n2. **Availability (A)** – Every request receives a response (even if some nodes fail).\n3. **Partition tolerance (P)** – The system continues operating despite network partitions.\n\nSince network partitions are unavoidable in distributed systems, the practical choice is between consistency and availability during a partition: a system must either reject requests to stay consistent (CP) or keep responding with possibly stale data (AP). Examples: CP systems like Zookeeper/HBase; AP systems like Cassandra/DynamoDB.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and correct; extra examples are accurate additions.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present and correct; extra examples are accurate additions."
+ },
+ {
+  "id": "fact-043",
+  "category": "factual",
+  "glm_answer": "**Supervised learning** uses labeled data—each input has a known output (label). The model learns to map inputs to outputs, e.g., predicting house prices or classifying spam emails. Common tasks: classification and regression.\n\n**Unsupervised learning** uses unlabeled data—the model finds hidden patterns or structure on its own, e.g., grouping customers by behavior. Common tasks: clustering, dimensionality reduction, and anomaly detection.\n\nIn short: supervised learning learns from answers; unsupervised learning discovers patterns without answers.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and correct: supervised learning uses labeled data, and unsupervised learning finds structure in unlabeled data.",
+  "judge_raw": "VERDICT: PASS\nBoth required key points are present and correct: supervised learning uses labeled data, and unsupervised learning finds structure in unlabeled data."
+ },
+ {
+  "id": "fact-044",
+  "category": "factual",
+  "glm_answer": "Compound interest is interest calculated on both the initial principal and any accumulated interest from previous periods. In other words, you earn \"interest on interest,\" causing your money to grow at an accelerating rate.\n\nFor example, $1,000 at 5% annual compound interest grows to $1,050 after one year, then earns interest on $1,050 the next year ($1,102.50), and so on.\n\nThe formula is: A = P(1 + r/n)^(nt), where P is principal, r is the annual rate, n is compounding frequency per year, and t is time in years.\n\nIt works for savings and investments (helping you) and for debts like credit cards (working against you). Time and compounding frequency significantly affect the outcome—the longer the period, the more dramatic the growth.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer correctly states interest on principal plus accumulated interest, with accurate supporting details.",
+  "judge_raw": "VERDICT: PASS\nThe answer correctly states interest on principal plus accumulated interest, with accurate supporting details."
+ },
+ {
+  "id": "fact-045",
+  "category": "factual",
+  "glm_answer": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy. Using sunlight, they take in carbon dioxide from the air and water from the soil to produce glucose (a sugar that fuels their growth) and release oxygen as a byproduct.\n\nThe overall equation is:\n\n6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂\n\nIt occurs mainly in the chloroplasts, using the green pigment chlorophyll to capture light. Photosynthesis happens in two stages: the light-dependent reactions (which capture energy) and the Calvin cycle (which uses that energy to build sugars).\n\nIt's essential to life on Earth, as it produces the oxygen we breathe and forms the base of most food chains.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points (light energy, CO₂ and water intake, glucose and oxygen production) are present, and the added detail is accurate.",
+  "judge_raw": "VERDICT: PASS\nAll three required key points (light energy, CO₂ and water intake, glucose and oxygen production) are present, and the added detail is accurate."
+ },
+ {
+  "id": "fact-046",
+  "category": "factual",
+  "glm_answer": "DNS (Domain Name System) translates human-readable domain names like `example.com` into IP addresses like `93.184.216.34` that computers use to locate each other on the internet.\n\nThink of it as the internet's phonebook: you look up a name, and it gives you the number to connect. When you visit a website, your device queries DNS servers to resolve the domain to an IP address, then connects to that server.\n\nIt also supports related lookups, like mail server records (MX) for email routing.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe candidate correctly states that DNS translates domain names to IP addresses, matching the required key point, with only accurate extra detail.",
+  "judge_raw": "VERDICT: PASS\nThe candidate correctly states that DNS translates domain names to IP addresses, matching the required key point, with only accurate extra detail."
+ },
+ {
+  "id": "fact-047",
+  "category": "factual",
+  "glm_answer": "The water cycle (hydrologic cycle) is the continuous movement of water through Earth's atmosphere, land, and oceans, driven by solar energy and gravity.\n\nKey stages:\n\n1. **Evaporation** – The sun heats oceans, lakes, and rivers, turning liquid water into vapor that rises into the air. Plants also release vapor through transpiration (together called evapotranspiration).\n\n2. **Condensation** – As vapor rises and cools, it condenses into tiny droplets, forming clouds and fog.\n\n3. **Precipitation** – When droplets grow heavy enough, water falls as rain, snow, sleet, or hail.\n\n4. **Collection & runoff** – Water collects in oceans, lakes, and groundwater. Some flows over land as runoff into rivers; some soaks into the soil to recharge aquifers.\n\nThe cycle then repeats. Water is neither created nor destroyed—it's continuously recycled, though its distribution varies by region and season.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll required key points (evaporation, condensation into clouds, precipitation) are present and correct, with accurate optional collection details.",
+  "judge_raw": "VERDICT: PASS\nAll required key points (evaporation, condensation into clouds, precipitation) are present and correct, with accurate optional collection details."
+ },
+ {
+  "id": "fact-048",
+  "category": "factual",
+  "glm_answer": "The Heisenberg uncertainty principle states that certain pairs of physical properties of a particle—most famously position and momentum—cannot both be known with arbitrary precision at the same time. The more precisely you measure one, the less precisely you can know the other. Mathematically: Δx · Δp ≥ ℏ/2, where Δx is position uncertainty and Δp is momentum uncertainty.\n\nThis isn't a limitation of measurement instruments; it's a fundamental feature of nature arising from the wave-like behavior of quantum objects. A similar relation applies to energy and time. The principle explains phenomena like quantum tunneling and sets fundamental limits on how sharply quantum states can be defined.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe answer clearly states that position and momentum cannot both be known with arbitrary precision, and correctly adds that this is fundamental, not an instrument limitation.",
+  "judge_raw": "VERDICT: PASS\nThe answer clearly states that position and momentum cannot both be known with arbitrary precision, and correctly adds that this is fundamental, not an instrument limitation."
+ },
+ {
+  "id": "fact-049",
+  "category": "factual",
+  "glm_answer": "A dividend is a payment a company distributes to its shareholders, typically in cash, from its profits. It's a way of sharing earnings with investors who own stock.\n\nKey points:\n- **Frequency**: Usually paid quarterly, though some companies pay monthly, semi-annually, or annually.\n- **Amount**: Declared per share (e.g., $0.50 per share) and approved by the board of directors.\n- **Not guaranteed**: Companies can reduce or suspend dividends, especially during financial difficulty.\n- **Alternatives**: Some dividends are paid in additional stock rather than cash.\n\nDividends are common among established, profitable companies, while growth-oriented firms often reinvest profits instead. For investors, they provide income and are one component of total investment returns, alongside price appreciation. Dividend payments are typically taxable income.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nThe candidate correctly states that dividends are payments from profits to shareholders, typically in cash and per share, with only accurate extra detail.",
+  "judge_raw": "VERDICT: PASS\nThe candidate correctly states that dividends are payments from profits to shareholders, typically in cash and per share, with only accurate extra detail."
+ },
+ {
+  "id": "fact-050",
+  "category": "factual",
+  "glm_answer": "Ice floats because water expands when it freezes. As water cools below 4°C, hydrogen bonds push molecules into an open, hexagonal lattice that takes up more space than the same molecules do in liquid form. This makes ice about 9% less dense than liquid water, so it floats.\n\nThis is unusual—most substances are denser as solids. It happens because in liquid water, molecules constantly break and reform hydrogen bonds and can pack relatively closely, while in ice the bonds lock them into a rigid structure with lots of empty space.\n\nA useful consequence: because water reaches maximum density at 4°C (not 0°C), lakes freeze from the top down, insulating aquatic life below.",
+  "agree": true,
+  "detail": "VERDICT: PASS — The required key point (ice is less dense than liquid water) is present, and all added details are correct.",
+  "judge_raw": "VERDICT: PASS — The required key point (ice is less dense than liquid water) is present, and all added details are correct."
+ },
+ {
+  "id": "summ-001",
+  "category": "summarisation",
+  "glm_answer": "- Hollis Energy's annual revenue rose 6 percent to 2.4 billion dollars, but net profit fell 18 percent to 190 million dollars due to an 85 million dollar one-time charge from closing an old gas plant.\n- CEO Priya Anand announced a 600 million dollar investment in wind farms over three years, targeting a 30 percent cut in carbon emissions by 2030, with a detailed climate report due next spring and investor meetings in Chicago in June.\n- Shares rose 2 percent after the announcement, though analysts noted debt has increased to 1.1 billion dollars; the company supplies electricity to 3.4 million customers across three states.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct supporting details.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-002",
+  "category": "summarisation",
+  "glm_answer": "The central bank held its main interest rate at 4.5 percent, surprising economists who expected a cut, as Governor Lena Karlsson said inflation at 3.1 percent remains above the 2 percent target and wage growth of 5.4 percent could keep prices rising. Markets now expect the first cut in September rather than June, meaning variable-rate borrowers will see no relief for several months.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurately stated, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-003",
+  "category": "summarisation",
+  "glm_answer": "Researchers developed a cheaper sodium battery that retained 90% capacity after 2,000 cycles and charged to 80% in 12 minutes. Its lower energy density suits stationary solar storage first; a start-up has licensed the design.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present (sodium battery, 90% after 2,000 cycles, lower energy density leading to stationary storage first), and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-004",
+  "category": "summarisation",
+  "glm_answer": "- A five-year survey counted 3,200 snow leopards across Central Asia, up from an estimated 2,500 a decade ago, with conservationists crediting compensation programmes for herders that cut revenge killings by about half.\n- Experts caution the rise may partly reflect better counting methods, as camera traps covered only 40 percent of the range, and climate change is shrinking the species' high-altitude habitat.\n- Snow leopards live in 12 countries at altitudes up to 5,500 metres, are listed as vulnerable, and are hard to spot, so researchers rely on camera traps and droppings; the survey covered about 1.2 million square kilometres.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct supporting detail.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-005",
+  "category": "summarisation",
+  "glm_answer": "The 1862 Corbett Mill, closed since 1971, will reopen next spring as a 6-million-pound industrial history museum—funded mainly by a 4.2-million-pound heritage lottery grant—featuring working looms, restored steam engines, worker recordings, a cafe, and free school classroom space, with 80,000 visitors expected in its first year.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and all details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-006",
+  "category": "summarisation",
+  "glm_answer": "- Lumen Mobile is buying Telcor for $7.8 billion in an all-share deal (0.6 Lumen shares per Telcor share), creating the country's second-largest operator with 24 million customers.\n- The merger is expected to save $400 million a year within three years, with about 2,500 job cuts; Daniel Ito will remain CEO of the combined firm.\n- Regulators, who blocked a similar deal in 2019, must approve it, and consumer groups warn prices could rise; the deal is expected to close within 18 months if approved.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-007",
+  "category": "summarisation",
+  "glm_answer": "Chatly's Tuesday software update (version 5.3) fixes a security flaw found by an independent researcher—who received a 15,000-dollar bug-bounty reward—that affected versions since September on both phones and computers and could have let attackers read Chatly messages, though the company says it has seen no evidence of exploitation and urges its 40 million monthly users in 90 countries to install the update, which downloads automatically if automatic updates are on, and says it will publish a full technical explanation in two weeks.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points are present (update fixes flaw, install version 5.3, no evidence of exploitation) and the added details are consistent with the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-008",
+  "category": "summarisation",
+  "glm_answer": "The Pembrook Orchestra, led by music director Ana Ribeiro, will perform all nine Beethoven symphonies over three July evenings at the open-air amphitheatre, with tickets from 18 pounds, free student seats, and pre-concert talks.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-009",
+  "category": "summarisation",
+  "glm_answer": "- The Marlow Institute's robot sorts household waste using cameras and a neural network, achieving 94 percent accuracy and processing 60 items per minute versus about 35 for a human, though accuracy drops to 71 percent on dirty or crushed items.\n- Each unit costs 180,000 euros, so the plant expects to recoup its investment only after about five years.\n- The Bavaria-based institute, with 300 researchers, trained the robot on 2 million labelled images; it uses a vacuum gripper and conveyor belt, and the three-month pilot ran at a plant processing 30,000 tonnes of recyclables a year.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct supporting detail.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-010",
+  "category": "summarisation",
+  "glm_answer": "- The 1494 Treaty of Tordesillas divided newly discovered non-European lands between Spain and Portugal along a line 370 leagues west of the Cape Verde islands, with Portugal getting lands to the east and Spain those to the west.\n- Portugal negotiated the shift of the line after a papal decree favoured Spain, fearing loss of its route around Africa; the treaty explains why Portuguese is spoken in Brazil while most of Latin America speaks Spanish.\n- Neither country consulted the indigenous peoples, other powers like France and England later rejected the agreement, and the line was adjusted again in 1529 on the opposite side of the world.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurately stated, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-011",
+  "category": "summarisation",
+  "glm_answer": "A 400-year-old oak, the Old Warden, was illegally felled in Weald Forest. Police are investigating; the trust offers a £10,000 reward and will plant a sapling.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": false,
+  "constraint_detail": "26 words, max 25"
+ },
+ {
+  "id": "summ-012",
+  "category": "summarisation",
+  "glm_answer": "Farmers in the Valdoro wine region have started using drones to spray their steep terraced vineyards, covering 20 hectares a day—four times faster than a worker on foot—while cutting pesticide use by 30 percent through targeted spraying. Each 25,000-euro drone is half-subsidised by the region, but union leaders fear job losses even as growers report worker shortages, and regulations require a licensed pilot, with a training course starting next month.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct extra details.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-013",
+  "category": "summarisation",
+  "glm_answer": "- Employees working three days a week from home reported 12 percent higher job satisfaction than fully in-office workers, with managers rating their productivity as unchanged.\n- Junior staff remote more than four days a week were 20 percent less likely to be promoted within two years, attributed to fewer chances to be noticed and mentored.\n- The 2023 survey of 5,000 employees at 120 companies recommends hybrid schedules with scheduled in-person days for new hires, noting results may differ in presence-required jobs and only 8 percent of respondents were in management.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurately stated, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-014",
+  "category": "summarisation",
+  "glm_answer": "Daniel Okoye won the Eastport Marathon in 2:09, breaking Henrik Dahl's 2016 course record of 2:12, while Lea Marchetti won the women's race in 2:26 as 14,000 runners raised over 900,000 dollars for children's hospitals before about 60,000 spectators.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and all added details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-015",
+  "category": "summarisation",
+  "glm_answer": "Rivermont has approved a 410-million-euro, 28-month tram line from the airport to the central station, starting in March, that will carry about 35,000 passengers a day and cut the airport trip from 50 minutes to 18, with compensation for residents, two bus routes withdrawn, environmental support, some business concerns, and a public exhibition of designs opening at the town hall next week.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, and the extra details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-016",
+  "category": "summarisation",
+  "glm_answer": "Imani Okafor, 27, won the Haldane Prize for proving a long-standing prime number conjecture, and plans to donate part of the $100,000 prize to mentoring girls in mathematics.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and nothing contradicts the reference.",
+  "constraint_ok": false,
+  "constraint_detail": "28 words, max 25"
+ },
+ {
+  "id": "summ-017",
+  "category": "summarisation",
+  "glm_answer": "The Lakeshore ferry will be suspended for ten days in September for a £3.5 million pier rebuild, funded by the regional transport fund. A replacement bus will run every 30 minutes, free for season ticket holders.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe required detail that the replacement bus adds about 40 minutes to the journey is missing.",
+  "constraint_ok": false,
+  "constraint_detail": "36 words, max 35"
+ },
+ {
+  "id": "summ-018",
+  "category": "summarisation",
+  "glm_answer": "The town council of Ashby will plant 5,000 trees along main roads over three years in an 800,000 pound scheme to cut summer temperatures, improve air quality, and lower flooding risk, with volunteers from local schools planting the first 500 saplings this autumn. Critics say the money should repair potholes and some shopkeepers worry about leaves blocking drains, but a council survey found 68 percent of residents support the idea.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct optional details.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-019",
+  "category": "summarisation",
+  "glm_answer": "The Silk Road was a network of trade routes linking China with the Mediterranean from about the second century BCE, along which goods, ideas, religions, and diseases passed through many hands, transported mainly by camels and horses, with stopping points like Samarkand and Kashgar, before declining as cheaper sea routes emerged and the Ottoman Empire controlled key territories in the fifteenth century—though the name itself was only coined in 1877 by a German geographer.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-020",
+  "category": "summarisation",
+  "glm_answer": "After an audit found 18% of essays marked inconsistently, the exam board will double-mark all essays from next year, costing £9 million and delaying results by a week.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate.",
+  "constraint_ok": false,
+  "constraint_detail": "28 words, max 25"
+ },
+ {
+  "id": "summ-021",
+  "category": "summarisation",
+  "glm_answer": "The Millbrook community garden, opened in 2015, has 85 plots, a 200-person waiting list, and donates surplus produce to a food bank. A grant-funded greenhouse is coming, the lease is renewed for ten years, and it has won a regional award.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe candidate omits two required key points: the 1.4 tonnes donated to the food bank and the 12,000 pound grant for the greenhouse.",
+  "constraint_ok": false,
+  "constraint_detail": "41 words, max 35"
+ },
+ {
+  "id": "summ-022",
+  "category": "summarisation",
+  "glm_answer": "Honeybees communicate food location via a waggle dance—angle indicating direction relative to the sun and duration indicating distance—a behaviour decoded by Karl von Frisch, who won the 1973 Nobel Prize.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-023",
+  "category": "summarisation",
+  "glm_answer": "The Great Fire of London started on 2 September 1666 in a Pudding Lane bakery and burned for four days, destroying around 13,000 homes and 87 churches—including old St Paul's—though only six deaths were officially recorded. The fire was halted partly by blowing up houses to create firebreaks, after which Christopher Wren designed a new St Paul's, rebuilding rules required brick or stone houses, and a 62-metre monument was built near the bakery.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-024",
+  "category": "summarisation",
+  "glm_answer": "Nuvo Foods has recalled 120,000 jars of peanut sauce sold in 11 countries between January and April (batch numbers beginning with 24B) after tests found an unlabeled allergen, and customers can return the product for a full refund, though no illnesses have been confirmed.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points (120,000 jars of peanut sauce recalled, unlisted allergen, full refund) are present, and all added details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-025",
+  "category": "summarisation",
+  "glm_answer": "The Kestrel space telescope, launched in 2019 and named after a hovering bird of prey, orbits the Sun 1.5 million kilometres from Earth and has found 54 planets around red stars, including four roughly Earth-sized ones in the habitable zone, though scientists caution that red stars' strong flares could strip planetary atmospheres. Its mission was extended three years due to lower-than-predicted fuel use, a follow-up telescope is planned for 2031, data are made public after six months, and amateurs have discovered two of the planets.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct optional details.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-026",
+  "category": "summarisation",
+  "glm_answer": "Warm Winter collected 8,400 coats—double last year's 4,200—after rising demand from heating costs. Distribution starts 1 November at six centres, with 1,500 donated new coats and free delivery. Saturday volunteers are still needed.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-027",
+  "category": "summarisation",
+  "glm_answer": "- The new scheme replaces weekly mixed collections with separate bins for paper (blue), glass (green) and food waste (brown caddy), collected on alternating weeks; a pilot in two districts raised recycling rates from 31 to 52 percent in a year and cut landfill waste by 4,000 tonnes.\n- Some residents complained about the number of bins and summer smells, so the council has promised larger food-waste caddies with sealed lids; households using the wrong bin will first get a warning leaflet rather than a fine.\n- The scheme will cover all 90,000 homes by 2026; the council spends 28 million pounds a year on waste services.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-028",
+  "category": "summarisation",
+  "glm_answer": "A Leeds-based study of 2,400 office workers over eight weeks found that those who took a 15-minute post-lunch walk reported 20 percent fewer afternoon energy slumps than desk-bound colleagues, though researchers caution the effect may partly reflect improved mood and plan a follow-up trial with wearable heart monitors.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points (15-minute post-lunch walk, 20 percent fewer slumps, 2,400 workers over eight weeks) are present, and the added details are consistent with the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-029",
+  "category": "summarisation",
+  "glm_answer": "The delayed, over-budget subway line opened Saturday: 17 km, 14 stations, 200,000 daily riders expected, free tickets first week, inquiry demanded over costs.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe candidate omits the required eight years of delays and the 5.1 vs 3.2 billion dollar cost figures.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-030",
+  "category": "summarisation",
+  "glm_answer": "An international team mapped the Atlantic cod genome, sequencing 1,100 fish from 14 locations, finding genes linked to growth and cold tolerance. Results may help set fishing limits, though more work is needed.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-031",
+  "category": "summarisation",
+  "glm_answer": "A fire at the Brantley warehouse on Tuesday night destroyed about 2 million dollars worth of electronics, taking firefighters from five stations six hours to control while 18 nearby homes were evacuated as a precaution. No one was injured, and although investigators believe the fire started near a forklift battery charging area, the exact cause remains unknown; the company plans to reopen a smaller site within a month.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-032",
+  "category": "summarisation",
+  "glm_answer": "A record June heatwave in southern Spain exceeded 44°C, prompting red alerts in six provinces, a 25% rise in heat-related hospital admissions, barbecue bans, postponed events, and damage to olive blossoms.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe candidate omits the required point that the heat should ease at the weekend.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-033",
+  "category": "summarisation",
+  "glm_answer": "A Pacific island nation signed a 2023 deal letting 280 citizens migrate yearly due to rising seas, offering residency and work rights, though critics fear brain drain.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe candidate omits the required key point about access to healthcare.",
+  "constraint_ok": false,
+  "constraint_detail": "27 words, max 25"
+ },
+ {
+  "id": "summ-034",
+  "category": "summarisation",
+  "glm_answer": "- The trial of 1,800 patients in 14 countries found the monthly drug reduced migraine days by 4.2 per month versus 1.9 for placebo, with mild nausea and fatigue reported by 7 percent.\n- The six-month study excluded people over 65, so long-term safety and effects in older adults remain unknown; the manufacturer will apply for approval next year.\n- The drug blocks CGRP, a protein involved in pain signalling; the trial was manufacturer-funded but analyzed by an independent university group and published in a medical journal.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct optional details.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-035",
+  "category": "summarisation",
+  "glm_answer": "- The new housing law caps annual rent increases in the capital at 3 percent, down from 7 percent, and requires landlords to give six months' notice before ending a contract without cause, up from two months.\n- Landlord groups argue the cap will push owners to sell and reduce supply, while tenant organisations say it protects families from sudden displacement; the law takes effect in January and will be reviewed after two years.\n- The law passed 82 votes to 61 after a nine-hour debate, and the housing minister announced a 50 million euro fund to support landlords who build new affordable homes.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-036",
+  "category": "summarisation",
+  "glm_answer": "Coastal Airways will launch the first direct Lisbon–Cape Town flights in October, running three times weekly on a 220-seat aircraft with introductory one-way fares from 389 euros, bookings opening 1 July.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points (new non-stop Lisbon–Cape Town flight from October, three times weekly, fares from 389 euros) are present, and the added details (220-seat aircraft, 1 July bookings) are correct.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-037",
+  "category": "summarisation",
+  "glm_answer": "Brightfield Bakery will close its three smaller shops by the end of June due to rising costs, moving affected employees to its main store or a partner cafe while continuing nationwide online delivery of its sourdough from July.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe required point that rising flour and energy costs halved profits is missing (only \"rising costs\" is mentioned).",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-038",
+  "category": "summarisation",
+  "glm_answer": "The government will pay 1.2 million benefit-claiming households £150 toward winter heating bills in November, funded from existing budgets. Charities welcomed it but noted it's smaller than last year's £300 payment.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe required detail of the 180 million pound cost is missing.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-039",
+  "category": "summarisation",
+  "glm_answer": "- The Soviet Union diverted the Amu Darya and Syr Darya to irrigate cotton, causing the Aral Sea to lose about 90 percent of its volume by 2007.\n- The shrinkage stranded ships, ended a fishing industry that employed 40,000 people, and exposed toxic dust harming residents; a 2005 dam helped the northern part recover, but the south is expected to stay largely dry.\n- Governments have planted salt-tolerant shrubs on the exposed seabed to reduce dust storms.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-040",
+  "category": "summarisation",
+  "glm_answer": "The partly volunteer-run Ferris Valley heritage railway reopens next year after residents raised £2.5 million; £4 million more is needed to reopen the full line.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe required key point that only 9 of the 24 km will carry trains is missing.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-041",
+  "category": "summarisation",
+  "glm_answer": "The first successful kidney transplant, performed in Boston in 1954 between identical twins Richard and Ronald Herrick, avoided rejection because the donor and recipient were genetically identical, earning surgeon Joseph Murray a Nobel Prize in 1990. The 1980s introduction of cyclosporine, which suppresses the immune system more precisely than earlier drugs, enabled transplants from unrelated donors, and today more than 90,000 kidney transplants are performed worldwide each year.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate; the added detail (Herrick names, Nobel Prize) is correct and consistent with the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-042",
+  "category": "summarisation",
+  "glm_answer": "The Panama Canal opened in 1914, shortening Atlantic–Pacific voyages by about 8,000 miles. Locks lift ships 26 metres to Gatun Lake; a 2016 expansion added larger neopanamax locks. Drought reduced 2023 crossings.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-043",
+  "category": "summarisation",
+  "glm_answer": "Heavy weekend rain caused the River Teal to burst its banks in Marlby and Ostend Green, forcing about 600 people from their homes, with 45 rescued by boat, a Red Cross-run shelter opened in a sports hall, and about 300 cattle moved to higher fields, while no deaths were reported but several roads and a railway line remain closed, water levels are expected to fall by Wednesday, and a second storm could arrive Thursday.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-044",
+  "category": "summarisation",
+  "glm_answer": "The Marsden Foundation has announced a 12 million dollar scholarship fund for rural students, distributed over five years, covering tuition plus an 8,000 dollar annual living allowance for up to four years, with about 300 students expected to benefit. Applicants must demonstrate financial need and have grown up at least 50 kilometres from a major city, as the foundation found rural students are 40 percent less likely to attend university than urban peers; applications open in January and will be judged by a panel of university representatives.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with no contradictions.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-045",
+  "category": "summarisation",
+  "glm_answer": "Australian scientists detected a faint radio signal, emitted when the universe was about 5.5 billion years old, from a galaxy 8 billion light-years away that is forming stars roughly 200 times faster than the Milky Way, suggesting star formation was far more intense in the early universe.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nBoth required key points are present and all added details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-046",
+  "category": "summarisation",
+  "glm_answer": "Following a March survey of 1,150 users that showed students most wanted evening access, the Hartwell Library—which opened in 1974, holds about 600,000 books, and has 2,100 members visiting at least monthly—will extend weekday hours until 10 pm and open Saturdays until 6 pm from next month, add 40 study desks on its second floor, and fund the extra staffing with a 52,000-pound annual council grant, while the children's section keeps its current hours and the council plans to review attendance in a year.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points (10 pm weekday closing, 52,000-pound council grant, 40 study desks) are present, and all other details match the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-047",
+  "category": "summarisation",
+  "glm_answer": "In Norvia's first televised election debate, incumbent Voss defended her record while challenger Rhee promised wage rises; a post-debate poll shows them statistically tied.",
+  "agree": false,
+  "detail": "VERDICT: FAIL — Both required key points (the 8-to-5 percent unemployment cut and the 12 percent minimum wage rise) are missing.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-048",
+  "category": "summarisation",
+  "glm_answer": "- Eldervale (22,000 residents, 800,000 annual visitors) is debating banning cars from its medieval centre, with a six-month trial planned for next summer followed by a resident vote.\n- Supporters, led by councillor Ruth Mbeki, say it would cut air pollution (currently above legal limits 40 days a year) and boost cafes; opponents, including traders, fear sales drops of up to 15 percent and difficulties for older residents.\n- Delivery vans would be allowed before 10 am, other towns like Ghent and Pontevedra have made similar changes, and a local newspaper survey found residents roughly evenly split.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required key points are present and accurate, with correct supporting detail.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-049",
+  "category": "summarisation",
+  "glm_answer": "Parents at Greenway Primary School voted 71 percent in favor of banning phones from the playground starting after the winter break, with exceptions for children who need a phone to travel home, and the head teacher said the ban would be reviewed after one term.",
+  "agree": false,
+  "detail": "VERDICT: FAIL\nThe candidate omits two required key points: the 312 families figure and the option to hand phones in at the office.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ },
+ {
+  "id": "summ-050",
+  "category": "summarisation",
+  "glm_answer": "Fleming discovered penicillin in 1928, but it was Florey and Chain who turned it into a usable drug by 1940, enabling mass production during the Second World War and earning all three the 1945 Nobel Prize.",
+  "agree": true,
+  "detail": "VERDICT: PASS\nAll three required points are present and nothing contradicts the reference.",
+  "constraint_ok": true,
+  "constraint_detail": "constraint met"
+ }
+]

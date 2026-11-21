@@ -1,0 +1,10 @@
+{
+ "fact-010": true,
+ "math-010": true,
+ "sent-002": true,
+ "summ-008": true,
+ "ner-002": true,
+ "code_debug-004": true,
+ "logic-003": true,
+ "code_gen-003": true
+}

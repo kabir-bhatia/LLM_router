@@ -5,6 +5,7 @@ Provides unified access to different LLM backends.
 """
 
 from src.providers.base import (
+    OllamaProvider,
     BaseProvider,
     ProviderError,
     ProviderModelNotFoundError,
@@ -13,6 +14,7 @@ from src.providers.base import (
     ProviderTimeoutError,
 )
 from src.providers.gemini import GeminiProvider
+from src.providers.openai_compat import OpenAICompatProvider
 from src.providers.manager import ProviderManager, get_provider_manager
 
 __all__ = [
@@ -25,6 +27,8 @@ __all__ = [
     "ProviderModelNotFoundError",
     # Implementations
     "GeminiProvider",
+    "OllamaProvider",
+    "OpenAICompatProvider",
     # Manager
     "ProviderManager",
     "get_provider_manager",

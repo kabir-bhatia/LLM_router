@@ -1,0 +1,802 @@
+[
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nI'm furious - I've been charged twice and nobody will help me.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "I'm furious - I've been charged twice and nobody will help me."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Anger about a billing error.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-001",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'The laptop has 16 GB of RAM and a 512 GB SSD.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The laptop has 16 GB of RAM and a 512 GB SSD."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Specification, no opinion.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-002",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"Food was cold, the waiter was rude, and we waited an hour. Never again.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Food was cold, the waiter was rude, and we waited an hour. Never again."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Only complaints and a vow not to return.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-003",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"The film depicts the devastating famine of 1943 and is based on historical records.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The film depicts the devastating famine of 1943 and is based on historical records."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Grim subject matter, but the sentence only describes and expresses no opinion.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-004",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'After my last two disappointing orders from this brand I was ready to complain again. Instead, the new kettle works flawlessly and arrived a day early.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "After my last two disappointing orders from this brand I was ready to complain again. Instead, the new kettle works flawlessly and arrived a day early."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Earlier disappointment is background; this order is praised.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-005",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"Not bad at all - honestly the best ramen I've had outside Japan.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Not bad at all - honestly the best ramen I've had outside Japan."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "'Not bad' opens a superlative compliment.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-006",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this message positive, negative, mixed or neutral? Explain briefly.\n\n\"Review summary: 3 out of 5 stars across 120 verified purchases.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "Review summary: 3 out of 5 stars across 120 verified purchases."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Statistic with no stated opinion.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-007",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I love the design of this chair and hate sitting in it for more than ten minutes.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "I love the design of this chair and hate sitting in it for more than ten minutes."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Love and hate about different aspects.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-008",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nSupport was friendly and apologetic, yet the issue is still not fixed after three weeks.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Support was friendly and apologetic, yet the issue is still not fixed after three weeks."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Polite service but unresolved problem.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-009",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThe tool does what the documentation says. I haven't tried the alternatives, so I can't say whether it's worth the price.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The tool does what the documentation says. I haven't tried the alternatives, so I can't say whether it's worth the price."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "States only that it matches its documentation and explicitly withholds any verdict on value.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-010",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"Lovely screen and sound, but the battery barely lasts a day.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Lovely screen and sound, but the battery barely lasts a day."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Two positives, one major negative.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-011",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nFour stars for the product, one star for the courier who crushed the box.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Four stars for the product, one star for the courier who crushed the box."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Separate verdicts for product and delivery.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-012",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"Decent camera and a gorgeous display; the speaker is tinny and the software is buggy.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Decent camera and a gorgeous display; the speaker is tinny and the software is buggy."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Two clear positives, two clear negatives.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-013",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this tweet positive, negative, mixed or neutral? Explain briefly.\n\n\"Oh great, another software update that deletes my settings. Exactly what I needed on a Monday.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Oh great, another software update that deletes my settings. Exactly what I needed on a Monday."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Sarcasm: positive words, intended complaint.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-014",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this tweet as positive, negative, mixed or neutral, then give a one-line reason: 'ngl this album slaps, been on repeat all week'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "ngl this album slaps, been on repeat all week"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Slang praise ('slaps') plus repeated listening.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-015",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"I wouldn't call the service 'helpful'. I'd call it nonexistent.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "I wouldn't call the service 'helpful'. I'd call it nonexistent."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Negation of a positive word, then a harsher negative.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-016",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Our meeting is scheduled for Thursday at 3 pm in room 204.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "Our meeting is scheduled for Thursday at 3 pm in room 204."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Logistics only.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-017",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThe pizza was delicious but the service was painfully slow.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "The pizza was delicious but the service was painfully slow."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Praise for food, complaint about service.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-018",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this message - positive, negative, mixed, or neutral? \"The store opens at 9 am and closes at 6 pm on weekdays.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The store opens at 9 am and closes at 6 pm on weekdays."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Pure schedule information, no opinion.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-019",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Bus route 42 runs every 20 minutes between the station and the airport.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "Bus route 42 runs every 20 minutes between the station and the airport."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Timetable fact.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-020",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThank you so much for the quick refund, you guys are amazing.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Thank you so much for the quick refund, you guys are amazing."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Gratitude and compliment.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-021",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"The hotel room was spotless, the staff were lovely and the breakfast was fantastic.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "The hotel room was spotless, the staff were lovely and the breakfast was fantastic."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Three separate positive remarks, no complaint.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-022",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nI didn't expect much from a budget phone, yet here I am, a month in, with zero complaints.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "I didn't expect much from a budget phone, yet here I am, a month in, with zero complaints."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Low expectations exceeded; 'zero complaints' is the verdict.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-023",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"The seams ripped the first time I wore the jacket. Awful quality.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "The seams ripped the first time I wore the jacket. Awful quality."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Defect and 'awful'.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-024",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'The acting was superb and the cinematography breathtaking, but I walked out feeling I'd wasted three hours on a story that went nowhere.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "The acting was superb and the cinematography breathtaking, but I walked out feeling I'd wasted three hours on a story that went nowhere."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Strong praise and a strong criticism of equal weight.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-025",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"Great value for money; these headphones sound far better than I expected.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Great value for money; these headphones sound far better than I expected."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Exceeded expectations, positive value judgement.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-026",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'The battery died after three days and support never replied. Total waste of money.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "The battery died after three days and support never replied. Total waste of money."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Product failure plus ignored support.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-027",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"Worst movie I've seen all year; the plot made no sense and I nearly fell asleep.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Worst movie I've seen all year; the plot made no sense and I nearly fell asleep."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Superlative negative, no redeeming remark.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-028",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Thanks for nothing - three calls, two transfers, and I'm still waiting on the refund.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Thanks for nothing - three calls, two transfers, and I'm still waiting on the refund."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Sarcastic thanks, unresolved problem.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-029",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I really wanted to like this vacuum. Two weeks in, the motor is already dying and the company ignores my emails.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "I really wanted to like this vacuum. Two weeks in, the motor is already dying and the company ignores my emails."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Hopeful opening, clearly negative outcome.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-030",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nAbsolutely loved this blender. Smoothies come out silky and cleanup takes seconds.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Absolutely loved this blender. Smoothies come out silky and cleanup takes seconds."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Unambiguous praise of performance and convenience.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-031",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this tweet - positive, negative, mixed, or neutral? \"Wow, a whole hour to deliver a cold sandwich. Truly a new record.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Wow, a whole hour to deliver a cold sandwich. Truly a new record."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Sarcasm about slow, poor delivery.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-032",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"The app update is wonderful. Everything loads instantly now.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "The app update is wonderful. Everything loads instantly now."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Positive evaluation with a concrete benefit.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-033",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"The course content is excellent; the platform itself is clunky and keeps logging me out.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "The course content is excellent; the platform itself is clunky and keeps logging me out."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Content praised, platform criticised.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-034",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"The cafe was fine. Nothing special, nothing wrong.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The cafe was fine. Nothing special, nothing wrong."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Deliberately flat evaluation.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-035",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this message positive, negative, mixed or neutral? Explain briefly.\n\n\"If I could give the repair crew six stars I would; they stayed late, fixed it properly and cleaned up after themselves.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "If I could give the repair crew six stars I would; they stayed late, fixed it properly and cleaned up after themselves."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "question",
+  "note": "Hyperbolic praise.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-036",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'Great location and friendly host, but the room was noisy and small.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Great location and friendly host, but the room was noisy and small."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Positives about location/host, negatives about the room.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-037",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nTerrible experience. The package arrived two weeks late and the box was crushed.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "Terrible experience. The package arrived two weeks late and the box was crushed."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Lateness and damage, explicit 'terrible'.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-038",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this tweet as positive, negative, mixed or neutral, then give a one-line reason: 'This update ruined the app. It crashes every time I open it.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "This update ruined the app. It crashes every time I open it."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "labelled",
+  "note": "Clear regression complaint.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-039",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this tweet positive, negative, mixed or neutral? Explain briefly.\n\n\"Just got my new phone and the camera is incredible. So happy with it!\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Just got my new phone and the camera is incredible. So happy with it!"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Enthusiastic praise and stated happiness.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-040",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this message positive, negative, mixed or neutral? Explain briefly.\n\n\"I ordered the blue model, size medium, and it arrived on Tuesday.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "I ordered the blue model, size medium, and it arrived on Tuesday."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "States facts about an order, no evaluation.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-041",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I came in sceptical about the 'miracle' cleaning spray. It took off a stain I'd given up on years ago. Consider me converted.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "I came in sceptical about the 'miracle' cleaning spray. It took off a stain I'd given up on years ago. Consider me converted."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Scepticism reversed into endorsement.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-042",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this message - positive, negative, mixed, or neutral? \"Best customer service I've had in years - they fixed my issue in five minutes!\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "positive",
+   "text": "Best customer service I've had in years - they fixed my issue in five minutes!"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Explicit superlative praise of support.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-043",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this review - positive, negative, mixed, or neutral? \"The room was 'sea view' if you stood on the toilet and squinted.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "negative",
+   "text": "The room was 'sea view' if you stood on the toilet and squinted."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Sarcastic dismissal of an exaggerated listing.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-044",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nIt's an average phone. Does what phones do.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "It's an average phone. Does what phones do."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Neither praise nor criticism.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-045",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'Honestly the food is the best in town. The staff, though, act like you're bothering them.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Honestly the food is the best in town. The staff, though, act like you're bothering them."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Best food, hostile staff.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-046",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"I enjoyed the first half of the film, though the ending was a letdown.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "I enjoyed the first half of the film, though the ending was a letdown."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "question",
+  "note": "Enjoyment then disappointment.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-047",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nNot thrilled with the price, but I can't deny the quality is excellent.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence.",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "mixed",
+   "text": "Not thrilled with the price, but I can't deny the quality is excellent."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Price complaint, quality praise.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-048",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "what's the vibe of this message - positive, negative, mixed, or neutral? \"The report has 14 pages and includes three appendices.\"",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "The report has 14 pages and includes three appendices."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Descriptive, no sentiment.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-049",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Not sure yet whether the new policy is good or bad; we'll see how it plays out next quarter.'",
+  "category": "sentiment",
+  "grader": "label",
+  "gold": {
+   "label": "neutral",
+   "text": "Not sure yet whether the new policy is good or bad; we'll see how it plays out next quarter."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "labelled",
+  "note": "Explicitly undecided, no leaning.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "sent-050",
+  "split": "unsplit"
+ }
+]

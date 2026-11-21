@@ -190,3 +190,27 @@ class ErrorResponse(BaseModel):
     error: str = Field(..., description="Error type")
     message: str = Field(..., description="Human-readable error message")
     detail: Optional[str] = Field(default=None, description="Additional details")
+
+
+# ===================
+# Phase 5 hybrid router (/v1/route)
+# ===================
+
+class RouteRequest(BaseModel):
+    """Request body for POST /v1/route."""
+    prompt: str = Field(..., min_length=1, max_length=100000, description="The task to answer")
+
+
+class RouteResponse(BaseModel):
+    """Answer plus how the hybrid router produced it."""
+    answer: str
+    category: str = Field(description="Task type: one of the 8 categories or out_of_scope")
+    difficulty: str = Field(description="easy or hard (the routing cell)")
+    layer: str = Field(description="solver | local | api")
+    model: str = Field(description="Model (or python-solver / translator:<model>) that produced the answer")
+    escalated: bool = Field(description="True if a cheaper step failed and the request moved up")
+    cost_usd: float = Field(description="List-price cost of every paid call made for this request")
+    b1_cost_usd: float = Field(description="What the single best model (B1) cost, or would have cost (estimate)")
+    savings_usd: float = Field(description="b1_cost_usd - cost_usd")
+    latency_ms: int
+    trace: list = Field(default_factory=list, description="Every step tried: model, outcome, reason, tokens, cost")

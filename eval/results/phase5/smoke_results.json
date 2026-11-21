@@ -1,0 +1,393 @@
+{
+ "meta": {
+  "n_tasks": 8,
+  "policy": "D:\\LLM_Router\\eval\\results\\phase4\\routing_policy.json",
+  "api_workers": 4,
+  "deadline_s": 500.0,
+  "started": "2026-11-20T21:17:59",
+  "finished": 8,
+  "complete": true,
+  "total_cost_usd": 0.0061633,
+  "elapsed_s": 28.4
+ },
+ "results": [
+  {
+   "id": "fact-010",
+   "status": "done",
+   "answer": "The Moon has phases because it orbits Earth, changing the angle between the Sun, Earth, and Moon. Half the Moon is always sunlit, but we see different amounts of that lit half from Earth. When the Moon is between Earth and the Sun, the lit side faces away—new moon. As it orbits, we see more of the lit side: crescent, first quarter, gibbous, then full. Then it reverses. A full cycle takes about 29.5 days. Phases are not caused by Earth’s shadow; that only happens during a lunar eclipse.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002565,
+   "b1_cost_usd": 0.004268,
+   "savings_usd": 0.0040115,
+   "latency_ms": 11905,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4449,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 55,
+     "tokens_out": 200,
+     "tokens_reasoning": 80,
+     "latency_ms": 2687,
+     "cost_usd": 0.0002565,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-010",
+   "status": "done",
+   "answer": "180 ÷ 45 = 4 hours  \n180 ÷ 30 = 6 hours  \nTotal = 4 + 6 = 10 hours\n\nANSWER: 10",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001209,
+   "b1_cost_usd": 0.003302,
+   "savings_usd": 0.0031810999999999996,
+   "latency_ms": 28414,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4451,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4448,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 95,
+     "tokens_out": 77,
+     "tokens_reasoning": 41,
+     "latency_ms": 1516,
+     "cost_usd": 0.0001209,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-002",
+   "status": "done",
+   "answer": "The statement simply lists technical specifications without expressing any opinion or emotion.\n\nANSWER: neutral",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001278,
+   "b1_cost_usd": 0.003432,
+   "savings_usd": 0.0033042,
+   "latency_ms": 6480,
+   "escalated": true,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4685,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 110,
+     "tokens_out": 79,
+     "tokens_reasoning": 61,
+     "latency_ms": 1713,
+     "cost_usd": 0.0001278,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-008",
+   "status": "done",
+   "answer": "Ana Ribeiro, the Pembrook Orchestra’s first female music director, conducts Beethoven’s nine symphonies over three July evenings. Tickets start at £18, with free student seats. Rain moves performances from the amphitheatre to the town hall.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.005262,
+   "b1_cost_usd": 0.005262,
+   "savings_usd": 0.0,
+   "latency_ms": 6487,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 296,
+     "tokens_out": 467,
+     "tokens_reasoning": 402,
+     "latency_ms": 6410,
+     "cost_usd": 0.005262,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-002",
+   "status": "done",
+   "answer": "[{\"text\": \"Amara Singh\", \"type\": \"PERSON\"}, {\"text\": \"Reliance Industries\", \"type\": \"ORG\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.77e-05,
+   "b1_cost_usd": 0.003348,
+   "savings_usd": 0.0033203,
+   "latency_ms": 1100,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 78,
+     "tokens_out": 32,
+     "tokens_reasoning": 0,
+     "latency_ms": 1099,
+     "cost_usd": 2.77e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-004",
+   "status": "done",
+   "answer": "```python\ndef capitalize_words(s):\n    return \" \".join(w.capitalize() for w in s.split())\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001659,
+   "b1_cost_usd": 0.003418,
+   "savings_usd": 0.0032521,
+   "latency_ms": 13790,
+   "escalated": true,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4348,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 113,
+     "tokens_out": 110,
+     "tokens_reasoning": 83,
+     "latency_ms": 2264,
+     "cost_usd": 0.0001659,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-003",
+   "status": "done",
+   "answer": "ANSWER: Pia",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "solver",
+   "model": "python-solver",
+   "cost_usd": 0,
+   "b1_cost_usd": 0.003184,
+   "savings_usd": 0.003184,
+   "latency_ms": 5,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "id": "code_gen-003",
+   "status": "done",
+   "answer": "```python\ndef multiples(n, k):\n    if k <= 0:\n        return []\n    return [n * i for i in range(1, k + 1)]\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00020249999999999996,
+   "b1_cost_usd": 0.003422,
+   "savings_usd": 0.0032195,
+   "latency_ms": 17083,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 4433,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it",
+     "attempts": 1,
+     "ok": false,
+     "why": "ConnectError: [WinError 10061] No connection could be made because the target machine actively refused it"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 99,
+     "tokens_out": 144,
+     "tokens_reasoning": 104,
+     "latency_ms": 2225,
+     "cost_usd": 0.00020249999999999996,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

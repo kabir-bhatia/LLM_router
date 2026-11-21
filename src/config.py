@@ -61,7 +61,7 @@ class Settings(BaseSettings):
     #   gemini-2.5-pro returned 404 as deprecated for new users. Kept as a
     #   fallback path since it's the lower-setup-cost option for anyone
     #   re-running this project on their own key.
-    use_vertex_ai: bool = True
+    use_vertex_ai: bool = False  # Vertex billing account closed; AI Studio key is the default
     google_application_credentials: str = ""  # path to service account JSON key
     vertex_project_id: str = ""  # auto-derived from the key file if unset
     vertex_location: str = "global"  # "global" has full model coverage; some models are missing from region-pinned locations like us-central1
@@ -84,6 +84,19 @@ class Settings(BaseSettings):
     # Model used by the LLM classifier itself. Must be cheap: it runs on every
     # single request, so an expensive classifier would eat the routing savings.
     classifier_model: str = "gemini-3.1-flash-lite"
+
+    # ===================
+    # OpenAI-compatible gateways (Fireworks paid tier, Hyde free gateway)
+    # ===================
+    fireworks_api_key: str = ""
+    fireworks_base_url: str = "https://api.fireworks.ai/inference/v1"
+    hyde_api_key: str = ""
+    hyde_base_url: str = ""
+
+    # ===================
+    # Ollama (local tier)
+    # ===================
+    ollama_base_url: str = "http://localhost:11434"
 
     # ===================
     # API Security

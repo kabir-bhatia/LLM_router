@@ -1,0 +1,449 @@
+{
+ "headline": {
+  "Router (main policy, GPU)": {
+   "acc_runs": [
+    0.95,
+    0.95625,
+    0.95625
+   ],
+   "cost_runs": [
+    0.05845495,
+    0.06052625,
+    0.05995345
+   ]
+  },
+  "B1 always kimi-k3p1-pro": {
+   "acc_runs": [
+    0.975,
+    0.9875,
+    0.9875
+   ],
+   "cost_runs": [
+    0.290226,
+    0.293726,
+    0.291936
+   ]
+  },
+  "B2 always deepseek-v4p1-flash": {
+   "acc_runs": [
+    0.975,
+    0.975,
+    0.96875
+   ],
+   "cost_runs": [
+    0.0485868,
+    0.0499728,
+    0.0474024
+   ]
+  }
+ },
+ "savings": {
+  "marginal_vs_B1": 0.7957105817182105,
+  "marginal_vs_B2": -0.22589886408791338,
+  "hw_vs_B1": 0.709523620599894,
+  "hw_vs_B2": -0.7430891259368877
+ },
+ "guardrail": {
+  "router run 1 vs B1 run 1": {
+   "passed": false,
+   "lower": -0.05625,
+   "diff": -0.025000000000000022,
+   "a": 0.95,
+   "b": 0.975
+  },
+  "router run 2 vs B1 run 2": {
+   "passed": false,
+   "lower": -0.05625,
+   "diff": -0.03125,
+   "a": 0.95625,
+   "b": 0.9875
+  },
+  "router run 3 vs B1 run 3": {
+   "passed": false,
+   "lower": -0.0625,
+   "diff": -0.03125,
+   "a": 0.95625,
+   "b": 0.9875
+  },
+  "router mean of 3 vs B1 mean of 3": {
+   "passed": false,
+   "lower": -0.054166666666666675,
+   "diff": -0.029166666666666785,
+   "a": 0.9541666666666666,
+   "b": 0.9833333333333334
+  },
+  "router run 1 vs B2 run 1 (informational)": {
+   "passed": false,
+   "lower": -0.05625,
+   "diff": -0.025000000000000022,
+   "a": 0.95,
+   "b": 0.975
+  },
+  "router run 2 vs B2 run 2 (informational)": {
+   "passed": false,
+   "lower": -0.05,
+   "diff": -0.018749999999999933,
+   "a": 0.95625,
+   "b": 0.975
+  },
+  "router run 3 vs B2 run 3 (informational)": {
+   "passed": false,
+   "lower": -0.05,
+   "diff": -0.012499999999999956,
+   "a": 0.95625,
+   "b": 0.96875
+  },
+  "B2 run 1 vs B1 run 1 (B2's own D12 test)": {
+   "passed": true,
+   "lower": -0.01875,
+   "diff": 0.0,
+   "a": 0.975,
+   "b": 0.975
+  },
+  "B2 run 2 vs B1 run 2 (B2's own D12 test)": {
+   "passed": false,
+   "lower": -0.0375,
+   "diff": -0.012500000000000067,
+   "a": 0.975,
+   "b": 0.9875
+  },
+  "B2 run 3 vs B1 run 3 (B2's own D12 test)": {
+   "passed": false,
+   "lower": -0.05,
+   "diff": -0.018750000000000044,
+   "a": 0.96875,
+   "b": 0.9875
+  }
+ },
+ "per_category": {
+  "factual": {
+   "n": 20,
+   "router": [
+    1.0,
+    0.0026812
+   ],
+   "b1": [
+    1.0,
+    0.05485466666666667
+   ],
+   "b2": [
+    1.0,
+    0.0051063
+   ]
+  },
+  "math": {
+   "n": 20,
+   "router": [
+    0.9833333333333333,
+    0.0008595
+   ],
+   "b1": [
+    1.0,
+    0.025046666666666665
+   ],
+   "b2": [
+    1.0,
+    0.0032833
+   ]
+  },
+  "sentiment": {
+   "n": 20,
+   "router": [
+    0.95,
+    7.02e-05
+   ],
+   "b1": [
+    1.0,
+    0.024046666666666668
+   ],
+   "b2": [
+    1.0,
+    0.0032141
+   ]
+  },
+  "summarisation": {
+   "n": 20,
+   "router": [
+    0.9333333333333333,
+    0.0503223
+   ],
+   "b1": [
+    0.8666666666666667,
+    0.06010666666666667
+   ],
+   "b2": [
+    0.8166666666666667,
+    0.0127514
+   ]
+  },
+  "ner": {
+   "n": 20,
+   "router": [
+    1.0,
+    0.0007863833333333334
+   ],
+   "b1": [
+    1.0,
+    0.023872
+   ],
+   "b2": [
+    1.0,
+    0.0039859
+   ]
+  },
+  "code_debug": {
+   "n": 20,
+   "router": [
+    0.8166666666666667,
+    0.0005535833333333333
+   ],
+   "b1": [
+    1.0,
+    0.026656666666666665
+   ],
+   "b2": [
+    1.0,
+    0.0044061
+   ]
+  },
+  "logic": {
+   "n": 20,
+   "router": [
+    0.9666666666666667,
+    0.002704166666666667
+   ],
+   "b1": [
+    1.0,
+    0.033924
+   ],
+   "b2": [
+    0.9666666666666667,
+    0.0082868
+   ]
+  },
+  "code_gen": {
+   "n": 20,
+   "router": [
+    0.9833333333333333,
+    0.0016675499999999998
+   ],
+   "b1": [
+    1.0,
+    0.04345533333333333
+   ],
+   "b2": [
+    1.0,
+    0.0076200999999999994
+   ]
+  }
+ },
+ "mixes": {
+  "equal": {
+   "vs_b1": 0.7957105817182105,
+   "vs_b2": -0.22589886408791338,
+   "acc": {
+    "router": 0.9541666666666666,
+    "b1": 0.9833333333333334,
+    "b2": 0.9729166666666667
+   },
+   "cost": {
+    "router": 0.00037278052083333335,
+    "b1": 0.0018247666666666668,
+    "b2": 0.0003040875
+   }
+  },
+  "support desk": {
+   "vs_b1": 0.6693266003601834,
+   "vs_b2": -1.1494424202274485,
+   "acc": {
+    "router": 0.9708333333333333,
+    "b1": 0.9666666666666667,
+    "b2": 0.9541666666666666
+   },
+   "cost": {
+    "router": 0.0006732510416666667,
+    "b1": 0.002036,
+    "b2": 0.00031322125
+   }
+  },
+  "developer tools": {
+   "vs_b1": 0.9609739507744615,
+   "vs_b2": 0.7614550524292374,
+   "acc": {
+    "router": 0.9249999999999999,
+    "b1": 1.0,
+    "b2": 0.9966666666666666
+   },
+   "cost": {
+    "router": 7.009416666666667e-05,
+    "b1": 0.0017960866666666664,
+    "b2": 0.00029384049999999997
+   }
+  },
+  "analyst": {
+   "vs_b1": 0.94513640782954,
+   "vs_b2": 0.6255266924116316,
+   "acc": {
+    "router": 0.9833333333333332,
+    "b1": 1.0,
+    "b2": 0.9888888888888888
+   },
+   "cost": {
+    "router": 0.0001040811111111111,
+    "b1": 0.0018970888888888888,
+    "b2": 0.00027794
+   }
+  }
+ },
+ "paths": {
+  "router_main_gpu_run1": {
+   "solver": 7,
+   "local": 57,
+   "api": 96,
+   "escalated": 13,
+   "oos": 7
+  },
+  "router_main_gpu_run2": {
+   "solver": 7,
+   "local": 63,
+   "api": 90,
+   "escalated": 7,
+   "oos": 7
+  },
+  "router_main_gpu_run3": {
+   "solver": 7,
+   "local": 64,
+   "api": 89,
+   "escalated": 6,
+   "oos": 7
+  },
+  "router_main_cpu_check": {
+   "solver": 5,
+   "local": 49,
+   "api": 106,
+   "escalated": 23,
+   "oos": 7
+  },
+  "router_gpu_server_run1": {
+   "solver": 7,
+   "local": 78,
+   "api": 75,
+   "escalated": 20,
+   "oos": 7
+  }
+ },
+ "zero_api_strict": 0,
+ "zero_api_categories": [],
+ "classifier": {
+  "cat_acc": 0.95625,
+  "oos_false": 7,
+  "diff_acc": 0.6535947712418301,
+  "same_labels": true
+ },
+ "solvers": {
+  "router_main_gpu_run1": {
+   "n": 40,
+   "solver": 7,
+   "correct": 7,
+   "translator": 7
+  },
+  "router_main_gpu_run2": {
+   "n": 40,
+   "solver": 7,
+   "correct": 7,
+   "translator": 7
+  },
+  "router_main_gpu_run3": {
+   "n": 40,
+   "solver": 7,
+   "correct": 7,
+   "translator": 7
+  },
+  "router_main_cpu_check": {
+   "n": 40,
+   "solver": 5,
+   "correct": 5,
+   "translator": 5
+  },
+  "router_gpu_server_run1": {
+   "n": 40,
+   "solver": 7,
+   "correct": 7,
+   "translator": 7
+  }
+ },
+ "validators": {
+  "router_main_gpu_run1": {
+   "attempts": 70,
+   "accepted": 57,
+   "rejected": 4,
+   "timeout": 9,
+   "other_err": 0,
+   "correct": 52
+  },
+  "router_main_gpu_run2": {
+   "attempts": 70,
+   "accepted": 63,
+   "rejected": 7,
+   "timeout": 0,
+   "other_err": 0,
+   "correct": 58
+  },
+  "router_main_gpu_run3": {
+   "attempts": 70,
+   "accepted": 64,
+   "rejected": 6,
+   "timeout": 0,
+   "other_err": 0,
+   "correct": 59
+  },
+  "router_main_cpu_check": {
+   "attempts": 72,
+   "accepted": 49,
+   "rejected": 6,
+   "timeout": 17,
+   "other_err": 0,
+   "correct": 43
+  },
+  "router_gpu_server_run1": {
+   "attempts": 98,
+   "accepted": 78,
+   "rejected": 6,
+   "timeout": 14,
+   "other_err": 0,
+   "correct": 72
+  }
+ },
+ "wrong_local_or_solver": 27,
+ "variation": {
+  "timeouts": {
+   "main_gpu_run1": 9,
+   "main_gpu_run2": 0,
+   "main_gpu_run3": 0
+  },
+  "diffs": {
+   "main_gpu_run1|main_gpu_run2": 8,
+   "main_gpu_run1|main_gpu_run3": 9,
+   "main_gpu_run2|main_gpu_run3": 1
+  }
+ },
+ "cpu": {
+  "acc": 0.95625,
+  "cost": 0.06740235,
+  "hw": 0.025163375,
+  "local": 49,
+  "guard": false,
+  "sav_b1": 0.7691405179657673,
+  "sav_b1_hw": 0.6829535568474507,
+  "p50": 62.818,
+  "p95": 242.913
+ },
+ "gpu_server": {
+  "acc": 0.95625,
+  "cost": 0.05571875,
+  "hw": 0.09332711111111107,
+  "guard": false,
+  "sav_b1": 0.8091579631185722,
+  "sav_b1_hw": 0.48950369986421416
+ }
+}

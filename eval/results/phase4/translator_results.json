@@ -1,0 +1,486 @@
+{
+ "results": {
+  "math": {
+   "A": {
+    "pure_python": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "gemma3:1b": {
+     "n": 22,
+     "answered": 17,
+     "correct": 7,
+     "coverage": 0.7727272727272727,
+     "precision": 0.4117647058823529
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "gemma3:4b": {
+     "n": 22,
+     "answered": 18,
+     "correct": 16,
+     "coverage": 0.8181818181818182,
+     "precision": 0.8888888888888888
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b": {
+     "n": 22,
+     "answered": 21,
+     "correct": 21,
+     "coverage": 0.9545454545454546,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 22,
+     "answered": 18,
+     "correct": 16,
+     "coverage": 0.8181818181818182,
+     "precision": 0.8888888888888888
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "qwen3:1.7b": {
+     "n": 22,
+     "answered": 17,
+     "correct": 14,
+     "coverage": 0.7727272727272727,
+     "precision": 0.8235294117647058
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    }
+   },
+   "B+hand": {
+    "pure_python": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "gemma3:1b": {
+     "n": 8,
+     "answered": 4,
+     "correct": 4,
+     "coverage": 0.5,
+     "precision": 1.0
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 8,
+     "answered": 4,
+     "correct": 4,
+     "coverage": 0.5,
+     "precision": 1.0
+    },
+    "gemma3:4b": {
+     "n": 8,
+     "answered": 4,
+     "correct": 3,
+     "coverage": 0.5,
+     "precision": 0.75
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 8,
+     "answered": 4,
+     "correct": 3,
+     "coverage": 0.5,
+     "precision": 0.75
+    },
+    "phi3.5:3.8b": {
+     "n": 8,
+     "answered": 5,
+     "correct": 5,
+     "coverage": 0.625,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 8,
+     "answered": 5,
+     "correct": 5,
+     "coverage": 0.625,
+     "precision": 1.0
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 8,
+     "answered": 5,
+     "correct": 4,
+     "coverage": 0.625,
+     "precision": 0.8
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 8,
+     "answered": 5,
+     "correct": 4,
+     "coverage": 0.625,
+     "precision": 0.8
+    },
+    "qwen3:1.7b": {
+     "n": 8,
+     "answered": 4,
+     "correct": 3,
+     "coverage": 0.5,
+     "precision": 0.75
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 8,
+     "answered": 4,
+     "correct": 3,
+     "coverage": 0.5,
+     "precision": 0.75
+    }
+   },
+   "all dev": {
+    "pure_python": {
+     "n": 30,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 0.7333333333333333,
+     "precision": 1.0
+    },
+    "gemma3:1b": {
+     "n": 30,
+     "answered": 21,
+     "correct": 11,
+     "coverage": 0.7,
+     "precision": 0.5238095238095238
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 30,
+     "answered": 26,
+     "correct": 26,
+     "coverage": 0.8666666666666667,
+     "precision": 1.0
+    },
+    "gemma3:4b": {
+     "n": 30,
+     "answered": 22,
+     "correct": 19,
+     "coverage": 0.7333333333333333,
+     "precision": 0.8636363636363636
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 30,
+     "answered": 26,
+     "correct": 25,
+     "coverage": 0.8666666666666667,
+     "precision": 0.9615384615384616
+    },
+    "phi3.5:3.8b": {
+     "n": 30,
+     "answered": 26,
+     "correct": 26,
+     "coverage": 0.8666666666666667,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 30,
+     "answered": 27,
+     "correct": 27,
+     "coverage": 0.9,
+     "precision": 1.0
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 30,
+     "answered": 23,
+     "correct": 20,
+     "coverage": 0.7666666666666667,
+     "precision": 0.8695652173913043
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 30,
+     "answered": 27,
+     "correct": 26,
+     "coverage": 0.9,
+     "precision": 0.9629629629629629
+    },
+    "qwen3:1.7b": {
+     "n": 30,
+     "answered": 21,
+     "correct": 17,
+     "coverage": 0.7,
+     "precision": 0.8095238095238095
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 30,
+     "answered": 26,
+     "correct": 25,
+     "coverage": 0.8666666666666667,
+     "precision": 0.9615384615384616
+    }
+   }
+  },
+  "logic": {
+   "A": {
+    "pure_python": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "gemma3:1b": {
+     "n": 22,
+     "answered": 1,
+     "correct": 1,
+     "coverage": 0.045454545454545456,
+     "precision": 1.0
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "gemma3:4b": {
+     "n": 22,
+     "answered": 9,
+     "correct": 9,
+     "coverage": 0.4090909090909091,
+     "precision": 1.0
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b": {
+     "n": 22,
+     "answered": 8,
+     "correct": 8,
+     "coverage": 0.36363636363636365,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 22,
+     "answered": 12,
+     "correct": 12,
+     "coverage": 0.5454545454545454,
+     "precision": 1.0
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    },
+    "qwen3:1.7b": {
+     "n": 22,
+     "answered": 4,
+     "correct": 4,
+     "coverage": 0.18181818181818182,
+     "precision": 1.0
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 22,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 1.0,
+     "precision": 1.0
+    }
+   },
+   "B+hand": {
+    "pure_python": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "gemma3:1b": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "gemma3:4b": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 8,
+     "answered": 0,
+     "correct": 0,
+     "coverage": 0.0,
+     "precision": null
+    },
+    "phi3.5:3.8b": {
+     "n": 8,
+     "answered": 1,
+     "correct": 0,
+     "coverage": 0.125,
+     "precision": 0.0
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 8,
+     "answered": 1,
+     "correct": 0,
+     "coverage": 0.125,
+     "precision": 0.0
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 8,
+     "answered": 1,
+     "correct": 0,
+     "coverage": 0.125,
+     "precision": 0.0
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 8,
+     "answered": 1,
+     "correct": 0,
+     "coverage": 0.125,
+     "precision": 0.0
+    },
+    "qwen3:1.7b": {
+     "n": 8,
+     "answered": 1,
+     "correct": 1,
+     "coverage": 0.125,
+     "precision": 1.0
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 8,
+     "answered": 1,
+     "correct": 1,
+     "coverage": 0.125,
+     "precision": 1.0
+    }
+   },
+   "all dev": {
+    "pure_python": {
+     "n": 30,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 0.7333333333333333,
+     "precision": 1.0
+    },
+    "gemma3:1b": {
+     "n": 30,
+     "answered": 1,
+     "correct": 1,
+     "coverage": 0.03333333333333333,
+     "precision": 1.0
+    },
+    "gemma3:1b (after pure-Python)": {
+     "n": 30,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 0.7333333333333333,
+     "precision": 1.0
+    },
+    "gemma3:4b": {
+     "n": 30,
+     "answered": 9,
+     "correct": 9,
+     "coverage": 0.3,
+     "precision": 1.0
+    },
+    "gemma3:4b (after pure-Python)": {
+     "n": 30,
+     "answered": 22,
+     "correct": 22,
+     "coverage": 0.7333333333333333,
+     "precision": 1.0
+    },
+    "phi3.5:3.8b": {
+     "n": 30,
+     "answered": 9,
+     "correct": 8,
+     "coverage": 0.3,
+     "precision": 0.8888888888888888
+    },
+    "phi3.5:3.8b (after pure-Python)": {
+     "n": 30,
+     "answered": 23,
+     "correct": 22,
+     "coverage": 0.7666666666666667,
+     "precision": 0.9565217391304348
+    },
+    "qwen2.5-coder:1.5b": {
+     "n": 30,
+     "answered": 13,
+     "correct": 12,
+     "coverage": 0.43333333333333335,
+     "precision": 0.9230769230769231
+    },
+    "qwen2.5-coder:1.5b (after pure-Python)": {
+     "n": 30,
+     "answered": 23,
+     "correct": 22,
+     "coverage": 0.7666666666666667,
+     "precision": 0.9565217391304348
+    },
+    "qwen3:1.7b": {
+     "n": 30,
+     "answered": 5,
+     "correct": 5,
+     "coverage": 0.16666666666666666,
+     "precision": 1.0
+    },
+    "qwen3:1.7b (after pure-Python)": {
+     "n": 30,
+     "answered": 23,
+     "correct": 23,
+     "coverage": 0.7666666666666667,
+     "precision": 1.0
+    }
+   }
+  }
+ },
+ "choice": {
+  "math": "phi3.5:3.8b",
+  "logic": "gemma3:4b"
+ }
+}

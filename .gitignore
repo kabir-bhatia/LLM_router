@@ -57,3 +57,10 @@ install.log
 
 # Serena (AI coding tool config/cache — local, not part of the project)
 .serena/
+
+# Local-only artifacts
+eval/phase4/cache/
+CHAT_TRANSCRIPT.md
+docs/interview/
+docs/REBUILD_PLAN.md
+.pytest_out.txt

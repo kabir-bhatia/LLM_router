@@ -1,0 +1,1122 @@
+[
+ {
+  "task_id": "summ-047",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "summarisation",
+  "item": 1,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits both core facts: Voss defending her unemployment record and Rhee's minimum wage promise.",
+    "judge": "glm",
+    "tokens_in": 490,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Neither core fact is present: the summary omits Voss's defense of her unemployment record and Rhee's promise to raise the minimum wage.",
+    "judge": "qwen",
+    "tokens_in": 544,
+    "tokens_out": 166,
+    "cost_usd": 0.002084,
+    "cached": false
+   }
+  },
+  "raw_text_len": 96
+ },
+ {
+  "task_id": "summ-009",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 2,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that accuracy falls for dirty or crushed items.",
+    "judge": "glm",
+    "tokens_in": 544,
+    "tokens_out": 24,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that accuracy drops for dirty or crushed items, presenting only the positive side of the story.",
+    "judge": "qwen",
+    "tokens_in": 609,
+    "tokens_out": 226,
+    "cost_usd": 0.002574,
+    "cached": false
+   }
+  },
+  "raw_text_len": 273
+ },
+ {
+  "task_id": "summ-031",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 3,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 \"quickly brought under control\" contradicts the source (six hours), and it invents a condition that reopening depends on investigators determining the cause.",
+    "judge": "glm",
+    "tokens_in": 532,
+    "tokens_out": 73,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that no one was injured, and it contradicts the source by describing the fire as \"quickly brought under control\" when it actually took six hours.",
+    "judge": "qwen",
+    "tokens_in": 581,
+    "tokens_out": 310,
+    "cost_usd": 0.003022,
+    "cached": false
+   }
+  },
+  "raw_text_len": 273
+ },
+ {
+  "task_id": "summ-012",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 4,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary merges the two sides, saying both unions and growers are concerned about employment, which reverses the source's point that growers say they are short of workers.",
+    "judge": "glm",
+    "tokens_in": 555,
+    "tokens_out": 96,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary incorrectly states that \"union leaders and growers are concerned about the impact on employment,\" reversing the growers' position; the source says growers are short of workers, not that they fear job losses.",
+    "judge": "qwen",
+    "tokens_in": 611,
+    "tokens_out": 332,
+    "cost_usd": 0.003214,
+    "cached": false
+   }
+  },
+  "raw_text_len": 317
+ },
+ {
+  "task_id": "fact-003",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 5,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 It covers total value of goods and services produced over a period; \"in an economy\" reasonably conveys within a country.",
+    "judge": "glm",
+    "tokens_in": 306,
+    "tokens_out": 33,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points are present: total value of goods and services, and produced within a country over a period.",
+    "judge": "qwen",
+    "tokens_in": 351,
+    "tokens_out": 159,
+    "cost_usd": 0.001656,
+    "cached": true
+   }
+  },
+  "raw_text_len": 147
+ },
+ {
+  "task_id": "fact-028",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 6,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits the required point that some violet light is absorbed by the upper atmosphere.",
+    "judge": "glm",
+    "tokens_in": 420,
+    "tokens_out": 66,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required point that some violet light is absorbed by the upper atmosphere.",
+    "judge": "qwen",
+    "tokens_in": 464,
+    "tokens_out": 303,
+    "cost_usd": 0.002746,
+    "cached": true
+   }
+  },
+  "raw_text_len": 537
+ },
+ {
+  "task_id": "fact-039",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 7,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (US\u2013Soviet rivalry after WWII, no direct war with arms race and proxy wars), and the added details are accurate.",
+    "judge": "glm",
+    "tokens_in": 420,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (US vs. Soviet rivalry after WWII; no direct war, with arms race and proxy conflicts) are clearly present, and all additional details are factually accurate.",
+    "judge": "qwen",
+    "tokens_in": 472,
+    "tokens_out": 279,
+    "cost_usd": 0.002618,
+    "cached": true
+   }
+  },
+  "raw_text_len": 604
+ },
+ {
+  "task_id": "summ-031",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 8,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 It reverses the evacuation relationship, saying the warehouse was evacuated for 18 homes when the source says 18 nearby homes were evacuated.",
+    "judge": "glm",
+    "tokens_in": 535,
+    "tokens_out": 79,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that no one was injured.",
+    "judge": "qwen",
+    "tokens_in": 583,
+    "tokens_out": 212,
+    "cost_usd": 0.002438,
+    "cached": false
+   }
+  },
+  "raw_text_len": 292
+ },
+ {
+  "task_id": "fact-019",
+  "model": "qwen3:1.7b",
+  "cov": 0.3333333333333333,
+  "category": "factual",
+  "item": 9,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer covers all required points: higher borrowing costs reduce spending/demand, curbing inflation, with the trade-off of slower growth and potential unemployment/recession.",
+    "judge": "glm",
+    "tokens_in": 346,
+    "tokens_out": 40,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present: higher borrowing costs reduce spending/demand, this curbs inflation, and the trade-off is slower growth and employment.",
+    "judge": "qwen",
+    "tokens_in": 390,
+    "tokens_out": 177,
+    "cost_usd": 0.001842,
+    "cached": true
+   }
+  },
+  "raw_text_len": 244
+ },
+ {
+  "task_id": "summ-013",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 10,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present, and all statements match the source accurately.",
+    "judge": "glm",
+    "tokens_in": 577,
+    "tokens_out": 22,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present and all details in the summary accurately reflect the source text.",
+    "judge": "qwen",
+    "tokens_in": 632,
+    "tokens_out": 246,
+    "cost_usd": 0.00274,
+    "cached": false
+   }
+  },
+  "raw_text_len": 437
+ },
+ {
+  "task_id": "fact-039",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 11,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer correctly covers both required key points, but it wrongly claims the Cold War led to the formation of the United Nations, which was founded in 1945 before the Cold War began.",
+    "judge": "glm",
+    "tokens_in": 389,
+    "tokens_out": 79,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that the Cold War \"led to the formation of organizations like the United Nations,\" but the UN was established in 1945, before the Cold War began.",
+    "judge": "qwen",
+    "tokens_in": 440,
+    "tokens_out": 409,
+    "cost_usd": 0.003334,
+    "cached": true
+   }
+  },
+  "raw_text_len": 412
+ },
+ {
+  "task_id": "summ-039",
+  "model": "gemma3:1b",
+  "cov": 0.0,
+  "category": "summarisation",
+  "item": 12,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe summary's vague \"economic hardship and environmental damage\" does not clearly state the core facts that the fishing industry ended and toxic dust spread.",
+    "judge": "glm",
+    "tokens_in": 572,
+    "tokens_out": 123,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The second core fact (fishing industry ended and toxic dust spread) is absent; the summary only vaguely references \"economic hardship and environmental damage\" without specifying either.",
+    "judge": "qwen",
+    "tokens_in": 635,
+    "tokens_out": 553,
+    "cost_usd": 0.004588,
+    "cached": false
+   }
+  },
+  "raw_text_len": 328
+ },
+ {
+  "task_id": "summ-013",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 13,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present with correct direction, and the attribution to reduced visibility matches the source's explanation.",
+    "judge": "glm",
+    "tokens_in": 558,
+    "tokens_out": 99,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (higher job satisfaction from remote work; reduced promotion likelihood), and no claims contradict or invent information beyond the source.",
+    "judge": "qwen",
+    "tokens_in": 617,
+    "tokens_out": 451,
+    "cost_usd": 0.00394,
+    "cached": false
+   }
+  },
+  "raw_text_len": 388
+ },
+ {
+  "task_id": "fact-002",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 14,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (476 CE, Odoacer deposing Romulus Augustulus) are present, and the added detail about gradual decline is accurate.",
+    "judge": "glm",
+    "tokens_in": 462,
+    "tokens_out": 40,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (476 CE date and Odoacer deposing Romulus Augustulus) are present, and the additional details are historically accurate.",
+    "judge": "qwen",
+    "tokens_in": 517,
+    "tokens_out": 292,
+    "cost_usd": 0.002786,
+    "cached": true
+   }
+  },
+  "raw_text_len": 696
+ },
+ {
+  "task_id": "fact-030",
+  "model": "gemma3:1b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 15,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer covers both required key points (timing-dependent outcome, shared data), but it incorrectly adds that \"the program's execution is stalled while waiting for a resource,\" which describes blocking/deadlock, not a race condition.",
+    "judge": "glm",
+    "tokens_in": 427,
+    "tokens_out": 101,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that \"the program's execution is stalled while waiting for a resource to become available,\" which describes blocking or deadlock, not a race condition, and contradicts the reference.",
+    "judge": "qwen",
+    "tokens_in": 472,
+    "tokens_out": 290,
+    "cost_usd": 0.002684,
+    "cached": true
+   }
+  },
+  "raw_text_len": 699
+ },
+ {
+  "task_id": "fact-048",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 16,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly states that position and momentum cannot both be known with arbitrary precision, matching the required key point.",
+    "judge": "glm",
+    "tokens_in": 360,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The required key point (position and momentum can't both be exactly known) is clearly stated, and no incorrect or contradictory claims are made.",
+    "judge": "qwen",
+    "tokens_in": 403,
+    "tokens_out": 352,
+    "cost_usd": 0.002918,
+    "cached": true
+   }
+  },
+  "raw_text_len": 350
+ },
+ {
+  "task_id": "fact-021",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 17,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly states that gases trap heat and keep the planet warm, and adds accurate detail about human emissions.",
+    "judge": "glm",
+    "tokens_in": 399,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (gases trap heat, keeping the planet warm), and the simplification \"trap heat from the sun\" is explicitly allowed by the grading rules as a standard popular-science explanation.",
+    "judge": "qwen",
+    "tokens_in": 443,
+    "tokens_out": 372,
+    "cost_usd": 0.003118,
+    "cached": true
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "summ-004",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 18,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present (rise in numbers; possible better counting), and nothing stated is wrong.",
+    "judge": "glm",
+    "tokens_in": 562,
+    "tokens_out": 28,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary states populations increased \"over five years,\" but the source says the rise is compared to an estimate from \"a decade ago,\" misrepresenting the timeframe of the increase.",
+    "judge": "qwen",
+    "tokens_in": 619,
+    "tokens_out": 959,
+    "cost_usd": 0.006992,
+    "cached": false
+   }
+  },
+  "raw_text_len": 338
+ },
+ {
+  "task_id": "fact-023",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 19,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points\u2014Rayleigh scattering and stronger scattering of shorter/blue wavelengths\u2014are present and correct.",
+    "judge": "glm",
+    "tokens_in": 343,
+    "tokens_out": 28,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (Rayleigh scattering and shorter/blue wavelengths scattering more) are present, and the additional mention of violet light is factually correct.",
+    "judge": "qwen",
+    "tokens_in": 387,
+    "tokens_out": 278,
+    "cost_usd": 0.002442,
+    "cached": true
+   }
+  },
+  "raw_text_len": 289
+ },
+ {
+  "task_id": "summ-007",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 20,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present (update fixes Chatly security flaw; users advised to install version 5.3), and all details match the source with no errors.",
+    "judge": "glm",
+    "tokens_in": 551,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (update fixes a security flaw in Chatly; users should install the new version), and all details in the summary accurately reflect the source text.",
+    "judge": "qwen",
+    "tokens_in": 598,
+    "tokens_out": 272,
+    "cost_usd": 0.002828,
+    "cached": false
+   }
+  },
+  "raw_text_len": 529
+ },
+ {
+  "task_id": "fact-010",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 21,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly explains that phases result from seeing different portions of the sunlit half as the Moon orbits Earth, with accurate phase descriptions.",
+    "judge": "glm",
+    "tokens_in": 464,
+    "tokens_out": 35,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The required key point (seeing different parts of the sunlit half as the Moon orbits) is clearly stated, and all additional details are factually correct.",
+    "judge": "qwen",
+    "tokens_in": 517,
+    "tokens_out": 297,
+    "cost_usd": 0.002816,
+    "cached": true
+   }
+  },
+  "raw_text_len": 771
+ },
+ {
+  "task_id": "fact-010",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 22,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The required key point is present, but the answer adds the false claim that the Moon is not a perfect sphere and its shadow shifts, which is wrong.",
+    "judge": "glm",
+    "tokens_in": 349,
+    "tokens_out": 39,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that phases happen \"because the Moon is not a perfect sphere and its shadow shifts over time,\" which is factually wrong and contradicts the correct explanation.",
+    "judge": "qwen",
+    "tokens_in": 392,
+    "tokens_out": 357,
+    "cost_usd": 0.002926,
+    "cached": true
+   }
+  },
+  "raw_text_len": 303
+ },
+ {
+  "task_id": "fact-025",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 23,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The answer covers all required points: lending money to the issuer, periodic interest payments, and repayment of principal.",
+    "judge": "glm",
+    "tokens_in": 350,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points (loan by investor, periodic interest payments, principal repaid) are clearly present, and no incorrect information is stated.",
+    "judge": "qwen",
+    "tokens_in": 394,
+    "tokens_out": 176,
+    "cost_usd": 0.001844,
+    "cached": true
+   }
+  },
+  "raw_text_len": 321
+ },
+ {
+  "task_id": "fact-026",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 24,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer covers both required points\u2014harmless version of a pathogen and immune memory\u2014and adds correct detail about antibodies and faster response.",
+    "judge": "glm",
+    "tokens_in": 380,
+    "tokens_out": 36,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (harmless version of a pathogen introduced; immune system builds memory cells) are clearly present, and the optional point about faster response is also included, with no factual errors.",
+    "judge": "qwen",
+    "tokens_in": 423,
+    "tokens_out": 263,
+    "cost_usd": 0.002424,
+    "cached": true
+   }
+  },
+  "raw_text_len": 451
+ },
+ {
+  "task_id": "summ-039",
+  "model": "qwen3:1.7b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 25,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe summary omits the core fact that the fishing industry ended (and toxic dust spread is only vaguely implied), and it wrongly attributes the northern recovery to the shrubs rather than the 2005 dam.",
+    "judge": "glm",
+    "tokens_in": 573,
+    "tokens_out": 113,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Core fact 2 (fishing industry ended and toxic dust spread) is not present, only vaguely alluded to as \"ecological and health issues\"; additionally, the summary incorrectly attributes northern recovery to shrubs rather than the dam.",
+    "judge": "qwen",
+    "tokens_in": 630,
+    "tokens_out": 519,
+    "cost_usd": 0.004374,
+    "cached": false
+   }
+  },
+  "raw_text_len": 278
+ },
+ {
+  "task_id": "fact-048",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 26,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer contains the required key point, but it wrongly frames the uncertainty principle as \"observing a particle inevitably disturbs it,\" which the rules explicitly mark as incorrect.",
+    "judge": "glm",
+    "tokens_in": 431,
+    "tokens_out": 58,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The candidate correctly states that position and momentum cannot both be known with perfect accuracy simultaneously, includes the optional point about it being fundamental rather than an instrument limitation, and the added \"observation disturbs the particle\" phrasing is an acceptabl",
+    "judge": "qwen",
+    "tokens_in": 476,
+    "tokens_out": 303,
+    "cost_usd": 0.00277,
+    "cached": true
+   }
+  },
+  "raw_text_len": 615
+ },
+ {
+  "task_id": "summ-038",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 27,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present, and all details (1.2 million households, 150 pounds, 180 million cost, charities' criticism) match the source.",
+    "judge": "glm",
+    "tokens_in": 511,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (government heating payment; charities say it's smaller and misses pensioners), and no information contradicts the source.",
+    "judge": "qwen",
+    "tokens_in": 568,
+    "tokens_out": 297,
+    "cost_usd": 0.002918,
+    "cached": false
+   }
+  },
+  "raw_text_len": 185
+ },
+ {
+  "task_id": "summ-026",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 28,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present (double last year's collection, distribution at community centres), and all statements match the source.",
+    "judge": "glm",
+    "tokens_in": 510,
+    "tokens_out": 32,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (doubling last year's collection and distribution at community centres), and all stated details are accurate to the source.",
+    "judge": "qwen",
+    "tokens_in": 562,
+    "tokens_out": 260,
+    "cost_usd": 0.002684,
+    "cached": false
+   }
+  },
+  "raw_text_len": 204
+ },
+ {
+  "task_id": "fact-018",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "factual",
+  "item": 29,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required points are present: small fast memory near/within the CPU, stores frequently accessed data, and reduces slow RAM accesses.",
+    "judge": "glm",
+    "tokens_in": 409,
+    "tokens_out": 35,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present (small fast memory near/within the CPU, stores frequently accessed data, reduces slower main-memory accesses), and no incorrect claims are made.",
+    "judge": "qwen",
+    "tokens_in": 453,
+    "tokens_out": 279,
+    "cost_usd": 0.00258,
+    "cached": true
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "summ-036",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 30,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts (October start, three times weekly) are present, and the summary's claims are consistent with the source.",
+    "judge": "glm",
+    "tokens_in": 531,
+    "tokens_out": 121,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts (non-stop Lisbon\u2013Cape Town flights starting in October; three times a week) are present, and all other details accurately reflect the source.",
+    "judge": "qwen",
+    "tokens_in": 586,
+    "tokens_out": 343,
+    "cost_usd": 0.00323,
+    "cached": false
+   }
+  },
+  "raw_text_len": 347
+ },
+ {
+  "task_id": "summ-019",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 31,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present and nothing is wrong; the secondary facts are also included.",
+    "judge": "glm",
+    "tokens_in": 516,
+    "tokens_out": 25,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (network linking China and the Mediterranean; decline due to sea routes and Ottoman control), and no information in the summary contradicts the source.",
+    "judge": "qwen",
+    "tokens_in": 560,
+    "tokens_out": 322,
+    "cost_usd": 0.003052,
+    "cached": false
+   }
+  },
+  "raw_text_len": 253
+ },
+ {
+  "task_id": "fact-015",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 32,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (began in Britain late 18th century; machines, factories, steam power), and the extra detail is accurate.",
+    "judge": "glm",
+    "tokens_in": 421,
+    "tokens_out": 39,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (Britain, late 18th century; machines, factories, steam power) are present, and all additional details are factually accurate.",
+    "judge": "qwen",
+    "tokens_in": 469,
+    "tokens_out": 264,
+    "cost_usd": 0.002522,
+    "cached": true
+   }
+  },
+  "raw_text_len": 654
+ },
+ {
+  "task_id": "summ-011",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 33,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present and nothing is wrong.",
+    "judge": "glm",
+    "tokens_in": 530,
+    "tokens_out": 18,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts (illegal felling of the 400-year-old oak and the reward) are accurately stated with no contradictions or invented details.",
+    "judge": "qwen",
+    "tokens_in": 593,
+    "tokens_out": 262,
+    "cost_usd": 0.002758,
+    "cached": false
+   }
+  },
+  "raw_text_len": 101
+ },
+ {
+  "task_id": "fact-038",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 34,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (sustained rise in general price level; money buys less/purchasing power erodes), and the extra detail is correct.",
+    "judge": "glm",
+    "tokens_in": 374,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (sustained/general rise in prices and reduced purchasing power) are clearly present, and the additional details are accurate.",
+    "judge": "qwen",
+    "tokens_in": 419,
+    "tokens_out": 239,
+    "cost_usd": 0.002272,
+    "cached": true
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "fact-009",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 35,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present: recession as a milder/shorter decline and depression as more severe and prolonged; no contradictions.",
+    "judge": "glm",
+    "tokens_in": 384,
+    "tokens_out": 35,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points are present: the candidate describes recession as a shorter/milder decline and depression as more severe and prolonged, with no factual errors.",
+    "judge": "qwen",
+    "tokens_in": 429,
+    "tokens_out": 297,
+    "cost_usd": 0.00264,
+    "cached": true
+   }
+  },
+  "raw_text_len": 354
+ },
+ {
+  "task_id": "fact-038",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 36,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required points are present: a general rise in prices over time and reduced purchasing power; extra details are correct.",
+    "judge": "glm",
+    "tokens_in": 328,
+    "tokens_out": 31,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (general rise in prices and reduced purchasing power) are present, and the additional details are accurate.",
+    "judge": "qwen",
+    "tokens_in": 372,
+    "tokens_out": 215,
+    "cost_usd": 0.002034,
+    "cached": true
+   }
+  },
+  "raw_text_len": 284
+ },
+ {
+  "task_id": "summ-040",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 37,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that more money (\u00a34 million) is still needed to rebuild the bridge, and instead implies the bridge rebuilding is already covered by the campaign.",
+    "judge": "glm",
+    "tokens_in": 519,
+    "tokens_out": 84,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The summary omits the core fact that more money is still needed to rebuild the bridge, and instead misleadingly implies the bridge is already being rebuilt as part of the current effort, contradicting the source.",
+    "judge": "qwen",
+    "tokens_in": 580,
+    "tokens_out": 359,
+    "cost_usd": 0.003314,
+    "cached": false
+   }
+  },
+  "raw_text_len": 173
+ },
+ {
+  "task_id": "summ-024",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 38,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present, and all details (batch numbers, countries, dates, refund, routine checks) match the source without contradiction.",
+    "judge": "glm",
+    "tokens_in": 526,
+    "tokens_out": 132,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts (peanut sauce recall and unlisted allergen found) are present, and no statement in the summary contradicts the source.",
+    "judge": "qwen",
+    "tokens_in": 587,
+    "tokens_out": 534,
+    "cost_usd": 0.004378,
+    "cached": false
+   }
+  },
+  "raw_text_len": 334
+ },
+ {
+  "task_id": "summ-019",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 39,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth core facts are present and all details match the source.",
+    "judge": "glm",
+    "tokens_in": 538,
+    "tokens_out": 20,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both core facts are present (network linking China and the Mediterranean; decline due to sea routes and Ottoman control), and all details in the summary are consistent with the source.",
+    "judge": "qwen",
+    "tokens_in": 582,
+    "tokens_out": 240,
+    "cost_usd": 0.002604,
+    "cached": false
+   }
+  },
+  "raw_text_len": 351
+ },
+ {
+  "task_id": "summ-034",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 40,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Both core facts are missing: no comparison to placebo and no mention of the short trial duration or exclusion of people over 65.",
+    "judge": "glm",
+    "tokens_in": 545,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Both core facts are missing: the summary does not compare the drug to placebo, and it omits the trial's short duration and exclusion of people over 65.",
+    "judge": "qwen",
+    "tokens_in": 596,
+    "tokens_out": 287,
+    "cost_usd": 0.002914,
+    "cached": false
+   }
+  },
+  "raw_text_len": 236
+ }
+]

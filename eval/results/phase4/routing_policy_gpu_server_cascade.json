@@ -1,0 +1,2290 @@
+{
+ "b1": "kimi-k3p1-pro",
+ "fallback": "deepseek-v4p1-flash",
+ "mode": "cascade",
+ "cells": {
+  "code_debug|easy": {
+   "model": "qwen2.5-coder:1.5b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "qwen2.5-coder:1.5b",
+    "llama3.2:3b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "gemma3:12b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "minimax-m3p1-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "qwen2.5-coder:1.5b"
+  },
+  "code_debug|hard": {
+   "model": "phi4:14b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from gemma3:12b to phi4:14b (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "gemma3:12b",
+    "phi4:14b",
+    "qwen2.5:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 9,
+     "acc": 0.4,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 11,
+     "acc": 0.26666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "gemma3:12b"
+  },
+  "code_gen|easy": {
+   "model": "llama3.2:3b",
+   "kind": "local",
+   "reason": "accuracy 100% (0 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "llama3.2:3b",
+    "gemma3:4b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "glm-5p3",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "llama3.2:3b"
+  },
+  "code_gen|hard": {
+   "model": "gpt-oss-120b",
+   "kind": "api",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from qwen2.5:14b to phi4:14b (cell loss vs B1: 2 tasks); HANDED BACK by the guardrail from phi4:14b to hyde/glm-5.3-flash (cell loss vs B1: 1 tasks); HANDED BACK by the guardrail from hyde/glm-5.3-flash to gpt-oss-120b (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "gemini-3.1-flash-lite",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "qwen2.5:14b"
+  },
+  "factual|easy": {
+   "model": "phi3.5:3.8b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from gemma3:1b to gemma3:4b (cell loss vs B1: 3 tasks); HANDED BACK by the guardrail from gemma3:4b to phi3.5:3.8b (cell loss vs B1: 2 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "gemma3:1b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "qwen2.5:14b",
+    "gemma3:12b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "gemma3:1b"
+  },
+  "factual|hard": {
+   "model": "gemma3:12b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from phi3.5:3.8b to gemma3:12b (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "phi3.5:3.8b",
+    "gemma3:12b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 10,
+     "acc": 0.3333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "phi3.5:3.8b"
+  },
+  "logic|easy": {
+   "model": "phi3.5:3.8b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "phi3.5:3.8b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "phi3.5:3.8b"
+  },
+  "logic|hard": {
+   "model": "gpt-oss-120b",
+   "kind": "api",
+   "reason": "accuracy 100% (0 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 9,
+     "acc": 0.4,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 9,
+     "acc": 0.4,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "gpt-oss-120b"
+  },
+  "math|easy": {
+   "model": "qwen3:1.7b",
+   "kind": "local",
+   "reason": "accuracy 100% (0 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "qwen3:1.7b",
+    "llama3.2:3b",
+    "qwen2.5-coder:1.5b",
+    "phi3.5:3.8b",
+    "gemma3:4b",
+    "gemma3:12b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "gpt-oss-120b",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "qwen3:1.7b"
+  },
+  "math|hard": {
+   "model": "granite4:350m",
+   "kind": "local",
+   "reason": "accuracy 100% (0 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "granite4:350m",
+    "qwen2.5-coder:1.5b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "gemma3:12b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "minimax-m3p1-flash",
+    "gpt-oss-120b",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "granite4:350m"
+  },
+  "ner|easy": {
+   "model": "granite4:350m",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "granite4:350m",
+    "llama3.2:1b",
+    "gemma3:1b",
+    "gemma3:4b",
+    "qwen2.5:14b",
+    "gemma3:12b",
+    "phi4:14b",
+    "phi3.5:3.8b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "granite4:350m"
+  },
+  "ner|hard": {
+   "model": "gemma3:4b",
+   "kind": "local",
+   "reason": "accuracy 87% (2 misses of 15) vs B1 1 misses; rule: at most 2 misses and >= 80%; HANDED BACK by the guardrail from granite4:350m to llama3.2:1b (cell loss vs B1: 2 tasks); HANDED BACK by the guardrail from llama3.2:1b to gemma3:4b (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 1,
+   "ladder": [
+    "granite4:350m",
+    "llama3.2:1b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "qwen2.5:14b",
+    "gemma3:12b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "nemotron-lightning-3p5-30b-a3b",
+    "gemini-3.1-flash-lite",
+    "glm-5p3",
+    "deepseek-v4p1-flash",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": true
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "granite4:350m"
+  },
+  "sentiment|easy": {
+   "model": "qwen2.5-coder:1.5b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "qwen2.5-coder:1.5b",
+    "qwen3:1.7b",
+    "llama3.2:3b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "gemma3:12b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "glm-5p3",
+    "gemini-3.1-flash-lite",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "qwen2.5-coder:1.5b"
+  },
+  "sentiment|hard": {
+   "model": "gemma3:4b",
+   "kind": "local",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from qwen2.5-coder:1.5b to llama3.2:1b (cell loss vs B1: 2 tasks); HANDED BACK by the guardrail from llama3.2:1b to llama3.2:3b (cell loss vs B1: 3 tasks); HANDED BACK by the guardrail from llama3.2:3b to gemma3:4b (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "qwen2.5-coder:1.5b",
+    "llama3.2:1b",
+    "llama3.2:3b",
+    "gemma3:4b",
+    "phi3.5:3.8b",
+    "gemma3:12b",
+    "qwen2.5:14b",
+    "phi4:14b",
+    "hyde/glm-5.3-flash",
+    "gpt-oss-120b",
+    "minimax-m3p1-flash",
+    "nemotron-lightning-3p5-30b-a3b",
+    "deepseek-v4p1-flash",
+    "gemini-3.1-flash-lite",
+    "glm-5p3",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "granite4:350m",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "llama3.2:1b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 0,
+     "acc": 1.0,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "qwen2.5-coder:1.5b"
+  },
+  "summarisation|easy": {
+   "model": "phi4:14b",
+   "kind": "local",
+   "reason": "accuracy 87% (2 misses of 15) vs B1 1 misses; rule: at most 2 misses and >= 80%",
+   "n": 15,
+   "b1_misses": 1,
+   "ladder": [
+    "phi4:14b",
+    "deepseek-v4p1-flash",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "llama3.2:1b",
+     "misses": 9,
+     "acc": 0.4,
+     "qualifies": false
+    },
+    {
+     "model": "granite4:350m",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 7,
+     "acc": 0.5333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": true
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "phi4:14b"
+  },
+  "summarisation|hard": {
+   "model": "kimi-k3p1-pro",
+   "kind": "api",
+   "reason": "accuracy 93% (1 misses of 15) vs B1 0 misses; rule: at most 1 misses and >= 80%; HANDED BACK by the guardrail from deepseek-v4p1-flash to kimi-k3p1-pro (cell loss vs B1: 1 tasks)",
+   "n": 15,
+   "b1_misses": 0,
+   "ladder": [
+    "deepseek-v4p1-flash",
+    "kimi-k3p1-pro"
+   ],
+   "considered": [
+    {
+     "model": "llama3.2:1b",
+     "misses": 11,
+     "acc": 0.26666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:1b",
+     "misses": 10,
+     "acc": 0.3333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "granite4:350m",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "qwen3:1.7b",
+     "misses": 9,
+     "acc": 0.4,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5-coder:1.5b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "llama3.2:3b",
+     "misses": 6,
+     "acc": 0.6,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:4b",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "phi3.5:3.8b",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemma3:12b",
+     "misses": 8,
+     "acc": 0.4666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "qwen2.5:14b",
+     "misses": 4,
+     "acc": 0.7333333333333333,
+     "qualifies": false
+    },
+    {
+     "model": "phi4:14b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "hyde/glm-5.3-flash",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "gpt-oss-120b",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "minimax-m3p1-flash",
+     "misses": 5,
+     "acc": 0.6666666666666666,
+     "qualifies": false
+    },
+    {
+     "model": "gemini-3.1-flash-lite",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    },
+    {
+     "model": "nemotron-lightning-3p5-30b-a3b",
+     "misses": 3,
+     "acc": 0.8,
+     "qualifies": false
+    },
+    {
+     "model": "deepseek-v4p1-flash",
+     "misses": 1,
+     "acc": 0.9333333333333333,
+     "qualifies": true
+    },
+    {
+     "model": "glm-5p3",
+     "misses": 2,
+     "acc": 0.8666666666666667,
+     "qualifies": false
+    }
+   ],
+   "level": "cell",
+   "escalate_to": "deepseek-v4p1-flash",
+   "initial_model": "deepseek-v4p1-flash"
+  }
+ },
+ "out_of_scope": {
+  "model": "deepseek-v4p1-flash",
+  "reason": "D9: no category fits -> straight to the fallback model (B2)"
+ },
+ "guardrail": {
+  "margin": 0.03,
+  "confidence": 0.95,
+  "final": {
+   "passed": true,
+   "lower_bound": -0.029166666666666667,
+   "diff_observed": -0.012500000000000067,
+   "router_accuracy": 0.9791666666666666,
+   "b1_accuracy": 0.9916666666666667,
+   "router_cost_usd": 0.07551575
+  },
+  "steps": [
+   {
+    "step": 0,
+    "action": "initial policy",
+    "passed": false,
+    "lower_bound": -0.09166666666666666,
+    "router_accuracy": 0.9291666666666667,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 1,
+    "action": "hand back factual|easy: gemma3:1b -> gemma3:4b",
+    "cell_loss_vs_b1": 3,
+    "passed": false,
+    "lower_bound": -0.0875,
+    "router_accuracy": 0.9333333333333333,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 2,
+    "action": "hand back ner|hard: granite4:350m -> llama3.2:1b",
+    "cell_loss_vs_b1": 2,
+    "passed": false,
+    "lower_bound": -0.08333333333333333,
+    "router_accuracy": 0.9375,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 3,
+    "action": "hand back code_gen|hard: qwen2.5:14b -> phi4:14b",
+    "cell_loss_vs_b1": 2,
+    "passed": false,
+    "lower_bound": -0.07916666666666666,
+    "router_accuracy": 0.9416666666666667,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 4,
+    "action": "hand back sentiment|hard: qwen2.5-coder:1.5b -> llama3.2:1b",
+    "cell_loss_vs_b1": 2,
+    "passed": false,
+    "lower_bound": -0.08333333333333333,
+    "router_accuracy": 0.9375,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 5,
+    "action": "hand back sentiment|hard: llama3.2:1b -> llama3.2:3b",
+    "cell_loss_vs_b1": 3,
+    "passed": false,
+    "lower_bound": -0.07083333333333333,
+    "router_accuracy": 0.9458333333333333,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 6,
+    "action": "hand back factual|easy: gemma3:4b -> phi3.5:3.8b",
+    "cell_loss_vs_b1": 2,
+    "passed": false,
+    "lower_bound": -0.0625,
+    "router_accuracy": 0.9541666666666667,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 7,
+    "action": "hand back summarisation|hard: deepseek-v4p1-flash -> kimi-k3p1-pro",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.058333333333333334,
+    "router_accuracy": 0.9583333333333334,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 8,
+    "action": "hand back code_debug|hard: gemma3:12b -> phi4:14b",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.05416666666666667,
+    "router_accuracy": 0.9625,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 9,
+    "action": "hand back ner|hard: llama3.2:1b -> gemma3:4b",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.04583333333333333,
+    "router_accuracy": 0.9666666666666667,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 10,
+    "action": "hand back code_gen|hard: phi4:14b -> hyde/glm-5.3-flash",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.04583333333333333,
+    "router_accuracy": 0.9666666666666667,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 11,
+    "action": "hand back code_gen|hard: hyde/glm-5.3-flash -> gpt-oss-120b",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.0375,
+    "router_accuracy": 0.9708333333333333,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 12,
+    "action": "hand back sentiment|hard: llama3.2:3b -> gemma3:4b",
+    "cell_loss_vs_b1": 1,
+    "passed": false,
+    "lower_bound": -0.03333333333333333,
+    "router_accuracy": 0.975,
+    "b1_accuracy": 0.9916666666666667
+   },
+   {
+    "step": 13,
+    "action": "hand back factual|hard: phi3.5:3.8b -> gemma3:12b",
+    "cell_loss_vs_b1": 1,
+    "passed": true,
+    "lower_bound": -0.029166666666666667,
+    "router_accuracy": 0.9791666666666666,
+    "b1_accuracy": 0.9916666666666667
+   }
+  ]
+ },
+ "solvers_enabled": true,
+ "tier": "gpu_server",
+ "escalation_note": "escalate_to and out_of_scope = B2 (D12 update 2026-11-21); B1 is the reference and the top of each cell ladder",
+ "guardrail_labels": "out-of-fold predicted (category, difficulty)"
+}

@@ -1,0 +1,1506 @@
+[
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Priya Nair works at Google.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Priya Nair",
+     "type": "PERSON"
+    },
+    {
+     "text": "Google",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Priya Nair = PERSON; Google = ORG.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-001"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Amara Singh works at Reliance Industries.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Amara Singh",
+     "type": "PERSON"
+    },
+    {
+     "text": "Reliance Industries",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Amara Singh = PERSON; Reliance Industries = ORG.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-002"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Tata Consultancy Services hired Anand Rajan in Bengaluru on 1 June 2020.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Tata Consultancy Services",
+     "type": "ORG"
+    },
+    {
+     "text": "Anand Rajan",
+     "type": "PERSON"
+    },
+    {
+     "text": "Bengaluru",
+     "type": "LOCATION"
+    },
+    {
+     "text": "1 June 2020",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Organisation named after a family name.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-003"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nAmazon expanded its warehouse network along the Amazon River in 2021.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Amazon",
+     "type": "ORG"
+    },
+    {
+     "text": "Amazon River",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2021",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Company vs river with the same word.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-004"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Georgia Smith moved from Georgia to Paris in March 2015.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Georgia Smith",
+     "type": "PERSON"
+    },
+    {
+     "text": "Georgia",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Paris",
+     "type": "LOCATION"
+    },
+    {
+     "text": "March 2015",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "First name that is also a place name.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-005"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nSiemens Energy and BP agreed terms with Kenya's government in Nairobi on 2020-11-04.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Siemens Energy",
+     "type": "ORG"
+    },
+    {
+     "text": "BP",
+     "type": "ORG"
+    },
+    {
+     "text": "Kenya",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Nairobi",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2020-11-04",
+     "type": "DATE"
+    }
+   ],
+   "alternatives": [
+    {
+     "entities": [
+      {
+       "text": "Siemens Energy",
+       "type": "ORG"
+      },
+      {
+       "text": "BP",
+       "type": "ORG"
+      },
+      {
+       "text": "Kenya",
+       "type": "ORG"
+      },
+      {
+       "text": "Nairobi",
+       "type": "LOCATION"
+      },
+      {
+       "text": "2020-11-04",
+       "type": "DATE"
+      }
+     ]
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "ISO-formatted date; 'government' is not a named entity. Alternative reading accepted (ambiguous span).",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-006"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Jordan Peterson met Jordan's king in Amman.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Jordan Peterson",
+     "type": "PERSON"
+    },
+    {
+     "text": "Jordan",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Amman",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "'Jordan' is a person's name in the first span and the country in the second; possessive 's is not part of the span.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-007"
+ },
+ {
+  "prompt": "Extract all named entities with their types (PERSON, ORG, LOCATION, DATE) from: 'Dr. Kavita Rao of AIIMS Delhi presented the findings in Geneva on 12 May 2021.'",
+  "gold": {
+   "entities": [
+    {
+     "text": "Kavita Rao",
+     "type": "PERSON"
+    },
+    {
+     "text": "AIIMS Delhi",
+     "type": "ORG"
+    },
+    {
+     "text": "Geneva",
+     "type": "LOCATION"
+    },
+    {
+     "text": "12 May 2021",
+     "type": "DATE"
+    }
+   ],
+   "alternatives": [
+    {
+     "entities": [
+      {
+       "text": "Kavita Rao",
+       "type": "PERSON"
+      },
+      {
+       "text": "AIIMS",
+       "type": "ORG"
+      },
+      {
+       "text": "Delhi",
+       "type": "LOCATION"
+      },
+      {
+       "text": "Geneva",
+       "type": "LOCATION"
+      },
+      {
+       "text": "12 May 2021",
+       "type": "DATE"
+      }
+     ]
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "instruction",
+  "note": "Title 'Dr.' is excluded from the PERSON span (stated convention); 'AIIMS Delhi' is one ORG span. Alternative reading accepted (ambiguous span).",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-008"
+ },
+ {
+  "prompt": "Extract all named entities with their types (PERSON, ORG, LOCATION, DATE) from: 'John Okafor joined Tata Steel in 9 November 2017.'",
+  "gold": {
+   "entities": [
+    {
+     "text": "John Okafor",
+     "type": "PERSON"
+    },
+    {
+     "text": "Tata Steel",
+     "type": "ORG"
+    },
+    {
+     "text": "9 November 2017",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "instruction",
+  "note": "Built from a template with known slots: John Okafor = PERSON; Tata Steel = ORG; 9 November 2017 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-009"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Priya Nair and Neha Sharma flew from Sydney to Kerala for a Deutsche Bank meeting in July 2022.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Priya Nair",
+     "type": "PERSON"
+    },
+    {
+     "text": "Neha Sharma",
+     "type": "PERSON"
+    },
+    {
+     "text": "Deutsche Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "Sydney",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Kerala",
+     "type": "LOCATION"
+    },
+    {
+     "text": "July 2022",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Priya Nair = PERSON; Neha Sharma = PERSON; Deutsche Bank = ORG; Sydney = LOCATION; Kerala = LOCATION; July 2022 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-010"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: The conference in Tokyo begins on 1998.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Tokyo",
+     "type": "LOCATION"
+    },
+    {
+     "text": "1998",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Tokyo = LOCATION; 1998 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-011"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nThe Delhi Capitals beat the Mumbai Indians in Dubai on 5 April 2022.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Delhi Capitals",
+     "type": "ORG"
+    },
+    {
+     "text": "Mumbai Indians",
+     "type": "ORG"
+    },
+    {
+     "text": "Dubai",
+     "type": "LOCATION"
+    },
+    {
+     "text": "5 April 2022",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Sports teams named after cities are ORG; the whole team name is one span.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-012"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nThe conference in Oslo begins on 3 March 2021.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Oslo",
+     "type": "LOCATION"
+    },
+    {
+     "text": "3 March 2021",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Oslo = LOCATION; 3 March 2021 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-013"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nMount Kilimanjaro in Tanzania was climbed by Amina Yusuf in January 2022.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Mount Kilimanjaro",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Tanzania",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Amina Yusuf",
+     "type": "PERSON"
+    },
+    {
+     "text": "January 2022",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Mountain with a title-like prefix is one LOCATION span.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-014"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Priya Nair works at Microsoft.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Priya Nair",
+     "type": "PERSON"
+    },
+    {
+     "text": "Microsoft",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Priya Nair = PERSON; Microsoft = ORG.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-015"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"The World Health Organization, headquartered in Geneva, praised Kerala's response in 2021.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "World Health Organization",
+     "type": "ORG"
+    },
+    {
+     "text": "Geneva",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Kerala",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2021",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "'the' is excluded from the ORG span; possessive stripped from Kerala.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-016"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Elena Petrova was born in Dubai.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Elena Petrova",
+     "type": "PERSON"
+    },
+    {
+     "text": "Dubai",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Elena Petrova = PERSON; Dubai = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-017"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Deutsche Bank's chief executive Amara Singh told reporters in Nairobi that the plant would open in 14 Feb 2019.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Amara Singh",
+     "type": "PERSON"
+    },
+    {
+     "text": "Deutsche Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "Nairobi",
+     "type": "LOCATION"
+    },
+    {
+     "text": "14 Feb 2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Amara Singh = PERSON; Deutsche Bank = ORG; Nairobi = LOCATION; 14 Feb 2019 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-018"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: On 5th May 2016, David Cohen left Unilever to join Reliance Industries in Lisbon.",
+  "gold": {
+   "entities": [
+    {
+     "text": "David Cohen",
+     "type": "PERSON"
+    },
+    {
+     "text": "Unilever",
+     "type": "ORG"
+    },
+    {
+     "text": "Reliance Industries",
+     "type": "ORG"
+    },
+    {
+     "text": "Lisbon",
+     "type": "LOCATION"
+    },
+    {
+     "text": "5th May 2016",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: David Cohen = PERSON; Unilever = ORG; Reliance Industries = ORG; Lisbon = LOCATION; 5th May 2016 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-019"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Washington crossed the Delaware, according to historian Eric Foner of Columbia University.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Washington",
+     "type": "PERSON"
+    },
+    {
+     "text": "Delaware",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Eric Foner",
+     "type": "PERSON"
+    },
+    {
+     "text": "Columbia University",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "'Washington' here is the general (a person), not the city or state.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-020"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Chen Wei was born in Lagos.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Chen Wei",
+     "type": "PERSON"
+    },
+    {
+     "text": "Lagos",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Chen Wei = PERSON; Lagos = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-021"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Amara Singh, who studied at Reliance Industries in Sydney, first met Yuki Sato on 21st June 2023.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Yuki Sato",
+     "type": "PERSON"
+    },
+    {
+     "text": "Amara Singh",
+     "type": "PERSON"
+    },
+    {
+     "text": "Reliance Industries",
+     "type": "ORG"
+    },
+    {
+     "text": "Sydney",
+     "type": "LOCATION"
+    },
+    {
+     "text": "21st June 2023",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Yuki Sato = PERSON; Amara Singh = PERSON; Reliance Industries = ORG; Sydney = LOCATION; 21st June 2023 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-022"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"On 15 August 1947, Jawaharlal Nehru addressed the nation from Delhi.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "15 August 1947",
+     "type": "DATE"
+    },
+    {
+     "text": "Jawaharlal Nehru",
+     "type": "PERSON"
+    },
+    {
+     "text": "Delhi",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Date at the start of the sentence.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-023"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Lionel Messi joined Inter Miami in July 2023 after leaving Paris Saint-Germain.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Lionel Messi",
+     "type": "PERSON"
+    },
+    {
+     "text": "Inter Miami",
+     "type": "ORG"
+    },
+    {
+     "text": "July 2023",
+     "type": "DATE"
+    },
+    {
+     "text": "Paris Saint-Germain",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Club names contain place names but are ORG as whole spans.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-024"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"The conference in Toronto begins on 2024-01-30.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Toronto",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2024-01-30",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Toronto = LOCATION; 2024-01-30 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-025"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nTata Steel opened a new office in Chennai.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Tata Steel",
+     "type": "ORG"
+    },
+    {
+     "text": "Chennai",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Tata Steel = ORG; Chennai = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-026"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Ford announced that Henry Ford's grandson would visit Detroit in 2019.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Ford",
+     "type": "ORG"
+    },
+    {
+     "text": "Henry Ford",
+     "type": "PERSON"
+    },
+    {
+     "text": "Detroit",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Same surname as company and person; the company 'Ford' is the subject of the announcement.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-027"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nElena Petrova was born in Lisbon.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Elena Petrova",
+     "type": "PERSON"
+    },
+    {
+     "text": "Lisbon",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Elena Petrova = PERSON; Lisbon = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-028"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Nestle opened a new office in Pune.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Nestle",
+     "type": "ORG"
+    },
+    {
+     "text": "Pune",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Nestle = ORG; Pune = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-029"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"After Rahul Mehta's talk in Germany, Tata Steel and Bank of America signed a deal that was announced on December 12, 2019.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Rahul Mehta",
+     "type": "PERSON"
+    },
+    {
+     "text": "Tata Steel",
+     "type": "ORG"
+    },
+    {
+     "text": "Bank of America",
+     "type": "ORG"
+    },
+    {
+     "text": "Germany",
+     "type": "LOCATION"
+    },
+    {
+     "text": "December 12, 2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Rahul Mehta = PERSON; Tata Steel = ORG; Bank of America = ORG; Germany = LOCATION; December 12, 2019 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-030"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Deutsche Bank announced its quarterly results on 14 Feb 2019.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Deutsche Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "14 Feb 2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Deutsche Bank = ORG; 14 Feb 2019 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-031"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Siemens announced its quarterly results on 9 November 2017.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Siemens",
+     "type": "ORG"
+    },
+    {
+     "text": "9 November 2017",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Siemens = ORG; 9 November 2017 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-032"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nBetween Nairobi, Pune and Kerala, Omar Haddad visited several Deutsche Bank offices before 9 November 2017.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Omar Haddad",
+     "type": "PERSON"
+    },
+    {
+     "text": "Deutsche Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "Nairobi",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Pune",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Kerala",
+     "type": "LOCATION"
+    },
+    {
+     "text": "9 November 2017",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Omar Haddad = PERSON; Deutsche Bank = ORG; Nairobi = LOCATION; Pune = LOCATION; Kerala = LOCATION; 9 November 2017 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-033"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nOn March 3, 2021, Kwame Mensah left University of Oxford to join Infosys in Cairo.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Kwame Mensah",
+     "type": "PERSON"
+    },
+    {
+     "text": "University of Oxford",
+     "type": "ORG"
+    },
+    {
+     "text": "Infosys",
+     "type": "ORG"
+    },
+    {
+     "text": "Cairo",
+     "type": "LOCATION"
+    },
+    {
+     "text": "March 3, 2021",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Kwame Mensah = PERSON; University of Oxford = ORG; Infosys = ORG; Cairo = LOCATION; March 3, 2021 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-034"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"David Cohen was born in Cairo.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "David Cohen",
+     "type": "PERSON"
+    },
+    {
+     "text": "Cairo",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: David Cohen = PERSON; Cairo = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-035"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nNokia, founded in Finland, is now headquartered in Espoo.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Nokia",
+     "type": "ORG"
+    },
+    {
+     "text": "Finland",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Espoo",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "note": "Appositive clause between commas.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-036"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Neha Sharma and Rahul Mehta flew from Dubai to Brazil for a Microsoft meeting in 21st June 2023.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Neha Sharma",
+     "type": "PERSON"
+    },
+    {
+     "text": "Rahul Mehta",
+     "type": "PERSON"
+    },
+    {
+     "text": "Microsoft",
+     "type": "ORG"
+    },
+    {
+     "text": "Dubai",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Brazil",
+     "type": "LOCATION"
+    },
+    {
+     "text": "21st June 2023",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Neha Sharma = PERSON; Rahul Mehta = PERSON; Microsoft = ORG; Dubai = LOCATION; Brazil = LOCATION; 21st June 2023 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-037"
+ },
+ {
+  "prompt": "Here's a line from a news article:\n\nFatima Khan joined Infosys in 2020-07-15.\n\nPull out every person, organisation, location and date it mentions, with the type of each.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Fatima Khan",
+     "type": "PERSON"
+    },
+    {
+     "text": "Infosys",
+     "type": "ORG"
+    },
+    {
+     "text": "2020-07-15",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "note": "Built from a template with known slots: Fatima Khan = PERSON; Infosys = ORG; 2020-07-15 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-038"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Vikram Joshi works at Tata Steel.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Vikram Joshi",
+     "type": "PERSON"
+    },
+    {
+     "text": "Tata Steel",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Vikram Joshi = PERSON; Tata Steel = ORG.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-039"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: After David Cohen's talk in Kenya, World Bank and Unilever signed a deal that was announced on December 12, 2019.",
+  "gold": {
+   "entities": [
+    {
+     "text": "David Cohen",
+     "type": "PERSON"
+    },
+    {
+     "text": "World Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "Unilever",
+     "type": "ORG"
+    },
+    {
+     "text": "Kenya",
+     "type": "LOCATION"
+    },
+    {
+     "text": "December 12, 2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: David Cohen = PERSON; World Bank = ORG; Unilever = ORG; Kenya = LOCATION; December 12, 2019 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-040"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Flipkart's chief executive Rahul Mehta told reporters in Tokyo that the plant would open in 1998.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Rahul Mehta",
+     "type": "PERSON"
+    },
+    {
+     "text": "Flipkart",
+     "type": "ORG"
+    },
+    {
+     "text": "Tokyo",
+     "type": "LOCATION"
+    },
+    {
+     "text": "1998",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Rahul Mehta = PERSON; Flipkart = ORG; Tokyo = LOCATION; 1998 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-041"
+ },
+ {
+  "prompt": "Extract all named entities with their types (PERSON, ORG, LOCATION, DATE) from: 'Chen Wei joined Nestle in 3 March 2021.'",
+  "gold": {
+   "entities": [
+    {
+     "text": "Chen Wei",
+     "type": "PERSON"
+    },
+    {
+     "text": "Nestle",
+     "type": "ORG"
+    },
+    {
+     "text": "3 March 2021",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "instruction",
+  "note": "Built from a template with known slots: Chen Wei = PERSON; Nestle = ORG; 3 March 2021 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-042"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Unilever opened a new office in Berlin.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Unilever",
+     "type": "ORG"
+    },
+    {
+     "text": "Berlin",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Unilever = ORG; Berlin = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-043"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Neha Sharma works at Flipkart.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Neha Sharma",
+     "type": "PERSON"
+    },
+    {
+     "text": "Flipkart",
+     "type": "ORG"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Neha Sharma = PERSON; Flipkart = ORG.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-044"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Microsoft opened a new office in Cairo.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Microsoft",
+     "type": "ORG"
+    },
+    {
+     "text": "Cairo",
+     "type": "LOCATION"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Microsoft = ORG; Cairo = LOCATION.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-045"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Tata Steel announced its quarterly results on 2020-07-15.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Tata Steel",
+     "type": "ORG"
+    },
+    {
+     "text": "2020-07-15",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Tata Steel = ORG; 2020-07-15 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-046"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"World Bank announced its quarterly results on 14 Feb 2019.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "World Bank",
+     "type": "ORG"
+    },
+    {
+     "text": "14 Feb 2019",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: World Bank = ORG; 14 Feb 2019 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-047"
+ },
+ {
+  "prompt": "Tag the people, organisations, places and dates in this sentence: The conference in Tokyo begins on 2024-01-30.",
+  "gold": {
+   "entities": [
+    {
+     "text": "Tokyo",
+     "type": "LOCATION"
+    },
+    {
+     "text": "2024-01-30",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "note": "Built from a template with known slots: Tokyo = LOCATION; 2024-01-30 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-048"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Apple's iPhone sales in India rose after Tim Cook visited Mumbai in April 2023.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Apple",
+     "type": "ORG"
+    },
+    {
+     "text": "India",
+     "type": "LOCATION"
+    },
+    {
+     "text": "Tim Cook",
+     "type": "PERSON"
+    },
+    {
+     "text": "Mumbai",
+     "type": "LOCATION"
+    },
+    {
+     "text": "April 2023",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "note": "Product name 'iPhone' is not one of the four types, so it is not tagged.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "hand-written, reviewed",
+  "id": "ner-049"
+ },
+ {
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Lars Eriksson joined Reliance Industries in July 2022.\"",
+  "gold": {
+   "entities": [
+    {
+     "text": "Lars Eriksson",
+     "type": "PERSON"
+    },
+    {
+     "text": "Reliance Industries",
+     "type": "ORG"
+    },
+    {
+     "text": "July 2022",
+     "type": "DATE"
+    }
+   ]
+  },
+  "source": "template",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "note": "Built from a template with known slots: Lars Eriksson = PERSON; Reliance Industries = ORG; July 2022 = DATE.",
+  "category": "ner",
+  "grader": "ner_f1",
+  "split": "unsplit",
+  "gold_checks": "template slots",
+  "id": "ner-050"
+ }
+]
