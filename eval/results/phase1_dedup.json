@@ -1,0 +1,55 @@
+{
+ "method": "minilm",
+ "threshold": 0.95,
+ "by_category": {
+  "factual": {
+   "max_similarity": 0.842,
+   "flagged_pairs": []
+  },
+  "math": {
+   "max_similarity": 0.96,
+   "flagged_pairs": [
+    [
+     "math-001",
+     "math-010",
+     0.96
+    ],
+    [
+     "math-002",
+     "math-013",
+     0.953
+    ]
+   ]
+  },
+  "sentiment": {
+   "max_similarity": 0.826,
+   "flagged_pairs": []
+  },
+  "summarisation": {
+   "max_similarity": 0.671,
+   "flagged_pairs": []
+  },
+  "ner": {
+   "max_similarity": 0.951,
+   "flagged_pairs": [
+    [
+     "ner-011",
+     "ner-048",
+     0.951
+    ]
+   ]
+  },
+  "code_debug": {
+   "max_similarity": 0.769,
+   "flagged_pairs": []
+  },
+  "logic": {
+   "max_similarity": 0.931,
+   "flagged_pairs": []
+  },
+  "code_gen": {
+   "max_similarity": 0.801,
+   "flagged_pairs": []
+  }
+ }
+}

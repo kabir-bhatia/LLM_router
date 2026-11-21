@@ -1,0 +1,10 @@
+{
+ "math": "Solve the problem. You may show brief working. End with a final line exactly of the form `ANSWER: <number>` (digits only, no units, no commas).",
+ "logic": "Solve the puzzle. You may show brief working. End with a final line exactly of the form `ANSWER: <value>`, where <value> is only the name/item/position asked for.",
+ "sentiment": "Classify the sentiment as exactly one of: positive, negative, mixed, neutral. Give a one-sentence reason, then end with a final line exactly of the form `ANSWER: <label>`.",
+ "ner": "Extract the named entities. Return only JSON: a list of objects {\"text\": \"<exact span>\", \"type\": \"PERSON|ORG|LOCATION|DATE\"}. No other text.",
+ "code_debug": "Find the bug and return only the corrected function, complete, in a single Python code block. No explanation outside the code block.",
+ "code_gen": "Return only the requested function in a single Python code block, with the exact name and signature given. No explanation outside the code block.",
+ "summarisation": "Follow the length/format constraint in the request exactly. Use only facts stated in the text; do not add anything. Return only the summary.",
+ "factual": "Answer accurately and concisely, in at most 120 words. Do not pad."
+}

@@ -1,0 +1,94 @@
+{
+ "B1": {
+  "model": "kimi-k3p1-pro",
+  "accuracy": 0.9916666666666667,
+  "cost_usd": 0.440846,
+  "rule": "most accurate API model on the dev tasks; ties go to the cheaper"
+ },
+ "B2": {
+  "model": "deepseek-v4p1-flash",
+  "accuracy": 0.9875,
+  "cost_usd": 0.0820851,
+  "diff_vs_b1_lower_bound": -0.020833333333333332,
+  "rule": "D12: cheapest single API model at most 3 points worse than B1 at 95% confidence (one-sided paired bootstrap over all 240 dev tasks)"
+ },
+ "n_dev_tasks": 240,
+ "table": [
+  {
+   "model": "kimi-k3p1-pro",
+   "accuracy": 0.9916666666666667,
+   "cost_usd": 0.440846,
+   "n": 240,
+   "noninferior_to_b1": true,
+   "diff_lower_bound": 0.0,
+   "diff_observed": 0.0
+  },
+  {
+   "model": "deepseek-v4p1-flash",
+   "accuracy": 0.9875,
+   "cost_usd": 0.0820851,
+   "n": 240,
+   "noninferior_to_b1": true,
+   "diff_lower_bound": -0.020833333333333332,
+   "diff_observed": -0.004166666666666652
+  },
+  {
+   "model": "gpt-oss-120b",
+   "accuracy": 0.9708333333333333,
+   "cost_usd": 0.028641899999999998,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.041666666666666664,
+   "diff_observed": -0.02083333333333337
+  },
+  {
+   "model": "gemini-3.1-flash-lite",
+   "accuracy": 0.9666666666666667,
+   "cost_usd": 0.1050665,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.04583333333333333,
+   "diff_observed": -0.025000000000000022
+  },
+  {
+   "model": "glm-5p3",
+   "accuracy": 0.95,
+   "cost_usd": 0.13417980000000002,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.06666666666666667,
+   "diff_observed": -0.04166666666666674
+  },
+  {
+   "model": "hyde/glm-5.3-flash",
+   "accuracy": 0.9416666666666667,
+   "cost_usd": 0.01377545,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.07916666666666666,
+   "diff_observed": -0.050000000000000044
+  },
+  {
+   "model": "nemotron-lightning-3p5-30b-a3b",
+   "accuracy": 0.9375,
+   "cost_usd": 0.049923,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.07916666666666666,
+   "diff_observed": -0.054166666666666696
+  },
+  {
+   "model": "minimax-m3p1-flash",
+   "accuracy": 0.9208333333333333,
+   "cost_usd": 0.03577245,
+   "n": 240,
+   "noninferior_to_b1": false,
+   "diff_lower_bound": -0.1,
+   "diff_observed": -0.07083333333333341
+  }
+ ],
+ "score_files": [
+  "D:\\LLM_Router\\eval\\results\\phase3\\graded_cpu_scores.jsonl",
+  "D:\\LLM_Router\\eval\\results\\phase3\\graded_gpu_scores.jsonl"
+ ]
+}

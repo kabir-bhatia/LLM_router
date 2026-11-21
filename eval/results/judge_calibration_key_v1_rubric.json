@@ -1,0 +1,1122 @@
+[
+ {
+  "task_id": "summ-047",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "summarisation",
+  "item": 1,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Both required key points (Voss's unemployment cut from 8 to 5 percent and Rhee's 12 percent minimum wage rise) are missing.",
+    "judge": "glm",
+    "tokens_in": 400,
+    "tokens_out": 39,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Both required key points (Voss's unemployment cut from 8 to 5 percent and Rhee's 12 percent minimum wage rise promise) are missing from the candidate answer.",
+    "judge": "qwen",
+    "tokens_in": 455,
+    "tokens_out": 157,
+    "cost_usd": 0.001852,
+    "cached": false
+   }
+  },
+  "raw_text_len": 96
+ },
+ {
+  "task_id": "summ-009",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 2,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Missing required key points about the 71% accuracy on dirty/crushed items and the 180,000 euro cost with ~5-year payback.",
+    "judge": "glm",
+    "tokens_in": 444,
+    "tokens_out": 39,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Two required key points are missing: the drop to 71% accuracy for dirty/crushed items, and the cost of 180,000 euros with a five-year payback period.",
+    "judge": "qwen",
+    "tokens_in": 511,
+    "tokens_out": 179,
+    "cost_usd": 0.002096,
+    "cached": false
+   }
+  },
+  "raw_text_len": 273
+ },
+ {
+  "task_id": "summ-031",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 3,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nMissing required key points: 18 homes evacuated/no injuries, and fire started near forklift battery charging area with cause unknown; also \"quickly brought under control\" contradicts the six-hour effort.",
+    "judge": "glm",
+    "tokens_in": 433,
+    "tokens_out": 49,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Two required key points are missing (18 homes evacuated/no one injured; started near forklift battery charging area), and the claim that the fire was \"quickly brought under control\" contradicts the reference's six-hour duration.",
+    "judge": "qwen",
+    "tokens_in": 483,
+    "tokens_out": 250,
+    "cost_usd": 0.002466,
+    "cached": false
+   }
+  },
+  "raw_text_len": 273
+ },
+ {
+  "task_id": "summ-012",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 4,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe required detail \"20 hectares a day\" is missing from the candidate answer.",
+    "judge": "glm",
+    "tokens_in": 458,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required detail that each drone covers 20 hectares a day, and it misrepresents the growers' position by saying they are \"concerned about the impact on employment,\" when the reference states growers say they are short of workers (i.e., they support the drones).",
+    "judge": "qwen",
+    "tokens_in": 515,
+    "tokens_out": 391,
+    "cost_usd": 0.003376,
+    "cached": false
+   }
+  },
+  "raw_text_len": 317
+ },
+ {
+  "task_id": "fact-003",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 5,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe candidate covers both required points: total value of goods and services produced in an economy (country) over a specific period.",
+    "judge": "glm",
+    "tokens_in": 249,
+    "tokens_out": 33,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (total value of goods and services; produced within a country in a period) are present and nothing stated is incorrect.",
+    "judge": "qwen",
+    "tokens_in": 293,
+    "tokens_out": 161,
+    "cost_usd": 0.001552,
+    "cached": false
+   }
+  },
+  "raw_text_len": 147
+ },
+ {
+  "task_id": "fact-028",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 6,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required point that some violet light is absorbed by the upper atmosphere.",
+    "judge": "glm",
+    "tokens_in": 363,
+    "tokens_out": 59,
+    "cost_usd": 0.0,
+    "cached": true
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required point that some violet light is absorbed by the upper atmosphere.",
+    "judge": "qwen",
+    "tokens_in": 406,
+    "tokens_out": 295,
+    "cost_usd": 0.002582,
+    "cached": true
+   }
+  },
+  "raw_text_len": 537
+ },
+ {
+  "task_id": "fact-039",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 7,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (US\u2013Soviet rivalry after WWII, no direct war with arms race and proxy wars), and the added details are accurate.",
+    "judge": "glm",
+    "tokens_in": 363,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (US vs. Soviet rivalry after WWII, and no direct war with arms race/proxy conflicts) are clearly present, and all additional details are factually accurate.",
+    "judge": "qwen",
+    "tokens_in": 414,
+    "tokens_out": 304,
+    "cost_usd": 0.002652,
+    "cached": false
+   }
+  },
+  "raw_text_len": 604
+ },
+ {
+  "task_id": "summ-031",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 8,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required point that no one was injured.",
+    "judge": "glm",
+    "tokens_in": 436,
+    "tokens_out": 82,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits two required key points: \"no one injured\" and \"cause unknown,\" and the phrasing \"the warehouse was evacuated for 18 homes\" misrepresents the reference (it was the nearby homes that were evacuated, not the warehouse).",
+    "judge": "qwen",
+    "tokens_in": 485,
+    "tokens_out": 327,
+    "cost_usd": 0.002932,
+    "cached": false
+   }
+  },
+  "raw_text_len": 292
+ },
+ {
+  "task_id": "fact-019",
+  "model": "qwen3:1.7b",
+  "cov": 0.3333333333333333,
+  "category": "factual",
+  "item": 9,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer covers all required points: higher borrowing costs reduce spending/demand, curbing inflation, with the trade-off of slower growth and potential unemployment/recession.",
+    "judge": "glm",
+    "tokens_in": 289,
+    "tokens_out": 40,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present: higher borrowing costs reduce spending/demand, this curbs inflation, and the trade-off is slower growth and employment.",
+    "judge": "qwen",
+    "tokens_in": 332,
+    "tokens_out": 179,
+    "cost_usd": 0.001738,
+    "cached": false
+   }
+  },
+  "raw_text_len": 244
+ },
+ {
+  "task_id": "summ-013",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 10,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present and accurately stated.",
+    "judge": "glm",
+    "tokens_in": 479,
+    "tokens_out": 19,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are accurately present with no contradictions or errors.",
+    "judge": "qwen",
+    "tokens_in": 535,
+    "tokens_out": 211,
+    "cost_usd": 0.002336,
+    "cached": false
+   }
+  },
+  "raw_text_len": 437
+ },
+ {
+  "task_id": "fact-039",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 11,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer correctly covers both required points, but it wrongly states the Cold War led to the formation of the United Nations, which was founded in 1945 before the Cold War began.",
+    "judge": "glm",
+    "tokens_in": 332,
+    "tokens_out": 70,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that the Cold War led to the formation of the United Nations, which was actually established in 1945 before the Cold War began.",
+    "judge": "qwen",
+    "tokens_in": 382,
+    "tokens_out": 404,
+    "cost_usd": 0.003188,
+    "cached": false
+   }
+  },
+  "raw_text_len": 412
+ },
+ {
+  "task_id": "summ-039",
+  "model": "gemma3:1b",
+  "cov": 0.0,
+  "category": "summarisation",
+  "item": 12,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe required point about the fishing industry of 40,000 jobs ending and toxic dust spreading is only vaguely covered by \"economic hardship and environmental damage.\"",
+    "judge": "glm",
+    "tokens_in": 480,
+    "tokens_out": 88,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits required details: no mention of rivers being diverted for cotton irrigation, no mention of the fishing industry's 40,000 jobs or toxic dust, and does not specify the northern part's recovery.",
+    "judge": "qwen",
+    "tokens_in": 547,
+    "tokens_out": 447,
+    "cost_usd": 0.003776,
+    "cached": false
+   }
+  },
+  "raw_text_len": 328
+ },
+ {
+  "task_id": "summ-013",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 13,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits required specifics: the 12 percent satisfaction gain with unchanged productivity, the 20 percent lower promotion rate for juniors remote more than four days, and in-person days for new hires.",
+    "judge": "glm",
+    "tokens_in": 460,
+    "tokens_out": 74,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the specific figures and conditions required: it does not mention three days a week, 12 percent higher satisfaction, unchanged productivity, junior staff, over four days remotely, or the 20 percent reduced promotion likelihood.",
+    "judge": "qwen",
+    "tokens_in": 520,
+    "tokens_out": 315,
+    "cost_usd": 0.00293,
+    "cached": false
+   }
+  },
+  "raw_text_len": 388
+ },
+ {
+  "task_id": "fact-002",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 14,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points (476 CE and Odoacer deposing Romulus Augustulus) are present, and the added detail on gradual decline is accurate.",
+    "judge": "glm",
+    "tokens_in": 405,
+    "tokens_out": 40,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (476 CE date and Odoacer deposing Romulus Augustulus) are present, and the additional details are historically accurate.",
+    "judge": "qwen",
+    "tokens_in": 459,
+    "tokens_out": 306,
+    "cost_usd": 0.002754,
+    "cached": false
+   }
+  },
+  "raw_text_len": 696
+ },
+ {
+  "task_id": "fact-030",
+  "model": "gemma3:1b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 15,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer correctly covers timing-dependent concurrent access to shared data, but incorrectly claims the program's execution is stalled waiting for a resource, which contradicts the definition of a race condition.",
+    "judge": "glm",
+    "tokens_in": 370,
+    "tokens_out": 77,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that \"the program's execution is stalled while waiting for a resource to become available,\" which describes blocking or deadlock, not a race condition, and contradicts the reference.",
+    "judge": "qwen",
+    "tokens_in": 414,
+    "tokens_out": 325,
+    "cost_usd": 0.002778,
+    "cached": false
+   }
+  },
+  "raw_text_len": 699
+ },
+ {
+  "task_id": "fact-048",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 16,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe candidate correctly states that position and momentum cannot both be known with arbitrary precision, matching the required key point.",
+    "judge": "glm",
+    "tokens_in": 303,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The candidate correctly states that position and momentum cannot both be known with arbitrary precision simultaneously, satisfying the required key point, and nothing stated is incorrect.",
+    "judge": "qwen",
+    "tokens_in": 345,
+    "tokens_out": 354,
+    "cost_usd": 0.002814,
+    "cached": false
+   }
+  },
+  "raw_text_len": 350
+ },
+ {
+  "task_id": "fact-021",
+  "model": "gemma3:1b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 17,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer states that gases trap heat and warm the planet (both required points), and the human-emissions detail is correct; the \"heat from the sun\" phrasing is loose but clarified by the re-emission explanation.",
+    "judge": "glm",
+    "tokens_in": 342,
+    "tokens_out": 85,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate states that gases \"trap heat from the sun,\" which contradicts the reference's correct explanation that they trap heat radiated from Earth's surface; this is a factual error about the mechanism of the greenhouse effect.",
+    "judge": "qwen",
+    "tokens_in": 385,
+    "tokens_out": 688,
+    "cost_usd": 0.004898,
+    "cached": false
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "summ-004",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 18,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits the required figures (3,200 counted, up from 2,500) and the required point that climate change is shrinking habitat.",
+    "judge": "glm",
+    "tokens_in": 462,
+    "tokens_out": 39,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the specific figures (3,200 up from 2,500), does not state that revenge killings were halved, and entirely omits climate change shrinking habitat, all of which are required key points.",
+    "judge": "qwen",
+    "tokens_in": 520,
+    "tokens_out": 324,
+    "cost_usd": 0.002984,
+    "cached": false
+   }
+  },
+  "raw_text_len": 338
+ },
+ {
+  "task_id": "fact-023",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 19,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (Rayleigh scattering and shorter/blue wavelengths scattering more) are present and correct.",
+    "judge": "glm",
+    "tokens_in": 286,
+    "tokens_out": 28,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (Rayleigh scattering and shorter/blue wavelengths scattering more) are present, and no incorrect or contradictory information is stated.",
+    "judge": "qwen",
+    "tokens_in": 329,
+    "tokens_out": 422,
+    "cost_usd": 0.00319,
+    "cached": false
+   }
+  },
+  "raw_text_len": 289
+ },
+ {
+  "task_id": "summ-007",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 20,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+    "judge": "glm",
+    "tokens_in": 454,
+    "tokens_out": 22,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present and no factual errors or contradictions with the reference are found.",
+    "judge": "qwen",
+    "tokens_in": 502,
+    "tokens_out": 303,
+    "cost_usd": 0.002822,
+    "cached": false
+   }
+  },
+  "raw_text_len": 529
+ },
+ {
+  "task_id": "fact-010",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 21,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly explains that phases result from seeing different portions of the sunlit half as the Moon orbits Earth, with no errors.",
+    "judge": "glm",
+    "tokens_in": 407,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The candidate answer correctly states that we see different parts of the sunlit portion as the Moon orbits Earth, fulfilling the required key point, and all additional details are accurate.",
+    "judge": "qwen",
+    "tokens_in": 459,
+    "tokens_out": 272,
+    "cost_usd": 0.00255,
+    "cached": false
+   }
+  },
+  "raw_text_len": 771
+ },
+ {
+  "task_id": "fact-010",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 22,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe required key point (seeing different parts of the sunlit half as it orbits) is present, but the answer adds a false claim that phases happen because the Moon is not a perfect sphere and its shadow shifts.",
+    "judge": "glm",
+    "tokens_in": 292,
+    "tokens_out": 51,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate incorrectly states that phases happen \"because the Moon is not a perfect sphere and its shadow shifts over time,\" which is factually wrong and contradicts the reference explanation.",
+    "judge": "qwen",
+    "tokens_in": 334,
+    "tokens_out": 315,
+    "cost_usd": 0.002558,
+    "cached": false
+   }
+  },
+  "raw_text_len": 303
+ },
+ {
+  "task_id": "fact-025",
+  "model": "qwen3:1.7b",
+  "cov": 0.0,
+  "category": "factual",
+  "item": 23,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly states it's a loan by the investor, includes periodic interest payments, and repayment of principal.",
+    "judge": "glm",
+    "tokens_in": 293,
+    "tokens_out": 30,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present: the investor lends money, receives periodic interest payments, and the principal is repaid at maturity.",
+    "judge": "qwen",
+    "tokens_in": 336,
+    "tokens_out": 167,
+    "cost_usd": 0.001674,
+    "cached": false
+   }
+  },
+  "raw_text_len": 321
+ },
+ {
+  "task_id": "fact-026",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 24,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer covers both required points\u2014harmless version of a pathogen and memory cells\u2014and correctly adds the faster later response.",
+    "judge": "glm",
+    "tokens_in": 323,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (harmless antigen/pathogen introduced; immune system builds memory) are clearly present, and no factual errors or contradictions are found.",
+    "judge": "qwen",
+    "tokens_in": 365,
+    "tokens_out": 249,
+    "cost_usd": 0.002224,
+    "cached": false
+   }
+  },
+  "raw_text_len": 451
+ },
+ {
+  "task_id": "summ-039",
+  "model": "qwen3:1.7b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 25,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits the required 40,000 fishing jobs and the 2005 dam helping the northern part recover, and wrongly implies the shrubs aided northern recovery.",
+    "judge": "glm",
+    "tokens_in": 481,
+    "tokens_out": 42,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The candidate omits the required key point about the fishing industry (40,000 jobs) and toxic dust, and omits the 2005 dam helping the northern part recover while the southern part stays dry; it also misleadingly attributes northern recovery to shrubs rather than the dam.",
+    "judge": "qwen",
+    "tokens_in": 542,
+    "tokens_out": 399,
+    "cost_usd": 0.003478,
+    "cached": false
+   }
+  },
+  "raw_text_len": 278
+ },
+ {
+  "task_id": "fact-048",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 26,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe candidate correctly states that position and momentum cannot both be simultaneously known with perfect precision, and the added detail (formula, fundamental nature) is accurate.",
+    "judge": "glm",
+    "tokens_in": 374,
+    "tokens_out": 38,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The candidate correctly states that position and momentum cannot both be exactly known simultaneously (required point) and notes this is fundamental to quantum mechanics rather than a measurement limitation (optional point), with no contradictions to the reference.",
+    "judge": "qwen",
+    "tokens_in": 418,
+    "tokens_out": 401,
+    "cost_usd": 0.003242,
+    "cached": false
+   }
+  },
+  "raw_text_len": 615
+ },
+ {
+  "task_id": "summ-038",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 27,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe required detail that the payment will be made in November is missing (only the 180 million cost is included).",
+    "judge": "glm",
+    "tokens_in": 406,
+    "tokens_out": 106,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The required key point \"paid in November\" is missing from the candidate answer.",
+    "judge": "qwen",
+    "tokens_in": 466,
+    "tokens_out": 296,
+    "cost_usd": 0.002708,
+    "cached": false
+   }
+  },
+  "raw_text_len": 185
+ },
+ {
+  "task_id": "summ-026",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 28,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits the required \"six community centres from 1 November\" detail and the \"needs Saturday volunteers\" key point.",
+    "judge": "glm",
+    "tokens_in": 404,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 Two required key points are missing: the answer does not specify \"six community centres from 1 November\" and does not mention the need for Saturday volunteers.",
+    "judge": "qwen",
+    "tokens_in": 457,
+    "tokens_out": 195,
+    "cost_usd": 0.002084,
+    "cached": false
+   }
+  },
+  "raw_text_len": 204
+ },
+ {
+  "task_id": "fact-018",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "factual",
+  "item": 29,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present: small fast memory near/within the CPU, stores frequently accessed data, and reduces slow main-memory (RAM) accesses.",
+    "judge": "glm",
+    "tokens_in": 352,
+    "tokens_out": 40,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present (small fast memory near/within the CPU, stores frequently accessed data, reduces slow main-memory accesses), and no incorrect statements are made.",
+    "judge": "qwen",
+    "tokens_in": 395,
+    "tokens_out": 265,
+    "cost_usd": 0.00238,
+    "cached": false
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "summ-036",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 30,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+    "judge": "glm",
+    "tokens_in": 431,
+    "tokens_out": 22,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The required key point \"about 11 hours\" (flight duration) is missing from the candidate answer.",
+    "judge": "qwen",
+    "tokens_in": 487,
+    "tokens_out": 356,
+    "cost_usd": 0.00311,
+    "cached": false
+   }
+  },
+  "raw_text_len": 347
+ },
+ {
+  "task_id": "summ-019",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 31,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+    "judge": "glm",
+    "tokens_in": 416,
+    "tokens_out": 22,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 The required key point that the Silk Road carried diseases is missing from the candidate answer.",
+    "judge": "qwen",
+    "tokens_in": 461,
+    "tokens_out": 167,
+    "cost_usd": 0.001924,
+    "cached": false
+   }
+  },
+  "raw_text_len": 253
+ },
+ {
+  "task_id": "fact-015",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 32,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe answer correctly states it began primarily in Britain in the late 18th century and covers machines, factories, and steam power, with correct optional details like urbanization.",
+    "judge": "glm",
+    "tokens_in": 364,
+    "tokens_out": 42,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (Britain, late 18th century; machines, factories, steam power) are present, and all additional details are factually accurate.",
+    "judge": "qwen",
+    "tokens_in": 411,
+    "tokens_out": 311,
+    "cost_usd": 0.002688,
+    "cached": false
+   }
+  },
+  "raw_text_len": 654
+ },
+ {
+  "task_id": "summ-011",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 33,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 the required key point about planting a sapling grown from the tree's acorns is missing.",
+    "judge": "glm",
+    "tokens_in": 439,
+    "tokens_out": 27,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2013 The candidate omits the required key point that a sapling grown from the tree's acorns will be planted, and also does not mention the tree's name \"Old Warden.\"",
+    "judge": "qwen",
+    "tokens_in": 506,
+    "tokens_out": 258,
+    "cost_usd": 0.00256,
+    "cached": false
+   }
+  },
+  "raw_text_len": 101
+ },
+ {
+  "task_id": "fact-038",
+  "model": "gemma3:1b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 34,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nBoth required key points are present (sustained rise in general price level; money buys less/purchasing power erodes), and the extra details are correct.",
+    "judge": "glm",
+    "tokens_in": 317,
+    "tokens_out": 41,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (sustained/general rise in prices and reduced purchasing power) are clearly present, and the additional details are accurate.",
+    "judge": "qwen",
+    "tokens_in": 361,
+    "tokens_out": 240,
+    "cost_usd": 0.002162,
+    "cached": false
+   }
+  },
+  "raw_text_len": 540
+ },
+ {
+  "task_id": "fact-009",
+  "model": "qwen3:1.7b",
+  "cov": 0.5,
+  "category": "factual",
+  "item": 35,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nThe candidate correctly identifies a recession as a milder decline and a depression as more severe and prolonged, matching both required key points.",
+    "judge": "glm",
+    "tokens_in": 327,
+    "tokens_out": 34,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 The candidate correctly identifies recession as a shorter/milder decline and depression as more severe and prolonged, covering both required key points without any factual errors.",
+    "judge": "qwen",
+    "tokens_in": 371,
+    "tokens_out": 409,
+    "cost_usd": 0.003196,
+    "cached": false
+   }
+  },
+  "raw_text_len": 354
+ },
+ {
+  "task_id": "fact-038",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "factual",
+  "item": 36,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required points (general rise in prices and reduced purchasing power) are present, and the extra details are correct.",
+    "judge": "glm",
+    "tokens_in": 271,
+    "tokens_out": 31,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 Both required key points (general rise in prices and reduction in purchasing power) are present, and the additional details are accurate.",
+    "judge": "qwen",
+    "tokens_in": 314,
+    "tokens_out": 219,
+    "cost_usd": 0.001942,
+    "cached": false
+   }
+  },
+  "raw_text_len": 284
+ },
+ {
+  "task_id": "summ-040",
+  "model": "gemma3:1b",
+  "cov": 0.3333333333333333,
+  "category": "summarisation",
+  "item": 37,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe answer omits all three required key points (1966 closure, 9 of 24 km reopening, \u00a34 million still needed for the bridge).",
+    "judge": "glm",
+    "tokens_in": 424,
+    "tokens_out": 84,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 All three required key points are missing: no mention of the 1966 closure or \"next year,\" no mention of 9 of 24 km, and no mention of the \u00a34 million needed for the bridge.",
+    "judge": "qwen",
+    "tokens_in": 486,
+    "tokens_out": 216,
+    "cost_usd": 0.002268,
+    "cached": false
+   }
+  },
+  "raw_text_len": 173
+ },
+ {
+  "task_id": "summ-024",
+  "model": "qwen3:1.7b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 38,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required points are present (120,000 jars recalled, unlisted allergen, refund available), and the added details are correct per the reference.",
+    "judge": "glm",
+    "tokens_in": 425,
+    "tokens_out": 162,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present (recall of 120,000 jars, unlisted allergen, refund available), and no statement contradicts the reference.",
+    "judge": "qwen",
+    "tokens_in": 487,
+    "tokens_out": 554,
+    "cost_usd": 0.004298,
+    "cached": false
+   }
+  },
+  "raw_text_len": 334
+ },
+ {
+  "task_id": "summ-019",
+  "model": "qwen3:1.7b",
+  "cov": 1.0,
+  "category": "summarisation",
+  "item": 39,
+  "verdicts": {
+   "glm": {
+    "passed": true,
+    "reason": "VERDICT: PASS\nAll three required key points are present and nothing contradicts the reference.",
+    "judge": "glm",
+    "tokens_in": 438,
+    "tokens_out": 22,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": true,
+    "reason": "VERDICT: PASS \u2014 All three required key points are present and no factual errors or contradictions with the reference are found.",
+    "judge": "qwen",
+    "tokens_in": 483,
+    "tokens_out": 255,
+    "cost_usd": 0.002496,
+    "cached": false
+   }
+  },
+  "raw_text_len": 351
+ },
+ {
+  "task_id": "summ-034",
+  "model": "gemma3:1b",
+  "cov": 0.6666666666666666,
+  "category": "summarisation",
+  "item": 40,
+  "verdicts": {
+   "glm": {
+    "passed": false,
+    "reason": "VERDICT: FAIL\nThe candidate omits the placebo comparison (1.9 fewer days) and the six-month duration/over-65 exclusion and approval plans, so two required key points are missing.",
+    "judge": "glm",
+    "tokens_in": 445,
+    "tokens_out": 44,
+    "cost_usd": 0.0,
+    "cached": false
+   },
+   "qwen": {
+    "passed": false,
+    "reason": "VERDICT: FAIL \u2014 All three required key points are missing or incomplete: no mention of the 1.9 placebo comparison, no 7 percent figure for side effects, and no reference to the six-month duration, exclusion of over-65s, or upcoming approval application.",
+    "judge": "qwen",
+    "tokens_in": 497,
+    "tokens_out": 248,
+    "cost_usd": 0.002482,
+    "cached": false
+   }
+  },
+  "raw_text_len": 236
+ }
+]

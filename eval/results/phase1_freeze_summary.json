@@ -1,0 +1,130 @@
+{
+ "sha256": "7246113c34a9cc6bdf58cdcbc44f7665bacd1cc41100ccf7f346d98400462344",
+ "n": 400,
+ "cells": {
+  "factual|easy|dev": 15,
+  "factual|easy|test": 10,
+  "factual|hard|dev": 15,
+  "factual|hard|test": 10,
+  "math|easy|dev": 15,
+  "math|easy|test": 10,
+  "math|hard|dev": 15,
+  "math|hard|test": 10,
+  "sentiment|easy|dev": 15,
+  "sentiment|easy|test": 10,
+  "sentiment|hard|dev": 15,
+  "sentiment|hard|test": 10,
+  "summarisation|easy|dev": 15,
+  "summarisation|easy|test": 10,
+  "summarisation|hard|dev": 15,
+  "summarisation|hard|test": 10,
+  "ner|easy|dev": 15,
+  "ner|easy|test": 10,
+  "ner|hard|dev": 15,
+  "ner|hard|test": 10,
+  "code_debug|easy|dev": 15,
+  "code_debug|easy|test": 10,
+  "code_debug|hard|dev": 15,
+  "code_debug|hard|test": 10,
+  "logic|easy|dev": 15,
+  "logic|easy|test": 10,
+  "logic|hard|dev": 15,
+  "logic|hard|test": 10,
+  "code_gen|easy|dev": 15,
+  "code_gen|easy|test": 10,
+  "code_gen|hard|dev": 15,
+  "code_gen|hard|test": 10
+ },
+ "template_sets": {
+  "logic|A|dev": 22,
+  "logic|B|dev": 6,
+  "logic|B|test": 10,
+  "logic|hand|dev": 2,
+  "logic|hand|test": 10,
+  "math|A|dev": 22,
+  "math|B|dev": 6,
+  "math|B|test": 10,
+  "math|hand|dev": 2,
+  "math|hand|test": 10
+ },
+ "checks": [
+  {
+   "check": "schema valid (all required fields, grader matches category)",
+   "checked": 400,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "unique ids",
+   "checked": 400,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "unique prompts (exact)",
+   "checked": 400,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "25 easy + 25 hard per category",
+   "checked": 8,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "gold answers pass their own grader (math, logic, sentiment, NER incl. alternatives; NER spans occur in prompt)",
+   "checked": 200,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "code_gen: reference passes all hidden tests (re-run)",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "code_debug: tests pass on reference and fail on the buggy code shown in the prompt (re-run)",
+   "checked": 50,
+   "failed": 0,
+   "detail": "min failing tests on buggy code = 1"
+  },
+  {
+   "check": "tests per task",
+   "checked": 100,
+   "failed": 0,
+   "detail": "code_gen 5-10, code_debug 3-9 (assert statements)"
+  },
+  {
+   "check": "math: regeneration reproduces every prompt+gold (independent recomputation / unique-solution asserts re-run)",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "logic: regeneration reproduces every prompt+gold (independent recomputation / unique-solution asserts re-run)",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "summarisation: reference_summary meets constraint and contains every required key fact",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "factual: every item has >=1 required key point",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  },
+  {
+   "check": "sentiment: labels balanced (13/13/12/12)",
+   "checked": 50,
+   "failed": 0,
+   "detail": ""
+  }
+ ]
+}

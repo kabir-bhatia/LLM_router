@@ -1,0 +1,1186 @@
+[
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should rotate a list left by k positions (k may exceed the list length) and return the new list; an empty list returns an empty list.\n\n```python\ndef rotate_left(xs, k):\n    if not xs:\n        return []\n    return xs[k:] + xs[:k]\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "rotate_left",
+   "tests": [
+    "assert rotate_left([1, 2, 3, 4, 5], 2) == [3, 4, 5, 1, 2]",
+    "assert rotate_left([1, 2, 3], 0) == [1, 2, 3]",
+    "assert rotate_left([1, 2, 3], 3) == [1, 2, 3]",
+    "assert rotate_left([1, 2, 3], 4) == [2, 3, 1]",
+    "assert rotate_left([], 5) == []",
+    "assert rotate_left([1, 2, 3, 4], 9) == [2, 3, 4, 1]"
+   ],
+   "reference": "def rotate_left(xs, k):\n    if not xs:\n        return []\n    k %= len(xs)\n    return xs[k:] + xs[:k]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "missing modulo",
+  "note": "Planted bug: missing modulo. Tests pass on the reference fix (6/6) and 2/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 2",
+  "id": "code_debug-001",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return True if a string reads the same forwards and backwards, ignoring case and non-alphanumeric characters.\n\n```python\ndef is_palindrome(s):\n    cleaned = \"\".join(c for c in s if c.isalnum())\n    return cleaned == cleaned[::-1]\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "is_palindrome",
+   "tests": [
+    "assert is_palindrome(\"Racecar\") is True",
+    "assert is_palindrome(\"A man, a plan, a canal: Panama\") is True",
+    "assert is_palindrome(\"hello\") is False",
+    "assert is_palindrome(\"\") is True",
+    "assert is_palindrome(\"No lemon, no melon\") is True"
+   ],
+   "reference": "def is_palindrome(s):\n    cleaned = \"\".join(c.lower() for c in s if c.isalnum())\n    return cleaned == cleaned[::-1]\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "missing normalisation",
+  "note": "Planted bug: missing normalisation. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-002",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should convert degrees Celsius to degrees Fahrenheit.\n\n```python\ndef c_to_f(c):\n    return c * 5 / 9 + 32\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "c_to_f",
+   "tests": [
+    "assert c_to_f(0) == 32",
+    "assert c_to_f(100) == 212",
+    "assert c_to_f(-40) == -40",
+    "assert abs(c_to_f(37) - 98.6) < 1e-9"
+   ],
+   "reference": "def c_to_f(c):\n    return c * 9 / 5 + 32\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "inverted formula",
+  "note": "Planted bug: inverted formula. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-003",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should capitalise the first letter of each word and lowercase the rest, words separated by single spaces, but it has a bug. Find and fix it:\n\n```python\ndef capitalize_words(s):\n    return \" \".join(w.upper() for w in s.split())\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "capitalize_words",
+   "tests": [
+    "assert capitalize_words(\"hello world\") == \"Hello World\"",
+    "assert capitalize_words(\"PYTHON is fun\") == \"Python Is Fun\"",
+    "assert capitalize_words(\"\") == \"\"",
+    "assert capitalize_words(\"a\") == \"A\""
+   ],
+   "reference": "def capitalize_words(s):\n    return \" \".join(w.capitalize() for w in s.split())\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "wrong string method",
+  "note": "Planted bug: wrong string method. Tests pass on the reference fix (4/4) and 2/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 2",
+  "id": "code_debug-004",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `pairs_with_sum` function is giving wrong results and i can't see why. it's supposed to count the pairs of elements at different positions i < j whose sum equals target. here's the code:\n\n```python\ndef pairs_with_sum(xs, target):\n    count = 0\n    for i in range(len(xs)):\n        for j in range(i, len(xs)):\n            if xs[i] + xs[j] == target:\n                count += 1\n    return count\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "pairs_with_sum",
+   "tests": [
+    "assert pairs_with_sum([1, 2, 3, 4], 5) == 2",
+    "assert pairs_with_sum([2, 2, 2], 4) == 3",
+    "assert pairs_with_sum([5], 10) == 0",
+    "assert pairs_with_sum([], 3) == 0",
+    "assert pairs_with_sum([1, 1], 2) == 1",
+    "assert pairs_with_sum([3, 3, 4], 6) == 1"
+   ],
+   "reference": "def pairs_with_sum(xs, target):\n    count = 0\n    for i in range(len(xs)):\n        for j in range(i + 1, len(xs)):\n            if xs[i] + xs[j] == target:\n                count += 1\n    return count\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "element paired with itself",
+  "note": "Planted bug: element paired with itself. Tests pass on the reference fix (6/6) and 4/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 4",
+  "id": "code_debug-005",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return the length of the longest streak of equal consecutive elements (0 for an empty list), but it has a bug. Find and fix it:\n\n```python\ndef longest_run(xs):\n    best = cur = 0\n    prev = object()\n    for x in xs:\n        if x == prev:\n            cur += 1\n        else:\n            cur = 0\n            prev = x\n        best = max(best, cur)\n    return best\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "longest_run",
+   "tests": [
+    "assert longest_run([1, 1, 2, 2, 2, 3]) == 3",
+    "assert longest_run([]) == 0",
+    "assert longest_run([7]) == 1",
+    "assert longest_run([1, 2, 3]) == 1",
+    "assert longest_run([4, 4, 4, 4]) == 4",
+    "assert longest_run([1, 1, 2, 1, 1]) == 2"
+   ],
+   "reference": "def longest_run(xs):\n    best = cur = 0\n    prev = object()\n    for x in xs:\n        if x == prev:\n            cur += 1\n        else:\n            cur = 1\n            prev = x\n        best = max(best, cur)\n    return best\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "reset to wrong value",
+  "note": "Planted bug: reset to wrong value. Tests pass on the reference fix (6/6) and 5/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 5",
+  "id": "code_debug-006",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `count_words` function is giving wrong results and i can't see why. it's supposed to count the words in a text, where words are separated by any amount of whitespace. here's the code:\n\n```python\ndef count_words(text):\n    return len(text.split(\" \"))\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "count_words",
+   "tests": [
+    "assert count_words(\"one two three\") == 3",
+    "assert count_words(\"  spaced   out  words \") == 3",
+    "assert count_words(\"\") == 0",
+    "assert count_words(\"tabs\\tand\\nnewlines\") == 3",
+    "assert count_words(\"single\") == 1"
+   ],
+   "reference": "def count_words(text):\n    return len(text.split())\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "bug_type": "wrong split",
+  "note": "Planted bug: wrong split. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-007",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the sum of both diagonals of a square matrix, counting the centre element only once for odd sizes.\n\n```python\ndef diagonal_sum(m):\n    n = len(m)\n    total = sum(m[i][i] + m[i][n - 1 - i] for i in range(n))\n    return total\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "diagonal_sum",
+   "tests": [
+    "assert diagonal_sum([[1, 2], [3, 4]]) == 10",
+    "assert diagonal_sum([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == 25",
+    "assert diagonal_sum([[5]]) == 5",
+    "assert diagonal_sum([[1, 0, 1], [0, 1, 0], [1, 0, 1]]) == 5"
+   ],
+   "reference": "def diagonal_sum(m):\n    n = len(m)\n    total = sum(m[i][i] + m[i][n - 1 - i] for i in range(n))\n    if n % 2:\n        total -= m[n // 2][n // 2]\n    return total\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "centre element double-counted",
+  "note": "Planted bug: centre element double-counted. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-008",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return part as a percentage of whole, rounded to 1 decimal place, but it has a bug. Find and fix it:\n\n```python\ndef percentage(part, whole):\n    return round(whole / part * 100, 1)\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "percentage",
+   "tests": [
+    "assert percentage(1, 4) == 25.0",
+    "assert percentage(1, 3) == 33.3",
+    "assert percentage(50, 200) == 25.0",
+    "assert percentage(0, 10) == 0.0",
+    "assert percentage(3, 2) == 150.0"
+   ],
+   "reference": "def percentage(part, whole):\n    return round(part / whole * 100, 1)\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "swapped operands",
+  "note": "Planted bug: swapped operands. Tests pass on the reference fix (5/5) and 5/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 5",
+  "id": "code_debug-009",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the sum of the decimal digits of a non-negative integer.\n\n```python\ndef digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 100\n    return total\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "digit_sum",
+   "tests": [
+    "assert digit_sum(0) == 0",
+    "assert digit_sum(5) == 5",
+    "assert digit_sum(123) == 6",
+    "assert digit_sum(9999) == 36",
+    "assert digit_sum(1001) == 2"
+   ],
+   "reference": "def digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 10\n    return total\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "wrong step size",
+  "note": "Planted bug: wrong step size. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-010",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the uppercase initials of a full name, e.g. \"john ronald smith\" -> \"JRS\".\n\n```python\ndef get_initials(name):\n    return \"\".join(w[-1].upper() for w in name.split())\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "get_initials",
+   "tests": [
+    "assert get_initials(\"john smith\") == \"JS\"",
+    "assert get_initials(\"a b c\") == \"ABC\"",
+    "assert get_initials(\"madonna\") == \"M\"",
+    "assert get_initials(\"grace brewster murray hopper\") == \"GBMH\""
+   ],
+   "reference": "def get_initials(name):\n    return \"\".join(w[0].upper() for w in name.split())\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "wrong index",
+  "note": "Planted bug: wrong index. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-011",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the largest of three numbers.\n\n```python\ndef max_of_three(a, b, c):\n    if a >= b and a >= c:\n        return a\n    if b >= a:\n        return b\n    return c\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "max_of_three",
+   "tests": [
+    "assert max_of_three(1, 2, 3) == 3",
+    "assert max_of_three(9, 2, 3) == 9",
+    "assert max_of_three(1, 5, 9) == 9",
+    "assert max_of_three(1, 9, 5) == 9",
+    "assert max_of_three(-1, -5, -3) == -1",
+    "assert max_of_three(4, 4, 4) == 4"
+   ],
+   "reference": "def max_of_three(a, b, c):\n    if a >= b and a >= c:\n        return a\n    if b >= c:\n        return b\n    return c\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "wrong variable in comparison",
+  "note": "Planted bug: wrong variable in comparison. Tests pass on the reference fix (6/6) and 2/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 2",
+  "id": "code_debug-012",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return True if every (, [ and { in a string is closed by the matching bracket in the right order.\n\n```python\ndef is_balanced(s):\n    pairs = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    stack = []\n    for ch in s:\n        if ch in \"([{\":\n            stack.append(ch)\n        elif ch in pairs:\n            if not stack or stack.pop() != pairs[ch]:\n                return False\n    return True\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "is_balanced",
+   "tests": [
+    "assert is_balanced(\"([]{})\") is True",
+    "assert is_balanced(\"(((\") is False",
+    "assert is_balanced(\"(]\") is False",
+    "assert is_balanced(\"\") is True",
+    "assert is_balanced(\"())\") is False",
+    "assert is_balanced(\"{[()]}x\") is True",
+    "assert is_balanced(\"([)]\") is False"
+   ],
+   "reference": "def is_balanced(s):\n    pairs = {\")\": \"(\", \"]\": \"[\", \"}\": \"{\"}\n    stack = []\n    for ch in s:\n        if ch in \"([{\":\n            stack.append(ch)\n        elif ch in pairs:\n            if not stack or stack.pop() != pairs[ch]:\n                return False\n    return not stack\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "unclosed openers ignored",
+  "note": "Planted bug: unclosed openers ignored. Tests pass on the reference fix (7/7) and 1/7 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 7/7, buggy fails 1",
+  "id": "code_debug-013",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the string reversed, building the result with a loop.\n\n```python\ndef reverse_string(s):\n    result = \"\"\n    for ch in s:\n        result = result + ch\n    return result\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "reverse_string",
+   "tests": [
+    "assert reverse_string(\"abc\") == \"cba\"",
+    "assert reverse_string(\"\") == \"\"",
+    "assert reverse_string(\"a\") == \"a\"",
+    "assert reverse_string(\"hello world\") == \"dlrow olleh\""
+   ],
+   "reference": "def reverse_string(s):\n    result = \"\"\n    for ch in s:\n        result = ch + result\n    return result\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "wrong concatenation order",
+  "note": "Planted bug: wrong concatenation order. Tests pass on the reference fix (4/4) and 2/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 2",
+  "id": "code_debug-014",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return the k most frequent values; ties are broken by the smaller value first, but it has a bug. Find and fix it:\n\n```python\ndef top_k_frequent(xs, k):\n    counts = {}\n    for x in xs:\n        counts[x] = counts.get(x, 0) + 1\n    return sorted(counts, key=lambda x: -counts[x])[:k]\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "top_k_frequent",
+   "tests": [
+    "assert top_k_frequent([1, 1, 2, 2, 3], 2) == [1, 2]",
+    "assert top_k_frequent([3, 3, 2, 2, 1], 2) == [2, 3]",
+    "assert top_k_frequent([5, 4, 4, 5, 9], 1) == [4]",
+    "assert top_k_frequent([9, 7, 8], 3) == [7, 8, 9]",
+    "assert top_k_frequent([], 2) == []"
+   ],
+   "reference": "def top_k_frequent(xs, k):\n    counts = {}\n    for x in xs:\n        counts[x] = counts.get(x, 0) + 1\n    return sorted(counts, key=lambda x: (-counts[x], x))[:k]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "tie-break ignored",
+  "note": "Planted bug: tie-break ignored. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-015",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return n! for an integer n >= 0 (0! is 1).\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 0\n    return n * factorial(n - 1)\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "factorial",
+   "tests": [
+    "assert factorial(0) == 1",
+    "assert factorial(1) == 1",
+    "assert factorial(5) == 120",
+    "assert factorial(7) == 5040"
+   ],
+   "reference": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "wrong base case",
+  "note": "Planted bug: wrong base case. Tests pass on the reference fix (4/4) and 4/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 4",
+  "id": "code_debug-016",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `dedupe_ignore_case` function is giving wrong results and i can't see why. it's supposed to remove words that repeat an earlier word ignoring case, keeping the first occurrence with its original casing. here's the code:\n\n```python\ndef dedupe_ignore_case(words):\n    seen = set()\n    out = []\n    for w in words:\n        if w not in seen:\n            seen.add(w.lower())\n            out.append(w)\n    return out\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "dedupe_ignore_case",
+   "tests": [
+    "assert dedupe_ignore_case([\"Apple\", \"apple\", \"Banana\"]) == [\"Apple\", \"Banana\"]",
+    "assert dedupe_ignore_case([]) == []",
+    "assert dedupe_ignore_case([\"a\", \"A\", \"a\"]) == [\"a\"]",
+    "assert dedupe_ignore_case([\"x\", \"y\"]) == [\"x\", \"y\"]",
+    "assert dedupe_ignore_case([\"Dog\", \"cat\", \"DOG\", \"Cat\"]) == [\"Dog\", \"cat\"]"
+   ],
+   "reference": "def dedupe_ignore_case(words):\n    seen = set()\n    out = []\n    for w in words:\n        if w.lower() not in seen:\n            seen.add(w.lower())\n            out.append(w)\n    return out\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "comparison not normalised",
+  "note": "Planted bug: comparison not normalised. Tests pass on the reference fix (5/5) and 2/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 2",
+  "id": "code_debug-017",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return \"FizzBuzz\" if n is divisible by both 3 and 5, \"Fizz\" if by 3, \"Buzz\" if by 5, otherwise str(n), but it has a bug. Find and fix it:\n\n```python\ndef fizzbuzz(n):\n    if n % 3 == 0:\n        return \"Fizz\"\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    if n % 5 == 0:\n        return \"Buzz\"\n    return str(n)\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "fizzbuzz",
+   "tests": [
+    "assert fizzbuzz(15) == \"FizzBuzz\"",
+    "assert fizzbuzz(30) == \"FizzBuzz\"",
+    "assert fizzbuzz(9) == \"Fizz\"",
+    "assert fizzbuzz(10) == \"Buzz\"",
+    "assert fizzbuzz(7) == \"7\""
+   ],
+   "reference": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    if n % 3 == 0:\n        return \"Fizz\"\n    if n % 5 == 0:\n        return \"Buzz\"\n    return str(n)\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "check order",
+  "note": "Planted bug: check order. Tests pass on the reference fix (5/5) and 2/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 2",
+  "id": "code_debug-018",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return an independent deep copy of a list of lists, so that changing the copy never changes the original, but it has a bug. Find and fix it:\n\n```python\ndef copy_grid(grid):\n    return [row for row in grid]\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "copy_grid",
+   "tests": [
+    "g = [[1, 2], [3, 4]]\nc = copy_grid(g)\nassert c == g\nc[0][0] = 99\nassert g == [[1, 2], [3, 4]]\nassert c is not g\nassert copy_grid([]) == []"
+   ],
+   "reference": "def copy_grid(grid):\n    return [row[:] for row in grid]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "shallow copy",
+  "note": "Planted bug: shallow copy. Tests pass on the reference fix (1/1) and 1/1 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 1/1, buggy fails 1",
+  "id": "code_debug-019",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `merge_sorted` function is giving wrong results and i can't see why. it's supposed to merge two already-sorted lists into one sorted list. here's the code:\n\n```python\ndef merge_sorted(a, b):\n    i = j = 0\n    result = []\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            result.append(a[i])\n            i += 1\n        else:\n            result.append(b[j])\n            j += 1\n    result.extend(a[i:])\n    return result\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "merge_sorted",
+   "tests": [
+    "assert merge_sorted([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]",
+    "assert merge_sorted([], [1, 2]) == [1, 2]",
+    "assert merge_sorted([1, 2], []) == [1, 2]",
+    "assert merge_sorted([1, 2, 3], [7, 8]) == [1, 2, 3, 7, 8]",
+    "assert merge_sorted([5, 6], [1, 2]) == [1, 2, 5, 6]",
+    "assert merge_sorted([1, 1], [1]) == [1, 1, 1]"
+   ],
+   "reference": "def merge_sorted(a, b):\n    i = j = 0\n    result = []\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            result.append(a[i])\n            i += 1\n        else:\n            result.append(b[j])\n            j += 1\n    result.extend(a[i:])\n    result.extend(b[j:])\n    return result\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "leftover elements dropped",
+  "note": "Planted bug: leftover elements dropped. Tests pass on the reference fix (6/6) and 4/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 4",
+  "id": "code_debug-020",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should count how many times target appears in a list.\n\n```python\ndef count_occurrences(xs, target):\n    count = 0\n    for x in xs:\n        if x != target:\n            count += 1\n    return count\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "count_occurrences",
+   "tests": [
+    "assert count_occurrences([1, 2, 1, 3, 1], 1) == 3",
+    "assert count_occurrences([], 5) == 0",
+    "assert count_occurrences([\"a\", \"b\"], \"c\") == 0",
+    "assert count_occurrences([2, 2], 2) == 2"
+   ],
+   "reference": "def count_occurrences(xs, target):\n    count = 0\n    for x in xs:\n        if x == target:\n            count += 1\n    return count\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "inverted condition",
+  "note": "Planted bug: inverted condition. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-021",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should compute base ** exp by repeated multiplication, for integer exp >= 0, but it has a bug. Find and fix it:\n\n```python\ndef power(base, exp):\n    result = 0\n    for _ in range(exp):\n        result *= base\n    return result\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "power",
+   "tests": [
+    "assert power(2, 10) == 1024",
+    "assert power(5, 0) == 1",
+    "assert power(3, 3) == 27",
+    "assert power(-2, 3) == -8",
+    "assert power(1, 50) == 1"
+   ],
+   "reference": "def power(base, exp):\n    result = 1\n    for _ in range(exp):\n        result *= base\n    return result\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "bad initial value",
+  "note": "Planted bug: bad initial value. Tests pass on the reference fix (5/5) and 5/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 5",
+  "id": "code_debug-022",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `transpose` function is giving wrong results and i can't see why. it's supposed to transpose a non-empty rectangular matrix given as a list of rows (rows and columns may differ in count). here's the code:\n\n```python\ndef transpose(matrix):\n    return [[row[j] for row in matrix] for j in range(len(matrix))]\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "transpose",
+   "tests": [
+    "assert transpose([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]",
+    "assert transpose([[1, 2, 3]]) == [[1], [2], [3]]",
+    "assert transpose([[1], [2], [3]]) == [[1, 2, 3]]",
+    "assert transpose([[1, 2, 3], [4, 5, 6]]) == [[1, 4], [2, 5], [3, 6]]"
+   ],
+   "reference": "def transpose(matrix):\n    return [[row[j] for row in matrix] for j in range(len(matrix[0]))]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "square-matrix assumption",
+  "note": "Planted bug: square-matrix assumption. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-023",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should run-length encode a string: \"aaabcc\" -> \"a3b1c2\" (empty string -> empty string), but it has a bug. Find and fix it:\n\n```python\ndef compress(s):\n    if not s:\n        return \"\"\n    out = []\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            out.append(s[i - 1] + str(count))\n            count = 1\n    return \"\".join(out)\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "compress",
+   "tests": [
+    "assert compress(\"aaabcc\") == \"a3b1c2\"",
+    "assert compress(\"\") == \"\"",
+    "assert compress(\"a\") == \"a1\"",
+    "assert compress(\"abc\") == \"a1b1c1\"",
+    "assert compress(\"zzzz\") == \"z4\"",
+    "assert compress(\"aabbaa\") == \"a2b2a2\""
+   ],
+   "reference": "def compress(s):\n    if not s:\n        return \"\"\n    out = []\n    count = 1\n    for i in range(1, len(s)):\n        if s[i] == s[i - 1]:\n            count += 1\n        else:\n            out.append(s[i - 1] + str(count))\n            count = 1\n    out.append(s[-1] + str(count))\n    return \"\".join(out)\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "final group not flushed",
+  "note": "Planted bug: final group not flushed. Tests pass on the reference fix (6/6) and 5/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 5",
+  "id": "code_debug-024",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return True if an integer is even, else False (including negative numbers and zero).\n\n```python\ndef is_even(n):\n    return n % 2 == 1\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "is_even",
+   "tests": [
+    "assert is_even(4) is True",
+    "assert is_even(7) is False",
+    "assert is_even(0) is True",
+    "assert is_even(-2) is True",
+    "assert is_even(-3) is False"
+   ],
+   "reference": "def is_even(n):\n    return n % 2 == 0\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "wrong comparison",
+  "note": "Planted bug: wrong comparison. Tests pass on the reference fix (5/5) and 5/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 5",
+  "id": "code_debug-025",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return a NEW list with each element squared, without modifying the input list, but it has a bug. Find and fix it:\n\n```python\ndef square_all(xs):\n    for i in range(len(xs)):\n        xs[i] = xs[i] * xs[i]\n    return xs\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "square_all",
+   "tests": [
+    "data = [1, 2, 3]\nassert square_all(data) == [1, 4, 9]\nassert data == [1, 2, 3]\nassert square_all([]) == []\nassert square_all([-2]) == [4]"
+   ],
+   "reference": "def square_all(xs):\n    return [x * x for x in xs]\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "mutates input",
+  "note": "Planted bug: mutates input. Tests pass on the reference fix (1/1) and 1/1 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 1/1, buggy fails 1",
+  "id": "code_debug-026",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return a dict of how many times each word appears in a list of words.\n\n```python\ndef word_frequencies(words):\n    d = {}\n    for w in words:\n        d[w] = d.get(w, 1) + 1\n    return d\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "word_frequencies",
+   "tests": [
+    "assert word_frequencies([\"a\", \"b\", \"a\"]) == {\"a\": 2, \"b\": 1}",
+    "assert word_frequencies([]) == {}",
+    "assert word_frequencies([\"x\"]) == {\"x\": 1}",
+    "assert word_frequencies([\"z\", \"z\", \"z\"]) == {\"z\": 3}"
+   ],
+   "reference": "def word_frequencies(words):\n    d = {}\n    for w in words:\n        d[w] = d.get(w, 0) + 1\n    return d\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "bug_type": "wrong default in counter",
+  "note": "Planted bug: wrong default in counter. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-027",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return a list of the squares of 1..n (empty list when n is 0), but it has a bug. Find and fix it:\n\n```python\ndef first_n_squares(n):\n    return [i * i for i in range(n)]\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "first_n_squares",
+   "tests": [
+    "assert first_n_squares(3) == [1, 4, 9]",
+    "assert first_n_squares(0) == []",
+    "assert first_n_squares(1) == [1]",
+    "assert first_n_squares(5) == [1, 4, 9, 16, 25]"
+   ],
+   "reference": "def first_n_squares(n):\n    return [i * i for i in range(1, n + 1)]\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "off-by-one range",
+  "note": "Planted bug: off-by-one range. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-028",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `join_with_commas` function is giving wrong results and i can't see why. it's supposed to join a list of strings with a comma and a space between items, with nothing after the last item. here's the code:\n\n```python\ndef join_with_commas(items):\n    out = \"\"\n    for it in items:\n        out += it + \", \"\n    return out\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "join_with_commas",
+   "tests": [
+    "assert join_with_commas([\"a\", \"b\", \"c\"]) == \"a, b, c\"",
+    "assert join_with_commas([\"x\"]) == \"x\"",
+    "assert join_with_commas([]) == \"\"",
+    "assert join_with_commas([\"one\", \"two\"]) == \"one, two\""
+   ],
+   "reference": "def join_with_commas(items):\n    return \", \".join(items)\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "bug_type": "trailing separator",
+  "note": "Planted bug: trailing separator. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-029",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the index of target in a sorted list of distinct integers, or -1 if absent.\n\n```python\ndef binary_search(xs, target):\n    lo, hi = 0, len(xs) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if xs[mid] == target:\n            return mid\n        if xs[mid] < target:\n            lo = mid\n        else:\n            hi = mid - 1\n    return -1\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "binary_search",
+   "tests": [
+    "assert binary_search([1, 3, 5, 7, 9], 7) == 3",
+    "assert binary_search([1, 3, 5, 7, 9], 1) == 0",
+    "assert binary_search([1, 3, 5, 7, 9], 9) == 4",
+    "assert binary_search([1, 3, 5, 7, 9], 4) == -1",
+    "assert binary_search([], 3) == -1",
+    "assert binary_search([2], 2) == 0",
+    "assert binary_search([1, 3, 5, 7, 9], 10) == -1"
+   ],
+   "reference": "def binary_search(xs, target):\n    lo, hi = 0, len(xs) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if xs[mid] == target:\n            return mid\n        if xs[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "infinite loop / pointer not advanced",
+  "note": "Planted bug: infinite loop / pointer not advanced. Tests pass on the reference fix (7/7) and 7/7 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 7/7, buggy fails 7",
+  "id": "code_debug-030",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return a list where element i is the maximum of the input's first i+1 elements, but it has a bug. Find and fix it:\n\n```python\ndef running_max(xs):\n    out = []\n    current = 0\n    for x in xs:\n        if x > current:\n            current = x\n        out.append(current)\n    return out\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "running_max",
+   "tests": [
+    "assert running_max([1, 3, 2, 5, 4]) == [1, 3, 3, 5, 5]",
+    "assert running_max([]) == []",
+    "assert running_max([-5, -3, -4]) == [-5, -3, -3]",
+    "assert running_max([7]) == [7]",
+    "assert running_max([2, 2, 2]) == [2, 2, 2]"
+   ],
+   "reference": "def running_max(xs):\n    out = []\n    current = None\n    for x in xs:\n        if current is None or x > current:\n            current = x\n        out.append(current)\n    return out\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "bad initial value for negatives",
+  "note": "Planted bug: bad initial value for negatives. Tests pass on the reference fix (5/5) and 1/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 1",
+  "id": "code_debug-031",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the sum of the integers from 1 to n inclusive (0 when n is 0).\n\n```python\ndef sum_to_n(n):\n    total = 0\n    for i in range(1, n):\n        total += i\n    return total\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "sum_to_n",
+   "tests": [
+    "assert sum_to_n(1) == 1",
+    "assert sum_to_n(4) == 10",
+    "assert sum_to_n(100) == 5050",
+    "assert sum_to_n(0) == 0"
+   ],
+   "reference": "def sum_to_n(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i\n    return total\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "off-by-one range",
+  "note": "Planted bug: off-by-one range. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-032",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return a list containing item appended to the given list; if no list is given, start from a fresh empty list each call.\n\n```python\ndef add_item(item, items=[]):\n    items.append(item)\n    return items\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "add_item",
+   "tests": [
+    "assert add_item(1) == [1]",
+    "assert add_item(2) == [2]",
+    "assert add_item(3, [9]) == [9, 3]",
+    "assert add_item(4) == [4]",
+    "base = []\nadd_item(5, base)\nassert base == [5]"
+   ],
+   "reference": "def add_item(item, items=None):\n    if items is None:\n        items = []\n    items.append(item)\n    return items\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "bug_type": "mutable default argument",
+  "note": "Planted bug: mutable default argument. Tests pass on the reference fix (5/5) and 2/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 2",
+  "id": "code_debug-033",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the binary representation of a non-negative integer as a string without any prefix.\n\n```python\ndef to_binary(n):\n    return bin(n)\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "to_binary",
+   "tests": [
+    "assert to_binary(5) == \"101\"",
+    "assert to_binary(0) == \"0\"",
+    "assert to_binary(8) == \"1000\"",
+    "assert to_binary(255) == \"11111111\""
+   ],
+   "reference": "def to_binary(n):\n    return bin(n)[2:]\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "unstripped prefix",
+  "note": "Planted bug: unstripped prefix. Tests pass on the reference fix (4/4) and 4/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 4",
+  "id": "code_debug-034",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return the list of averages of every window of k consecutive elements (empty if k exceeds the length), but it has a bug. Find and fix it:\n\n```python\ndef moving_average(xs, k):\n    return [sum(xs[i:i + k]) / k for i in range(len(xs) - k)]\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "moving_average",
+   "tests": [
+    "assert moving_average([1, 2, 3, 4], 2) == [1.5, 2.5, 3.5]",
+    "assert moving_average([1, 2, 3], 3) == [2.0]",
+    "assert moving_average([1, 2], 3) == []",
+    "assert moving_average([4, 4, 4, 4], 1) == [4.0, 4.0, 4.0, 4.0]",
+    "assert moving_average([], 2) == []"
+   ],
+   "reference": "def moving_average(xs, k):\n    return [sum(xs[i:i + k]) / k for i in range(len(xs) - k + 1)]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "last window dropped",
+  "note": "Planted bug: last window dropped. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-035",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should count the vowels (a, e, i, o, u, case-insensitive) in a string.\n\n```python\ndef count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeio\")\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "count_vowels",
+   "tests": [
+    "assert count_vowels(\"hello\") == 2",
+    "assert count_vowels(\"SKY\") == 0",
+    "assert count_vowels(\"education\") == 5",
+    "assert count_vowels(\"\") == 0",
+    "assert count_vowels(\"Umbrella\") == 3",
+    "assert count_vowels(\"rhythm\") == 0"
+   ],
+   "reference": "def count_vowels(s):\n    return sum(1 for c in s.lower() if c in \"aeiou\")\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "missing element in literal",
+  "note": "Planted bug: missing element in literal. Tests pass on the reference fix (6/6) and 2/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 2",
+  "id": "code_debug-036",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the smallest element of a non-empty list of numbers.\n\n```python\ndef min_in_list(xs):\n    m = 0\n    for x in xs:\n        if x < m:\n            m = x\n    return m\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "min_in_list",
+   "tests": [
+    "assert min_in_list([3, 1, 2]) == 1",
+    "assert min_in_list([5, 9, 7]) == 5",
+    "assert min_in_list([-4, -9]) == -9",
+    "assert min_in_list([8]) == 8"
+   ],
+   "reference": "def min_in_list(xs):\n    m = xs[0]\n    for x in xs:\n        if x < m:\n            m = x\n    return m\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "bad initial value",
+  "note": "Planted bug: bad initial value. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-037",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `kth_largest_distinct` function is giving wrong results and i can't see why. it's supposed to return the k-th largest DISTINCT value of a list (k starts at 1), or None if there are fewer than k distinct values. here's the code:\n\n```python\ndef kth_largest_distinct(xs, k):\n    vals = sorted(xs, reverse=True)\n    return vals[k - 1] if 1 <= k <= len(vals) else None\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "kth_largest_distinct",
+   "tests": [
+    "assert kth_largest_distinct([4, 4, 3, 1], 2) == 3",
+    "assert kth_largest_distinct([5, 5, 5], 2) is None",
+    "assert kth_largest_distinct([1, 2, 3], 1) == 3",
+    "assert kth_largest_distinct([9, 7, 7, 5], 3) == 5",
+    "assert kth_largest_distinct([], 1) is None",
+    "assert kth_largest_distinct([1, 2], 3) is None"
+   ],
+   "reference": "def kth_largest_distinct(xs, k):\n    vals = sorted(set(xs), reverse=True)\n    return vals[k - 1] if 1 <= k <= len(vals) else None\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "duplicates not removed",
+  "note": "Planted bug: duplicates not removed. Tests pass on the reference fix (6/6) and 3/6 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 6/6, buggy fails 3",
+  "id": "code_debug-038",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "my `is_prime` function is giving wrong results and i can't see why. it's supposed to return True if n is a prime number, else False (n may be 0, 1 or negative). here's the code:\n\n```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, int(n ** 0.5)):\n        if n % d == 0:\n            return False\n    return True\n```\nwhat's wrong with it?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "is_prime",
+   "tests": [
+    "assert is_prime(2) is True",
+    "assert is_prime(3) is True",
+    "assert is_prime(9) is False",
+    "assert is_prime(25) is False",
+    "assert is_prime(29) is True",
+    "assert is_prime(1) is False",
+    "assert is_prime(0) is False",
+    "assert is_prime(-7) is False",
+    "assert is_prime(49) is False"
+   ],
+   "reference": "def is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, int(n ** 0.5) + 1):\n        if n % d == 0:\n            return False\n    return True\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "bug_type": "range excludes the square root",
+  "note": "Planted bug: range excludes the square root. Tests pass on the reference fix (9/9) and 3/9 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 9/9, buggy fails 3",
+  "id": "code_debug-039",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return the last element of a list, or None if the list is empty, but it has a bug. Find and fix it:\n\n```python\ndef last_element(xs):\n    return xs[len(xs)] if xs else None\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "last_element",
+   "tests": [
+    "assert last_element([1, 2, 3]) == 3",
+    "assert last_element([]) is None",
+    "assert last_element([\"a\"]) == \"a\""
+   ],
+   "reference": "def last_element(xs):\n    return xs[-1] if xs else None\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "index out of range",
+  "note": "Planted bug: index out of range. Tests pass on the reference fix (3/3) and 2/3 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 3/3, buggy fails 2",
+  "id": "code_debug-040",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should group words by length: return a dict mapping each length to the list of words with that length, in input order.\n\n```python\ndef group_by_length(words):\n    groups = {}\n    for w in words:\n        groups[len(w)] = [w]\n    return groups\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "group_by_length",
+   "tests": [
+    "assert group_by_length([\"a\", \"bb\", \"c\", \"dd\", \"eee\"]) == {1: [\"a\", \"c\"], 2: [\"bb\", \"dd\"], 3: [\"eee\"]}",
+    "assert group_by_length([]) == {}",
+    "assert group_by_length([\"x\"]) == {1: [\"x\"]}",
+    "assert group_by_length([\"hi\", \"yo\", \"hey\"]) == {2: [\"hi\", \"yo\"], 3: [\"hey\"]}"
+   ],
+   "reference": "def group_by_length(words):\n    groups = {}\n    for w in words:\n        groups.setdefault(len(w), []).append(w)\n    return groups\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "overwrites accumulated list",
+  "note": "Planted bug: overwrites accumulated list. Tests pass on the reference fix (4/4) and 2/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 2",
+  "id": "code_debug-041",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the n-th Fibonacci number with fib(0) = 0 and fib(1) = 1, iteratively.\n\n```python\ndef fib(n):\n    a, b = 0, 1\n    for _ in range(n - 1):\n        a, b = b, a + b\n    return a\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "fib",
+   "tests": [
+    "assert fib(0) == 0",
+    "assert fib(1) == 1",
+    "assert fib(2) == 1",
+    "assert fib(10) == 55",
+    "assert fib(20) == 6765"
+   ],
+   "reference": "def fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "bug_type": "off-by-one iteration count",
+  "note": "Planted bug: off-by-one iteration count. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-042",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should remove duplicates from a list while keeping the first occurrence of each element in its original order.\n\n```python\ndef remove_duplicates(xs):\n    return list(set(xs))\n```\n\nCan you work out the problem and give me the corrected function?",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "remove_duplicates",
+   "tests": [
+    "assert remove_duplicates([3, 1, 3, 2, 1]) == [3, 1, 2]",
+    "assert remove_duplicates([]) == []",
+    "assert remove_duplicates([\"b\", \"a\", \"b\"]) == [\"b\", \"a\"]",
+    "assert remove_duplicates([5, 4, 3, 2, 1, 1]) == [5, 4, 3, 2, 1]"
+   ],
+   "reference": "def remove_duplicates(xs):\n    seen = set()\n    out = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            out.append(x)\n    return out\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "bug_type": "order not preserved",
+  "note": "Planted bug: order not preserved. Tests pass on the reference fix (4/4) and 3/4 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 4/4, buggy fails 3",
+  "id": "code_debug-043",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should split a list into consecutive chunks of size n; the last chunk may be shorter, but it has a bug. Find and fix it:\n\n```python\ndef chunk(xs, n):\n    return [xs[i:i + n] for i in range(0, len(xs) - n, n)]\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "chunk",
+   "tests": [
+    "assert chunk([1, 2, 3, 4], 2) == [[1, 2], [3, 4]]",
+    "assert chunk([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]",
+    "assert chunk([], 3) == []",
+    "assert chunk([1, 2], 5) == [[1, 2]]",
+    "assert chunk([1, 2, 3], 1) == [[1], [2], [3]]"
+   ],
+   "reference": "def chunk(xs, n):\n    return [xs[i:i + n] for i in range(0, len(xs), n)]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "last chunk dropped",
+  "note": "Planted bug: last chunk dropped. Tests pass on the reference fix (5/5) and 4/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 4",
+  "id": "code_debug-044",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return True if a year is a leap year in the Gregorian calendar, but it has a bug. Find and fix it:\n\n```python\ndef is_leap_year(y):\n    return (y % 4 == 0 and y % 100 != 0) or y % 100 == 0\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "is_leap_year",
+   "tests": [
+    "assert is_leap_year(2024) is True",
+    "assert is_leap_year(2023) is False",
+    "assert is_leap_year(1900) is False",
+    "assert is_leap_year(2000) is True",
+    "assert is_leap_year(2100) is False"
+   ],
+   "reference": "def is_leap_year(y):\n    return (y % 4 == 0 and y % 100 != 0) or y % 400 == 0\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "neutral",
+  "bug_type": "wrong divisor",
+  "note": "Planted bug: wrong divisor. Tests pass on the reference fix (5/5) and 2/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 2",
+  "id": "code_debug-045",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return a NEW sorted list with value inserted into an already-sorted list; do not modify the input list, but it has a bug. Find and fix it:\n\n```python\ndef insert_sorted(xs, v):\n    out = xs\n    i = 0\n    while i < len(out) and out[i] < v:\n        i += 1\n    out.insert(i, v)\n    return out\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "insert_sorted",
+   "tests": [
+    "base = [1, 3, 5]\nassert insert_sorted(base, 4) == [1, 3, 4, 5]\nassert base == [1, 3, 5]\nassert insert_sorted([], 2) == [2]\nassert insert_sorted([1, 2], 0) == [0, 1, 2]\nassert insert_sorted([1, 2], 9) == [1, 2, 9]\nassert insert_sorted([2, 2], 2) == [2, 2, 2]"
+   ],
+   "reference": "def insert_sorted(xs, v):\n    out = list(xs)\n    i = 0\n    while i < len(out) and out[i] < v:\n        i += 1\n    out.insert(i, v)\n    return out\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "aliasing / mutates input",
+  "note": "Planted bug: aliasing / mutates input. Tests pass on the reference fix (1/1) and 1/1 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 1/1, buggy fails 1",
+  "id": "code_debug-046",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return a new list with every occurrence of val removed (the input list should be left unchanged), but it has a bug. Find and fix it:\n\n```python\ndef remove_all(lst, val):\n    for x in lst:\n        if x == val:\n            lst.remove(x)\n    return lst\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "remove_all",
+   "tests": [
+    "data = [1, 2, 2, 3, 2]\nassert remove_all(data, 2) == [1, 3]\nassert data == [1, 2, 2, 3, 2]\nassert remove_all([2, 2, 2], 2) == []\nassert remove_all([], 1) == []\nassert remove_all([1, 3], 2) == [1, 3]"
+   ],
+   "reference": "def remove_all(lst, val):\n    return [x for x in lst if x != val]\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "mutation while iterating",
+  "note": "Planted bug: mutation while iterating. Tests pass on the reference fix (1/1) and 1/1 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 1/1, buggy fails 1",
+  "id": "code_debug-047",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "This function should return the number of days in a given month (1-12) of a given year, handling leap years, but it has a bug. Find and fix it:\n\n```python\ndef days_in_month(year, month):\n    if month == 2:\n        leap = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0\n        return 28\n    return 30 if month in (4, 6, 9, 11) else 31\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "days_in_month",
+   "tests": [
+    "assert days_in_month(2023, 1) == 31",
+    "assert days_in_month(2023, 4) == 30",
+    "assert days_in_month(2023, 2) == 28",
+    "assert days_in_month(2024, 2) == 29",
+    "assert days_in_month(1900, 2) == 28",
+    "assert days_in_month(2000, 2) == 29",
+    "assert days_in_month(2023, 12) == 31"
+   ],
+   "reference": "def days_in_month(year, month):\n    if month == 2:\n        leap = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0\n        return 29 if leap else 28\n    return 30 if month in (4, 6, 9, 11) else 31\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "neutral",
+  "bug_type": "special case ignored",
+  "note": "Planted bug: special case ignored. Tests pass on the reference fix (7/7) and 2/7 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 7/7, buggy fails 2",
+  "id": "code_debug-048",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should flatten arbitrarily nested lists of values into one flat list, preserving order.\n\n```python\ndef flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.append(flatten(item))\n        else:\n            result.append(item)\n    return result\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "flatten",
+   "tests": [
+    "assert flatten([1, [2, [3, 4]], 5]) == [1, 2, 3, 4, 5]",
+    "assert flatten([]) == []",
+    "assert flatten([[], [[]]]) == []",
+    "assert flatten([1, 2]) == [1, 2]",
+    "assert flatten([[1], [2, [3]], [[4]]]) == [1, 2, 3, 4]"
+   ],
+   "reference": "def flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "bug_type": "extend vs append in recursion",
+  "note": "Planted bug: extend vs append in recursion. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-049",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should restrict x to the range [lo, hi].\n\n```python\ndef clamp(x, lo, hi):\n    return min(lo, max(x, hi))\n```",
+  "category": "code_debug",
+  "grader": "code_tests",
+  "gold": {
+   "entry_point": "clamp",
+   "tests": [
+    "assert clamp(5, 0, 10) == 5",
+    "assert clamp(-3, 0, 10) == 0",
+    "assert clamp(15, 0, 10) == 10",
+    "assert clamp(0, 0, 10) == 0",
+    "assert clamp(10, 0, 10) == 10"
+   ],
+   "reference": "def clamp(x, lo, hi):\n    return max(lo, min(x, hi))\n"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "bug_type": "swapped min/max",
+  "note": "Planted bug: swapped min/max. Tests pass on the reference fix (5/5) and 3/5 fail on the buggy version.",
+  "gold_checks": "mutation: reference passes 5/5, buggy fails 3",
+  "id": "code_debug-050",
+  "split": "unsplit"
+ }
+]

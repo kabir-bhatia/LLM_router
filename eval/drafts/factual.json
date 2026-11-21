@@ -1,0 +1,1167 @@
+[
+ {
+  "prompt": "What was the Peace of Westphalia (1648) known for?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "It ended the Thirty Years' War in Europe and is often seen as the origin of the modern system of sovereign states, each with authority over its own territory.",
+   "key_points": [
+    "ended the Thirty Years' War",
+    "established state sovereignty principles"
+   ],
+   "optional_points": [],
+   "question": "What was the Peace of Westphalia (1648) known for?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: It ended the Thirty Years' War in Europe and is often seen as the origin of the modern system of sovereign states, each with authority over its own territory.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-001",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - when and how did the Western Roman Empire end?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "It is traditionally dated to 476 CE, when the Germanic general Odoacer deposed the last western emperor, Romulus Augustulus, after a long decline; the Eastern (Byzantine) Empire continued until 1453.",
+   "key_points": [
+    "traditional date 476 CE",
+    "Odoacer deposed Romulus Augustulus"
+   ],
+   "optional_points": [
+    "Eastern Empire survived until 1453"
+   ],
+   "question": "When and how did the Western Roman Empire end?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "history",
+  "note": "Reference: It is traditionally dated to 476 CE, when the Germanic general Odoacer deposed the last western emperor, Romulus Augustulus, after a long decline; the Eastern (Byzantine) Empire continued until 1453.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-002",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What does GDP measure?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Gross domestic product measures the total market value of all final goods and services produced within a country in a given period.",
+   "key_points": [
+    "total value of goods and services",
+    "produced within a country in a period"
+   ],
+   "optional_points": [],
+   "question": "What does GDP measure?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: Gross domestic product measures the total market value of all final goods and services produced within a country in a given period.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-003",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what is the difference between nominal and real interest rates?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The nominal rate is the stated rate before adjusting for inflation; the real rate subtracts inflation (approximately nominal minus inflation) and shows the actual growth in purchasing power.",
+   "key_points": [
+    "nominal is not adjusted for inflation",
+    "real = nominal minus inflation"
+   ],
+   "optional_points": [
+    "real rate shows change in purchasing power"
+   ],
+   "question": "What is the difference between nominal and real interest rates?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "finance",
+  "note": "Reference: The nominal rate is the stated rate before adjusting for inflation; the real rate subtracts inflation (approximately nominal minus inflation) and shows the actual growth in purchasing power.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-004",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what is opportunity cost?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Opportunity cost is the value of the next best alternative given up when a choice is made; because resources are scarce, every choice has one.",
+   "key_points": [
+    "value of the next best alternative forgone"
+   ],
+   "optional_points": [
+    "arises from scarcity/choice"
+   ],
+   "question": "What is opportunity cost?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "finance",
+  "note": "Reference: Opportunity cost is the value of the next best alternative given up when a choice is made; because resources are scarce, every choice has one.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-005",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a black hole?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape once inside its event horizon; many form when massive stars collapse.",
+   "key_points": [
+    "gravity so strong light cannot escape"
+   ],
+   "optional_points": [
+    "boundary called the event horizon"
+   ],
+   "question": "What is a black hole?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: A black hole is a region of space where gravity is so strong that nothing, not even light, can escape once inside its event horizon; many form when massive stars collapse.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-006",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What caused the Dust Bowl in the 1930s United States?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Severe drought combined with farming practices that stripped the Great Plains of native grasses, such as deep ploughing, left the soil loose, and strong winds then blew it away in huge dust storms.",
+   "key_points": [
+    "severe drought",
+    "poor farming practices / removal of native grasses"
+   ],
+   "optional_points": [
+    "wind erosion and dust storms on the Great Plains"
+   ],
+   "question": "What caused the Dust Bowl in the 1930s United States?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: Severe drought combined with farming practices that stripped the Great Plains of native grasses, such as deep ploughing, left the soil loose, and strong winds then blew it away in huge dust storms.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-007",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a hash function, and why is that useful for storing passwords?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A hash function maps input of any size to a fixed-size output, is deterministic and is easy to compute but hard to reverse, so a system can store only the hash of a password (ideally salted) and compare hashes at login.",
+   "key_points": [
+    "maps input to fixed-size output deterministically",
+    "one-way: hard to invert",
+    "systems store password hashes rather than plaintext"
+   ],
+   "optional_points": [
+    "salting the hash"
+   ],
+   "question": "What is a hash function, and why is that useful for storing passwords?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: A hash function maps input of any size to a fixed-size output, is deterministic and is easy to compute but hard to reverse, so a system can store only the hash of a password (ideally salted) and compare hashes at login.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-008",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is the difference between a recession and a depression?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A recession is a significant, widespread decline in economic activity, often defined as two consecutive quarters of falling GDP; a depression is a far more severe and prolonged downturn, such as the 1930s Great Depression, and has no single official definition.",
+   "key_points": [
+    "recession: shorter/milder decline (often two quarters of falling GDP)",
+    "depression: much more severe and prolonged"
+   ],
+   "optional_points": [
+    "depression has no formal precise definition"
+   ],
+   "question": "What is the difference between a recession and a depression?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: A recession is a significant, widespread decline in economic activity, often defined as two consecutive quarters of falling GDP; a depression is a far more severe and prolonged downturn, such as the 1930s Great Depression, and has no single official definition.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-009",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Why does the Moon have phases?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The Moon orbits Earth, so from Earth we see different portions of its sunlit half over the month; the phases are not caused by Earth's shadow.",
+   "key_points": [
+    "we see different parts of the sunlit half as it orbits"
+   ],
+   "optional_points": [
+    "not caused by Earth's shadow"
+   ],
+   "question": "Why does the Moon have phases?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: The Moon orbits Earth, so from Earth we see different portions of its sunlit half over the month; the phases are not caused by Earth's shadow.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-010",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what is the difference between correlation and causation?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Correlation means two variables tend to change together; causation means a change in one actually produces a change in the other. A correlation can arise from a hidden third factor or coincidence, so it does not by itself prove causation.",
+   "key_points": [
+    "correlation = move together",
+    "causation = one produces the other"
+   ],
+   "optional_points": [
+    "confounders/coincidence can explain correlation"
+   ],
+   "question": "What is the difference between correlation and causation?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "science",
+  "note": "Reference: Correlation means two variables tend to change together; causation means a change in one actually produces a change in the other. A correlation can arise from a hidden third factor or coincidence, so it does not by itself prove causation.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-011",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is the difference between a virus and a bacterium?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Bacteria are single-celled living organisms that can reproduce on their own, while viruses are much smaller and can only replicate inside a host cell. Antibiotics work on bacteria but not on viruses.",
+   "key_points": [
+    "bacteria are cells that reproduce independently",
+    "viruses need a host cell to replicate"
+   ],
+   "optional_points": [
+    "antibiotics treat bacteria, not viruses"
+   ],
+   "question": "What is the difference between a virus and a bacterium?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: Bacteria are single-celled living organisms that can reproduce on their own, while viruses are much smaller and can only replicate inside a host cell. Antibiotics work on bacteria but not on viruses.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-012",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - why is the speed of light central to special relativity?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Special relativity postulates that the speed of light in vacuum is the same for all inertial observers, which leads to time dilation and length contraction and makes it the maximum speed at which information or matter can travel.",
+   "key_points": [
+    "constant for all inertial observers",
+    "implies time dilation and length contraction"
+   ],
+   "optional_points": [
+    "nothing with mass can reach/exceed it"
+   ],
+   "question": "Why is the speed of light central to special relativity?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "science",
+  "note": "Reference: Special relativity postulates that the speed of light in vacuum is the same for all inertial observers, which leads to time dilation and length contraction and makes it the maximum speed at which information or matter can travel.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-013",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What were the main causes of the 2008 global financial crisis?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A US housing bubble fuelled by risky subprime mortgages that were packaged into complex securities and spread through highly leveraged banks; when house prices fell, defaults surged and institutions such as Lehman Brothers collapsed.",
+   "key_points": [
+    "subprime mortgage lending / housing bubble",
+    "securitisation and leverage spread the risk"
+   ],
+   "optional_points": [
+    "collapse of institutions such as Lehman Brothers"
+   ],
+   "question": "What were the main causes of the 2008 global financial crisis?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: A US housing bubble fuelled by risky subprime mortgages that were packaged into complex securities and spread through highly leveraged banks; when house prices fell, defaults surged and institutions such as Lehman Brothers collapsed.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-014",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What was the Industrial Revolution?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The Industrial Revolution was the shift from hand production to machine and factory production that began in Britain in the late 1700s, driven by steam power and mechanised textiles, and it led to rapid urbanisation.",
+   "key_points": [
+    "began in Britain in the late 18th century",
+    "machines, factories and steam power"
+   ],
+   "optional_points": [
+    "urbanisation / social change"
+   ],
+   "question": "What was the Industrial Revolution?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: The Industrial Revolution was the shift from hand production to machine and factory production that began in Britain in the late 1700s, driven by steam power and mechanised textiles, and it led to rapid urbanisation.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-015",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what is the difference between TCP and UDP?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "TCP is connection-oriented and provides reliable, ordered delivery using acknowledgements and retransmission; UDP is connectionless with no delivery guarantee but lower overhead and latency, so it suits streaming, gaming and DNS.",
+   "key_points": [
+    "TCP reliable, ordered, connection-oriented",
+    "UDP connectionless, no guarantees, lower latency"
+   ],
+   "optional_points": [],
+   "question": "What is the difference between TCP and UDP?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "tech",
+  "note": "Reference: TCP is connection-oriented and provides reliable, ordered delivery using acknowledgements and retransmission; UDP is connectionless with no delivery guarantee but lower overhead and latency, so it suits streaming, gaming and DNS.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-016",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. What was the significance of the Magna Carta of 1215?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Barons forced King John to accept it, establishing that the king was subject to the law and limiting arbitrary royal power; it became a symbol and precursor of constitutional government, although its original terms mainly protected the barons' feudal rights.",
+   "key_points": [
+    "imposed on King John by barons in 1215",
+    "king subject to law / limits on royal power"
+   ],
+   "optional_points": [
+    "precursor of constitutional rights"
+   ],
+   "question": "What was the significance of the Magna Carta of 1215?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "domain": "history",
+  "note": "Reference: Barons forced King John to accept it, establishing that the king was subject to the law and limiting arbitrary royal power; it became a symbol and precursor of constitutional government, although its original terms mainly protected the barons' feudal rights.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-017",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a CPU cache and why does it exist?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A CPU cache is a small, very fast memory close to the processor that stores recently or frequently used data so the CPU does not have to wait for the much slower main memory.",
+   "key_points": [
+    "small fast memory near the CPU",
+    "stores frequently/recently used data",
+    "reduces slow main-memory accesses"
+   ],
+   "optional_points": [],
+   "question": "What is a CPU cache and why does it exist?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: A CPU cache is a small, very fast memory close to the processor that stores recently or frequently used data so the CPU does not have to wait for the much slower main memory.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-018",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Why do central banks raise interest rates to fight inflation, and what is the main trade-off?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Higher rates make borrowing more expensive, which reduces spending and investment and so cools demand and price growth; the trade-off is slower economic growth and possibly higher unemployment.",
+   "key_points": [
+    "higher borrowing cost reduces demand",
+    "lowers inflation pressure",
+    "cost: slower growth / higher unemployment"
+   ],
+   "optional_points": [],
+   "question": "Why do central banks raise interest rates to fight inflation, and what is the main trade-off?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: Higher rates make borrowing more expensive, which reduces spending and investment and so cools demand and price growth; the trade-off is slower economic growth and possibly higher unemployment.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-019",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What causes the seasons on Earth?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The seasons are caused by the tilt of Earth's axis (about 23.5 degrees), which changes how directly sunlight hits each hemisphere and the length of the days over the year; it is not caused by Earth's distance from the Sun.",
+   "key_points": [
+    "Earth's axial tilt",
+    "changes sunlight angle/day length"
+   ],
+   "optional_points": [
+    "not distance from the Sun"
+   ],
+   "question": "What causes the seasons on Earth?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: The seasons are caused by the tilt of Earth's axis (about 23.5 degrees), which changes how directly sunlight hits each hemisphere and the length of the days over the year; it is not caused by Earth's distance from the Sun.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-020",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is the greenhouse effect?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The greenhouse effect is the warming that occurs when gases such as carbon dioxide and water vapour trap heat radiated from Earth's surface; human emissions of these gases strengthen it.",
+   "key_points": [
+    "gases trap heat radiated by Earth",
+    "keeps the planet warm"
+   ],
+   "optional_points": [
+    "increased by human greenhouse-gas emissions"
+   ],
+   "question": "What is the greenhouse effect?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: The greenhouse effect is the warming that occurs when gases such as carbon dioxide and water vapour trap heat radiated from Earth's surface; human emissions of these gases strengthen it.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-021",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "How does a heat pump work, and why can it deliver more heat than the electrical energy it uses?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A heat pump uses electricity to run a refrigerant cycle that moves heat from a cooler place to a warmer one rather than generating heat; since it transfers existing heat, the heat delivered can be several times the electrical input (coefficient of performance above 1).",
+   "key_points": [
+    "does not create heat, transfers it",
+    "output heat exceeds electrical input (COP > 1)"
+   ],
+   "optional_points": [
+    "moves heat using a refrigerant cycle"
+   ],
+   "question": "How does a heat pump work, and why can it deliver more heat than the electrical energy it uses?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: A heat pump uses electricity to run a refrigerant cycle that moves heat from a cooler place to a warmer one rather than generating heat; since it transfers existing heat, the heat delivered can be several times the electrical input (coefficient of performance above 1).",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-022",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - why is the sky blue?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Air molecules scatter short (blue) wavelengths of sunlight much more strongly than long (red) ones, a process called Rayleigh scattering, so blue light reaches our eyes from all directions.",
+   "key_points": [
+    "Rayleigh scattering by air molecules",
+    "shorter/blue wavelengths scatter more"
+   ],
+   "optional_points": [],
+   "question": "Why is the sky blue?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "domain": "science",
+  "note": "Reference: Air molecules scatter short (blue) wavelengths of sunlight much more strongly than long (red) ones, a process called Rayleigh scattering, so blue light reaches our eyes from all directions.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-023",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what do mitochondria do in a cell?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Mitochondria carry out cellular respiration, producing most of the cell's ATP, which is why they are called its powerhouses.",
+   "key_points": [
+    "produce ATP / energy"
+   ],
+   "optional_points": [
+    "through cellular respiration"
+   ],
+   "question": "What do mitochondria do in a cell?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "domain": "science",
+  "note": "Reference: Mitochondria carry out cellular respiration, producing most of the cell's ATP, which is why they are called its powerhouses.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-024",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a bond in finance?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A bond is a loan to a government or company: the issuer pays the holder regular interest (the coupon) and repays the face value at maturity.",
+   "key_points": [
+    "a loan made by the investor",
+    "pays interest/coupon",
+    "principal returned at maturity"
+   ],
+   "optional_points": [],
+   "question": "What is a bond in finance?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: A bond is a loan to a government or company: the issuer pays the holder regular interest (the coupon) and repays the face value at maturity.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-025",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. How do vaccines work?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Vaccines expose the immune system to a harmless form or piece of a pathogen so it learns to recognise it and creates memory cells, allowing a faster, stronger response if the real pathogen appears.",
+   "key_points": [
+    "introduce a harmless antigen or part of a pathogen",
+    "immune system builds memory"
+   ],
+   "optional_points": [
+    "faster response on later exposure"
+   ],
+   "question": "How do vaccines work?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "domain": "science",
+  "note": "Reference: Vaccines expose the immune system to a harmless form or piece of a pathogen so it learns to recognise it and creates memory cells, allowing a faster, stronger response if the real pathogen appears.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-026",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "How do mRNA vaccines work?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "They deliver messenger RNA that instructs the body's cells to make a harmless piece of the pathogen, such as the spike protein, which the immune system learns to recognise; the mRNA is soon broken down and does not change a person's DNA.",
+   "key_points": [
+    "mRNA instructs cells to make an antigen (e.g. spike protein)",
+    "immune system responds and remembers"
+   ],
+   "optional_points": [
+    "mRNA degrades and does not alter DNA"
+   ],
+   "question": "How do mRNA vaccines work?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: They deliver messenger RNA that instructs the body's cells to make a harmless piece of the pathogen, such as the spike protein, which the immune system learns to recognise; the mRNA is soon broken down and does not change a person's DNA.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-027",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Why is the sky blue and not violet?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Violet is scattered even more than blue, but the Sun emits less violet light, the upper atmosphere absorbs some of it, and human eyes are less sensitive to violet, so the sky appears blue.",
+   "key_points": [
+    "violet is scattered more strongly than blue",
+    "Sun emits less violet and some is absorbed",
+    "human eyes are less sensitive to violet"
+   ],
+   "optional_points": [],
+   "question": "Why is the sky blue and not violet?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: Violet is scattered even more than blue, but the Sun emits less violet light, the upper atmosphere absorbs some of it, and human eyes are less sensitive to violet, so the sky appears blue.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-028",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. What is encryption?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Encryption scrambles data into an unreadable form using an algorithm and a key, so that only someone with the right key can turn it back into readable data.",
+   "key_points": [
+    "converts data into unreadable form",
+    "needs a key to decrypt"
+   ],
+   "optional_points": [],
+   "question": "What is encryption?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "domain": "tech",
+  "note": "Reference: Encryption scrambles data into an unreadable form using an algorithm and a key, so that only someone with the right key can turn it back into readable data.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-029",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a race condition in programming?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A race condition occurs when the result of a program depends on the unpredictable timing of concurrent operations on shared data, causing inconsistent or incorrect results; it is prevented with synchronisation such as locks or atomic operations.",
+   "key_points": [
+    "outcome depends on timing of concurrent operations",
+    "shared mutable state"
+   ],
+   "optional_points": [
+    "prevented by locks/atomics/synchronisation"
+   ],
+   "question": "What is a race condition in programming?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: A race condition occurs when the result of a program depends on the unpredictable timing of concurrent operations on shared data, causing inconsistent or incorrect results; it is prevented with synchronisation such as locks or atomic operations.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-030",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. What is the difference between weather and climate?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Weather is the short-term state of the atmosphere (hours to days), while climate is the average pattern of weather over a long period, typically 30 years or more.",
+   "key_points": [
+    "weather is short-term conditions",
+    "climate is the long-term average (decades)"
+   ],
+   "optional_points": [],
+   "question": "What is the difference between weather and climate?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "domain": "science",
+  "note": "Reference: Weather is the short-term state of the atmosphere (hours to days), while climate is the average pattern of weather over a long period, typically 30 years or more.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-031",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - how does the attention mechanism in a transformer model work?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "For each token, attention computes scores between its query and the keys of all tokens, turns them into weights, and takes a weighted sum of the value vectors, letting the model focus on relevant tokens anywhere in the sequence, in parallel.",
+   "key_points": [
+    "each token weighs the relevance of other tokens",
+    "output is a weighted sum of value vectors"
+   ],
+   "optional_points": [
+    "uses queries, keys and values",
+    "captures long-range dependencies in parallel"
+   ],
+   "question": "How does the attention mechanism in a transformer model work?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "domain": "tech",
+  "note": "Reference: For each token, attention computes scores between its query and the keys of all tokens, turns them into weights, and takes a weighted sum of the value vectors, letting the model focus on relevant tokens anywhere in the sequence, in parallel.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-032",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Explain what an API is.",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "An API (application programming interface) is a defined set of requests and responses that lets one piece of software use the features or data of another without knowing how it is implemented.",
+   "key_points": [
+    "interface for software to communicate",
+    "defined requests/responses"
+   ],
+   "optional_points": [
+    "hides the implementation"
+   ],
+   "question": "Explain what an API is."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: An API (application programming interface) is a defined set of requests and responses that lets one piece of software use the features or data of another without knowing how it is implemented.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-033",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Does the Coriolis effect decide which way water spins down a bathtub drain?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "No. At bathtub scale the Coriolis force is far too weak; the swirl direction is set by the basin's shape and any residual motion of the water. The Coriolis effect does matter for large-scale systems like hurricanes.",
+   "key_points": [
+    "no, too weak at that scale"
+   ],
+   "optional_points": [
+    "basin shape / initial motion dominate",
+    "matters for large systems like cyclones"
+   ],
+   "question": "Does the Coriolis effect decide which way water spins down a bathtub drain?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: No. At bathtub scale the Coriolis force is far too weak; the swirl direction is set by the basin's shape and any residual motion of the water. The Coriolis effect does matter for large-scale systems like hurricanes.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-034",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What was the French Revolution?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The French Revolution (beginning in 1789) was a period of upheaval in which the monarchy was overthrown and France moved toward a republic based on ideas of liberty and equality, before Napoleon rose to power.",
+   "key_points": [
+    "began in 1789",
+    "monarchy overthrown"
+   ],
+   "optional_points": [
+    "ideals of liberty/equality or republic"
+   ],
+   "question": "What was the French Revolution?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: The French Revolution (beginning in 1789) was a period of upheaval in which the monarchy was overthrown and France moved toward a republic based on ideas of liberty and equality, before Napoleon rose to power.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-035",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Why do we have leap years, and why aren't all years divisible by 4 leap years?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A solar year is about 365.2422 days, so an extra day roughly every four years keeps the calendar aligned with the seasons; century years are skipped unless divisible by 400, to correct the slight overcorrection.",
+   "key_points": [
+    "year is about 365.24 days",
+    "extra day every four years",
+    "century years only leap if divisible by 400"
+   ],
+   "optional_points": [],
+   "question": "Why do we have leap years, and why aren't all years divisible by 4 leap years?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: A solar year is about 365.2422 days, so an extra day roughly every four years keeps the calendar aligned with the seasons; century years are skipped unless divisible by 400, to correct the slight overcorrection.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-036",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is machine learning?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Machine learning is a branch of AI in which algorithms learn patterns from data and use them to make predictions or decisions, instead of following explicitly programmed rules.",
+   "key_points": [
+    "algorithms learn patterns from data",
+    "instead of explicit hand-written rules"
+   ],
+   "optional_points": [],
+   "question": "What is machine learning?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: Machine learning is a branch of AI in which algorithms learn patterns from data and use them to make predictions or decisions, instead of following explicitly programmed rules.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-037",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is inflation?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Inflation is a sustained rise in the general level of prices, which reduces the purchasing power of money.",
+   "key_points": [
+    "general/sustained rise in prices",
+    "purchasing power of money falls"
+   ],
+   "optional_points": [],
+   "question": "What is inflation?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: Inflation is a sustained rise in the general level of prices, which reduces the purchasing power of money.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-038",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What was the Cold War?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The Cold War was a period of geopolitical rivalry between the United States and the Soviet Union and their allies after World War II, fought through an arms race and proxy conflicts rather than direct war, ending around 1991.",
+   "key_points": [
+    "US vs Soviet Union rivalry after WWII",
+    "no direct full-scale war (arms race, proxy wars)"
+   ],
+   "optional_points": [
+    "ended around 1991"
+   ],
+   "question": "What was the Cold War?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "history",
+  "note": "Reference: The Cold War was a period of geopolitical rivalry between the United States and the Soviet Union and their allies after World War II, fought through an arms race and proxy conflicts rather than direct war, ending around 1991.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-039",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what does the Pythagorean theorem state?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a^2 + b^2 = c^2.",
+   "key_points": [
+    "applies to right triangles",
+    "a^2 + b^2 = c^2 with c the hypotenuse"
+   ],
+   "optional_points": [],
+   "question": "What does the Pythagorean theorem state?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "domain": "science",
+  "note": "Reference: In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides: a^2 + b^2 = c^2.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-040",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. How does public-key cryptography let two strangers communicate securely?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Each party has a public key that anyone may use to encrypt a message and a private key, kept secret, that is needed to decrypt it, so no secret has to be shared beforehand.",
+   "key_points": [
+    "key pair: public and private",
+    "encrypt with public key, decrypt with private key"
+   ],
+   "optional_points": [
+    "no prior shared secret needed"
+   ],
+   "question": "How does public-key cryptography let two strangers communicate securely?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "domain": "tech",
+  "note": "Reference: Each party has a public key that anyone may use to encrypt a message and a private key, kept secret, that is needed to decrypt it, so no secret has to be shared beforehand.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-041",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What does the CAP theorem state?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A distributed data store cannot simultaneously guarantee consistency, availability and partition tolerance; since network partitions happen, during a partition a system must choose between consistency and availability.",
+   "key_points": [
+    "can't have consistency, availability and partition tolerance all at once",
+    "during a partition choose consistency or availability"
+   ],
+   "optional_points": [],
+   "question": "What does the CAP theorem state?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: A distributed data store cannot simultaneously guarantee consistency, availability and partition tolerance; since network partitions happen, during a partition a system must choose between consistency and availability.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-042",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is the difference between supervised and unsupervised learning?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Supervised learning trains on labelled examples to predict the label for new inputs (e.g. classification), while unsupervised learning finds structure in unlabelled data (e.g. clustering).",
+   "key_points": [
+    "supervised uses labelled data",
+    "unsupervised finds structure in unlabelled data"
+   ],
+   "optional_points": [],
+   "question": "What is the difference between supervised and unsupervised learning?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "tech",
+  "note": "Reference: Supervised learning trains on labelled examples to predict the label for new inputs (e.g. classification), while unsupervised learning finds structure in unlabelled data (e.g. clustering).",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-043",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is compound interest?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Compound interest is interest calculated on both the original principal and the interest already added, so the balance grows faster over time than with simple interest.",
+   "key_points": [
+    "interest on principal plus accumulated interest"
+   ],
+   "optional_points": [
+    "grows faster/exponentially vs simple interest"
+   ],
+   "question": "What is compound interest?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: Compound interest is interest calculated on both the original principal and the interest already added, so the balance grows faster over time than with simple interest.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-044",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Explain what photosynthesis is.",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Photosynthesis is the process by which plants, algae and some bacteria use light energy to turn carbon dioxide and water into glucose, releasing oxygen.",
+   "key_points": [
+    "uses light energy",
+    "takes in carbon dioxide and water",
+    "produces glucose (sugar) and oxygen"
+   ],
+   "optional_points": [],
+   "question": "Explain what photosynthesis is."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: Photosynthesis is the process by which plants, algae and some bacteria use light energy to turn carbon dioxide and water into glucose, releasing oxygen.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-045",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "quick question - what does DNS do?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "The Domain Name System translates human-readable domain names such as example.com into the numeric IP addresses computers use to find each other.",
+   "key_points": [
+    "translates domain names to IP addresses"
+   ],
+   "optional_points": [
+    "works as a distributed/hierarchical lookup system"
+   ],
+   "question": "What does DNS do?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "domain": "tech",
+  "note": "Reference: The Domain Name System translates human-readable domain names such as example.com into the numeric IP addresses computers use to find each other.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-046",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. Explain the water cycle.",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "Water evaporates from oceans and land, rises and condenses into clouds, falls as precipitation, and collects in rivers, lakes, oceans and groundwater before the cycle repeats.",
+   "key_points": [
+    "evaporation",
+    "condensation into clouds",
+    "precipitation"
+   ],
+   "optional_points": [
+    "collection in oceans, rivers, lakes and groundwater"
+   ],
+   "question": "Explain the water cycle."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "domain": "science",
+  "note": "Reference: Water evaporates from oceans and land, rises and condenses into clouds, falls as precipitation, and collects in rivers, lakes, oceans and groundwater before the cycle repeats.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-047",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What does the Heisenberg uncertainty principle say?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "It says that certain pairs of properties, such as position and momentum, cannot both be known with arbitrary precision at the same time; this is a fundamental feature of quantum systems, not just a limit of measuring instruments.",
+   "key_points": [
+    "position and momentum can't both be exactly known"
+   ],
+   "optional_points": [
+    "fundamental to quantum mechanics, not instrument clumsiness"
+   ],
+   "question": "What does the Heisenberg uncertainty principle say?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "direct",
+  "domain": "science",
+  "note": "Reference: It says that certain pairs of properties, such as position and momentum, cannot both be known with arbitrary precision at the same time; this is a fundamental feature of quantum systems, not just a limit of measuring instruments.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-048",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "What is a dividend?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "A dividend is a share of a company's profits paid to its shareholders, usually in cash and on a per-share basis.",
+   "key_points": [
+    "portion of profits paid to shareholders",
+    "usually paid per share (often in cash)"
+   ],
+   "optional_points": [],
+   "question": "What is a dividend?"
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "direct",
+  "domain": "finance",
+  "note": "Reference: A dividend is a share of a company's profits paid to its shareholders, usually in cash and on a per-share basis.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-049",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. Why does ice float on liquid water?",
+  "category": "factual",
+  "grader": "judge",
+  "gold": {
+   "reference": "When water freezes its molecules form an open hexagonal lattice held by hydrogen bonds, making ice about 9% less dense than liquid water, so it floats.",
+   "key_points": [
+    "ice is less dense than liquid water"
+   ],
+   "optional_points": [
+    "hydrogen bonds form an open lattice when freezing"
+   ],
+   "question": "Why does ice float on liquid water?"
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "domain": "science",
+  "note": "Reference: When water freezes its molecules form an open hexagonal lattice held by hydrogen bonds, making ice about 9% less dense than liquid water, so it floats.",
+  "gold_checks": "Claude draft; GLM agreement check pending",
+  "id": "fact-050",
+  "split": "unsplit"
+ }
+]

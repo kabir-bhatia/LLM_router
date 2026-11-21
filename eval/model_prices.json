@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "currency": "USD",
+    "unit": "per 1M tokens",
+    "fetched": "2026-11-20",
+    "note": "Standard (non-US-premium, non-batch, non-spot) serverless rates. Re-check before quoting final numbers."
+  },
+  "fireworks": {
+    "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {"input": 0.05, "cached_input": 0.01, "output": 0.20, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/gpt-oss-120b": {"input": 0.15, "cached_input": 0.015, "output": 0.60, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/glm-5p3-flash": {"input": 0.15, "cached_input": 0.03, "output": 0.50, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/minimax-m3p1-flash": {"input": 0.15, "cached_input": 0.015, "output": 0.60, "source": "https://fireworks.ai/models/fireworks/minimax-m3p1-flash (model page only; not in pricing table)"},
+    "accounts/fireworks/models/deepseek-v4p1-flash": {"input": 0.30, "cached_input": 0.006, "output": 1.20, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/minimax-m3": {"input": 0.30, "cached_input": 0.06, "output": 1.20, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/nemotron-3-ultra-nvfp4": {"input": 0.60, "cached_input": 0.12, "output": 2.40, "source": "https://fireworks.ai/pricing (Nemotron 3 Ultra, preview)"},
+    "accounts/fireworks/models/glm-5p3": {"input": 1.40, "cached_input": 0.26, "output": 4.40, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/qwen3p8-max": {"input": 2.00, "cached_input": 0.25, "output": 6.00, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/kimi-k3p1-pro": {"input": 2.00, "cached_input": 0.20, "output": 10.00, "source": "https://fireworks.ai/pricing"},
+    "accounts/fireworks/models/kimi-k3": {"input": 3.00, "cached_input": 0.30, "output": 15.00, "source": "https://fireworks.ai/pricing"}
+  },
+  "hyde": {
+    "_note": "Hyde gateway is free for the user. hyde/glm-5.3-flash is priced at public Fireworks market rates for the cost comparison; judge models (Kimi) are not priced.",
+    "hyde/glm-5.3-flash": {"input": 0.15, "output": 0.50, "source": "market-equivalent: Fireworks glm-5p3-flash, https://fireworks.ai/pricing"}
+  },
+  "gemini": {
+    "_note": "Gemini AI Studio runs on the free tier ($0 actual); priced at list for the comparison. Same figures as D1 and src/services/cost.py.",
+    "gemini-3.1-flash-lite": {"input": 0.25, "output": 1.50, "source": "src/services/cost.py (checked 2026-08-15) / D1"}
+  }
+}

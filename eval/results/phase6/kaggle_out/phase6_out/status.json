@@ -1,0 +1,10 @@
+{
+ "status": {
+  "main_gpu_run1": "done",
+  "main_gpu_run2": "done",
+  "main_gpu_run3": "done",
+  "main_cpu_check": "done",
+  "gpu_server_run1": "done"
+ },
+ "fireworks_spend_usd": 0.29283
+}

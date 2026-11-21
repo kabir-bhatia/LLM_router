@@ -1,0 +1,392 @@
+{
+ "rules": {
+  "accuracy_all": 0.6958333333333333,
+  "coverage_any": 0.7833333333333333,
+  "acc_when_fired": 0.8882978723404256,
+  "coverage_strong": 0.5166666666666667,
+  "acc_when_strong": 0.9758064516129032,
+  "false_oos_dev": 0.0,
+  "oos_flagged": 0.8,
+  "ms_per_prompt": 0.1766499999879064,
+  "confusion_note": "abstentions are shown in the out_of_scope column"
+ },
+ "embedding": {
+  "accuracy_no_oos_threshold": 0.9916666666666667,
+  "accuracy": 0.9666666666666667,
+  "false_oos_dev": 0.03333333333333333,
+  "oos_flagged": 0.6733333333333332,
+  "thresholds": [
+   0.478,
+   0.491,
+   0.49,
+   0.458,
+   0.506
+  ],
+  "ms_per_prompt": 40.511547500530774
+ },
+ "hybrid": {
+  "accuracy": 0.9666666666666667,
+  "false_oos_dev": 0.020833333333333332,
+  "oos_flagged": 0.9466666666666667,
+  "share_decided_by_rule": 0.5166666666666667,
+  "acc_rule_path": 0.9758064516129032,
+  "acc_embedding_path": 0.9568965517241379,
+  "ms_per_prompt": 19.75723129191111
+ },
+ "llm": {
+  "accuracy": 0.9958333333333333,
+  "false_oos_dev": 0.004166666666666667,
+  "oos_flagged": 1.0,
+  "failed_calls": 0,
+  "mean_latency_s": 1.4089611715740629,
+  "mean_tokens_in": 256.65185185185186,
+  "mean_tokens_out": 4.303703703703704,
+  "cost_total_usd": 0.0109754,
+  "n_calls": 270,
+  "cost_per_1000_usd": 0.040649629629629626
+ },
+ "per_category": {
+  "rules": {
+   "factual": 0.7333333333333333,
+   "math": 0.8,
+   "sentiment": 1.0,
+   "summarisation": 1.0,
+   "ner": 0.06666666666666667,
+   "code_debug": 0.6666666666666666,
+   "logic": 0.7333333333333333,
+   "code_gen": 0.5666666666666667
+  },
+  "embedding": {
+   "factual": 0.9333333333333333,
+   "math": 0.9333333333333333,
+   "sentiment": 1.0,
+   "summarisation": 0.9333333333333333,
+   "ner": 1.0,
+   "code_debug": 0.9666666666666667,
+   "logic": 0.9666666666666667,
+   "code_gen": 1.0
+  },
+  "hybrid": {
+   "factual": 0.9333333333333333,
+   "math": 0.8666666666666667,
+   "sentiment": 1.0,
+   "summarisation": 1.0,
+   "ner": 1.0,
+   "code_debug": 1.0,
+   "logic": 0.9666666666666667,
+   "code_gen": 0.9666666666666667
+  },
+  "llm": {
+   "factual": 1.0,
+   "math": 1.0,
+   "sentiment": 0.9666666666666667,
+   "summarisation": 1.0,
+   "ner": 1.0,
+   "code_debug": 1.0,
+   "logic": 1.0,
+   "code_gen": 1.0
+  }
+ },
+ "rules_misses": [
+  {
+   "id": "fact-002",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-013",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-017",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-023",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-026",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-032",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-040",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "fact-041",
+   "true": "factual",
+   "rule": "none"
+  },
+  {
+   "id": "math-026",
+   "true": "math",
+   "rule": "summarisation"
+  },
+  {
+   "id": "math-028",
+   "true": "math",
+   "rule": "none"
+  },
+  {
+   "id": "math-038",
+   "true": "math",
+   "rule": "summarisation"
+  },
+  {
+   "id": "math-041",
+   "true": "math",
+   "rule": "none"
+  },
+  {
+   "id": "math-043",
+   "true": "math",
+   "rule": "none"
+  },
+  {
+   "id": "math-044",
+   "true": "math",
+   "rule": "none"
+  },
+  {
+   "id": "ner-001",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-002",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-003",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-004",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-006",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-007",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-010",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-012",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-015",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-016",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-017",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-018",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-020",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-021",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-028",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-030",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-031",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-032",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-033",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-035",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-037",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-039",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-041",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-043",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-044",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-048",
+   "true": "ner",
+   "rule": "none"
+  },
+  {
+   "id": "ner-049",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "ner-050",
+   "true": "ner",
+   "rule": "factual"
+  },
+  {
+   "id": "code_debug-001",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-008",
+   "true": "code_debug",
+   "rule": "math"
+  },
+  {
+   "id": "code_debug-012",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-013",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-014",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-021",
+   "true": "code_debug",
+   "rule": "math"
+  },
+  {
+   "id": "code_debug-025",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-034",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-036",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "code_debug-041",
+   "true": "code_debug",
+   "rule": "none"
+  },
+  {
+   "id": "logic-015",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-019",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-025",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-029",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-034",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-037",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-048",
+   "true": "logic",
+   "rule": "none"
+  },
+  {
+   "id": "logic-049",
+   "true": "logic",
+   "rule": "none"
+  }
+ ]
+}

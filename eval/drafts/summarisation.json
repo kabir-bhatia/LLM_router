@@ -1,0 +1,2302 @@
+[
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it as exactly 3 bullet points (each line starting with '- ')? I only have a minute.\n\nHollis Energy reported annual revenue of 2.4 billion dollars, up 6 percent from last year, but net profit fell 18 percent to 190 million dollars because of a one-time charge of 85 million dollars linked to closing an old gas plant. Chief executive Priya Anand said the company will invest 600 million dollars in wind farms over three years and expects to cut carbon emissions by 30 percent by 2030. Shares rose 2 percent after the announcement, although analysts noted that debt has increased to 1.1 billion dollars. The company, founded in 1952, supplies electricity to 3.4 million customers across three states. The old gas plant, built in 1978, had been due to close for several years. The chief executive also said the company would publish a detailed climate report next spring and meet investors in Chicago in June.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "revenue 2.4 billion, up 6 percent",
+    "profit down 18 percent due to an 85 million charge",
+    "600 million wind investment over three years"
+   ],
+   "fact_hints": [
+    [
+     "2.4 billion"
+    ],
+    [
+     "18",
+     "85 million"
+    ],
+    [
+     "600 million",
+     "wind"
+    ]
+   ],
+   "core_facts": [
+    "the company's revenue rose",
+    "but its profit fell because of a one-time charge"
+   ],
+   "secondary_facts": [
+    "600 million dollar wind investment over three years"
+   ],
+   "source_text": "Hollis Energy reported annual revenue of 2.4 billion dollars, up 6 percent from last year, but net profit fell 18 percent to 190 million dollars because of a one-time charge of 85 million dollars linked to closing an old gas plant. Chief executive Priya Anand said the company will invest 600 million dollars in wind farms over three years and expects to cut carbon emissions by 30 percent by 2030. Shares rose 2 percent after the announcement, although analysts noted that debt has increased to 1.1 billion dollars. The company, founded in 1952, supplies electricity to 3.4 million customers across three states. The old gas plant, built in 1978, had been due to close for several years. The chief executive also said the company would publish a detailed climate report next spring and meet investors in Chicago in June.",
+   "reference_summary": "- Revenue rose 6 percent to 2.4 billion dollars.\n- Profit fell 18 percent because of an 85 million dollar charge.\n- It will invest 600 million dollars in wind farms over three years."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 139,
+  "note": "Constraint is checked by code; key facts (revenue 2.4 billion, up 6 percent; profit down 18 percent due to an 85 million charge; 600 million wind investment over three years) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-001",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly two sentences:\n\nLast week the central bank held its main interest rate at 4.5 percent, surprising some economists who had expected a cut. Governor Lena Karlsson said inflation, now at 3.1 percent, is falling but remains above the 2 percent target, and that wage growth of 5.4 percent could keep prices rising. Markets now expect the first cut in September rather than June. Mortgage lenders said the decision means borrowers on variable-rate deals will see no relief for several months. The governor spoke at a press conference in the capital on Thursday after a vote of seven to two within the monetary policy committee. The bank raised rates eleven times between 2022 and 2023 to deal with an inflation peak above 9 percent. The currency strengthened slightly against the dollar after the announcement.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "central bank held its rate at 4.5 percent",
+    "inflation 3.1 percent above 2 percent target; wage growth 5.4 percent",
+    "first cut now expected in September"
+   ],
+   "fact_hints": [
+    [
+     "4.5"
+    ],
+    [
+     "3.1",
+     "target"
+    ],
+    [
+     "September"
+    ]
+   ],
+   "core_facts": [
+    "the central bank held its interest rate",
+    "inflation is still above target so the first cut is expected later"
+   ],
+   "secondary_facts": [
+    "rate 4.5 percent",
+    "inflation 3.1 percent, wage growth 5.4 percent"
+   ],
+   "source_text": "Last week the central bank held its main interest rate at 4.5 percent, surprising some economists who had expected a cut. Governor Lena Karlsson said inflation, now at 3.1 percent, is falling but remains above the 2 percent target, and that wage growth of 5.4 percent could keep prices rising. Markets now expect the first cut in September rather than June. Mortgage lenders said the decision means borrowers on variable-rate deals will see no relief for several months. The governor spoke at a press conference in the capital on Thursday after a vote of seven to two within the monetary policy committee. The bank raised rates eleven times between 2022 and 2023 to deal with an inflation peak above 9 percent. The currency strengthened slightly against the dollar after the announcement.",
+   "reference_summary": "The central bank held its rate at 4.5 percent. Inflation of 3.1 percent is still above the 2 percent target and wages are rising 5.4 percent, so markets expect the first cut in September."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 131,
+  "note": "Constraint is checked by code; key facts (central bank held its rate at 4.5 percent; inflation 3.1 percent above 2 percent target; wage growth 5.4 percent; first cut now expected in September) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-002",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 35 words:\n\nResearchers have developed a battery made from sodium instead of lithium, which is cheaper and more abundant. In tests, the cell kept 90 percent of its capacity after 2,000 charge cycles and charged to 80 percent in 12 minutes. Its energy density is still about 30 percent lower than a typical lithium-ion cell, so the team expects it to be used first in stationary storage for solar farms rather than in cars. Sodium is found in common salt and is available almost everywhere, whereas lithium is mined mainly in a few countries and its price has swung widely in recent years. The research was led by a team at a technical university in Sweden, and a start-up has already licensed the design for production.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "sodium battery instead of lithium",
+    "90 percent capacity after 2,000 cycles",
+    "30 percent lower energy density so first used for stationary storage"
+   ],
+   "fact_hints": [
+    [
+     "sodium"
+    ],
+    [
+     "90",
+     "2,000"
+    ],
+    [
+     "30 percent",
+     "stationary",
+     "storage"
+    ]
+   ],
+   "core_facts": [
+    "researchers built a battery that uses sodium instead of lithium",
+    "its lower energy density means it suits stationary storage first"
+   ],
+   "secondary_facts": [
+    "keeps 90 percent of capacity after 2,000 cycles"
+   ],
+   "source_text": "Researchers have developed a battery made from sodium instead of lithium, which is cheaper and more abundant. In tests, the cell kept 90 percent of its capacity after 2,000 charge cycles and charged to 80 percent in 12 minutes. Its energy density is still about 30 percent lower than a typical lithium-ion cell, so the team expects it to be used first in stationary storage for solar farms rather than in cars. Sodium is found in common salt and is available almost everywhere, whereas lithium is mined mainly in a few countries and its price has swung widely in recent years. The research was led by a team at a technical university in Sweden, and a start-up has already licensed the design for production.",
+   "reference_summary": "Researchers built a sodium battery that keeps 90 percent of its capacity after 2,000 cycles, but its 30 percent lower energy density suits stationary storage first."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 124,
+  "note": "Constraint is checked by code; key facts (sodium battery instead of lithium; 90 percent capacity after 2,000 cycles; 30 percent lower energy density so first used for stationary storage) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-003",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text as exactly 3 bullet points (each line starting with '- '):\n\nWildlife officials counted 3,200 snow leopards across Central Asia in a five-year survey, up from an estimate of 2,500 a decade ago. Conservationists credit community programmes that pay herders compensation for livestock lost to leopards, which has reduced revenge killings by about half in surveyed valleys. However, the survey used camera traps in only 40 percent of the range, and some experts believe the apparent rise may partly reflect better counting methods rather than a real increase. Climate change is shrinking the high-altitude habitat the animals depend on. Snow leopards live in 12 countries at altitudes up to 5,500 metres and are very hard to spot, which is why researchers rely on camera traps and droppings. They are listed as vulnerable. The survey was coordinated by a conservation coalition and took five years, covering about 1.2 million square kilometres.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "3,200 snow leopards counted, up from 2,500",
+    "herder compensation halved revenge killings",
+    "counting may overstate the rise; climate change shrinks habitat"
+   ],
+   "fact_hints": [
+    [
+     "3,200",
+     "2,500"
+    ],
+    [
+     "compensation",
+     "half"
+    ],
+    [
+     "counting",
+     "climate"
+    ]
+   ],
+   "core_facts": [
+    "snow leopard numbers appear to have risen",
+    "the rise may partly reflect better counting"
+   ],
+   "secondary_facts": [
+    "3,200 counted versus 2,500",
+    "herder compensation halved revenge killings",
+    "climate change shrinks their habitat"
+   ],
+   "source_text": "Wildlife officials counted 3,200 snow leopards across Central Asia in a five-year survey, up from an estimate of 2,500 a decade ago. Conservationists credit community programmes that pay herders compensation for livestock lost to leopards, which has reduced revenge killings by about half in surveyed valleys. However, the survey used camera traps in only 40 percent of the range, and some experts believe the apparent rise may partly reflect better counting methods rather than a real increase. Climate change is shrinking the high-altitude habitat the animals depend on. Snow leopards live in 12 countries at altitudes up to 5,500 metres and are very hard to spot, which is why researchers rely on camera traps and droppings. They are listed as vulnerable. The survey was coordinated by a conservation coalition and took five years, covering about 1.2 million square kilometres.",
+   "reference_summary": "- Surveyors counted 3,200 snow leopards, up from an estimate of 2,500.\n- Compensation for herders cut revenge killings by about half.\n- The rise may partly reflect better counting, and climate change shrinks their habitat."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 139,
+  "note": "Constraint is checked by code; key facts (3,200 snow leopards counted, up from 2,500; herder compensation halved revenge killings; counting may overstate the rise; climate change shrinks habitat) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-004",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly one sentence? I only have a minute.\n\nThe old Corbett Mill, built in 1862, will reopen next spring as a museum of industrial history after a 6 million pound restoration. The project is funded mainly by a heritage lottery grant covering 4.2 million pounds, with the rest raised by donations. Visitors will see working looms, restored steam engines and recordings of former mill workers. The museum expects 80,000 visitors in its first year. The mill once employed 900 people and produced woollen cloth that was exported across Europe. It closed in 1971 and stood empty for decades, and a fire in 1998 damaged one wing. The new museum will include a cafe in the former boiler house and a classroom space for school visits, which will be free of charge.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "Corbett Mill reopens as a museum of industrial history",
+    "6 million pound restoration, 4.2 million from a heritage lottery grant"
+   ],
+   "fact_hints": [
+    [
+     "museum"
+    ],
+    [
+     "6 million",
+     "4.2 million"
+    ]
+   ],
+   "core_facts": [
+    "the old mill will reopen as a museum of industrial history",
+    "the restoration is funded mostly by a heritage lottery grant"
+   ],
+   "secondary_facts": [
+    "6 million pound restoration",
+    "reopens next spring"
+   ],
+   "source_text": "The old Corbett Mill, built in 1862, will reopen next spring as a museum of industrial history after a 6 million pound restoration. The project is funded mainly by a heritage lottery grant covering 4.2 million pounds, with the rest raised by donations. Visitors will see working looms, restored steam engines and recordings of former mill workers. The museum expects 80,000 visitors in its first year. The mill once employed 900 people and produced woollen cloth that was exported across Europe. It closed in 1971 and stood empty for decades, and a fire in 1998 damaged one wing. The new museum will include a cafe in the former boiler house and a classroom space for school visits, which will be free of charge.",
+   "reference_summary": "Corbett Mill will reopen next spring as a museum of industrial history after a 6 million pound restoration, 4.2 million of it from a heritage lottery grant."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "passage_words": 123,
+  "note": "Constraint is checked by code; key facts (Corbett Mill reopens as a museum of industrial history; 6 million pound restoration, 4.2 million from a heritage lottery grant) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-005",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it as exactly 3 bullet points (each line starting with '- ')? I only have a minute.\n\nLumen Mobile has agreed to buy rival Telcor for 7.8 billion dollars in an all-share deal that would create the country's second-largest operator with 24 million customers. The companies say the merger will save 400 million dollars a year in costs within three years, with about 2,500 jobs expected to go. Regulators, who blocked a similar deal in 2019, will review the agreement, and consumer groups warn it could raise prices. Telcor shareholders will receive 0.6 Lumen shares for each Telcor share. Lumen Mobile, founded in 2003, currently has 14 million customers and is led by chief executive Daniel Ito, who would remain in charge of the combined firm. Telcor, which has 10 million customers, has struggled with falling revenues in recent years. The deal is expected to close within 18 months if approved.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "Lumen to buy Telcor for 7.8 billion dollars in shares",
+    "400 million dollars a year savings, about 2,500 jobs to go",
+    "regulators will review; consumer groups fear higher prices"
+   ],
+   "fact_hints": [
+    [
+     "7.8 billion",
+     "Telcor"
+    ],
+    [
+     "400 million",
+     "2,500"
+    ],
+    [
+     "regulators",
+     "prices"
+    ]
+   ],
+   "core_facts": [
+    "Lumen Mobile will buy Telcor",
+    "regulators will review the deal and consumer groups fear higher prices"
+   ],
+   "secondary_facts": [
+    "7.8 billion dollars in shares",
+    "400 million dollars a year savings, about 2,500 jobs go"
+   ],
+   "source_text": "Lumen Mobile has agreed to buy rival Telcor for 7.8 billion dollars in an all-share deal that would create the country's second-largest operator with 24 million customers. The companies say the merger will save 400 million dollars a year in costs within three years, with about 2,500 jobs expected to go. Regulators, who blocked a similar deal in 2019, will review the agreement, and consumer groups warn it could raise prices. Telcor shareholders will receive 0.6 Lumen shares for each Telcor share. Lumen Mobile, founded in 2003, currently has 14 million customers and is led by chief executive Daniel Ito, who would remain in charge of the combined firm. Telcor, which has 10 million customers, has struggled with falling revenues in recent years. The deal is expected to close within 18 months if approved.",
+   "reference_summary": "- Lumen Mobile will buy Telcor for 7.8 billion dollars in shares.\n- The merger should save 400 million dollars a year, with about 2,500 jobs going.\n- Regulators will review it and consumer groups fear higher prices."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 134,
+  "note": "Constraint is checked by code; key facts (Lumen to buy Telcor for 7.8 billion dollars in shares; 400 million dollars a year savings, about 2,500 jobs to go; regulators will review; consumer groups fear higher prices) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-006",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"A software update released on Tuesday fixes a security flaw that could let attackers read messages sent through the Chatly app. The flaw, found by an independent researcher, affected versions released since September and was present on both phones and computers. Chatly says it has seen no evidence that the weakness was used. Users should install version 5.3 as soon as possible; the update downloads automatically if automatic updates are switched on. Chatly has 40 million monthly users in 90 countries and is known for its group chats and disappearing messages. The security researcher who found the flaw was paid a reward of 15,000 dollars under the company's bug-bounty programme. Chatly said it will publish a full technical explanation in two weeks.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "update fixes a security flaw in Chatly",
+    "install version 5.3",
+    "no evidence the flaw was exploited"
+   ],
+   "fact_hints": [
+    [
+     "flaw",
+     "security"
+    ],
+    [
+     "5.3"
+    ],
+    [
+     "no evidence",
+     "not used",
+     "exploited"
+    ]
+   ],
+   "core_facts": [
+    "an update fixes a security flaw in the Chatly app",
+    "users should install the new version"
+   ],
+   "secondary_facts": [
+    "no evidence the flaw was exploited"
+   ],
+   "source_text": "A software update released on Tuesday fixes a security flaw that could let attackers read messages sent through the Chatly app. The flaw, found by an independent researcher, affected versions released since September and was present on both phones and computers. Chatly says it has seen no evidence that the weakness was used. Users should install version 5.3 as soon as possible; the update downloads automatically if automatic updates are switched on. Chatly has 40 million monthly users in 90 countries and is known for its group chats and disappearing messages. The security researcher who found the flaw was paid a reward of 15,000 dollars under the company's bug-bounty programme. Chatly said it will publish a full technical explanation in two weeks.",
+   "reference_summary": "A software update fixes a security flaw in Chatly, with no evidence it was exploited, and users should install version 5.3."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 122,
+  "note": "Constraint is checked by code; key facts (update fixes a security flaw in Chatly; install version 5.3; no evidence the flaw was exploited) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-007",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 35 words:\n\nThe Pembrook Orchestra will perform all nine Beethoven symphonies over three evenings in July, conducted by Ana Ribeiro, who joined as music director last year. Tickets start at 18 pounds and a limited number of free seats will be given to students. The concerts will be held in the open-air amphitheatre, and if it rains they will move indoors to the town hall, which holds only 400 people. Ribeiro is the first woman to lead the orchestra in its 90-year history. The amphitheatre seats 1,500 and was renovated last year. Each evening will include three symphonies with a short interval, and a pre-concert talk about Beethoven's life will be given by a local professor an hour before each performance.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "all nine Beethoven symphonies over three evenings in July",
+    "conductor Ana Ribeiro",
+    "tickets from 18 pounds"
+   ],
+   "fact_hints": [
+    [
+     "nine",
+     "Beethoven"
+    ],
+    [
+     "Ribeiro"
+    ],
+    [
+     "18"
+    ]
+   ],
+   "core_facts": [
+    "the orchestra will play all nine Beethoven symphonies",
+    "over three evenings in July"
+   ],
+   "secondary_facts": [
+    "conductor Ana Ribeiro",
+    "tickets from 18 pounds"
+   ],
+   "source_text": "The Pembrook Orchestra will perform all nine Beethoven symphonies over three evenings in July, conducted by Ana Ribeiro, who joined as music director last year. Tickets start at 18 pounds and a limited number of free seats will be given to students. The concerts will be held in the open-air amphitheatre, and if it rains they will move indoors to the town hall, which holds only 400 people. Ribeiro is the first woman to lead the orchestra in its 90-year history. The amphitheatre seats 1,500 and was renovated last year. Each evening will include three symphonies with a short interval, and a pre-concert talk about Beethoven's life will be given by a local professor an hour before each performance.",
+   "reference_summary": "The Pembrook Orchestra, conducted by Ana Ribeiro, will play all nine Beethoven symphonies over three evenings in July, with tickets from 18 pounds."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 119,
+  "note": "Constraint is checked by code; key facts (all nine Beethoven symphonies over three evenings in July; conductor Ana Ribeiro; tickets from 18 pounds) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-008",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text as exactly 3 bullet points (each line starting with '- '):\n\nEngineers at the Marlow Institute have built a robot that sorts household waste using cameras and a trained neural network. In a pilot at a recycling plant, it identified plastics, metals and paper with 94 percent accuracy and processed 60 items per minute, compared with about 35 for a human worker. The machine struggles with dirty or crushed items, where accuracy falls to 71 percent. Each unit costs 180,000 euros, so the plant expects to recoup its investment only after about five years. The institute, based in Bavaria, has 300 researchers and works with industry on automation. The robot uses a vacuum gripper and a conveyor belt and was trained on 2 million labelled images of waste. The pilot ran for three months at a plant that processes 30,000 tonnes of recyclables a year.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "robot sorts waste with 94 percent accuracy at 60 items/minute",
+    "accuracy falls to 71 percent for dirty or crushed items",
+    "costs 180,000 euros, payback about five years"
+   ],
+   "fact_hints": [
+    [
+     "94",
+     "60 items"
+    ],
+    [
+     "71"
+    ],
+    [
+     "180,000",
+     "five years"
+    ]
+   ],
+   "core_facts": [
+    "a robot sorts household waste accurately and faster than a person",
+    "its accuracy falls for dirty or crushed items"
+   ],
+   "secondary_facts": [
+    "94 percent accuracy, 60 items a minute",
+    "costs 180,000 euros, payback about five years"
+   ],
+   "source_text": "Engineers at the Marlow Institute have built a robot that sorts household waste using cameras and a trained neural network. In a pilot at a recycling plant, it identified plastics, metals and paper with 94 percent accuracy and processed 60 items per minute, compared with about 35 for a human worker. The machine struggles with dirty or crushed items, where accuracy falls to 71 percent. Each unit costs 180,000 euros, so the plant expects to recoup its investment only after about five years. The institute, based in Bavaria, has 300 researchers and works with industry on automation. The robot uses a vacuum gripper and a conveyor belt and was trained on 2 million labelled images of waste. The pilot ran for three months at a plant that processes 30,000 tonnes of recyclables a year.",
+   "reference_summary": "- The robot sorts waste with 94 percent accuracy at 60 items a minute.\n- Accuracy falls to 71 percent for dirty or crushed items.\n- Each unit costs 180,000 euros, so payback takes about five years."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 134,
+  "note": "Constraint is checked by code; key facts (robot sorts waste with 94 percent accuracy at 60 items/minute; accuracy falls to 71 percent for dirty or crushed items; costs 180,000 euros, payback about five years) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-009",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text as exactly 3 bullet points (each line starting with '- '):\n\nThe Treaty of Tordesillas, signed in 1494, divided newly discovered lands outside Europe between Spain and Portugal along a line 370 leagues west of the Cape Verde islands. Lands east of the line went to Portugal and those to the west to Spain. The pope had earlier issued a decree that favoured Spain, and Portugal, fearing the loss of its route around Africa, negotiated the shift of the line. The treaty later explained why Portuguese became the language of Brazil, which lay east of the line, while most of the rest of Latin America spoke Spanish. The treaty was signed in a small town in Spain, now in the province of Valladolid. Neither country consulted the peoples who already lived in the lands being divided, and other European powers such as France and England later rejected the agreement. The line was adjusted again in 1529 on the opposite side of the world.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "1494 treaty divided new lands between Spain and Portugal",
+    "line 370 leagues west of Cape Verde",
+    "explains Portuguese in Brazil and Spanish elsewhere in Latin America"
+   ],
+   "fact_hints": [
+    [
+     "1494"
+    ],
+    [
+     "370",
+     "Cape Verde"
+    ],
+    [
+     "Brazil",
+     "Portuguese"
+    ]
+   ],
+   "core_facts": [
+    "a 1494 treaty divided newly found lands between Spain and Portugal",
+    "it explains why Brazil speaks Portuguese"
+   ],
+   "secondary_facts": [
+    "the line lay 370 leagues west of the Cape Verde islands"
+   ],
+   "source_text": "The Treaty of Tordesillas, signed in 1494, divided newly discovered lands outside Europe between Spain and Portugal along a line 370 leagues west of the Cape Verde islands. Lands east of the line went to Portugal and those to the west to Spain. The pope had earlier issued a decree that favoured Spain, and Portugal, fearing the loss of its route around Africa, negotiated the shift of the line. The treaty later explained why Portuguese became the language of Brazil, which lay east of the line, while most of the rest of Latin America spoke Spanish. The treaty was signed in a small town in Spain, now in the province of Valladolid. Neither country consulted the peoples who already lived in the lands being divided, and other European powers such as France and England later rejected the agreement. The line was adjusted again in 1529 on the opposite side of the world.",
+   "reference_summary": "- The 1494 treaty divided newly found lands between Spain and Portugal.\n- The dividing line lay 370 leagues west of the Cape Verde islands.\n- It explains why Brazil speaks Portuguese while most of Latin America speaks Spanish."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 152,
+  "note": "Constraint is checked by code; key facts (1494 treaty divided new lands between Spain and Portugal; line 370 leagues west of Cape Verde; explains Portuguese in Brazil and Spanish elsewhere in Latin America) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-010",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in no more than 25 words. Keep only facts stated in the text.\n\n\"A 400-year-old oak tree in the Weald Forest was cut down illegally last week, and police are investigating. The tree, known locally as the Old Warden, was thought to have sheltered soldiers in the English Civil War and was a popular walking destination. The forest trust has offered a 10,000 pound reward for information and says the trunk, about 3 metres around, was removed with a chainsaw at night. The trust will plant a sapling grown from one of the tree's acorns on the same spot. The Weald Forest covers 1,400 hectares and receives about 300,000 visitors a year. Rangers found the stump and sawdust on Monday morning and think the work took several hours. It is a criminal offence to fell a protected tree, punishable with a fine of up to 20,000 pounds, and local woodworkers have been told to report any large oak timber offered for sale.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "400-year-old oak 'Old Warden' illegally cut down",
+    "10,000 pound reward offered",
+    "sapling from its acorns will be planted"
+   ],
+   "fact_hints": [
+    [
+     "oak",
+     "Old Warden",
+     "400"
+    ],
+    [
+     "10,000",
+     "reward"
+    ],
+    [
+     "sapling",
+     "acorn"
+    ]
+   ],
+   "core_facts": [
+    "a 400-year-old oak was illegally cut down",
+    "a reward is offered for information"
+   ],
+   "secondary_facts": [
+    "a sapling from its acorns will be planted"
+   ],
+   "source_text": "A 400-year-old oak tree in the Weald Forest was cut down illegally last week, and police are investigating. The tree, known locally as the Old Warden, was thought to have sheltered soldiers in the English Civil War and was a popular walking destination. The forest trust has offered a 10,000 pound reward for information and says the trunk, about 3 metres around, was removed with a chainsaw at night. The trust will plant a sapling grown from one of the tree's acorns on the same spot. The Weald Forest covers 1,400 hectares and receives about 300,000 visitors a year. Rangers found the stump and sawdust on Monday morning and think the work took several hours. It is a criminal offence to fell a protected tree, punishable with a fine of up to 20,000 pounds, and local woodworkers have been told to report any large oak timber offered for sale.",
+   "reference_summary": "Police are investigating the illegal felling of the 400-year-old Old Warden oak; a 10,000 pound reward is offered and a sapling will replace it."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "careful",
+  "passage_words": 149,
+  "note": "Constraint is checked by code; key facts (400-year-old oak 'Old Warden' illegally cut down; 10,000 pound reward offered; sapling from its acorns will be planted) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-011",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly two sentences:\n\nFarmers in the Valdoro region have begun using drones to spray vineyards, replacing tractors that compact the soil on steep slopes. Each drone covers 20 hectares in a day, about four times the speed of a worker on foot, and cuts pesticide use by 30 percent because it targets only affected vines. The drones cost 25,000 euros each, and a regional subsidy covers half. Union leaders worry that the technology will remove seasonal jobs, while growers say they are short of workers. Valdoro is a wine region of about 12,000 hectares known for its steep terraced vineyards. The drones fly at a height of three metres and are guided by maps made from aerial photographs. Regulations require a licensed pilot for each flight, and a training course for growers starts next month.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "drones spray vineyards: 20 hectares a day and 30 percent less pesticide",
+    "cost 25,000 euros with a subsidy covering half",
+    "union fears about seasonal jobs versus growers' labour shortage"
+   ],
+   "fact_hints": [
+    [
+     "20 hectares",
+     "30 percent"
+    ],
+    [
+     "25,000",
+     "half",
+     "subsidy"
+    ],
+    [
+     "jobs",
+     "union",
+     "workers"
+    ]
+   ],
+   "core_facts": [
+    "drones now spray vineyards",
+    "unions fear job losses while growers say they are short of workers"
+   ],
+   "secondary_facts": [
+    "20 hectares a day and 30 percent less pesticide",
+    "25,000 euros each, subsidy covers half"
+   ],
+   "source_text": "Farmers in the Valdoro region have begun using drones to spray vineyards, replacing tractors that compact the soil on steep slopes. Each drone covers 20 hectares in a day, about four times the speed of a worker on foot, and cuts pesticide use by 30 percent because it targets only affected vines. The drones cost 25,000 euros each, and a regional subsidy covers half. Union leaders worry that the technology will remove seasonal jobs, while growers say they are short of workers. Valdoro is a wine region of about 12,000 hectares known for its steep terraced vineyards. The drones fly at a height of three metres and are guided by maps made from aerial photographs. Regulations require a licensed pilot for each flight, and a training course for growers starts next month.",
+   "reference_summary": "Vineyard drones cover 20 hectares a day and cut pesticide use by 30 percent. They cost 25,000 euros with a subsidy covering half, but unions fear job losses while growers cite worker shortages."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 132,
+  "note": "Constraint is checked by code; key facts (drones spray vineyards: 20 hectares a day and 30 percent less pesticide; cost 25,000 euros with a subsidy covering half; union fears about seasonal jobs versus growers' labour shortage) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-012",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "A report on remote work surveyed 5,000 employees at 120 companies. Workers who spent three days a week at home reported 12 percent higher job satisfaction than those who were fully in the office, and their managers rated their productivity as unchanged. However, junior staff who worked remotely more than four days a week were 20 percent less likely to be promoted within two years, which the authors attribute to fewer chances to be noticed and mentored. The report recommends hybrid schedules with scheduled in-person days for new hires. The survey was run by an independent research firm in 2023 and covered workers in finance, technology and healthcare administration. Average commuting time saved was 54 minutes a day. The authors noted that results may differ in jobs where workers must be present, and that only 8 percent of respondents were in management.\n\nTL;DR as exactly 3 bullet points (each line starting with '- '), please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "three remote days a week raised satisfaction by 12 percent with unchanged productivity",
+    "juniors working remotely over four days were 20 percent less likely to be promoted",
+    "recommends hybrid schedules with in-person days for new hires"
+   ],
+   "fact_hints": [
+    [
+     "12 percent",
+     "satisfaction"
+    ],
+    [
+     "20 percent",
+     "promoted"
+    ],
+    [
+     "hybrid",
+     "new hires"
+    ]
+   ],
+   "core_facts": [
+    "working from home three days a week raised job satisfaction",
+    "mostly-remote junior staff were less likely to be promoted"
+   ],
+   "secondary_facts": [
+    "12 percent higher satisfaction, productivity unchanged",
+    "20 percent less likely",
+    "recommends hybrid schedules for new hires"
+   ],
+   "source_text": "A report on remote work surveyed 5,000 employees at 120 companies. Workers who spent three days a week at home reported 12 percent higher job satisfaction than those who were fully in the office, and their managers rated their productivity as unchanged. However, junior staff who worked remotely more than four days a week were 20 percent less likely to be promoted within two years, which the authors attribute to fewer chances to be noticed and mentored. The report recommends hybrid schedules with scheduled in-person days for new hires. The survey was run by an independent research firm in 2023 and covered workers in finance, technology and healthcare administration. Average commuting time saved was 54 minutes a day. The authors noted that results may differ in jobs where workers must be present, and that only 8 percent of respondents were in management.",
+   "reference_summary": "- Working three days at home raised job satisfaction by 12 percent with unchanged productivity.\n- Juniors working remotely over four days a week were 20 percent less likely to be promoted.\n- The report recommends hybrid schedules with in-person days for new hires."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "tldr",
+  "passage_words": 142,
+  "note": "Constraint is checked by code; key facts (three remote days a week raised satisfaction by 12 percent with unchanged productivity; juniors working remotely over four days were 20 percent less likely to be promoted; recommends hybrid schedules with in-person days for new hires) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-013",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly one sentence:\n\nMarathon runner Daniel Okoye won the Eastport Marathon on Sunday in 2 hours 9 minutes, shaving three minutes off the course record that had stood since 2016. Temperatures stayed near 12 degrees, which organisers called ideal. Some 14,000 runners took part, raising more than 900,000 dollars for children's hospitals. Okoye said he had trained for six months at altitude in Kenya. The previous record of 2:12 was held by Henrik Dahl. The course runs along the coast and finishes in the harbour square, where crowds of about 60,000 gathered. Women's winner Lea Marchetti finished in 2:26, and organisers said the 20th edition would be held on the same weekend next year.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "Daniel Okoye won in 2:09, a course record",
+    "14,000 runners raised over 900,000 dollars for children's hospitals"
+   ],
+   "fact_hints": [
+    [
+     "2 hours 9",
+     "2:09",
+     "record"
+    ],
+    [
+     "14,000",
+     "900,000"
+    ]
+   ],
+   "core_facts": [
+    "Daniel Okoye won the marathon in a course record time",
+    "the race raised large sums for children's hospitals"
+   ],
+   "secondary_facts": [
+    "2 hours 9 minutes",
+    "14,000 runners"
+   ],
+   "source_text": "Marathon runner Daniel Okoye won the Eastport Marathon on Sunday in 2 hours 9 minutes, shaving three minutes off the course record that had stood since 2016. Temperatures stayed near 12 degrees, which organisers called ideal. Some 14,000 runners took part, raising more than 900,000 dollars for children's hospitals. Okoye said he had trained for six months at altitude in Kenya. The previous record of 2:12 was held by Henrik Dahl. The course runs along the coast and finishes in the harbour square, where crowds of about 60,000 gathered. Women's winner Lea Marchetti finished in 2:26, and organisers said the 20th edition would be held on the same weekend next year.",
+   "reference_summary": "Daniel Okoye won the Eastport Marathon in 2 hours 9 minutes, a course record, in a race of 14,000 runners that raised over 900,000 dollars for children's hospitals."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 111,
+  "note": "Constraint is checked by code; key facts (Daniel Okoye won in 2:09, a course record; 14,000 runners raised over 900,000 dollars for children's hospitals) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-014",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly one sentence:\n\nThe city of Rivermont has approved a new tram line connecting the airport to the central station. Construction will start in March and is expected to take 28 months, with a total budget of 410 million euros. Officials say the line will carry about 35,000 passengers a day and cut the airport trip from 50 minutes to 18. Residents along the route will be offered compensation for noise during the building phase, and two existing bus routes will be withdrawn once the tram opens. The current airport bus is often delayed by traffic on the ring road, and taxi fares for the same trip average 32 euros. Environmental groups have welcomed the plan, though some business owners near the central station worry that building work will reduce footfall. A public exhibition of the route designs opens at the town hall next week.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "tram line connects airport and central station",
+    "construction takes about 28 months / starts in March",
+    "budget 410 million euros"
+   ],
+   "fact_hints": [
+    [
+     "tram"
+    ],
+    [
+     "28 months",
+     "28-month",
+     "2.3 years"
+    ],
+    [
+     "410"
+    ]
+   ],
+   "core_facts": [
+    "the city is building a tram line from the airport to the central station",
+    "construction takes over two years"
+   ],
+   "secondary_facts": [
+    "budget 410 million euros",
+    "starts in March"
+   ],
+   "source_text": "The city of Rivermont has approved a new tram line connecting the airport to the central station. Construction will start in March and is expected to take 28 months, with a total budget of 410 million euros. Officials say the line will carry about 35,000 passengers a day and cut the airport trip from 50 minutes to 18. Residents along the route will be offered compensation for noise during the building phase, and two existing bus routes will be withdrawn once the tram opens. The current airport bus is often delayed by traffic on the ring road, and taxi fares for the same trip average 32 euros. Environmental groups have welcomed the plan, though some business owners near the central station worry that building work will reduce footfall. A public exhibition of the route designs opens at the town hall next week.",
+   "reference_summary": "Rivermont will build a 410 million euro tram line linking the airport to the central station, with construction starting in March and taking 28 months."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 142,
+  "note": "Constraint is checked by code; key facts (tram line connects airport and central station; construction takes about 28 months / starts in March; budget 410 million euros) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-015",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in no more than 25 words? I only have a minute.\n\nThe Haldane Prize for young mathematicians was awarded this year to Imani Okafor, 27, for proving a long-standing conjecture about patterns in prime numbers. Her proof, 62 pages long and posted online in March, was checked by three independent teams over four months. Okafor said she worked on the problem during evenings while teaching school, and she plans to donate part of the 100,000 dollar prize to a programme that mentors girls in mathematics. The prize, named after a pioneering statistician, is awarded every two years to a mathematician under 30. Okafor studied at a university in Lagos and completed a doctorate in Cambridge before returning to teaching. Her result concerns the gaps between consecutive primes and builds on earlier work by several leading researchers.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "Imani Okafor won the Haldane Prize for proving a conjecture about primes",
+    "will donate part of the 100,000 dollar prize to mentor girls"
+   ],
+   "fact_hints": [
+    [
+     "Okafor",
+     "prime"
+    ],
+    [
+     "100,000",
+     "mentor"
+    ]
+   ],
+   "core_facts": [
+    "Imani Okafor won the prize for proving a conjecture about primes",
+    "she will donate part of the prize to mentor girls in mathematics"
+   ],
+   "secondary_facts": [
+    "100,000 dollar prize"
+   ],
+   "source_text": "The Haldane Prize for young mathematicians was awarded this year to Imani Okafor, 27, for proving a long-standing conjecture about patterns in prime numbers. Her proof, 62 pages long and posted online in March, was checked by three independent teams over four months. Okafor said she worked on the problem during evenings while teaching school, and she plans to donate part of the 100,000 dollar prize to a programme that mentors girls in mathematics. The prize, named after a pioneering statistician, is awarded every two years to a mathematician under 30. Okafor studied at a university in Lagos and completed a doctorate in Cambridge before returning to teaching. Her result concerns the gaps between consecutive primes and builds on earlier work by several leading researchers.",
+   "reference_summary": "Imani Okafor won the Haldane Prize for proving a conjecture about primes and will donate part of the 100,000 dollar prize to mentor girls."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 125,
+  "note": "Constraint is checked by code; key facts (Imani Okafor won the Haldane Prize for proving a conjecture about primes; will donate part of the 100,000 dollar prize to mentor girls) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-016",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 35 words:\n\nThe Lakeshore ferry service will be suspended for ten days in September while the pier is rebuilt. The pier has been unsafe since a crack was found in a supporting beam in March, and engineers have limited the ferry to 60 passengers per trip since then. A replacement bus will run between the two towns every 30 minutes, adding about 40 minutes to the journey. The 3.5 million pound project is paid for by the regional transport fund. The ferry carries about 2,000 passengers on a typical summer day and is popular with cyclists and hikers. Passengers with season tickets will be able to use the replacement bus at no extra charge. The pier was built in 1936, and heritage groups want the original wooden railings to be kept.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "ferry suspended for ten days in September for pier rebuild",
+    "replacement bus every 30 minutes, adds about 40 minutes",
+    "3.5 million pound project"
+   ],
+   "fact_hints": [
+    [
+     "ten days",
+     "suspended"
+    ],
+    [
+     "bus",
+     "30 minutes"
+    ],
+    [
+     "3.5 million"
+    ]
+   ],
+   "core_facts": [
+    "the ferry is suspended for ten days in September while the pier is rebuilt",
+    "a replacement bus makes the journey longer"
+   ],
+   "secondary_facts": [
+    "bus every 30 minutes adds about 40 minutes",
+    "3.5 million pound project"
+   ],
+   "source_text": "The Lakeshore ferry service will be suspended for ten days in September while the pier is rebuilt. The pier has been unsafe since a crack was found in a supporting beam in March, and engineers have limited the ferry to 60 passengers per trip since then. A replacement bus will run between the two towns every 30 minutes, adding about 40 minutes to the journey. The 3.5 million pound project is paid for by the regional transport fund. The ferry carries about 2,000 passengers on a typical summer day and is popular with cyclists and hikers. Passengers with season tickets will be able to use the replacement bus at no extra charge. The pier was built in 1936, and heritage groups want the original wooden railings to be kept.",
+   "reference_summary": "The Lakeshore ferry is suspended for ten days in September for a 3.5 million pound pier rebuild, with a replacement bus every 30 minutes adding about 40 minutes."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 129,
+  "note": "Constraint is checked by code; key facts (ferry suspended for ten days in September for pier rebuild; replacement bus every 30 minutes, adds about 40 minutes; 3.5 million pound project) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-017",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly two sentences. Keep only facts stated in the text.\n\n\"The town council of Ashby has decided to plant 5,000 trees along the main roads over the next three years, aiming to cut summer temperatures in the centre and improve air quality. The 800,000 pound scheme will include volunteers from local schools, who will plant the first 500 saplings this autumn. Critics argue the money should go to repairing potholes, but the council says the trees will also lower flooding risk by absorbing rainwater. The species chosen include lime, hornbeam and field maple, which tolerate pollution and drought. Each tree will cost about 160 pounds to plant and maintain for five years. The council's survey found that 68 percent of residents support the idea, while a small group of shopkeepers worry about leaves blocking drains.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "plant 5,000 trees over three years",
+    "800,000 pound scheme",
+    "council says trees reduce heat and flooding while critics prefer pothole repairs"
+   ],
+   "fact_hints": [
+    [
+     "5,000"
+    ],
+    [
+     "800,000"
+    ],
+    [
+     "potholes",
+     "flooding",
+     "heat"
+    ]
+   ],
+   "core_facts": [
+    "the council will plant thousands of trees along the main roads",
+    "critics would rather the money fixed potholes"
+   ],
+   "secondary_facts": [
+    "800,000 pound scheme",
+    "council says trees reduce heat and flooding"
+   ],
+   "source_text": "The town council of Ashby has decided to plant 5,000 trees along the main roads over the next three years, aiming to cut summer temperatures in the centre and improve air quality. The 800,000 pound scheme will include volunteers from local schools, who will plant the first 500 saplings this autumn. Critics argue the money should go to repairing potholes, but the council says the trees will also lower flooding risk by absorbing rainwater. The species chosen include lime, hornbeam and field maple, which tolerate pollution and drought. Each tree will cost about 160 pounds to plant and maintain for five years. The council's survey found that 68 percent of residents support the idea, while a small group of shopkeepers worry about leaves blocking drains.",
+   "reference_summary": "Ashby council will plant 5,000 trees over three years in an 800,000 pound scheme. It says the trees will cut heat and flooding, though critics would rather repair potholes."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 125,
+  "note": "Constraint is checked by code; key facts (plant 5,000 trees over three years; 800,000 pound scheme; council says trees reduce heat and flooding while critics prefer pothole repairs) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-018",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean from about the second century BCE. Merchants rarely travelled the whole distance; goods such as silk, spices and paper passed through many hands. The network also carried ideas and religions, including Buddhism, and diseases such as the plague. It declined as sea routes became cheaper and as the Ottoman Empire controlled key territories in the fifteenth century. Samarkand and Kashgar were among the best-known stopping points, where caravans rested and traded. Camels and horses were the main means of transport across the deserts and mountains. The name 'Silk Road' was only coined in 1877 by a German geographer, long after the routes had fallen into decline.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "network of trade routes linking China and the Mediterranean",
+    "carried goods, ideas and diseases",
+    "declined as sea routes grew cheaper / Ottoman control"
+   ],
+   "fact_hints": [
+    [
+     "network",
+     "routes"
+    ],
+    [
+     "ideas",
+     "religion",
+     "Buddhism",
+     "disease"
+    ],
+    [
+     "sea",
+     "Ottoman"
+    ]
+   ],
+   "core_facts": [
+    "the Silk Road was a network of trade routes linking China and the Mediterranean",
+    "it declined as sea routes and Ottoman control took over"
+   ],
+   "secondary_facts": [
+    "carried goods, ideas and diseases"
+   ],
+   "source_text": "The Silk Road was not a single road but a network of trade routes linking China with the Mediterranean from about the second century BCE. Merchants rarely travelled the whole distance; goods such as silk, spices and paper passed through many hands. The network also carried ideas and religions, including Buddhism, and diseases such as the plague. It declined as sea routes became cheaper and as the Ottoman Empire controlled key territories in the fifteenth century. Samarkand and Kashgar were among the best-known stopping points, where caravans rested and traded. Camels and horses were the main means of transport across the deserts and mountains. The name 'Silk Road' was only coined in 1877 by a German geographer, long after the routes had fallen into decline.",
+   "reference_summary": "The Silk Road was a network of trade routes linking China and the Mediterranean that carried goods, ideas and diseases until sea routes and Ottoman control caused its decline."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 125,
+  "note": "Constraint is checked by code; key facts (network of trade routes linking China and the Mediterranean; carried goods, ideas and diseases; declined as sea routes grew cheaper / Ottoman control) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-019",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "A national exam board has changed how it marks essays after an audit found that two different examiners gave grades that differed by more than one level on 18 percent of scripts. From next year every essay will be marked by two examiners, and a third will be called in if they disagree. The change will cost 9 million pounds and delay results by about one week. Teachers' unions welcomed the review but said pupils should not pay for the board's errors. The board, which serves about 600,000 students each summer, carried out the audit after complaints from schools in the north of the country. Examiners are mostly serving teachers who mark scripts in the evenings, and the board will also give them new training on grade boundaries. The education department said it would monitor the changes closely.\n\nTL;DR in no more than 25 words, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "audit found large grading differences on 18 percent of scripts",
+    "from next year two examiners mark each essay",
+    "cost 9 million pounds, results delayed about a week"
+   ],
+   "fact_hints": [
+    [
+     "18"
+    ],
+    [
+     "two examiners",
+     "third"
+    ],
+    [
+     "9 million",
+     "week"
+    ]
+   ],
+   "core_facts": [
+    "an audit found essay marking was inconsistent",
+    "two examiners will mark each essay from next year"
+   ],
+   "secondary_facts": [
+    "costs 9 million pounds, results about a week later"
+   ],
+   "source_text": "A national exam board has changed how it marks essays after an audit found that two different examiners gave grades that differed by more than one level on 18 percent of scripts. From next year every essay will be marked by two examiners, and a third will be called in if they disagree. The change will cost 9 million pounds and delay results by about one week. Teachers' unions welcomed the review but said pupils should not pay for the board's errors. The board, which serves about 600,000 students each summer, carried out the audit after complaints from schools in the north of the country. Examiners are mostly serving teachers who mark scripts in the evenings, and the board will also give them new training on grade boundaries. The education department said it would monitor the changes closely.",
+   "reference_summary": "Audit found 18 percent of scripts inconsistently graded; from next year two examiners mark each essay, costing 9 million pounds and delaying results a week."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "tldr",
+  "passage_words": 138,
+  "note": "Constraint is checked by code; key facts (audit found large grading differences on 18 percent of scripts; from next year two examiners mark each essay; cost 9 million pounds, results delayed about a week) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-020",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 35 words:\n\nThe Millbrook community garden, started in 2015 on a disused car park, now has 85 plots and a waiting list of more than 200 people. Members grow vegetables and herbs, and surplus produce is donated weekly to a food bank, which received 1.4 tonnes last year. A new greenhouse, paid for by a 12,000 pound grant, will let the garden start seedlings earlier in the year. The council has agreed to renew its lease for another ten years. The garden is run by 30 volunteers who meet every Wednesday morning, and new members pay 25 pounds a year. A beekeeping group keeps four hives on the roof of the tool shed. Schools visit in the spring term to learn about growing food, and the garden has won a regional award for community projects.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "started in 2015 on a disused car park, 85 plots",
+    "1.4 tonnes donated to a food bank",
+    "12,000 pound grant pays for a new greenhouse"
+   ],
+   "fact_hints": [
+    [
+     "2015",
+     "85 plots"
+    ],
+    [
+     "1.4 tonnes",
+     "food bank"
+    ],
+    [
+     "greenhouse",
+     "12,000"
+    ]
+   ],
+   "core_facts": [
+    "a community garden was built on a disused car park",
+    "it donates surplus produce to a food bank"
+   ],
+   "secondary_facts": [
+    "85 plots, started in 2015",
+    "12,000 pound grant for a greenhouse"
+   ],
+   "source_text": "The Millbrook community garden, started in 2015 on a disused car park, now has 85 plots and a waiting list of more than 200 people. Members grow vegetables and herbs, and surplus produce is donated weekly to a food bank, which received 1.4 tonnes last year. A new greenhouse, paid for by a 12,000 pound grant, will let the garden start seedlings earlier in the year. The council has agreed to renew its lease for another ten years. The garden is run by 30 volunteers who meet every Wednesday morning, and new members pay 25 pounds a year. A beekeeping group keeps four hives on the roof of the tool shed. Schools visit in the spring term to learn about growing food, and the garden has won a regional award for community projects.",
+   "reference_summary": "The Millbrook community garden, begun in 2015 on a disused car park with 85 plots, gave 1.4 tonnes to a food bank and will add a greenhouse paid by a 12,000 pound grant."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 133,
+  "note": "Constraint is checked by code; key facts (started in 2015 on a disused car park, 85 plots; 1.4 tonnes donated to a food bank; 12,000 pound grant pays for a new greenhouse) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-021",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Honeybees communicate the location of food through a waggle dance. A forager that finds nectar returns to the hive and dances on the comb: the angle of the dance relative to vertical shows the direction of the food relative to the sun, and the length of the waggle shows the distance. Other bees follow the dancer and fly out to the flowers. The behaviour, decoded by Karl von Frisch in the 1940s, earned him a Nobel Prize in 1973. A typical hive holds between 20,000 and 60,000 bees, and only a small share of them are foragers at any one time. Researchers later showed that the dancing bees also pass on information about the scent of the flowers. Von Frisch shared the prize with two other scientists who studied animal behaviour.\n\nTL;DR in exactly one sentence, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "bees use a waggle dance to signal food",
+    "angle shows direction, duration shows distance",
+    "decoded by Karl von Frisch, Nobel Prize 1973"
+   ],
+   "fact_hints": [
+    [
+     "waggle"
+    ],
+    [
+     "angle",
+     "direction",
+     "distance"
+    ],
+    [
+     "von Frisch"
+    ]
+   ],
+   "core_facts": [
+    "honeybees signal where food is with a waggle dance",
+    "the dance's angle shows direction and its length shows distance"
+   ],
+   "secondary_facts": [
+    "decoded by Karl von Frisch, Nobel Prize 1973"
+   ],
+   "source_text": "Honeybees communicate the location of food through a waggle dance. A forager that finds nectar returns to the hive and dances on the comb: the angle of the dance relative to vertical shows the direction of the food relative to the sun, and the length of the waggle shows the distance. Other bees follow the dancer and fly out to the flowers. The behaviour, decoded by Karl von Frisch in the 1940s, earned him a Nobel Prize in 1973. A typical hive holds between 20,000 and 60,000 bees, and only a small share of them are foragers at any one time. Researchers later showed that the dancing bees also pass on information about the scent of the flowers. Von Frisch shared the prize with two other scientists who studied animal behaviour.",
+   "reference_summary": "Honeybees signal food through a waggle dance whose angle shows direction and whose length shows distance, as decoded by Karl von Frisch, who won a Nobel Prize in 1973."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "tldr",
+  "passage_words": 131,
+  "note": "Constraint is checked by code; key facts (bees use a waggle dance to signal food; angle shows direction, duration shows distance; decoded by Karl von Frisch, Nobel Prize 1973) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-022",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly two sentences? I only have a minute.\n\nThe Great Fire of London began on 2 September 1666 in a bakery on Pudding Lane and burned for four days. Because most houses were built of timber and packed closely together, the fire spread quickly, destroying about 13,000 homes and 87 parish churches, including the old St Paul's Cathedral. Only six deaths were officially recorded, though historians think the true toll was higher. Afterwards Christopher Wren designed a new St Paul's, and rebuilding rules required houses to be made of brick or stone. The diarist Samuel Pepys buried his wine and a wheel of Parmesan cheese in his garden to protect them and wrote a vivid account of the fire. King Charles II and his brother helped fight the flames, and the fire was finally halted partly by blowing up houses to create firebreaks. A monument, 62 metres tall, was later built near the bakery.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "began 2 September 1666 in a bakery on Pudding Lane and burned four days",
+    "destroyed about 13,000 homes and 87 churches",
+    "Wren rebuilt St Paul's; houses had to be brick or stone"
+   ],
+   "fact_hints": [
+    [
+     "1666",
+     "Pudding Lane",
+     "four days"
+    ],
+    [
+     "13,000",
+     "87"
+    ],
+    [
+     "Wren",
+     "brick",
+     "stone"
+    ]
+   ],
+   "core_facts": [
+    "the Great Fire of London began in a bakery on Pudding Lane",
+    "it destroyed thousands of homes and churches"
+   ],
+   "secondary_facts": [
+    "Wren designed a new St Paul's, rebuilding rules required brick or stone"
+   ],
+   "source_text": "The Great Fire of London began on 2 September 1666 in a bakery on Pudding Lane and burned for four days. Because most houses were built of timber and packed closely together, the fire spread quickly, destroying about 13,000 homes and 87 parish churches, including the old St Paul's Cathedral. Only six deaths were officially recorded, though historians think the true toll was higher. Afterwards Christopher Wren designed a new St Paul's, and rebuilding rules required houses to be made of brick or stone. The diarist Samuel Pepys buried his wine and a wheel of Parmesan cheese in his garden to protect them and wrote a vivid account of the fire. King Charles II and his brother helped fight the flames, and the fire was finally halted partly by blowing up houses to create firebreaks. A monument, 62 metres tall, was later built near the bakery.",
+   "reference_summary": "The Great Fire began on 2 September 1666 in a Pudding Lane bakery and burned four days, destroying about 13,000 homes and 87 churches. Christopher Wren later designed a new St Paul's, and rebuilding rules required brick or stone."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 146,
+  "note": "Constraint is checked by code; key facts (began 2 September 1666 in a bakery on Pudding Lane and burned four days; destroyed about 13,000 homes and 87 churches; Wren rebuilt St Paul's; houses had to be brick or stone) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-023",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"The company Nuvo Foods has recalled 120,000 jars of peanut sauce after tests found traces of an allergen that was not listed on the label. The affected jars carry batch numbers beginning with 24B and were sold in 11 countries between January and April. No illnesses have been confirmed. Customers are asked to stop using the product and can return it to the store for a full refund. Nuvo Foods, based in Rotterdam, sells its sauces in more than 30 countries and employs 2,800 people. The company discovered the problem during routine checks after a customer in Germany reported a mild reaction, which was later found to be unrelated. A hotline and a web page with photos of the batch codes have been set up.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "recall of 120,000 jars of peanut sauce",
+    "unlisted allergen found",
+    "full refund available"
+   ],
+   "fact_hints": [
+    [
+     "120,000"
+    ],
+    [
+     "allergen",
+     "label"
+    ],
+    [
+     "refund"
+    ]
+   ],
+   "core_facts": [
+    "peanut sauce jars were recalled",
+    "an allergen not listed on the label was found"
+   ],
+   "secondary_facts": [
+    "120,000 jars",
+    "full refund available"
+   ],
+   "source_text": "The company Nuvo Foods has recalled 120,000 jars of peanut sauce after tests found traces of an allergen that was not listed on the label. The affected jars carry batch numbers beginning with 24B and were sold in 11 countries between January and April. No illnesses have been confirmed. Customers are asked to stop using the product and can return it to the store for a full refund. Nuvo Foods, based in Rotterdam, sells its sauces in more than 30 countries and employs 2,800 people. The company discovered the problem during routine checks after a customer in Germany reported a mild reaction, which was later found to be unrelated. A hotline and a web page with photos of the batch codes have been set up.",
+   "reference_summary": "Nuvo Foods recalled 120,000 jars of peanut sauce after an allergen missing from the label was found, and customers can get a full refund."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 125,
+  "note": "Constraint is checked by code; key facts (recall of 120,000 jars of peanut sauce; unlisted allergen found; full refund available) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-024",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly two sentences. Keep only facts stated in the text.\n\n\"The Kestrel space telescope, launched in 2019, has discovered 54 planets orbiting small red stars, including four that are roughly Earth-sized and lie in the zone where liquid water could exist. Its mission was extended by three years after fuel use proved lower than predicted. Scientists caution that red stars often emit strong flares that could strip atmospheres from nearby planets, so being in the habitable zone does not mean a planet is hospitable. A follow-up telescope is planned for 2031. The telescope is named after a small bird of prey known for hovering motionless while hunting, which reflects how the instrument stares at one patch of sky. It orbits the Sun rather than the Earth, 1.5 million kilometres away. Data are shared publicly after six months, and amateurs have discovered two of the planets.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "Kestrel telescope found 54 planets, four Earth-sized in the habitable zone",
+    "mission extended by three years",
+    "flares from red stars may strip atmospheres; follow-up telescope in 2031"
+   ],
+   "fact_hints": [
+    [
+     "54",
+     "four"
+    ],
+    [
+     "three years",
+     "extended"
+    ],
+    [
+     "flares",
+     "2031"
+    ]
+   ],
+   "core_facts": [
+    "a space telescope has found dozens of planets, some Earth-sized in the habitable zone",
+    "flares from red stars may strip their atmospheres"
+   ],
+   "secondary_facts": [
+    "mission extended by three years",
+    "follow-up telescope in 2031"
+   ],
+   "source_text": "The Kestrel space telescope, launched in 2019, has discovered 54 planets orbiting small red stars, including four that are roughly Earth-sized and lie in the zone where liquid water could exist. Its mission was extended by three years after fuel use proved lower than predicted. Scientists caution that red stars often emit strong flares that could strip atmospheres from nearby planets, so being in the habitable zone does not mean a planet is hospitable. A follow-up telescope is planned for 2031. The telescope is named after a small bird of prey known for hovering motionless while hunting, which reflects how the instrument stares at one patch of sky. It orbits the Sun rather than the Earth, 1.5 million kilometres away. Data are shared publicly after six months, and amateurs have discovered two of the planets.",
+   "reference_summary": "The Kestrel telescope has found 54 planets, four of them Earth-sized in the habitable zone, and its mission was extended by three years. Flares from red stars may strip atmospheres, and a follow-up telescope is planned for 2031."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "careful",
+  "passage_words": 135,
+  "note": "Constraint is checked by code; key facts (Kestrel telescope found 54 planets, four Earth-sized in the habitable zone; mission extended by three years; flares from red stars may strip atmospheres; follow-up telescope in 2031) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-025",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "A local charity, Warm Winter, collected 8,400 coats during its autumn drive, double the number from last year. Volunteers cleaned and sorted the coats and will give them out at six community centres from 1 November. The charity says demand has risen because more families are struggling with heating costs. It still needs volunteers on Saturdays and has set up a hotline for people who cannot reach the centres. Last year the drive collected 4,200 coats and had to turn people away at two centres because supplies ran out. This year a clothing retailer donated 1,500 new coats, and a transport company is delivering them for free. Volunteers meet at the warehouse at 9 am, and training is provided on the first day.\n\nTL;DR in no more than 35 words, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "Warm Winter collected 8,400 coats, double last year",
+    "distributed at six community centres from 1 November",
+    "needs Saturday volunteers"
+   ],
+   "fact_hints": [
+    [
+     "8,400",
+     "double"
+    ],
+    [
+     "six",
+     "1 November"
+    ],
+    [
+     "volunteers",
+     "Saturday"
+    ]
+   ],
+   "core_facts": [
+    "a charity collected twice as many coats as last year",
+    "the coats will be given out at community centres"
+   ],
+   "secondary_facts": [
+    "8,400 coats",
+    "from 1 November",
+    "still needs Saturday volunteers"
+   ],
+   "source_text": "A local charity, Warm Winter, collected 8,400 coats during its autumn drive, double the number from last year. Volunteers cleaned and sorted the coats and will give them out at six community centres from 1 November. The charity says demand has risen because more families are struggling with heating costs. It still needs volunteers on Saturdays and has set up a hotline for people who cannot reach the centres. Last year the drive collected 4,200 coats and had to turn people away at two centres because supplies ran out. This year a clothing retailer donated 1,500 new coats, and a transport company is delivering them for free. Volunteers meet at the warehouse at 9 am, and training is provided on the first day.",
+   "reference_summary": "Warm Winter collected 8,400 coats, double last year's, to be given out at six community centres from 1 November, and still needs Saturday volunteers."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "tldr",
+  "passage_words": 123,
+  "note": "Constraint is checked by code; key facts (Warm Winter collected 8,400 coats, double last year; distributed at six community centres from 1 November; needs Saturday volunteers) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-026",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it as exactly 3 bullet points (each line starting with '- ')? I only have a minute.\n\nThe city's new recycling scheme replaces weekly mixed collections with separate bins for paper, glass and food waste, collected on alternating weeks. A pilot in two districts raised recycling rates from 31 to 52 percent in a year and cut the amount of waste sent to landfill by 4,000 tonnes. Some residents complained about the number of bins and about smells in summer, and the council has promised larger food-waste caddies with sealed lids. The scheme will cover all 90,000 homes by 2026. The council collects waste from about 90,000 homes and spends 28 million pounds a year on waste services. Glass is collected in a green box, paper in a blue one and food waste in a brown caddy. Households that put the wrong waste in a bin will first receive a warning leaflet rather than a fine.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "separate bins for paper, glass and food waste",
+    "pilot raised recycling from 31 to 52 percent",
+    "complaints about bins and smells; rollout to 90,000 homes by 2026"
+   ],
+   "fact_hints": [
+    [
+     "separate bins",
+     "paper",
+     "glass"
+    ],
+    [
+     "31",
+     "52"
+    ],
+    [
+     "90,000",
+     "2026",
+     "complaint"
+    ]
+   ],
+   "core_facts": [
+    "a new scheme uses separate bins for paper, glass and food waste",
+    "a pilot raised recycling rates"
+   ],
+   "secondary_facts": [
+    "from 31 to 52 percent",
+    "complaints about bins and smells",
+    "90,000 homes by 2026"
+   ],
+   "source_text": "The city's new recycling scheme replaces weekly mixed collections with separate bins for paper, glass and food waste, collected on alternating weeks. A pilot in two districts raised recycling rates from 31 to 52 percent in a year and cut the amount of waste sent to landfill by 4,000 tonnes. Some residents complained about the number of bins and about smells in summer, and the council has promised larger food-waste caddies with sealed lids. The scheme will cover all 90,000 homes by 2026. The council collects waste from about 90,000 homes and spends 28 million pounds a year on waste services. Glass is collected in a green box, paper in a blue one and food waste in a brown caddy. Households that put the wrong waste in a bin will first receive a warning leaflet rather than a fine.",
+   "reference_summary": "- Separate bins now take paper, glass and food waste on alternating weeks.\n- A pilot raised recycling from 31 to 52 percent.\n- Some residents complained about bins and smells, and the scheme will reach 90,000 homes by 2026."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 139,
+  "note": "Constraint is checked by code; key facts (separate bins for paper, glass and food waste; pilot raised recycling from 31 to 52 percent; complaints about bins and smells; rollout to 90,000 homes by 2026) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-027",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly one sentence? I only have a minute.\n\nA new study of 2,400 office workers found that those who took a 15-minute walk after lunch reported 20 percent fewer afternoon energy slumps than those who stayed at their desks. The researchers, based at a university in Leeds, followed participants for eight weeks and used daily questionnaires rather than clinical measurements. They caution that the effect may partly reflect better mood from leaving the office, and they plan a follow-up trial with wearable heart monitors next year. Participants were recruited from 40 firms and asked to rate their alertness on a five-point scale at 3 pm each day. The walking group averaged 3.9 and the desk group 3.2 at the start. The study was paid for by a health insurer, which had no say in the analysis, according to the authors.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "15-minute walk after lunch",
+    "20 percent fewer afternoon slumps",
+    "study of 2,400 workers over eight weeks"
+   ],
+   "fact_hints": [
+    [
+     "walk"
+    ],
+    [
+     "20 percent",
+     "20%"
+    ],
+    [
+     "2,400",
+     "eight weeks"
+    ]
+   ],
+   "core_facts": [
+    "a 15-minute walk after lunch",
+    "workers had fewer afternoon energy slumps"
+   ],
+   "secondary_facts": [
+    "20 percent fewer slumps",
+    "2,400 workers over eight weeks"
+   ],
+   "source_text": "A new study of 2,400 office workers found that those who took a 15-minute walk after lunch reported 20 percent fewer afternoon energy slumps than those who stayed at their desks. The researchers, based at a university in Leeds, followed participants for eight weeks and used daily questionnaires rather than clinical measurements. They caution that the effect may partly reflect better mood from leaving the office, and they plan a follow-up trial with wearable heart monitors next year. Participants were recruited from 40 firms and asked to rate their alertness on a five-point scale at 3 pm each day. The walking group averaged 3.9 and the desk group 3.2 at the start. The study was paid for by a health insurer, which had no say in the analysis, according to the authors.",
+   "reference_summary": "A study of 2,400 office workers over eight weeks found that a 15-minute walk after lunch brought 20 percent fewer afternoon energy slumps."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "passage_words": 132,
+  "note": "Constraint is checked by code; key facts (15-minute walk after lunch; 20 percent fewer afternoon slumps; study of 2,400 workers over eight weeks) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-028",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in no more than 25 words? I only have a minute.\n\nThe new subway line opened on Saturday after eight years of delays. Originally budgeted at 3.2 billion dollars, it ended up costing 5.1 billion, which the transport authority blames on tunnelling through unexpected rock and on redesigns after a safety review. The line runs 17 kilometres with 14 stations and is expected to carry 200,000 riders a day. Opposition politicians called for an inquiry into the overspend, but the mayor says the project will pay back through reduced congestion. The line connects the airport in the north with the university district in the south and has a transfer to the existing blue line. Trains are driverless and run every three minutes at peak times. Tickets for the first week are free, and the transport authority expects the opening to be followed by a long period of fine-tuning.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "line opened after eight years of delays",
+    "cost 5.1 billion dollars versus 3.2 billion budget",
+    "17 km with 14 stations"
+   ],
+   "fact_hints": [
+    [
+     "eight years",
+     "opened"
+    ],
+    [
+     "5.1",
+     "3.2"
+    ],
+    [
+     "17",
+     "14 stations"
+    ]
+   ],
+   "core_facts": [
+    "the subway opened after years of delays",
+    "it cost far more than budgeted"
+   ],
+   "secondary_facts": [
+    "17 km with 14 stations"
+   ],
+   "source_text": "The new subway line opened on Saturday after eight years of delays. Originally budgeted at 3.2 billion dollars, it ended up costing 5.1 billion, which the transport authority blames on tunnelling through unexpected rock and on redesigns after a safety review. The line runs 17 kilometres with 14 stations and is expected to carry 200,000 riders a day. Opposition politicians called for an inquiry into the overspend, but the mayor says the project will pay back through reduced congestion. The line connects the airport in the north with the university district in the south and has a transfer to the existing blue line. Trains are driverless and run every three minutes at peak times. Tickets for the first week are free, and the transport authority expects the opening to be followed by a long period of fine-tuning.",
+   "reference_summary": "The subway opened after eight years of delays, costing 5.1 billion dollars against a 3.2 billion budget, and runs 17 kilometres with 14 stations."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 137,
+  "note": "Constraint is checked by code; key facts (line opened after eight years of delays; cost 5.1 billion dollars versus 3.2 billion budget; 17 km with 14 stations) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-029",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in no more than 35 words. Keep only facts stated in the text.\n\n\"An international team has mapped the genome of the Atlantic cod, hoping to understand why some populations survive overfishing better than others. They sequenced 1,100 fish from 14 locations and found a cluster of genes linked to growth rate and tolerance of cold water. The results could help managers set fishing limits that protect vulnerable populations, although the authors say more work is needed before the findings guide policy. Atlantic cod were once so abundant that early explorers described rivers thick with fish, but stocks in the western Atlantic collapsed in the early 1990s and some have yet to recover. The study was funded by research councils in four countries, and the genetic data has been made freely available online.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "genome of the Atlantic cod mapped from 1,100 fish at 14 locations",
+    "genes linked to growth and cold tolerance",
+    "more work needed before guiding policy"
+   ],
+   "fact_hints": [
+    [
+     "cod",
+     "genome"
+    ],
+    [
+     "1,100",
+     "14 locations"
+    ],
+    [
+     "more work",
+     "policy"
+    ]
+   ],
+   "core_facts": [
+    "scientists mapped the Atlantic cod genome",
+    "more work is needed before it guides policy"
+   ],
+   "secondary_facts": [
+    "1,100 fish from 14 locations",
+    "genes linked to growth and cold tolerance"
+   ],
+   "source_text": "An international team has mapped the genome of the Atlantic cod, hoping to understand why some populations survive overfishing better than others. They sequenced 1,100 fish from 14 locations and found a cluster of genes linked to growth rate and tolerance of cold water. The results could help managers set fishing limits that protect vulnerable populations, although the authors say more work is needed before the findings guide policy. Atlantic cod were once so abundant that early explorers described rivers thick with fish, but stocks in the western Atlantic collapsed in the early 1990s and some have yet to recover. The study was funded by research councils in four countries, and the genetic data has been made freely available online.",
+   "reference_summary": "Scientists mapped the Atlantic cod genome from 1,100 fish at 14 locations, finding genes linked to growth and cold tolerance, though more work is needed before it guides policy."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 120,
+  "note": "Constraint is checked by code; key facts (genome of the Atlantic cod mapped from 1,100 fish at 14 locations; genes linked to growth and cold tolerance; more work needed before guiding policy) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-030",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly two sentences:\n\nA fire at the Brantley warehouse on Tuesday night destroyed about 2 million dollars worth of electronics. Firefighters from five stations took six hours to bring the blaze under control, and 18 nearby homes were evacuated as a precaution but residents returned the next morning. Investigators say the fire started near a charging area for forklift batteries, although the exact cause is still unknown. No one was injured, and the company says it will reopen a smaller site within a month. The warehouse, built in 2004, stood in an industrial park on the edge of town and stored televisions, laptops and phone accessories for several retailers. Smoke could be seen from 20 kilometres away, and the main road was closed for most of the night. Insurance assessors will visit the site later this week.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "fire destroyed about 2 million dollars of electronics",
+    "18 homes evacuated, no one injured",
+    "started near forklift battery charging area, cause unknown"
+   ],
+   "fact_hints": [
+    [
+     "2 million"
+    ],
+    [
+     "18",
+     "no one",
+     "injured"
+    ],
+    [
+     "forklift",
+     "battery",
+     "unknown"
+    ]
+   ],
+   "core_facts": [
+    "a warehouse fire destroyed about 2 million dollars of electronics",
+    "no one was injured"
+   ],
+   "secondary_facts": [
+    "18 homes evacuated",
+    "started near the forklift battery charging area, cause unknown"
+   ],
+   "source_text": "A fire at the Brantley warehouse on Tuesday night destroyed about 2 million dollars worth of electronics. Firefighters from five stations took six hours to bring the blaze under control, and 18 nearby homes were evacuated as a precaution but residents returned the next morning. Investigators say the fire started near a charging area for forklift batteries, although the exact cause is still unknown. No one was injured, and the company says it will reopen a smaller site within a month. The warehouse, built in 2004, stood in an industrial park on the edge of town and stored televisions, laptops and phone accessories for several retailers. Smoke could be seen from 20 kilometres away, and the main road was closed for most of the night. Insurance assessors will visit the site later this week.",
+   "reference_summary": "A fire destroyed about 2 million dollars of electronics at the Brantley warehouse, forcing 18 homes to evacuate but injuring no one. It started near the forklift battery charging area, though the cause is unknown."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 134,
+  "note": "Constraint is checked by code; key facts (fire destroyed about 2 million dollars of electronics; 18 homes evacuated, no one injured; started near forklift battery charging area, cause unknown) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-031",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 35 words:\n\nA heatwave in southern Spain pushed temperatures above 44 degrees on Thursday, a record for the month of June. Authorities issued red alerts in six provinces and asked people to avoid outdoor work between noon and 6 pm. Hospitals reported a 25 percent rise in heat-related admissions. The weather agency said the heat should ease at the weekend, when a cooler wind from the Atlantic is expected. The previous June record was 43.1 degrees, set in 2017. Several regions have banned barbecues in forests, and some outdoor events in Seville and Cordoba were postponed. Farmers say that the heat has damaged olive blossoms, and the agriculture ministry will assess the losses next week.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "temperatures above 44 degrees, June record",
+    "red alerts in six provinces",
+    "heat should ease at the weekend"
+   ],
+   "fact_hints": [
+    [
+     "44"
+    ],
+    [
+     "six provinces",
+     "red alert"
+    ],
+    [
+     "weekend",
+     "ease"
+    ]
+   ],
+   "core_facts": [
+    "southern Spain had record June heat above 44 degrees",
+    "the heat should ease at the weekend"
+   ],
+   "secondary_facts": [
+    "red alerts in six provinces"
+   ],
+   "source_text": "A heatwave in southern Spain pushed temperatures above 44 degrees on Thursday, a record for the month of June. Authorities issued red alerts in six provinces and asked people to avoid outdoor work between noon and 6 pm. Hospitals reported a 25 percent rise in heat-related admissions. The weather agency said the heat should ease at the weekend, when a cooler wind from the Atlantic is expected. The previous June record was 43.1 degrees, set in 2017. Several regions have banned barbecues in forests, and some outdoor events in Seville and Cordoba were postponed. Farmers say that the heat has damaged olive blossoms, and the agriculture ministry will assess the losses next week.",
+   "reference_summary": "Southern Spain recorded a June record above 44 degrees, red alerts cover six provinces, and the heat should ease at the weekend."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 113,
+  "note": "Constraint is checked by code; key facts (temperatures above 44 degrees, June record; red alerts in six provinces; heat should ease at the weekend) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-032",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "In 2023, a small island nation in the Pacific signed a deal with a larger neighbour that lets 280 of its citizens migrate each year as climate change raises sea levels. The agreement guarantees residency, work rights and access to healthcare. Government leaders on the island say the deal is a last resort and insist that the country will remain a state even if its land is submerged. Critics argue that it could encourage the departure of young, skilled people, leaving an ageing population behind. The island nation has about 11,000 people and its highest point is only five metres above sea level. Places are awarded by ballot to citizens aged 18 to 50, and applicants must have a job offer in the neighbouring country. The deal followed three years of negotiations and a visit by the prime minister to the larger nation's capital.\n\nTL;DR in no more than 25 words, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "deal lets 280 citizens migrate each year because of rising seas",
+    "grants residency, work rights, healthcare",
+    "critics fear loss of young skilled people"
+   ],
+   "fact_hints": [
+    [
+     "280"
+    ],
+    [
+     "residency",
+     "work",
+     "healthcare"
+    ],
+    [
+     "young",
+     "skilled",
+     "ageing"
+    ]
+   ],
+   "core_facts": [
+    "a small island nation lets its citizens migrate because of rising seas",
+    "critics fear it will drain young skilled people"
+   ],
+   "secondary_facts": [
+    "280 people a year",
+    "residency, work rights and healthcare"
+   ],
+   "source_text": "In 2023, a small island nation in the Pacific signed a deal with a larger neighbour that lets 280 of its citizens migrate each year as climate change raises sea levels. The agreement guarantees residency, work rights and access to healthcare. Government leaders on the island say the deal is a last resort and insist that the country will remain a state even if its land is submerged. Critics argue that it could encourage the departure of young, skilled people, leaving an ageing population behind. The island nation has about 11,000 people and its highest point is only five metres above sea level. Places are awarded by ballot to citizens aged 18 to 50, and applicants must have a job offer in the neighbouring country. The deal followed three years of negotiations and a visit by the prime minister to the larger nation's capital.",
+   "reference_summary": "A Pacific island nation lets 280 citizens migrate yearly with residency, work rights and healthcare, though critics fear losing young skilled people."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "tldr",
+  "passage_words": 144,
+  "note": "Constraint is checked by code; key facts (deal lets 280 citizens migrate each year because of rising seas; grants residency, work rights, healthcare; critics fear loss of young skilled people) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-033",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage as exactly 3 bullet points (each line starting with '- '). Keep only facts stated in the text.\n\n\"A trial of a new migraine drug involved 1,800 patients across 14 countries. Participants who took the drug monthly had on average 4.2 fewer migraine days per month, compared with 1.9 fewer days for those on a placebo. The most common side effects were mild nausea and fatigue, reported by 7 percent of patients. Researchers stressed that the study lasted only six months and excluded people over 65, so long-term safety and effects in older adults remain unknown. The manufacturer will apply for approval next year. Migraine affects about one in seven people worldwide and is more common in women. The drug works by blocking a protein called CGRP, which is involved in pain signalling. The trial was funded by the manufacturer, but the analysis was conducted by an independent university group and published in a medical journal.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "drug cut migraine days by 4.2 vs 1.9 for placebo",
+    "side effects mild nausea/fatigue in 7 percent",
+    "only six months and excluded over-65s; approval to be sought next year"
+   ],
+   "fact_hints": [
+    [
+     "4.2",
+     "1.9"
+    ],
+    [
+     "nausea",
+     "7 percent"
+    ],
+    [
+     "six months",
+     "over 65",
+     "approval"
+    ]
+   ],
+   "core_facts": [
+    "the new migraine drug cut migraine days more than placebo",
+    "the trial was short and excluded people over 65"
+   ],
+   "secondary_facts": [
+    "4.2 fewer days versus 1.9",
+    "mild nausea and fatigue in 7 percent",
+    "approval to be sought next year"
+   ],
+   "source_text": "A trial of a new migraine drug involved 1,800 patients across 14 countries. Participants who took the drug monthly had on average 4.2 fewer migraine days per month, compared with 1.9 fewer days for those on a placebo. The most common side effects were mild nausea and fatigue, reported by 7 percent of patients. Researchers stressed that the study lasted only six months and excluded people over 65, so long-term safety and effects in older adults remain unknown. The manufacturer will apply for approval next year. Migraine affects about one in seven people worldwide and is more common in women. The drug works by blocking a protein called CGRP, which is involved in pain signalling. The trial was funded by the manufacturer, but the analysis was conducted by an independent university group and published in a medical journal.",
+   "reference_summary": "- The drug cut migraine days by 4.2 a month versus 1.9 on placebo.\n- Side effects were mild nausea and fatigue, in 7 percent of patients.\n- The trial lasted only six months and excluded over 65s, and approval will be sought next year."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "careful",
+  "passage_words": 138,
+  "note": "Constraint is checked by code; key facts (drug cut migraine days by 4.2 vs 1.9 for placebo; side effects mild nausea/fatigue in 7 percent; only six months and excluded over-65s; approval to be sought next year) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-034",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text as exactly 3 bullet points (each line starting with '- '):\n\nUnder the new housing law passed on Friday, landlords in the capital may raise rents by no more than 3 percent a year, down from the 7 percent that was previously allowed. The law also requires landlords to give tenants six months' notice before ending a contract without cause, up from two months. Landlord groups say the cap will push owners to sell, reducing supply, while tenant organisations say it protects families from sudden displacement. The measure takes effect in January and will be reviewed after two years. The capital has about 900,000 rental homes, and rents have risen 35 percent over the past decade. The law passed with 82 votes to 61 after a debate lasting nine hours. The housing minister said that a fund of 50 million euros would support landlords who build new affordable homes.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "annual rent increase capped at 3 percent (was 7)",
+    "six months' notice before ending a contract",
+    "takes effect in January, reviewed after two years"
+   ],
+   "fact_hints": [
+    [
+     "3 percent"
+    ],
+    [
+     "six months"
+    ],
+    [
+     "January",
+     "two years"
+    ]
+   ],
+   "core_facts": [
+    "annual rent rises are capped at 3 percent",
+    "landlords must give much longer notice before ending a contract"
+   ],
+   "secondary_facts": [
+    "takes effect in January, reviewed after two years"
+   ],
+   "source_text": "Under the new housing law passed on Friday, landlords in the capital may raise rents by no more than 3 percent a year, down from the 7 percent that was previously allowed. The law also requires landlords to give tenants six months' notice before ending a contract without cause, up from two months. Landlord groups say the cap will push owners to sell, reducing supply, while tenant organisations say it protects families from sudden displacement. The measure takes effect in January and will be reviewed after two years. The capital has about 900,000 rental homes, and rents have risen 35 percent over the past decade. The law passed with 82 votes to 61 after a debate lasting nine hours. The housing minister said that a fund of 50 million euros would support landlords who build new affordable homes.",
+   "reference_summary": "- Annual rent rises are capped at 3 percent, down from 7.\n- Landlords must give six months' notice to end a contract without cause.\n- The law takes effect in January and will be reviewed after two years."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 138,
+  "note": "Constraint is checked by code; key facts (annual rent increase capped at 3 percent (was 7); six months' notice before ending a contract; takes effect in January, reviewed after two years) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-035",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly one sentence:\n\nCoastal Airways will start a direct flight between Lisbon and Cape Town in October, the first non-stop service between the two cities. The flights will run three times a week on a 220-seat aircraft and take about 11 hours. Introductory fares begin at 389 euros one way. The airline says the route responds to growing demand from tourists and from Portuguese families with ties to southern Africa. Currently passengers between the two cities must change planes in Johannesburg or Dubai, which can add five hours to the trip. Coastal Airways, founded in 2011, flies to 24 destinations and operates a fleet of 18 aircraft. Bookings open on 1 July, and the airline will offer extra baggage on the first week of flights.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "new non-stop Lisbon-Cape Town flight from October",
+    "three flights a week, about 11 hours",
+    "fares from 389 euros"
+   ],
+   "fact_hints": [
+    [
+     "Lisbon",
+     "Cape Town",
+     "non-stop",
+     "direct"
+    ],
+    [
+     "three times",
+     "11 hours"
+    ],
+    [
+     "389"
+    ]
+   ],
+   "core_facts": [
+    "new non-stop flights between Lisbon and Cape Town start in October",
+    "the service runs several times a week"
+   ],
+   "secondary_facts": [
+    "about 11 hours",
+    "fares from 389 euros"
+   ],
+   "source_text": "Coastal Airways will start a direct flight between Lisbon and Cape Town in October, the first non-stop service between the two cities. The flights will run three times a week on a 220-seat aircraft and take about 11 hours. Introductory fares begin at 389 euros one way. The airline says the route responds to growing demand from tourists and from Portuguese families with ties to southern Africa. Currently passengers between the two cities must change planes in Johannesburg or Dubai, which can add five hours to the trip. Coastal Airways, founded in 2011, flies to 24 destinations and operates a fleet of 18 aircraft. Bookings open on 1 July, and the airline will offer extra baggage on the first week of flights.",
+   "reference_summary": "Coastal Airways will launch the first non-stop Lisbon to Cape Town flights in October, three times a week and taking about 11 hours, with fares from 389 euros."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "passage_words": 122,
+  "note": "Constraint is checked by code; key facts (new non-stop Lisbon-Cape Town flight from October; three flights a week, about 11 hours; fares from 389 euros) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-036",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Brightfield Bakery announced on Monday that it will close its three smaller shops by the end of June and focus on its main store and online orders. The owner, Maria Castillo, said rising flour and energy costs had cut profits by almost half since 2022. Around 14 employees will be offered jobs at the main store or at a partner cafe. Customers will be able to order the bakery's best-selling sourdough for nationwide delivery from July. The bakery was founded in 1987 by Castillo's parents and became known for its cinnamon rolls and rye loaves. Its smaller shops are in two suburbs and a railway station, and the rents on those sites rose sharply last year. Castillo said she would keep the recipes unchanged and thanked customers for their loyalty.\n\nTL;DR in exactly one sentence, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "closing three smaller shops by end of June",
+    "rising flour and energy costs halved profits",
+    "focus on main store and online orders"
+   ],
+   "fact_hints": [
+    [
+     "three",
+     "3 smaller",
+     "close"
+    ],
+    [
+     "costs",
+     "flour"
+    ],
+    [
+     "online"
+    ]
+   ],
+   "core_facts": [
+    "the bakery is closing its three smaller shops",
+    "because rising costs cut its profits"
+   ],
+   "secondary_facts": [
+    "focus on the main store and online orders"
+   ],
+   "source_text": "Brightfield Bakery announced on Monday that it will close its three smaller shops by the end of June and focus on its main store and online orders. The owner, Maria Castillo, said rising flour and energy costs had cut profits by almost half since 2022. Around 14 employees will be offered jobs at the main store or at a partner cafe. Customers will be able to order the bakery's best-selling sourdough for nationwide delivery from July. The bakery was founded in 1987 by Castillo's parents and became known for its cinnamon rolls and rye loaves. Its smaller shops are in two suburbs and a railway station, and the rents on those sites rose sharply last year. Castillo said she would keep the recipes unchanged and thanked customers for their loyalty.",
+   "reference_summary": "Brightfield Bakery will close its three smaller shops by the end of June because rising flour and energy costs hurt profits, and will focus on its main store and online orders."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "tldr",
+  "passage_words": 130,
+  "note": "Constraint is checked by code; key facts (closing three smaller shops by end of June; rising flour and energy costs halved profits; focus on main store and online orders) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-037",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "The government has announced a plan to give 1.2 million households a one-off payment of 150 pounds towards winter heating bills. The payment will be made automatically in November to people receiving certain benefits, and the 180 million pound cost will come from existing budgets. Charities welcomed the move but said it is smaller than last year's help and does not reach many pensioners on low incomes. Last year's payment was 300 pounds and reached 2.4 million households, which is why charities say this year's scheme is less generous. Energy prices have fallen 22 percent since the peak, but remain well above levels from before 2021. The finance minister said the government would keep the policy under review.\n\nTL;DR in no more than 35 words, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "150 pound one-off payment to 1.2 million households",
+    "paid in November, 180 million pounds",
+    "charities say it is smaller and misses some pensioners"
+   ],
+   "fact_hints": [
+    [
+     "150"
+    ],
+    [
+     "1.2 million",
+     "180 million"
+    ],
+    [
+     "charities",
+     "pensioners",
+     "smaller"
+    ]
+   ],
+   "core_facts": [
+    "the government will make a one-off heating payment to households",
+    "charities say it is smaller than last year's and misses some pensioners"
+   ],
+   "secondary_facts": [
+    "1.2 million households, paid in November",
+    "costs 180 million pounds"
+   ],
+   "source_text": "The government has announced a plan to give 1.2 million households a one-off payment of 150 pounds towards winter heating bills. The payment will be made automatically in November to people receiving certain benefits, and the 180 million pound cost will come from existing budgets. Charities welcomed the move but said it is smaller than last year's help and does not reach many pensioners on low incomes. Last year's payment was 300 pounds and reached 2.4 million households, which is why charities say this year's scheme is less generous. Energy prices have fallen 22 percent since the peak, but remain well above levels from before 2021. The finance minister said the government would keep the policy under review.",
+   "reference_summary": "The government will give 1.2 million households a one-off 150 pound heating payment in November, costing 180 million pounds, though charities say it is smaller than last year's and misses some pensioners."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "tldr",
+  "passage_words": 118,
+  "note": "Constraint is checked by code; key facts (150 pound one-off payment to 1.2 million households; paid in November, 180 million pounds; charities say it is smaller and misses some pensioners) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-038",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "When the Aral Sea began to shrink in the 1960s, the Soviet Union was diverting the rivers that fed it to irrigate cotton fields in Uzbekistan and Kazakhstan. By 2007 the sea had lost about 90 percent of its volume, leaving ships stranded on dry sand, ending a fishing industry that once employed 40,000 people, and exposing toxic dust that harmed nearby residents. A dam completed in 2005 helped the northern part recover, with fish catches rising again, but the southern part is expected to remain largely dry. The Aral Sea was once the fourth-largest lake in the world. The rivers that fed it, the Amu Darya and the Syr Darya, still supply irrigation for cotton, which is a very thirsty crop. Governments in the region have planted salt-tolerant shrubs on the exposed seabed to reduce dust storms.\n\nTL;DR as exactly 3 bullet points (each line starting with '- '), please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "rivers diverted for cotton irrigation shrank the Aral Sea by about 90 percent",
+    "fishing industry of 40,000 jobs ended and toxic dust spread",
+    "2005 dam helped the northern part recover, the southern part stays dry"
+   ],
+   "fact_hints": [
+    [
+     "divert",
+     "irrigat",
+     "90 percent"
+    ],
+    [
+     "40,000",
+     "toxic"
+    ],
+    [
+     "dam",
+     "northern"
+    ]
+   ],
+   "core_facts": [
+    "diverting rivers to irrigate cotton shrank the Aral Sea",
+    "the fishing industry ended and toxic dust spread"
+   ],
+   "secondary_facts": [
+    "about 90 percent lost",
+    "2005 dam helped the northern part recover, the south stays dry"
+   ],
+   "source_text": "When the Aral Sea began to shrink in the 1960s, the Soviet Union was diverting the rivers that fed it to irrigate cotton fields in Uzbekistan and Kazakhstan. By 2007 the sea had lost about 90 percent of its volume, leaving ships stranded on dry sand, ending a fishing industry that once employed 40,000 people, and exposing toxic dust that harmed nearby residents. A dam completed in 2005 helped the northern part recover, with fish catches rising again, but the southern part is expected to remain largely dry. The Aral Sea was once the fourth-largest lake in the world. The rivers that fed it, the Amu Darya and the Syr Darya, still supply irrigation for cotton, which is a very thirsty crop. Governments in the region have planted salt-tolerant shrubs on the exposed seabed to reduce dust storms.",
+   "reference_summary": "- Diverting rivers to irrigate cotton shrank the Aral Sea by about 90 percent.\n- The 40,000-job fishing industry ended and toxic dust spread.\n- A 2005 dam helped the northern part recover, while the southern part stays dry."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "tldr",
+  "passage_words": 138,
+  "note": "Constraint is checked by code; key facts (rivers diverted for cotton irrigation shrank the Aral Sea by about 90 percent; fishing industry of 40,000 jobs ended and toxic dust spread; 2005 dam helped the northern part recover, the southern part stays dry) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-039",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in no more than 25 words:\n\nThe Ferris Valley railway, closed in 1966, will partly reopen next year after a campaign by local residents raised 2.5 million pounds. Only 9 of the original 24 kilometres will carry trains at first, run by volunteers using restored steam locomotives at weekends. A further 4 million pounds is needed to rebuild a collapsed bridge before the full line can reopen. Organisers expect the heritage line to bring 60,000 tourists a year to the valley. The Ferris Valley line was closed in 1966 as part of national cuts to rural railways, and its tracks lay overgrown for 30 years before volunteers began clearing them. The reopened stretch will have two stations and a small museum. The campaign group, founded in 2008, has about 1,200 members and receives no government funding.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "railway closed in 1966 partly reopens next year",
+    "only 9 of the 24 km will carry trains",
+    "4 million more needed for the bridge"
+   ],
+   "fact_hints": [
+    [
+     "1966",
+     "reopen"
+    ],
+    [
+     "9",
+     "24"
+    ],
+    [
+     "4 million",
+     "bridge"
+    ]
+   ],
+   "core_facts": [
+    "a closed railway will partly reopen",
+    "more money is still needed to rebuild the bridge"
+   ],
+   "secondary_facts": [
+    "only 9 of 24 kilometres at first",
+    "closed in 1966"
+   ],
+   "source_text": "The Ferris Valley railway, closed in 1966, will partly reopen next year after a campaign by local residents raised 2.5 million pounds. Only 9 of the original 24 kilometres will carry trains at first, run by volunteers using restored steam locomotives at weekends. A further 4 million pounds is needed to rebuild a collapsed bridge before the full line can reopen. Organisers expect the heritage line to bring 60,000 tourists a year to the valley. The Ferris Valley line was closed in 1966 as part of national cuts to rural railways, and its tracks lay overgrown for 30 years before volunteers began clearing them. The reopened stretch will have two stations and a small museum. The campaign group, founded in 2008, has about 1,200 members and receives no government funding.",
+   "reference_summary": "The railway closed in 1966 will partly reopen next year, running 9 of 24 kilometres, with 4 million pounds more needed for the bridge."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 130,
+  "note": "Constraint is checked by code; key facts (railway closed in 1966 partly reopens next year; only 9 of the 24 km will carry trains; 4 million more needed for the bridge) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-040",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Summarise the following text in exactly two sentences:\n\nThe first successful kidney transplant took place in Boston in 1954, between identical twins, which avoided rejection because the donor and recipient were genetically the same. Surgeon Joseph Murray received the Nobel Prize in 1990 for the work. The breakthrough for unrelated donors came in the 1980s with the drug cyclosporine, which suppresses the immune system more precisely than earlier medicines. Today more than 90,000 kidney transplants are performed worldwide each year, though the waiting list is far longer. The surgeon's patient, Richard Herrick, survived for eight more years with the transplanted kidney, and the donor, his twin Ronald, lived a long life too. Dialysis, which cleans the blood with a machine, was already available in the 1950s but is a burden for patients. Many countries now run organ donation registers.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "first kidney transplant in 1954 between identical twins",
+    "cyclosporine in the 1980s enabled transplants from unrelated donors",
+    "more than 90,000 transplants a year, waiting list longer"
+   ],
+   "fact_hints": [
+    [
+     "1954",
+     "twins"
+    ],
+    [
+     "cyclosporine",
+     "1980s"
+    ],
+    [
+     "90,000"
+    ]
+   ],
+   "core_facts": [
+    "the first kidney transplant was between identical twins",
+    "cyclosporine later allowed transplants from unrelated donors"
+   ],
+   "secondary_facts": [
+    "in 1954",
+    "more than 90,000 transplants a year, waiting list longer"
+   ],
+   "source_text": "The first successful kidney transplant took place in Boston in 1954, between identical twins, which avoided rejection because the donor and recipient were genetically the same. Surgeon Joseph Murray received the Nobel Prize in 1990 for the work. The breakthrough for unrelated donors came in the 1980s with the drug cyclosporine, which suppresses the immune system more precisely than earlier medicines. Today more than 90,000 kidney transplants are performed worldwide each year, though the waiting list is far longer. The surgeon's patient, Richard Herrick, survived for eight more years with the transplanted kidney, and the donor, his twin Ronald, lived a long life too. Dialysis, which cleans the blood with a machine, was already available in the 1950s but is a burden for patients. Many countries now run organ donation registers.",
+   "reference_summary": "The first kidney transplant, in 1954, was between identical twins. Cyclosporine in the 1980s allowed transplants from unrelated donors, and more than 90,000 are now done yearly while the waiting list is longer."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "imperative",
+  "passage_words": 131,
+  "note": "Constraint is checked by code; key facts (first kidney transplant in 1954 between identical twins; cyclosporine in the 1980s enabled transplants from unrelated donors; more than 90,000 transplants a year, waiting list longer) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-041",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in no more than 35 words. Keep only facts stated in the text.\n\n\"The Panama Canal opened in 1914 and shortened the sea journey between the Atlantic and Pacific oceans by about 8,000 miles. It uses a system of locks to lift ships 26 metres above sea level to Gatun Lake. An expansion completed in 2016 added a third set of locks that allows much larger vessels, called neopanamax ships, to pass. About 14,000 vessels use the canal each year, and drought in 2023 forced authorities to reduce daily crossings. Each lock chamber in the original canal is 33.5 metres wide and fills with water by gravity, using no pumps. Tolls vary with ship size, and the largest container ships can pay over 800,000 dollars for one crossing. The canal is 82 kilometres long and was built by the United States after an earlier French attempt failed.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 35
+   },
+   "key_facts": [
+    "canal opened in 1914, saving about 8,000 miles",
+    "2016 expansion added larger locks",
+    "2023 drought reduced crossings"
+   ],
+   "fact_hints": [
+    [
+     "1914"
+    ],
+    [
+     "2016",
+     "expansion",
+     "third"
+    ],
+    [
+     "drought"
+    ]
+   ],
+   "core_facts": [
+    "the Panama Canal opened in 1914 and shortened the sea journey",
+    "drought has reduced crossings"
+   ],
+   "secondary_facts": [
+    "saves about 8,000 miles",
+    "2016 expansion with larger locks"
+   ],
+   "source_text": "The Panama Canal opened in 1914 and shortened the sea journey between the Atlantic and Pacific oceans by about 8,000 miles. It uses a system of locks to lift ships 26 metres above sea level to Gatun Lake. An expansion completed in 2016 added a third set of locks that allows much larger vessels, called neopanamax ships, to pass. About 14,000 vessels use the canal each year, and drought in 2023 forced authorities to reduce daily crossings. Each lock chamber in the original canal is 33.5 metres wide and fills with water by gravity, using no pumps. Tolls vary with ship size, and the largest container ships can pay over 800,000 dollars for one crossing. The canal is 82 kilometres long and was built by the United States after an earlier French attempt failed.",
+   "reference_summary": "The Panama Canal opened in 1914, saving about 8,000 miles, was expanded in 2016 with larger locks, and saw crossings reduced by drought in 2023."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 134,
+  "note": "Constraint is checked by code; key facts (canal opened in 1914, saving about 8,000 miles; 2016 expansion added larger locks; 2023 drought reduced crossings) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-042",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"Heavy rain over the weekend caused the River Teal to burst its banks in two towns, forcing about 600 people from their homes. Emergency crews rescued 45 residents by boat, and a temporary shelter was opened in a sports hall. The weather service expects the water level to fall by Wednesday, but it warned that a second storm could arrive on Thursday. No deaths have been reported, although several roads and a railway line remain closed. The two towns, Marlby and Ostend Green, lie on low ground where the river has flooded twice before, in 1998 and 2012. The shelter provides blankets, hot meals and a children's play area, run by volunteers from the Red Cross. Local farmers have also moved about 300 cattle to higher fields to keep them safe.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "river flooding forced about 600 people from homes",
+    "45 rescued by boat",
+    "no deaths reported / second storm possible Thursday"
+   ],
+   "fact_hints": [
+    [
+     "600"
+    ],
+    [
+     "45"
+    ],
+    [
+     "no deaths",
+     "second storm",
+     "Thursday"
+    ]
+   ],
+   "core_facts": [
+    "river flooding forced hundreds of people from their homes",
+    "no deaths have been reported"
+   ],
+   "secondary_facts": [
+    "45 rescued by boat",
+    "a second storm could arrive on Thursday"
+   ],
+   "source_text": "Heavy rain over the weekend caused the River Teal to burst its banks in two towns, forcing about 600 people from their homes. Emergency crews rescued 45 residents by boat, and a temporary shelter was opened in a sports hall. The weather service expects the water level to fall by Wednesday, but it warned that a second storm could arrive on Thursday. No deaths have been reported, although several roads and a railway line remain closed. The two towns, Marlby and Ostend Green, lie on low ground where the river has flooded twice before, in 1998 and 2012. The shelter provides blankets, hot meals and a children's play area, run by volunteers from the Red Cross. Local farmers have also moved about 300 cattle to higher fields to keep them safe.",
+   "reference_summary": "Flooding from the River Teal forced about 600 people from their homes, 45 were rescued by boat, and no deaths have been reported."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 131,
+  "note": "Constraint is checked by code; key facts (river flooding forced about 600 people from homes; 45 rescued by boat; no deaths reported / second storm possible Thursday) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-043",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly two sentences? I only have a minute.\n\nThe Marsden Foundation announced a 12 million dollar scholarship fund for students from rural areas, to be distributed over five years. Each scholarship covers tuition and a living allowance of 8,000 dollars a year for up to four years, and about 300 students are expected to benefit in total. Applicants must show financial need and have grown up at least 50 kilometres from a major city. The foundation says it chose the criteria after finding that rural students are 40 percent less likely to attend university than urban peers. The foundation was set up by a retired shipping executive, Elias Marsden, in 1998 and has already given away 60 million dollars to education projects. Applications open in January and will be judged by a panel of university representatives. Scholarship holders may study at any accredited public university in the country.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 2
+   },
+   "key_facts": [
+    "12 million dollar scholarship fund over five years",
+    "covers tuition and an 8,000 dollar yearly allowance for about 300 students",
+    "rural students 40 percent less likely to attend university"
+   ],
+   "fact_hints": [
+    [
+     "12 million"
+    ],
+    [
+     "300",
+     "8,000"
+    ],
+    [
+     "40 percent"
+    ]
+   ],
+   "core_facts": [
+    "a foundation is funding scholarships for rural students",
+    "because rural students are much less likely to attend university"
+   ],
+   "secondary_facts": [
+    "12 million dollars over five years",
+    "8,000 dollar allowance for about 300 students"
+   ],
+   "source_text": "The Marsden Foundation announced a 12 million dollar scholarship fund for students from rural areas, to be distributed over five years. Each scholarship covers tuition and a living allowance of 8,000 dollars a year for up to four years, and about 300 students are expected to benefit in total. Applicants must show financial need and have grown up at least 50 kilometres from a major city. The foundation says it chose the criteria after finding that rural students are 40 percent less likely to attend university than urban peers. The foundation was set up by a retired shipping executive, Elias Marsden, in 1998 and has already given away 60 million dollars to education projects. Applications open in January and will be judged by a panel of university representatives. Scholarship holders may study at any accredited public university in the country.",
+   "reference_summary": "The Marsden Foundation will give 12 million dollars over five years to rural students. Each scholarship covers tuition and an 8,000 dollar yearly allowance for about 300 students, since rural students are 40 percent less likely to attend university."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 140,
+  "note": "Constraint is checked by code; key facts (12 million dollar scholarship fund over five years; covers tuition and an 8,000 dollar yearly allowance for about 300 students; rural students 40 percent less likely to attend university) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-044",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly one sentence? I only have a minute.\n\nScientists at an Australian observatory have detected a faint radio signal from a galaxy that is 8 billion light-years away, one of the most distant of its kind ever observed. The signal was caught using a network of 36 dishes working together and took the team nearly three years to confirm. The galaxy is forming stars about 200 times faster than the Milky Way, which suggests that star formation was far more intense in the early universe. The signal is produced by cold gas that is cooling and collapsing into new stars, and it left the galaxy when the universe was only about 5.5 billion years old. The observatory is located in a remote desert, where radio interference is very low. Results are published this week in a leading astronomy journal.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "radio signal from a galaxy 8 billion light-years away",
+    "forming stars about 200 times faster than the Milky Way"
+   ],
+   "fact_hints": [
+    [
+     "8 billion"
+    ],
+    [
+     "200 times",
+     "200x"
+    ]
+   ],
+   "core_facts": [
+    "a faint radio signal was detected from a very distant galaxy",
+    "the galaxy forms stars much faster than the Milky Way"
+   ],
+   "secondary_facts": [
+    "8 billion light-years away",
+    "about 200 times faster"
+   ],
+   "source_text": "Scientists at an Australian observatory have detected a faint radio signal from a galaxy that is 8 billion light-years away, one of the most distant of its kind ever observed. The signal was caught using a network of 36 dishes working together and took the team nearly three years to confirm. The galaxy is forming stars about 200 times faster than the Milky Way, which suggests that star formation was far more intense in the early universe. The signal is produced by cold gas that is cooling and collapsing into new stars, and it left the galaxy when the universe was only about 5.5 billion years old. The observatory is located in a remote desert, where radio interference is very low. Results are published this week in a leading astronomy journal.",
+   "reference_summary": "Astronomers detected a faint radio signal from a galaxy 8 billion light-years away that is forming stars about 200 times faster than the Milky Way."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "embedded",
+  "passage_words": 131,
+  "note": "Constraint is checked by code; key facts (radio signal from a galaxy 8 billion light-years away; forming stars about 200 times faster than the Milky Way) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-045",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"The Hartwell Library has extended its opening hours after a survey showed that students most wanted evening access. From next month it will stay open until 10 pm on weekdays, two hours later than before, and until 6 pm on Saturdays. The extra staffing will cost 52,000 pounds a year and be paid for by a grant from the local council. The library will also add 40 study desks on its second floor. The library, which opened in 1974, has about 600,000 books and 2,100 members who visit in person at least once a month. The survey was carried out in March and received answers from 1,150 users. A separate children's section will keep its current hours, and the council hopes to review attendance figures in a year.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "library stays open until 10 pm on weekdays",
+    "extra cost 52,000 pounds funded by council grant",
+    "40 new study desks"
+   ],
+   "fact_hints": [
+    [
+     "10 pm",
+     "10pm",
+     "evening"
+    ],
+    [
+     "52,000"
+    ],
+    [
+     "40"
+    ]
+   ],
+   "core_facts": [
+    "the library will stay open later on weekday evenings",
+    "paid for by a council grant"
+   ],
+   "secondary_facts": [
+    "52,000 pounds a year",
+    "40 new study desks"
+   ],
+   "source_text": "The Hartwell Library has extended its opening hours after a survey showed that students most wanted evening access. From next month it will stay open until 10 pm on weekdays, two hours later than before, and until 6 pm on Saturdays. The extra staffing will cost 52,000 pounds a year and be paid for by a grant from the local council. The library will also add 40 study desks on its second floor. The library, which opened in 1974, has about 600,000 books and 2,100 members who visit in person at least once a month. The survey was carried out in March and received answers from 1,150 users. A separate children's section will keep its current hours, and the council hopes to review attendance figures in a year.",
+   "reference_summary": "Hartwell Library will stay open until 10 pm on weekdays, funded by a 52,000 pound council grant, and will add 40 new study desks."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 128,
+  "note": "Constraint is checked by code; key facts (library stays open until 10 pm on weekdays; extra cost 52,000 pounds funded by council grant; 40 new study desks) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-046",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Here's an article my manager sent me. Can you summarise it in no more than 25 words? I only have a minute.\n\nCandidates for next month's election in Norvia debated on live television for the first time on Wednesday. Incumbent president Sara Voss defended her record of cutting unemployment from 8 to 5 percent, while challenger Tomas Rhee argued that wages have not kept up with prices and promised to raise the minimum wage by 12 percent. A poll taken after the debate gave Voss 46 percent and Rhee 44 percent, within the margin of error of 3 points, with 10 percent undecided. Norvia has 11 million voters and has been governed by a centre-left coalition since 2019. The debate lasted 90 minutes and was moderated by two journalists. Two other candidates, from the Green party and a small conservative movement, were not invited because their polling is below 5 percent.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "max_words": 25
+   },
+   "key_facts": [
+    "Voss cites unemployment cut from 8 to 5 percent",
+    "Rhee promises a 12 percent minimum wage rise"
+   ],
+   "fact_hints": [
+    [
+     "unemployment",
+     "8 to 5"
+    ],
+    [
+     "12 percent",
+     "minimum wage"
+    ]
+   ],
+   "core_facts": [
+    "Voss defends her record on unemployment",
+    "Rhee promises a higher minimum wage"
+   ],
+   "secondary_facts": [],
+   "source_text": "Candidates for next month's election in Norvia debated on live television for the first time on Wednesday. Incumbent president Sara Voss defended her record of cutting unemployment from 8 to 5 percent, while challenger Tomas Rhee argued that wages have not kept up with prices and promised to raise the minimum wage by 12 percent. A poll taken after the debate gave Voss 46 percent and Rhee 44 percent, within the margin of error of 3 points, with 10 percent undecided. Norvia has 11 million voters and has been governed by a centre-left coalition since 2019. The debate lasted 90 minutes and was moderated by two journalists. Two other candidates, from the Green party and a small conservative movement, were not invited because their polling is below 5 percent.",
+   "reference_summary": "Voss cites unemployment falling from 8 to 5 percent, while Rhee promises a 12 percent minimum wage rise."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "passage_words": 129,
+  "note": "Constraint is checked by code; key facts (Voss cites unemployment cut from 8 to 5 percent; Rhee promises a 12 percent minimum wage rise) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-047",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "The town of Eldervale is debating a proposal to ban cars from its medieval centre. Supporters, led by councillor Ruth Mbeki, say pedestrian streets would reduce air pollution, which currently exceeds legal limits on 40 days a year, and boost cafes. Opponents, including the traders' association, fear that sales will drop by up to 15 percent and that older residents will struggle to reach shops. A six-month trial is planned for next summer, after which residents will vote. Delivery vans would still be allowed before 10 am. Eldervale has about 22,000 residents and welcomes 800,000 visitors a year, drawn by its cathedral and medieval walls. Several other European towns, such as Ghent and Pontevedra, have already limited traffic in their centres. A survey by the local newspaper found residents roughly evenly split on the idea.\n\nTL;DR as exactly 3 bullet points (each line starting with '- '), please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "bullets": 3
+   },
+   "key_facts": [
+    "proposal to ban cars from the medieval centre",
+    "supporters cite pollution above limits; opponents fear a 15 percent sales drop",
+    "six-month trial next summer, then a vote"
+   ],
+   "fact_hints": [
+    [
+     "ban",
+     "cars"
+    ],
+    [
+     "pollution",
+     "15 percent"
+    ],
+    [
+     "six-month",
+     "trial",
+     "vote"
+    ]
+   ],
+   "core_facts": [
+    "the town is considering banning cars from its medieval centre",
+    "supporters cite pollution while opponents fear lost sales"
+   ],
+   "secondary_facts": [
+    "six-month trial next summer, then a vote"
+   ],
+   "source_text": "The town of Eldervale is debating a proposal to ban cars from its medieval centre. Supporters, led by councillor Ruth Mbeki, say pedestrian streets would reduce air pollution, which currently exceeds legal limits on 40 days a year, and boost cafes. Opponents, including the traders' association, fear that sales will drop by up to 15 percent and that older residents will struggle to reach shops. A six-month trial is planned for next summer, after which residents will vote. Delivery vans would still be allowed before 10 am. Eldervale has about 22,000 residents and welcomes 800,000 visitors a year, drawn by its cathedral and medieval walls. Several other European towns, such as Ghent and Pontevedra, have already limited traffic in their centres. A survey by the local newspaper found residents roughly evenly split on the idea.",
+   "reference_summary": "- Eldervale is considering a ban on cars in its medieval centre.\n- Supporters cite pollution above limits, while opponents fear a 15 percent sales drop.\n- A six-month trial next summer will be followed by a vote."
+  },
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "tldr",
+  "passage_words": 135,
+  "note": "Constraint is checked by code; key facts (proposal to ban cars from the medieval centre; supporters cite pollution above limits; opponents fear a 15 percent sales drop; six-month trial next summer, then a vote) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-048",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"Parents at Greenway Primary School have voted to ban phones from the playground. In a ballot of 312 families, 71 percent supported the ban, which starts after the winter break. Teachers say pupils spend break times looking at screens instead of playing, and the head teacher hopes the rule will reduce arguments linked to social media. Children who need a phone to travel home can hand it in at the office in the morning. The school has 480 pupils aged four to eleven. Staff already ask children to keep phones in their bags during lessons, but they say rules were hard to enforce during breaks. The head teacher said the ban would be reviewed after one term, and parents who disagreed were invited to a meeting in January.\"",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "parents voted to ban phones from the playground",
+    "71 percent of 312 families supported",
+    "phones can be handed in at the office"
+   ],
+   "fact_hints": [
+    [
+     "ban"
+    ],
+    [
+     "71"
+    ],
+    [
+     "office",
+     "hand"
+    ]
+   ],
+   "core_facts": [
+    "parents voted to ban phones from the playground",
+    "children who need a phone can hand it in at the office"
+   ],
+   "secondary_facts": [
+    "71 percent of 312 families in favour"
+   ],
+   "source_text": "Parents at Greenway Primary School have voted to ban phones from the playground. In a ballot of 312 families, 71 percent supported the ban, which starts after the winter break. Teachers say pupils spend break times looking at screens instead of playing, and the head teacher hopes the rule will reduce arguments linked to social media. Children who need a phone to travel home can hand it in at the office in the morning. The school has 480 pupils aged four to eleven. Staff already ask children to keep phones in their bags during lessons, but they say rules were hard to enforce during breaks. The head teacher said the ban would be reviewed after one term, and parents who disagreed were invited to a meeting in January.",
+   "reference_summary": "Parents at Greenway Primary School voted, with 71 percent of 312 families in favour, to ban phones from the playground, though children can hand phones in at the office."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "careful",
+  "passage_words": 128,
+  "note": "Constraint is checked by code; key facts (parents voted to ban phones from the playground; 71 percent of 312 families supported; phones can be handed in at the office) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-049",
+  "split": "unsplit"
+ },
+ {
+  "prompt": "In 1928 Alexander Fleming noticed that a mould had killed bacteria on one of his culture dishes at St Mary's Hospital in London. He identified the mould as Penicillium and named the active substance penicillin, but he struggled to purify it. It was not until 1940 that Howard Florey and Ernst Chain, working at Oxford, turned it into a usable drug. Mass production during the Second World War saved thousands of soldiers from infected wounds. Fleming was a Scottish bacteriologist who had earlier discovered lysozyme, an enzyme in tears and saliva. He shared the 1945 Nobel Prize with Florey and Chain. Early penicillin was so scarce that doctors sometimes recovered it from patients' urine so that it could be used again.\n\nTL;DR in exactly one sentence, please.",
+  "category": "summarisation",
+  "grader": "constraint",
+  "gold": {
+   "constraints": {
+    "sentences": 1
+   },
+   "key_facts": [
+    "Fleming noticed in 1928 that a mould killed bacteria",
+    "Florey and Chain made it a usable drug from 1940",
+    "mass production in WWII saved soldiers"
+   ],
+   "fact_hints": [
+    [
+     "1928",
+     "Fleming"
+    ],
+    [
+     "Florey",
+     "Chain",
+     "1940"
+    ],
+    [
+     "war",
+     "soldiers"
+    ]
+   ],
+   "core_facts": [
+    "Fleming noticed that a mould killed bacteria",
+    "it later became a usable drug that saved soldiers"
+   ],
+   "secondary_facts": [
+    "noticed in 1928",
+    "Florey and Chain made it a drug from 1940"
+   ],
+   "source_text": "In 1928 Alexander Fleming noticed that a mould had killed bacteria on one of his culture dishes at St Mary's Hospital in London. He identified the mould as Penicillium and named the active substance penicillin, but he struggled to purify it. It was not until 1940 that Howard Florey and Ernst Chain, working at Oxford, turned it into a usable drug. Mass production during the Second World War saved thousands of soldiers from infected wounds. Fleming was a Scottish bacteriologist who had earlier discovered lysozyme, an enzyme in tears and saliva. He shared the 1945 Nobel Prize with Florey and Chain. Early penicillin was so scarce that doctors sometimes recovered it from patients' urine so that it could be used again.",
+   "reference_summary": "Alexander Fleming noticed in 1928 that a mould killed bacteria, and after Florey and Chain made penicillin a usable drug from 1940, wartime mass production saved soldiers."
+  },
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "tldr",
+  "passage_words": 121,
+  "note": "Constraint is checked by code; key facts (Fleming noticed in 1928 that a mould killed bacteria; Florey and Chain made it a usable drug from 1940; mass production in WWII saved soldiers) must survive and nothing may be invented (blind judge).",
+  "gold_checks": "key-fact keywords found in passage; GLM agreement check pending",
+  "id": "summ-050",
+  "split": "unsplit"
+ }
+]

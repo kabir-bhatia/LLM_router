@@ -1,0 +1,852 @@
+[
+ {
+  "prompt": "drove 90 km doing 30 km/h, then 60 km at 30 km/h. total time on the road in hours?",
+  "gold": {
+   "answer": 5,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:travel",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (travel); both agree on 5.",
+  "id": "math-001",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "For the logbook: the first stretch was 270 km at 30 km/h, the second 270 km at 90 km/h. What was the average speed over the full distance, km/h?",
+  "gold": {
+   "answer": 45,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:travel",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (travel); both agree on 45.",
+  "id": "math-002",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Quick one for the inventory report - we opened the quarter with 1940 bottles of juice. Week 1 we lost 40% of that to sales, week 2 we sold 50% of whatever was left, and in week 3 a further 45 went out. What's the closing stock?",
+  "gold": {
+   "answer": 537,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:percent_chain",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (percent_chain); both agree on 537.",
+  "id": "math-003",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "₹8,500 is invested at 20% compound interest per year. After two years, an extra ₹1,500 is added, and the whole balance then grows for one more year at the same rate. What is the final balance?",
+  "gold": {
+   "answer": 16488,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:savings",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (savings); both agree on 16488.",
+  "id": "math-004",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Work out how many bags of rice remain. Starting stock: 1900. Monday sales: 25% of the stock. Tuesday sales: 10 units.",
+  "gold": {
+   "answer": 1415,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:percent_chain",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (percent_chain); both agree on 1415.",
+  "id": "math-005",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A salary of ₹50,000 is spent as follows: 30% on rent, then 20% of what remains on food. How many rupees are left after rent and food?",
+  "gold": {
+   "answer": 28000,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "Rent 15,000 leaves 35,000; food 7,000 leaves 28,000. Checked by two independent computations.",
+  "id": "math-006",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A prize of ₹672 is shared among three people in the ratio 3:4:5. How much more does the person with the largest share get than the person with the smallest?",
+  "gold": {
+   "answer": 112,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:ratio_split",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (ratio_split); both agree on 112.",
+  "id": "math-007",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A prize of ₹336 is shared among three people in the ratio 1:2:4. How much more does the person with the largest share get than the person with the smallest?",
+  "gold": {
+   "answer": 144,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:ratio_split",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (ratio_split); both agree on 144.",
+  "id": "math-008",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Given test scores 55, 59, 97, find the score on test 4 that makes the mean of all 4 scores equal 72.",
+  "gold": {
+   "answer": 77,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:average",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (average); both agree on 77.",
+  "id": "math-009",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "drove 180 km doing 45 km/h, then 180 km at 30 km/h. total time on the road in hours?",
+  "gold": {
+   "answer": 10,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:travel",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (travel); both agree on 10.",
+  "id": "math-010",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A recipe that serves 4 people uses 300 g of flour. How many grams of flour are needed to serve 10 people with the same recipe?",
+  "gold": {
+   "answer": 750,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "75 g per person, times 10 = 750 g. Checked by two independent computations.",
+  "id": "math-011",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A tank is filled by pipe A alone in 6 hours and by pipe B alone in 3 hours. With both pipes open together, how many minutes does it take to fill the empty tank?",
+  "gold": {
+   "answer": 120,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "Combined rate 1/6+1/3 = 1/2 tank per hour, so 2 hours = 120 minutes. Checked by two independent computations.",
+  "id": "math-012",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "For the logbook: the first stretch was 60 km at 60 km/h, the second 180 km at 60 km/h. What was the average speed over the full distance, km/h?",
+  "gold": {
+   "answer": 60,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:travel",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (travel); both agree on 60.",
+  "id": "math-013",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "our village has 8,800 residents and it keeps growing by 25% a year. what will the population be 2 years from now?",
+  "gold": {
+   "answer": 13750,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:growth",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (growth); both agree on 13750.",
+  "id": "math-014",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A shop has 1680 chairs. It sells 50% of them on Monday and 40 more on Tuesday. How many chairs are left?",
+  "gold": {
+   "answer": 800,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:percent_chain",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (percent_chain); both agree on 800.",
+  "id": "math-015",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Two positive integers have a greatest common divisor of 5 and a least common multiple of 60. One of them is 15. What is the other?",
+  "gold": {
+   "answer": 20,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "formal",
+  "template_set": "hand",
+  "note": "gcd*lcm = product, so other = 5*60/15 = 20; check gcd(20,15)=5, lcm=60. Checked by two independent computations.",
+  "id": "math-016",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Quick one for the inventory report - we opened the quarter with 900 tickets. Week 1 we lost 40% of that to sales, week 2 we sold 20% of whatever was left, and in week 3 a further 25 went out. What's the closing stock?",
+  "gold": {
+   "answer": 407,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:percent_chain",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (percent_chain); both agree on 407.",
+  "id": "math-017",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "For the board deck: we began with 11,400 subscribers; year 1 grew 25%, year 2 shrank 20%, year 3 grew 10%. What is the year-3 subscriber count?",
+  "gold": {
+   "answer": 12540,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:growth",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (growth); both agree on 12540.",
+  "id": "math-018",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A prize of ₹100 is shared among three people in the ratio 1:3:6. How much more does the person with the largest share get than the person with the smallest?",
+  "gold": {
+   "answer": 50,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:ratio_split",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (ratio_split); both agree on 50.",
+  "id": "math-019",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A town of 8,000 people grows 5% in one year and another 5% the next year. What is its population after the two years?",
+  "gold": {
+   "answer": 8820,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "8000 -> 8400 -> 8820. Checked by two independent computations.",
+  "id": "math-020",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "You have 30 litres of a 20% acid solution. How many litres of pure acid must be added to make it a 40% solution?",
+  "gold": {
+   "answer": 10,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "6 L acid now; (6+x)/(30+x) = 0.4 gives x = 10. Checked by two independent computations.",
+  "id": "math-021",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "bought a lamp wholesale at ₹1400, tagged it 40% higher. how many rupees of markup is that?",
+  "gold": {
+   "answer": 560,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:markup_discount",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (markup_discount); both agree on 560.",
+  "id": "math-022",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A faulty clock gains exactly 3 minutes every hour. It is set to the correct time at 8:00 am. When the true time is 2:00 pm, how many minutes ahead of the true time does the clock show?",
+  "gold": {
+   "answer": 18,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "6 hours elapse, 3 minutes gained per hour = 18 minutes. Checked by two independent computations.",
+  "id": "math-023",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Split 300 rupees in the ratio 2:3. Report the bigger share.",
+  "gold": {
+   "answer": 180,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:ratio_split",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (ratio_split); both agree on 180.",
+  "id": "math-024",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "The price of a bike is raised by 20% and then the new price is cut by 20%. If the bike started at ₹500, what does it cost at the end?",
+  "gold": {
+   "answer": 480,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "500*1.2 = 600; 600*0.8 = 480 (a +20%/-20% pair nets -4%). Checked by two independent computations.",
+  "id": "math-025",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Shift summary needed: P ran for the full 3 hours at 12 parts/hour; Q joined for just the final 2 hours at 10 parts/hour. Total parts from both?",
+  "gold": {
+   "answer": 56,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:unit_rate",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (unit_rate); both agree on 56.",
+  "id": "math-026",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Margin check for the month-end sheet: jacket cost ₹850, price tag = cost + 20%, then we ran a 25% off sale on the tag price. Net profit per jacket in rupees (negative if loss)?",
+  "gold": {
+   "answer": -85,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:markup_discount",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (markup_discount); both agree on -85.",
+  "id": "math-027",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "i handed over ₹500 for 7 notebooks that cost ₹60 apiece - what should i get back?",
+  "gold": {
+   "answer": 80,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:shopping",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (shopping); both agree on 80.",
+  "id": "math-028",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "hey, a train does the first 120 km at 60 km/h and the next 120 km at 40 km/h. what's its average speed over the whole 240 km?",
+  "gold": {
+   "answer": 48,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "casual",
+  "template_set": "hand",
+  "note": "Time = 2h + 3h = 5h; 240/5 = 48 km/h (not the simple mean 50). Checked by two independent computations.",
+  "id": "math-029",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A company has 7,000 subscribers. Over three consecutive years its subscriber count changes by +25%, -50% and +20% respectively. How many subscribers does it have at the end of year three?",
+  "gold": {
+   "answer": 5250,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:growth",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (growth); both agree on 5250.",
+  "id": "math-030",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Planning my savings: ₹9,500 sits in an account earning 20% a year, compounded annually. At the end of year 2 I top it up with ₹1,000, and leave everything in for year 3. What's the balance after year 3?",
+  "gold": {
+   "answer": 17616,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:savings",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (savings); both agree on 17616.",
+  "id": "math-031",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A customer purchases 6 units of item P at ₹45 and 2 units of item Q at ₹125. A 25% discount applies to the total. If the customer tenders ₹2000, compute the change returned.",
+  "gold": {
+   "answer": 1610,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:shopping",
+  "difficulty": "hard",
+  "phrasing": "formal",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (shopping); both agree on 1610.",
+  "id": "math-032",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "The sum of three consecutive even numbers is 78. What is the largest of the three?",
+  "gold": {
+   "answer": 28,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "Middle = 78/3 = 26, so the numbers are 24, 26, 28. Checked by two independent computations.",
+  "id": "math-033",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "two numbers add up to 91 and differ by 5. which one's the bigger one?",
+  "gold": {
+   "answer": 48,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:age_linear",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (age_linear); both agree on 48.",
+  "id": "math-034",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Cost price ₹400, markup 25%. State the markup amount in rupees.",
+  "gold": {
+   "answer": 100,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:markup_discount",
+  "difficulty": "easy",
+  "phrasing": "imperative",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (markup_discount); both agree on 100.",
+  "id": "math-035",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "so Vikram's store started the week with 680 oranges, sold 25% on Monday, then another 60 on Tuesday. how many are still on the shelf?",
+  "gold": {
+   "answer": 450,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:percent_chain",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (percent_chain); both agree on 450.",
+  "id": "math-036",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "me and my cousin are splitting ₹480 in the ratio 3 to 5 (he gets the bigger part). how much is his share?",
+  "gold": {
+   "answer": 300,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:ratio_split",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (ratio_split); both agree on 300.",
+  "id": "math-037",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Shift summary needed: P ran for the full 2 hours at 15 parts/hour; Q joined for just the final 1 hours at 16 parts/hour. Total parts from both?",
+  "gold": {
+   "answer": 46,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:unit_rate",
+  "difficulty": "hard",
+  "phrasing": "embedded",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (unit_rate); both agree on 46.",
+  "id": "math-038",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Asha is 3 times as old as Asha's daughter. In 6 years Asha will be 2 times as old as the daughter will be then. How old is the daughter now?",
+  "gold": {
+   "answer": 6,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:age_linear",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (age_linear); both agree on 6.",
+  "id": "math-039",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "After a 20% discount, a phone costs ₹24,000. What was its price before the discount?",
+  "gold": {
+   "answer": 30000,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "24,000 is 80% of the original, so original = 24,000/0.8 = 30,000. Checked by two independent computations.",
+  "id": "math-040",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Divya is 4 times as old as Divya's daughter. In 17 years Divya will be 3 times as old as the daughter will be then. How old is the daughter now?",
+  "gold": {
+   "answer": 34,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:age_linear",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (age_linear); both agree on 34.",
+  "id": "math-041",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A student scored 68, 94, 68 in her first 3 tests. What must she score in the next test so that her average over all 4 tests is exactly 72?",
+  "gold": {
+   "answer": 58,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:average",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (average); both agree on 58.",
+  "id": "math-042",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "i handed over ₹1000 for 3 notebooks that cost ₹18 apiece - what should i get back?",
+  "gold": {
+   "answer": 946,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:shopping",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (shopping); both agree on 946.",
+  "id": "math-043",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Section A has 30 students with an average mark of 59. Section B has 30 students with an average mark of 65. What is the average mark of all 60 students together?",
+  "gold": {
+   "answer": 62,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:average",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (average); both agree on 62.",
+  "id": "math-044",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "our press stamps out 336 bolts every 12 min. running it nonstop for 4 hours, how many bolts is that?",
+  "gold": {
+   "answer": 6720,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:unit_rate",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (unit_rate); both agree on 6720.",
+  "id": "math-045",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "A town has 6,800 people and its population grows 20% every year. How many people live there after 2 years?",
+  "gold": {
+   "answer": 9792,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:growth",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (growth); both agree on 9792.",
+  "id": "math-046",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "In how many different ways can a committee of 3 people be chosen from a group of 8 people?",
+  "gold": {
+   "answer": 56,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "hand",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "hand",
+  "note": "C(8,3) = 8*7*6/3! = 56. Checked by two independent computations.",
+  "id": "math-047",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "₹5,000 is deposited at 5% simple interest per year. What is the total amount after 3 years?",
+  "gold": {
+   "answer": 5750,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:B:savings",
+  "difficulty": "easy",
+  "phrasing": "word_problem",
+  "template_set": "B",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (savings); both agree on 5750.",
+  "id": "math-048",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "our press stamps out 136 bolts every 8 min. running it nonstop for 2 hours, how many bolts is that?",
+  "gold": {
+   "answer": 2040,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:unit_rate",
+  "difficulty": "easy",
+  "phrasing": "casual",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (unit_rate); both agree on 2040.",
+  "id": "math-049",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ },
+ {
+  "prompt": "Rohan buys 4 pens at ₹45 each and 5 folders at ₹80 each. The whole bill gets a 25% discount. Rohan pays with a ₹2000 note. How much change comes back?",
+  "gold": {
+   "answer": 1565,
+   "tolerance": 0
+  },
+  "grader": "numeric",
+  "category": "math",
+  "source": "generated:A:shopping",
+  "difficulty": "hard",
+  "phrasing": "word_problem",
+  "template_set": "A",
+  "note": "Computed in exact fractions and re-derived by an independent formulation (shopping); both agree on 1565.",
+  "id": "math-050",
+  "split": "unsplit",
+  "gold_checks": "independent re-computation"
+ }
+]

@@ -1,0 +1,42 @@
+[
+ {
+  "id": "smoke-fact",
+  "category": "factual",
+  "prompt": "Explain in two sentences what a hash table is and why lookups are fast."
+ },
+ {
+  "id": "smoke-math",
+  "category": "math",
+  "prompt": "A shop has 480 notebooks. It sells 25% on Monday and 90 more on Tuesday. How many notebooks are left? Answer with the number."
+ },
+ {
+  "id": "smoke-sent",
+  "category": "sentiment",
+  "prompt": "Classify the sentiment of this review as positive, negative or mixed, then give a one-line reason: 'Delivery was quick, but the headphones stopped charging after two days.'"
+ },
+ {
+  "id": "smoke-summ",
+  "category": "summarisation",
+  "prompt": "Summarise in exactly one sentence: The city council approved a new bike-lane network after a year of public consultations. The plan adds 40 km of protected lanes over three years, funded partly by a national grant. Local businesses raised concerns about losing parking, so the council promised a review after the first phase."
+ },
+ {
+  "id": "smoke-ner",
+  "category": "ner",
+  "prompt": "Extract all named entities with their types (PERSON, ORG, LOCATION, DATE) as JSON from: 'Priya Nair joined Infosys in Pune on 3 March 2021.'"
+ },
+ {
+  "id": "smoke-debug",
+  "category": "code_debug",
+  "prompt": "This function should return the average of a list but has a bug. Find and fix it:\ndef avg(xs):\n    return sum(xs) / len(xs) - 1"
+ },
+ {
+  "id": "smoke-logic",
+  "category": "logic",
+  "prompt": "Ana, Ben and Cy each own a different pet: cat, dog, fish. Ben does not own the fish. Cy owns the dog. Who owns the cat?"
+ },
+ {
+  "id": "smoke-codegen",
+  "category": "code_gen",
+  "prompt": "Write a Python function `second_largest(nums)` that returns the second-largest distinct number in a list, or None if it does not exist."
+ }
+]

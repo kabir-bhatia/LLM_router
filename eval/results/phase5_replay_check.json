@@ -1,0 +1,119 @@
+{
+ "true": {
+  "labels": "true",
+  "policy": "D:\\LLM_Router\\eval\\results\\phase4\\routing_policy.json",
+  "n": 240,
+  "solvers_enabled": true,
+  "router": {
+   "accuracy": 0.9791666666666666,
+   "cost_usd": 0.06414985,
+   "paths": {
+    "solver": 49,
+    "local": 82,
+    "escalated": 11,
+    "api": 98,
+    "error": 0
+   }
+  },
+  "replay_official": {
+   "accuracy": 0.9791666666666666,
+   "cost_usd": 0.06414985,
+   "paths": {
+    "solver": 49,
+    "local": 82,
+    "escalated": 11,
+    "api": 98
+   },
+   "blank_api_retry_tasks": [],
+   "label_validator_tasks": [],
+   "unexplained_mismatches": []
+  }
+ },
+ "predicted": {
+  "labels": "predicted",
+  "policy": "D:\\LLM_Router\\eval\\results\\phase4\\routing_policy.json",
+  "n": 240,
+  "solvers_enabled": true,
+  "router": {
+   "accuracy": 0.9791666666666666,
+   "cost_usd": 0.0810092,
+   "paths": {
+    "solver": 45,
+    "local": 77,
+    "escalated": 12,
+    "api": 106,
+    "error": 0
+   }
+  },
+  "replay_official": {
+   "accuracy": 0.9791666666666666,
+   "cost_usd": 0.0807944,
+   "paths": {
+    "solver": 45,
+    "local": 78,
+    "escalated": 11,
+    "api": 106
+   },
+   "blank_api_retry_tasks": [],
+   "label_validator_tasks": [
+    {
+     "id": "code_gen-041",
+     "why": [
+      "path escalated vs local",
+      "cost 0.0002148 vs 0.0000000"
+     ],
+     "router": {
+      "id": "code_gen-041",
+      "path": "escalated",
+      "correct": true,
+      "cost": 0.0002148,
+      "model": "deepseek-v4p1-flash",
+      "escalated": true,
+      "category": "sentiment",
+      "plan": [
+       "local:gemma3:4b",
+       "api:deepseek-v4p1-flash"
+      ],
+      "trace": [
+       [
+        "local",
+        "gemma3:4b",
+        false
+       ],
+       [
+        "api",
+        "deepseek-v4p1-flash",
+        true
+       ]
+      ]
+     },
+     "replay": {
+      "id": "code_gen-041",
+      "category": "code_gen",
+      "difficulty": "hard",
+      "path": "local",
+      "correct": true,
+      "cost": 0.0,
+      "hw_cost": 0.0,
+      "route_model": "gemma3:4b",
+      "routed_cell": "sentiment|hard"
+     }
+    }
+   ],
+   "unexplained_mismatches": []
+  },
+  "replay_predicted_category": {
+   "accuracy": 0.9791666666666666,
+   "cost_usd": 0.0810092,
+   "paths": {
+    "solver": 45,
+    "local": 77,
+    "escalated": 12,
+    "api": 106
+   },
+   "blank_api_retry_tasks": [],
+   "label_validator_tasks": [],
+   "unexplained_mismatches": []
+  }
+ }
+}

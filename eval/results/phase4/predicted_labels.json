@@ -1,0 +1,962 @@
+{
+"fact-010": [
+"factual",
+"easy"
+],
+"fact-012": [
+"factual",
+"hard"
+],
+"fact-015": [
+"factual",
+"easy"
+],
+"fact-019": [
+"factual",
+"hard"
+],
+"fact-034": [
+"factual",
+"hard"
+],
+"fact-048": [
+"factual",
+"easy"
+],
+"math-004": [
+"math",
+"hard"
+],
+"math-026": [
+"summarisation",
+"easy"
+],
+"math-032": [
+"math",
+"hard"
+],
+"math-045": [
+"math",
+"easy"
+],
+"math-046": [
+"math",
+"easy"
+],
+"math-049": [
+"math",
+"easy"
+],
+"sent-011": [
+"sentiment",
+"easy"
+],
+"sent-027": [
+"sentiment",
+"hard"
+],
+"sent-029": [
+"sentiment",
+"hard"
+],
+"sent-032": [
+"sentiment",
+"easy"
+],
+"sent-033": [
+"sentiment",
+"easy"
+],
+"sent-044": [
+"sentiment",
+"easy"
+],
+"summ-004": [
+"summarisation",
+"hard"
+],
+"summ-007": [
+"summarisation",
+"easy"
+],
+"summ-010": [
+"summarisation",
+"hard"
+],
+"summ-011": [
+"summarisation",
+"hard"
+],
+"summ-019": [
+"summarisation",
+"hard"
+],
+"summ-036": [
+"summarisation",
+"hard"
+],
+"ner-004": [
+"ner",
+"hard"
+],
+"ner-007": [
+"ner",
+"easy"
+],
+"ner-020": [
+"ner",
+"easy"
+],
+"ner-028": [
+"ner",
+"hard"
+],
+"ner-043": [
+"ner",
+"easy"
+],
+"ner-050": [
+"ner",
+"easy"
+],
+"code_debug-003": [
+"code_debug",
+"easy"
+],
+"code_debug-031": [
+"code_debug",
+"hard"
+],
+"code_debug-034": [
+"code_debug",
+"easy"
+],
+"code_debug-039": [
+"code_debug",
+"hard"
+],
+"code_debug-041": [
+"code_debug",
+"hard"
+],
+"code_debug-050": [
+"code_debug",
+"easy"
+],
+"logic-003": [
+"logic",
+"easy"
+],
+"logic-026": [
+"logic",
+"easy"
+],
+"logic-034": [
+"logic",
+"easy"
+],
+"logic-042": [
+"logic",
+"hard"
+],
+"logic-045": [
+"logic",
+"easy"
+],
+"logic-046": [
+"logic",
+"hard"
+],
+"code_gen-015": [
+"code_gen",
+"hard"
+],
+"code_gen-022": [
+"code_gen",
+"easy"
+],
+"code_gen-028": [
+"code_gen",
+"hard"
+],
+"code_gen-033": [
+"code_gen",
+"easy"
+],
+"code_gen-043": [
+"code_gen",
+"hard"
+],
+"code_gen-046": [
+"code_gen",
+"hard"
+],
+"fact-003": [
+"factual",
+"easy"
+],
+"fact-007": [
+"factual",
+"hard"
+],
+"fact-009": [
+"factual",
+"hard"
+],
+"fact-023": [
+"factual",
+"easy"
+],
+"fact-037": [
+"factual",
+"easy"
+],
+"fact-043": [
+"factual",
+"hard"
+],
+"math-005": [
+"math",
+"easy"
+],
+"math-007": [
+"math",
+"hard"
+],
+"math-011": [
+"math",
+"easy"
+],
+"math-022": [
+"math",
+"easy"
+],
+"math-031": [
+"math",
+"hard"
+],
+"math-050": [
+"math",
+"hard"
+],
+"sent-003": [
+"sentiment",
+"easy"
+],
+"sent-013": [
+"sentiment",
+"easy"
+],
+"sent-015": [
+"sentiment",
+"easy"
+],
+"sent-026": [
+"sentiment",
+"easy"
+],
+"sent-035": [
+"sentiment",
+"easy"
+],
+"sent-049": [
+"sentiment",
+"easy"
+],
+"summ-008": [
+"summarisation",
+"hard"
+],
+"summ-012": [
+"summarisation",
+"easy"
+],
+"summ-028": [
+"summarisation",
+"hard"
+],
+"summ-038": [
+"summarisation",
+"hard"
+],
+"summ-041": [
+"summarisation",
+"easy"
+],
+"summ-047": [
+"summarisation",
+"hard"
+],
+"ner-008": [
+"ner",
+"hard"
+],
+"ner-017": [
+"ner",
+"easy"
+],
+"ner-021": [
+"ner",
+"easy"
+],
+"ner-030": [
+"ner",
+"hard"
+],
+"ner-035": [
+"ner",
+"easy"
+],
+"ner-049": [
+"ner",
+"hard"
+],
+"code_debug-006": [
+"code_debug",
+"hard"
+],
+"code_debug-017": [
+"code_debug",
+"hard"
+],
+"code_debug-032": [
+"code_debug",
+"hard"
+],
+"code_debug-036": [
+"code_debug",
+"easy"
+],
+"code_debug-045": [
+"code_debug",
+"easy"
+],
+"code_debug-046": [
+"code_debug",
+"hard"
+],
+"logic-002": [
+"logic",
+"easy"
+],
+"logic-014": [
+"logic",
+"hard"
+],
+"logic-019": [
+"logic",
+"hard"
+],
+"logic-038": [
+"logic",
+"easy"
+],
+"logic-040": [
+"logic",
+"hard"
+],
+"logic-049": [
+"logic",
+"hard"
+],
+"code_gen-001": [
+"code_gen",
+"hard"
+],
+"code_gen-012": [
+"code_gen",
+"easy"
+],
+"code_gen-014": [
+"code_gen",
+"easy"
+],
+"code_gen-027": [
+"code_gen",
+"hard"
+],
+"code_gen-048": [
+"code_gen",
+"easy"
+],
+"code_gen-050": [
+"code_gen",
+"easy"
+],
+"fact-013": [
+"factual",
+"hard"
+],
+"fact-018": [
+"factual",
+"easy"
+],
+"fact-025": [
+"factual",
+"easy"
+],
+"fact-028": [
+"factual",
+"easy"
+],
+"fact-040": [
+"factual",
+"hard"
+],
+"fact-041": [
+"factual",
+"hard"
+],
+"math-003": [
+"math",
+"hard"
+],
+"math-008": [
+"math",
+"hard"
+],
+"math-010": [
+"out_of_scope",
+"easy"
+],
+"math-015": [
+"math",
+"easy"
+],
+"math-017": [
+"math",
+"hard"
+],
+"math-024": [
+"math",
+"easy"
+],
+"sent-001": [
+"sentiment",
+"hard"
+],
+"sent-009": [
+"sentiment",
+"hard"
+],
+"sent-012": [
+"sentiment",
+"hard"
+],
+"sent-019": [
+"sentiment",
+"easy"
+],
+"sent-036": [
+"sentiment",
+"hard"
+],
+"sent-037": [
+"sentiment",
+"hard"
+],
+"summ-009": [
+"summarisation",
+"hard"
+],
+"summ-013": [
+"summarisation",
+"hard"
+],
+"summ-026": [
+"summarisation",
+"easy"
+],
+"summ-032": [
+"summarisation",
+"easy"
+],
+"summ-034": [
+"summarisation",
+"hard"
+],
+"summ-045": [
+"summarisation",
+"easy"
+],
+"ner-006": [
+"ner",
+"hard"
+],
+"ner-012": [
+"ner",
+"hard"
+],
+"ner-015": [
+"ner",
+"easy"
+],
+"ner-016": [
+"ner",
+"hard"
+],
+"ner-039": [
+"ner",
+"easy"
+],
+"ner-044": [
+"ner",
+"easy"
+],
+"code_debug-012": [
+"code_debug",
+"hard"
+],
+"code_debug-014": [
+"code_debug",
+"hard"
+],
+"code_debug-015": [
+"code_debug",
+"easy"
+],
+"code_debug-024": [
+"code_debug",
+"hard"
+],
+"code_debug-038": [
+"code_debug",
+"hard"
+],
+"code_debug-040": [
+"code_debug",
+"easy"
+],
+"logic-006": [
+"logic",
+"hard"
+],
+"logic-016": [
+"logic",
+"hard"
+],
+"logic-017": [
+"logic",
+"easy"
+],
+"logic-021": [
+"logic",
+"hard"
+],
+"logic-037": [
+"logic",
+"easy"
+],
+"logic-044": [
+"logic",
+"easy"
+],
+"code_gen-002": [
+"code_gen",
+"easy"
+],
+"code_gen-006": [
+"code_gen",
+"hard"
+],
+"code_gen-007": [
+"code_gen",
+"hard"
+],
+"code_gen-024": [
+"code_gen",
+"hard"
+],
+"code_gen-045": [
+"code_gen",
+"easy"
+],
+"code_gen-049": [
+"code_gen",
+"easy"
+],
+"fact-002": [
+"out_of_scope",
+"easy"
+],
+"fact-017": [
+"factual",
+"hard"
+],
+"fact-030": [
+"out_of_scope",
+"easy"
+],
+"fact-038": [
+"factual",
+"easy"
+],
+"fact-039": [
+"factual",
+"easy"
+],
+"fact-044": [
+"factual",
+"easy"
+],
+"math-014": [
+"math",
+"easy"
+],
+"math-019": [
+"math",
+"hard"
+],
+"math-025": [
+"math",
+"hard"
+],
+"math-030": [
+"math",
+"hard"
+],
+"math-036": [
+"math",
+"easy"
+],
+"math-041": [
+"math",
+"easy"
+],
+"sent-017": [
+"sentiment",
+"hard"
+],
+"sent-022": [
+"sentiment",
+"easy"
+],
+"sent-023": [
+"sentiment",
+"hard"
+],
+"sent-039": [
+"sentiment",
+"hard"
+],
+"sent-045": [
+"sentiment",
+"easy"
+],
+"sent-046": [
+"sentiment",
+"hard"
+],
+"summ-017": [
+"summarisation",
+"hard"
+],
+"summ-018": [
+"summarisation",
+"easy"
+],
+"summ-024": [
+"summarisation",
+"hard"
+],
+"summ-027": [
+"summarisation",
+"hard"
+],
+"summ-035": [
+"summarisation",
+"hard"
+],
+"summ-039": [
+"summarisation",
+"easy"
+],
+"ner-002": [
+"ner",
+"easy"
+],
+"ner-009": [
+"ner",
+"hard"
+],
+"ner-010": [
+"ner",
+"hard"
+],
+"ner-018": [
+"ner",
+"hard"
+],
+"ner-031": [
+"ner",
+"easy"
+],
+"ner-041": [
+"ner",
+"hard"
+],
+"code_debug-001": [
+"code_debug",
+"hard"
+],
+"code_debug-004": [
+"code_debug",
+"easy"
+],
+"code_debug-005": [
+"code_debug",
+"hard"
+],
+"code_debug-008": [
+"code_debug",
+"hard"
+],
+"code_debug-021": [
+"code_debug",
+"hard"
+],
+"code_debug-022": [
+"code_debug",
+"easy"
+],
+"logic-009": [
+"logic",
+"hard"
+],
+"logic-011": [
+"logic",
+"easy"
+],
+"logic-015": [
+"logic",
+"hard"
+],
+"logic-029": [
+"out_of_scope",
+"hard"
+],
+"logic-048": [
+"logic",
+"easy"
+],
+"logic-050": [
+"logic",
+"hard"
+],
+"code_gen-004": [
+"code_gen",
+"easy"
+],
+"code_gen-019": [
+"code_gen",
+"hard"
+],
+"code_gen-034": [
+"code_gen",
+"hard"
+],
+"code_gen-037": [
+"code_gen",
+"easy"
+],
+"code_gen-041": [
+"sentiment",
+"hard"
+],
+"code_gen-042": [
+"code_gen",
+"hard"
+],
+"fact-021": [
+"factual",
+"easy"
+],
+"fact-022": [
+"factual",
+"hard"
+],
+"fact-026": [
+"factual",
+"hard"
+],
+"fact-032": [
+"factual",
+"hard"
+],
+"fact-033": [
+"factual",
+"easy"
+],
+"fact-036": [
+"factual",
+"hard"
+],
+"math-018": [
+"math",
+"hard"
+],
+"math-028": [
+"out_of_scope",
+"easy"
+],
+"math-037": [
+"math",
+"easy"
+],
+"math-038": [
+"summarisation",
+"easy"
+],
+"math-043": [
+"math",
+"easy"
+],
+"math-044": [
+"math",
+"hard"
+],
+"sent-002": [
+"sentiment",
+"hard"
+],
+"sent-004": [
+"sentiment",
+"easy"
+],
+"sent-006": [
+"sentiment",
+"easy"
+],
+"sent-028": [
+"sentiment",
+"easy"
+],
+"sent-034": [
+"sentiment",
+"easy"
+],
+"sent-048": [
+"sentiment",
+"hard"
+],
+"summ-014": [
+"summarisation",
+"hard"
+],
+"summ-025": [
+"summarisation",
+"easy"
+],
+"summ-030": [
+"summarisation",
+"easy"
+],
+"summ-031": [
+"summarisation",
+"easy"
+],
+"summ-040": [
+"summarisation",
+"hard"
+],
+"summ-050": [
+"summarisation",
+"hard"
+],
+"ner-001": [
+"ner",
+"easy"
+],
+"ner-003": [
+"ner",
+"hard"
+],
+"ner-032": [
+"ner",
+"easy"
+],
+"ner-033": [
+"ner",
+"hard"
+],
+"ner-037": [
+"ner",
+"hard"
+],
+"ner-048": [
+"ner",
+"easy"
+],
+"code_debug-013": [
+"code_debug",
+"hard"
+],
+"code_debug-023": [
+"code_debug",
+"easy"
+],
+"code_debug-025": [
+"code_debug",
+"easy"
+],
+"code_debug-029": [
+"code_debug",
+"hard"
+],
+"code_debug-037": [
+"code_debug",
+"easy"
+],
+"code_debug-047": [
+"code_debug",
+"easy"
+],
+"logic-004": [
+"logic",
+"hard"
+],
+"logic-010": [
+"logic",
+"hard"
+],
+"logic-012": [
+"logic",
+"hard"
+],
+"logic-024": [
+"logic",
+"easy"
+],
+"logic-025": [
+"logic",
+"hard"
+],
+"logic-047": [
+"logic",
+"easy"
+],
+"code_gen-003": [
+"code_gen",
+"easy"
+],
+"code_gen-009": [
+"code_gen",
+"easy"
+],
+"code_gen-016": [
+"code_gen",
+"easy"
+],
+"code_gen-023": [
+"code_gen",
+"hard"
+],
+"code_gen-038": [
+"code_gen",
+"hard"
+],
+"code_gen-044": [
+"code_gen",
+"hard"
+]
+}

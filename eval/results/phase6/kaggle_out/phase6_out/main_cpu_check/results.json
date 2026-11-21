@@ -1,0 +1,6807 @@
+{
+ "meta": {
+  "n_tasks": 160,
+  "policy": "/kaggle/working/LLM_Router/eval/results/phase4/routing_policy.json",
+  "api_workers": 8,
+  "deadline_s": 14400.0,
+  "started": "2026-11-20T22:43:17",
+  "finished": 160,
+  "complete": true,
+  "total_cost_usd": 0.06740235,
+  "elapsed_s": 1811.9
+ },
+ "results": [
+  {
+   "id": "fact-001",
+   "status": "done",
+   "answer": "The Peace of Westphalia (1648) was a set of treaties signed in Münster and Osnabrück that ended the **Thirty Years’ War** (1618–1648) and, through the Treaty of Münster, the **Eighty Years’ War** between Spain and the Dutch Republic.\n\nIt is best known for:\n\n- **Ending the Thirty Years’ War** and bringing peace to the Holy Roman Empire.\n- **Recognizing the independence** of the Dutch Republic and the Swiss Confederacy.\n- **Weakening the Holy Roman Empire** and strengthening its territorial princes, who gained more autonomy, including the right to form alliances and conduct foreign policy.\n- **Settling religious conflict** by extending the Peace of Augsburg to Calvinists, setting 1624 as the baseline for religious land ownership, and providing limited toleration and parity among Catholics, Lutherans, and Calvinists.\n- **Redrawing borders**: France gained parts of Alsace and confirmed control of Metz, Toul, and Verdun; Sweden gained Western Pomerania, Wismar, and Bremen-Verden; Brandenburg-Prussia gained territory.\n- **Establishing principles associated with modern international relations**: sovereign equality of states, territorial integrity, non-intervention, diplomacy, and balance of power—often called the “Westphalian system.”\n- **Marking the decline of papal and Habsburg universal authority** and the rise of the secular territorial state.\n\nHistorians debate how much it truly created the modern state system, but it remains a symbol of sovereignty-based international order.",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0020718000000000004,
+   "b1_cost_usd": 0.0068,
+   "savings_usd": 0.004728199999999999,
+   "latency_ms": 13534,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 58,
+     "tokens_out": 1712,
+     "tokens_reasoning": 1394,
+     "latency_ms": 13532,
+     "cost_usd": 0.0020718000000000004,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-004",
+   "status": "done",
+   "answer": "Nominal interest rate is the stated rate on a loan or investment, not adjusted for inflation. Real interest rate adjusts for inflation, showing the change in purchasing power. Approximate formula: real rate ≈ nominal rate − inflation rate. More exactly: (1 + nominal) / (1 + inflation) − 1. Example: if a savings account pays 5% nominal and inflation is 3%, the real return is about 2%.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00022019999999999999,
+   "b1_cost_usd": 0.004032,
+   "savings_usd": 0.0038118,
+   "latency_ms": 31617,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30097,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 62,
+     "tokens_out": 168,
+     "tokens_reasoning": 77,
+     "latency_ms": 1517,
+     "cost_usd": 0.00022019999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-005",
+   "status": "done",
+   "answer": "**Opportunity cost** is the value of the **next best alternative you give up** when you make a choice.\n\nIn simple terms: it’s what you *could have had* if you’d chosen differently.\n\n**Example:**  \nIf you spend Saturday studying, and your next-best option was working a shift for $100, the opportunity cost of studying is the $100 you didn’t earn (plus whatever else you gave up, like relaxing).\n\nIt’s not always money — it can be time, enjoyment, or other benefits. The key idea: **every choice has a cost, even if you don’t pay cash for it.**",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002745,
+   "b1_cost_usd": 0.004406,
+   "savings_usd": 0.0041315,
+   "latency_ms": 2251,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 51,
+     "tokens_out": 216,
+     "tokens_reasoning": 81,
+     "latency_ms": 2250,
+     "cost_usd": 0.0002745,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-006",
+   "status": "done",
+   "answer": "A black hole is a region in space where gravitational pull is so strong that nothing, not even light, can escape from it. This intense gravity results from a substantial amount of mass being compressed into a very small area, often the remnthy of a massive star that has undergone a supernova explosion. The boundary beyond which nothing can return is called the event horizon. Inside the event horizon, the gravitational pull increases infinitely, leading to a point known as the singularity where current physics laws break down. Black holes can vary in size, from small to supermassive ones found at galactic centers.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004592,
+   "savings_usd": 0.004592,
+   "latency_ms": 56600,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 42,
+     "tokens_out": 131,
+     "tokens_reasoning": null,
+     "latency_ms": 26504,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-008",
+   "status": "done",
+   "answer": "A hash function maps input data to a fixed-size string, deterministically and one-way: you can’t feasibly reverse it or find two inputs with the same hash.\n\nFor passwords, you store only the hash, not the password. At login, hash the entered password and compare. If the database leaks, attackers don’t get plaintext passwords. Use a unique salt and a slow, memory-hard algorithm (bcrypt, scrypt, Argon2) to resist rainbow tables and brute-force cracking.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002457,
+   "b1_cost_usd": 0.004198,
+   "savings_usd": 0.003952300000000001,
+   "latency_ms": 88371,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30060,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 63,
+     "tokens_out": 189,
+     "tokens_reasoning": 84,
+     "latency_ms": 1714,
+     "cost_usd": 0.0002457,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-011",
+   "status": "done",
+   "answer": "Correlation indicates a relationship or pattern between two variables, where changes in one variable are associated with changes in another. However, it does not imply that one causes the other. Causation, on thethy other hand, means that changes in one variable directly cause changes in another. Establishing causation requires rigorous testing to rule out other factors and often experimental manipulation. Simply put, correlation can suggest a possible causal link, but further investigation is needed to confirm causation.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00438,
+   "savings_usd": 0.00438,
+   "latency_ms": 108051,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 49,
+     "tokens_out": 102,
+     "tokens_reasoning": null,
+     "latency_ms": 21394,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-014",
+   "status": "done",
+   "answer": "The 2008 crisis stemmed from a U.S. housing bubble fueled by low interest rates and lax lending, especially subprime mortgages. These risky loans were securitized into mortgage-backed securities and complex derivatives (CDOs), often misrated AAA by credit agencies. Excessive leverage and reliance on short-term wholesale funding in shadow banking made institutions fragile. When housing prices fell and defaults rose, securities lost value, triggering margin calls, fire sales, and counterparty panic. Credit default swaps, notably AIG’s, amplified losses. Weak regulation, global imbalances, and interconnected global finance spread the shock worldwide.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002658,
+   "b1_cost_usd": 0.004694,
+   "savings_usd": 0.0044282,
+   "latency_ms": 140168,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30065,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 62,
+     "tokens_out": 206,
+     "tokens_reasoning": 81,
+     "latency_ms": 2051,
+     "cost_usd": 0.0002658,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-016",
+   "status": "done",
+   "answer": "TCP is connection-oriented: it establishes a connection, guarantees delivery, orders data, and retransmits lost packets. It’s reliable but slower, used for web, email, file transfer.\n\nUDP is connectionless: it sends packets without setup, delivery guarantees, ordering, or retransmission. It’s faster and lower-latency, used for streaming, gaming, DNS, VoIP.\n\nIn short: TCP = reliable, ordered, slower; UDP = fast, lightweight, best-effort.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001992,
+   "b1_cost_usd": 0.004162,
+   "savings_usd": 0.0039628,
+   "latency_ms": 169598,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30089,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 60,
+     "tokens_out": 151,
+     "tokens_reasoning": 46,
+     "latency_ms": 1393,
+     "cost_usd": 0.0001992,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-020",
+   "status": "done",
+   "answer": "Earth’s seasons are caused mainly by its axial tilt of about 23.5°. As Earth orbits the Sun, the Northern and Southern Hemispheres alternately tilt toward or away from the Sun. The tilted hemisphere receives sunlight more directly and for longer days, causing summer; the opposite hemisphere gets less direct sunlight and shorter days, causing winter. Near the equinoxes, both hemispheres receive similar sunlight. Earth’s changing distance from the Sun has only a minor effect and is not the main cause.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002121,
+   "b1_cost_usd": 0.004308,
+   "savings_usd": 0.0040959,
+   "latency_ms": 197958,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30111,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 55,
+     "tokens_out": 163,
+     "tokens_reasoning": 60,
+     "latency_ms": 1884,
+     "cost_usd": 0.0002121,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-024",
+   "status": "done",
+   "answer": "Mitochondria are often referred to as the powerhouses of the cell. They generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy. In addition to energy production, mitochondria are involved in other tasks such as signaling, cellular differentiation, cell death, as well as the control of the cell cycle and cell growth. They have their own DNA, which suggests an evolutionary origin from free-living bacteria.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004198,
+   "savings_usd": 0.004198,
+   "latency_ms": 207717,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 50,
+     "tokens_out": 111,
+     "tokens_reasoning": null,
+     "latency_ms": 22922,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-027",
+   "status": "done",
+   "answer": "mRNA vaccines deliver synthetic mRNA encoding a target antigen (e.g., SARS-CoV-2 spike protein) inside lipid nanoparticles. After injection, cells take up the particles and translate the mRNA into antigen protein. That protein is processed and displayed, stimulating antibodies and T cells. The mRNA never enters the cell nucleus and cannot alter DNA; it degrades naturally. This creates immune memory, so future exposure to the real pathogen triggers a faster, stronger response.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002682,
+   "b1_cost_usd": 0.004246,
+   "savings_usd": 0.0039778,
+   "latency_ms": 221616,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30066,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 54,
+     "tokens_out": 210,
+     "tokens_reasoning": 118,
+     "latency_ms": 1916,
+     "cost_usd": 0.0002682,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-029",
+   "status": "done",
+   "answer": "Encryption is a security method used to protect information by converting it into a code, making it unreadable to unauthorized users. Only those with the decryption key can revert it back to its original, readable form. It's widely used to secure data transmission and storage, ensuring privacy and preventing data breaches.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003886,
+   "savings_usd": 0.003886,
+   "latency_ms": 211146,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 59,
+     "tokens_out": 71,
+     "tokens_reasoning": null,
+     "latency_ms": 16432,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-031",
+   "status": "done",
+   "answer": "Weather refers to short-term atmospheric conditions in a specific place at a specific time, including temperature, humidity, precipitation, and wind. In contrast, climate describes the long-term average of these weather elements and their variability over a longer period, typically 30 years or more, for a specific region. Weather can change from minute to minute, while climate represents the persistent patterns of weather over decades.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004182,
+   "savings_usd": 0.004182,
+   "latency_ms": 198724,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 64,
+     "tokens_out": 91,
+     "tokens_reasoning": null,
+     "latency_ms": 19353,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-035",
+   "status": "done",
+   "answer": "The French Revolution (1789–1799) was a period of radical political and social upheaval in France. Driven by financial crisis, inequality, Enlightenment ideas, and weak leadership, it overthrew the absolute monarchy, abolished feudal privileges, and established a republic. Key events included the storming of the Bastille (July 14, 1789), the Declaration of the Rights of Man, the Reign of Terror, and the rise of Napoleon Bonaparte. It reshaped France and inspired democratic and nationalist movements worldwide.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00025499999999999996,
+   "b1_cost_usd": 0.004328,
+   "savings_usd": 0.004073,
+   "latency_ms": 210741,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30068,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 54,
+     "tokens_out": 199,
+     "tokens_reasoning": 93,
+     "latency_ms": 1628,
+     "cost_usd": 0.00025499999999999996,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-042",
+   "status": "done",
+   "answer": "The CAP theorem, also known as Brewer's theorem, posits that in any distributed data storage system, only two out of the following three guarantees can be achieved simultaneously: Consistency (all nodes see the same data at the same time), Availability (every request receives a response about whether it was successful or not), and Partition Tolerance (the system continues to operate despite arbitrary message loss or network failures). Essentially, the theorem asserts that a distributed system can'thy guarantee all three properties at once.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004408,
+   "savings_usd": 0.004408,
+   "latency_ms": 199501,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 44,
+     "tokens_out": 114,
+     "tokens_reasoning": null,
+     "latency_ms": 22505,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-045",
+   "status": "done",
+   "answer": "Photosynthesis is a biological process by which green plants, algae, and some bacteria convert light energy, usually from the sun, into chemical energy in the form of glucose. Using chlorophyll in their chloroplasts, these organisms absorb light and carbon dioxide, and through a series of reactions, produce glucose and release oxygen as a byproduct. This process is fundamental to life on Earth as it forms the base of most food chains and contributes to the oxygen we breathe.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004238,
+   "savings_usd": 0.004238,
+   "latency_ms": 194243,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 44,
+     "tokens_out": 119,
+     "tokens_reasoning": null,
+     "latency_ms": 24173,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-046",
+   "status": "done",
+   "answer": "DNS, or Domain Name System, translates human-readable domain names (like www.example.com) into IP addresses that computers use to locate and identify each other on the Internet. It functions like a phonebook for the Internet, allowing users to access websites using easy-to-remember names instead of numerical IP addresses.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00385,
+   "savings_usd": 0.00385,
+   "latency_ms": 178072,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 44,
+     "tokens_out": 70,
+     "tokens_reasoning": null,
+     "latency_ms": 14431,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-047",
+   "status": "done",
+   "answer": "The water cycle is the continuous movement of water through Earth’s systems. Energy from the sun evaporates water from oceans, lakes, and soil; plants also release water vapor through transpiration. Rising vapor cools and condenses into clouds. When droplets grow heavy enough, they fall as precipitation—rain, snow, sleet, or hail. Some water runs off into rivers and oceans; some infiltrates soil and becomes groundwater. Eventually, it evaporates or is taken up by plants again. This cycle distributes fresh water, regulates climate, and sustains life.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00023370000000000002,
+   "b1_cost_usd": 0.00446,
+   "savings_usd": 0.0042263000000000005,
+   "latency_ms": 188967,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30070,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 71,
+     "tokens_out": 177,
+     "tokens_reasoning": 61,
+     "latency_ms": 1861,
+     "cost_usd": 0.00023370000000000002,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-049",
+   "status": "done",
+   "answer": "A dividend is a portion of a company’s profits paid to shareholders, usually in cash or extra stock. The board of directors declares it, often quarterly, and it is paid per share. It rewards investors and can signal financial health. In math, a dividend is the number being divided in a division problem.",
+   "category": "factual",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002787,
+   "b1_cost_usd": 0.003802,
+   "savings_usd": 0.0035233,
+   "latency_ms": 187291,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30098,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 53,
+     "tokens_out": 219,
+     "tokens_reasoning": 154,
+     "latency_ms": 2070,
+     "cost_usd": 0.0002787,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "fact-050",
+   "status": "done",
+   "answer": "Ice floats on liquid water because it is less dense. When water freezes, its molecules form a crystalline structure maintained by hydrogen bonds, which occupy more space than the disordered arrangement of molecules in liquid water. This results in ice having a lower density, causing it to be buoyant and float on water. This property is crucial for aquatic life, as it insulates bodies of water in cold climates, allowing life to survive beneath the ice layer.",
+   "category": "factual",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004234,
+   "savings_usd": 0.004234,
+   "latency_ms": 192894,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:phi3.5:3.8b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 63,
+     "tokens_out": 107,
+     "tokens_reasoning": null,
+     "latency_ms": 22189,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-001",
+   "status": "done",
+   "answer": "90 km at 30 km/h takes 3 hours.  \n60 km at 30 km/h takes 2 hours.  \nTotal time = 3 + 2 = 5 hours.\n\nANSWER: 5",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001593,
+   "b1_cost_usd": 0.003382,
+   "savings_usd": 0.0032227000000000002,
+   "latency_ms": 204447,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30064,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 95,
+     "tokens_out": 109,
+     "tokens_reasoning": 64,
+     "latency_ms": 843,
+     "cost_usd": 0.0001593,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-002",
+   "status": "done",
+   "answer": "Total distance = 270 + 270 = 540 km  \nTotal time = 270/30 + 270/90 = 9 + 3 = 12 h  \nAverage speed = 540 / 12 = 45 km/h\n\nANSWER: 45",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001704,
+   "b1_cost_usd": 0.003462,
+   "savings_usd": 0.0032916,
+   "latency_ms": 321013,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 495,
+     "tokens_out": 32,
+     "tokens_reasoning": null,
+     "latency_ms": 15919,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "literal(s) not from the problem: ['2']"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 14124,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 14s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 108,
+     "tokens_out": 115,
+     "tokens_reasoning": 59,
+     "latency_ms": 916,
+     "cost_usd": 0.0001704,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-006",
+   "status": "done",
+   "answer": "Rent = 30% of ₹50,000 = ₹15,000  \nRemaining = ₹35,000  \nFood = 20% of ₹35,000 = ₹7,000  \nLeft = ₹35,000 − ₹7,000 = ₹28,000\n\nANSWER: 28000",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00017399999999999997,
+   "b1_cost_usd": 0.003478,
+   "savings_usd": 0.003304,
+   "latency_ms": 315292,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 491,
+     "tokens_out": 36,
+     "tokens_reasoning": null,
+     "latency_ms": 14980,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "literal(s) not from the problem: constant 1 outside (1 +/- percentage)"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 15112,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 15s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 104,
+     "tokens_out": 119,
+     "tokens_reasoning": 54,
+     "latency_ms": 960,
+     "cost_usd": 0.00017399999999999997,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-009",
+   "status": "done",
+   "answer": "The sum of all 4 scores must be \\(72 \\times 4 = 288\\).\n\nCurrent sum: \\(55 + 59 + 97 = 211\\)\n\nMissing score: \\(288 - 211 = 77\\)\n\nANSWER: 77",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00015179999999999998,
+   "b1_cost_usd": 0.00346,
+   "savings_usd": 0.0033082,
+   "latency_ms": 300509,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 480,
+     "tokens_out": 60,
+     "tokens_reasoning": null,
+     "latency_ms": 20634,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "no plain arithmetic expression in the reply"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 9459,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 9s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 98,
+     "tokens_out": 102,
+     "tokens_reasoning": 50,
+     "latency_ms": 890,
+     "cost_usd": 0.00015179999999999998,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-012",
+   "status": "done",
+   "answer": "Pipe A fills \\( \\frac{1}{6} \\) tank/hour, pipe B fills \\( \\frac{1}{3} \\) tank/hour.\n\nTogether:  \n\\[\n\\frac{1}{6}+\\frac{1}{3}=\\frac{1}{2}\n\\]\nSo they fill half the tank in 1 hour, meaning the full tank takes 2 hours = 120 minutes.\n\nANSWER: 120",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002214,
+   "b1_cost_usd": 0.00375,
+   "savings_usd": 0.0035286,
+   "latency_ms": 195096,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30054,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 106,
+     "tokens_out": 158,
+     "tokens_reasoning": 73,
+     "latency_ms": 1079,
+     "cost_usd": 0.0002214,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-013",
+   "status": "done",
+   "answer": "ANSWER: 60",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "solver",
+   "model": "translator:phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003162,
+   "savings_usd": 0.003162,
+   "latency_ms": 177169,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 494,
+     "tokens_out": 30,
+     "tokens_reasoning": null,
+     "latency_ms": 15084,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-016",
+   "status": "done",
+   "answer": "ANSWER: 20",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "solver",
+   "model": "translator:phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003156,
+   "savings_usd": 0.003156,
+   "latency_ms": 155033,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 479,
+     "tokens_out": 15,
+     "tokens_reasoning": null,
+     "latency_ms": 8171,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-020",
+   "status": "done",
+   "answer": "ANSWER: 8820",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "solver",
+   "model": "translator:phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00316,
+   "savings_usd": 0.00316,
+   "latency_ms": 146442,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 479,
+     "tokens_out": 29,
+     "tokens_reasoning": null,
+     "latency_ms": 11527,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-021",
+   "status": "done",
+   "answer": "Let \\(x\\) be litres of pure acid added.\n\nInitial acid: \\(30 \\times 0.20 = 6\\) litres.\n\n\\[\n\\frac{6+x}{30+x}=0.40\n\\]\n\n\\[\n6+x=12+0.4x\n\\]\n\n\\[\n0.6x=6\n\\]\n\n\\[\nx=10\n\\]\n\nANSWER: 10",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002427,
+   "b1_cost_usd": 0.003546,
+   "savings_usd": 0.0033033000000000003,
+   "latency_ms": 274466,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 480,
+     "tokens_out": 50,
+     "tokens_reasoning": null,
+     "latency_ms": 17685,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "no plain arithmetic expression in the reply"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 12400,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 12s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 97,
+     "tokens_out": 178,
+     "tokens_reasoning": 99,
+     "latency_ms": 1267,
+     "cost_usd": 0.0002427,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-023",
+   "status": "done",
+   "answer": "ANSWER: 18",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001941,
+   "b1_cost_usd": 0.003182,
+   "savings_usd": 0.0029879,
+   "latency_ms": 248648,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 497,
+     "tokens_out": 20,
+     "tokens_reasoning": null,
+     "latency_ms": 11930,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "literal(s) not from the problem: ['6', '12']"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 18123,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 18s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 115,
+     "tokens_out": 133,
+     "tokens_reasoning": 127,
+     "latency_ms": 1156,
+     "cost_usd": 0.0001941,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-027",
+   "status": "done",
+   "answer": "ANSWER: -85",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001584,
+   "b1_cost_usd": 0.003178,
+   "savings_usd": 0.0030196,
+   "latency_ms": 247803,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 501,
+     "tokens_out": 35,
+     "tokens_reasoning": null,
+     "latency_ms": 16789,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "result is not a clean non-negative number"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 13301,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 13s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 112,
+     "tokens_out": 104,
+     "tokens_reasoning": 98,
+     "latency_ms": 1015,
+     "cost_usd": 0.0001584,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-029",
+   "status": "done",
+   "answer": "Average speed = total distance ÷ total time.\n\n- First 120 km at 60 km/h: \\(120/60 = 2\\) hours  \n- Next 120 km at 40 km/h: \\(120/40 = 3\\) hours  \n\nTotal time = \\(2 + 3 = 5\\) hours  \nTotal distance = \\(240\\) km  \n\n\\[\n\\text{Average speed} = \\frac{240}{5} = 48 \\text{ km/h}\n\\]\n\n**Answer: 48 km/h**",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0002238,
+   "b1_cost_usd": 0.003828,
+   "savings_usd": 0.0036041999999999997,
+   "latency_ms": 1115,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 82,
+     "tokens_out": 166,
+     "tokens_reasoning": 58,
+     "latency_ms": 1115,
+     "cost_usd": 0.0002238,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-033",
+   "status": "done",
+   "answer": "The numbers are 24, 26, and 28, so the largest is 28.\n\nANSWER: 28",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001167,
+   "b1_cost_usd": 0.003272,
+   "savings_usd": 0.0031553,
+   "latency_ms": 126314,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30059,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 85,
+     "tokens_out": 76,
+     "tokens_reasoning": 50,
+     "latency_ms": 739,
+     "cost_usd": 0.0001167,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-034",
+   "status": "done",
+   "answer": "The bigger number is \\((91 + 5) / 2 = 48\\).\n\nANSWER: 48",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001026,
+   "b1_cost_usd": 0.003236,
+   "savings_usd": 0.0031334,
+   "latency_ms": 145902,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30099,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 86,
+     "tokens_out": 64,
+     "tokens_reasoning": 41,
+     "latency_ms": 639,
+     "cost_usd": 0.0001026,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-035",
+   "status": "done",
+   "answer": "ANSWER: 100",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "solver",
+   "model": "translator:phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003122,
+   "savings_usd": 0.003122,
+   "latency_ms": 131701,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 466,
+     "tokens_out": 14,
+     "tokens_reasoning": null,
+     "latency_ms": 6763,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-039",
+   "status": "done",
+   "answer": "Let daughter's current age be \\(d\\).  \nAsha is \\(3d\\).  \nIn 6 years: \\(3d + 6 = 2(d + 6)\\).\n\n\\[\n3d + 6 = 2d + 12\n\\]\n\\[\nd = 6\n\\]\n\nANSWER: 6",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00017969999999999998,
+   "b1_cost_usd": 0.00348,
+   "savings_usd": 0.0033003,
+   "latency_ms": 271687,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 486,
+     "tokens_out": 62,
+     "tokens_reasoning": null,
+     "latency_ms": 22366,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": false,
+     "why": "no plain arithmetic expression in the reply"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 7676,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 8s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 107,
+     "tokens_out": 123,
+     "tokens_reasoning": 55,
+     "latency_ms": 1059,
+     "cost_usd": 0.00017969999999999998,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-040",
+   "status": "done",
+   "answer": "ANSWER: 30000",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "solver",
+   "model": "translator:phi3.5:3.8b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003142,
+   "savings_usd": 0.003142,
+   "latency_ms": 138385,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": 474,
+     "tokens_out": 20,
+     "tokens_reasoning": null,
+     "latency_ms": 8865,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-042",
+   "status": "done",
+   "answer": "The total needed for 4 tests is \\(72 \\times 4 = 288\\).\n\nCurrent total: \\(68 + 94 + 68 = 230\\).\n\nNext test score: \\(288 - 230 = 58\\).\n\nANSWER: 58",
+   "category": "math",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001422,
+   "b1_cost_usd": 0.0035,
+   "savings_usd": 0.0033578,
+   "latency_ms": 142189,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30086,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 106,
+     "tokens_out": 92,
+     "tokens_reasoning": 40,
+     "latency_ms": 918,
+     "cost_usd": 0.0001422,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-047",
+   "status": "done",
+   "answer": "A committee of 3 people chosen from 8 is a combination, since order does not matter.\n\n\\[\n\\binom{8}{3}=\\frac{8!}{3!(8-3)!}=\\frac{8\\cdot 7\\cdot 6}{3\\cdot 2\\cdot 1}=56\n\\]\n\n**Answer: 56 ways**",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00014309999999999998,
+   "b1_cost_usd": 0.00355,
+   "savings_usd": 0.0034069,
+   "latency_ms": 864,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 65,
+     "tokens_out": 103,
+     "tokens_reasoning": 32,
+     "latency_ms": 862,
+     "cost_usd": 0.00014309999999999998,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "math-048",
+   "status": "done",
+   "answer": "Simple interest = \\(5000 \\times 0.05 \\times 3 = 750\\)\n\nTotal amount = \\(5000 + 750 = 5750\\)\n\nANSWER: 5750",
+   "category": "math",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001305,
+   "b1_cost_usd": 0.003376,
+   "savings_usd": 0.0032455,
+   "latency_ms": 141380,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "local:qwen3:1.7b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no recipe matched with certainty"
+    },
+    {
+     "step": "translator",
+     "model": "phi3.5:3.8b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30146,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "local",
+     "model": "qwen3:1.7b",
+     "ok": false,
+     "skipped": "local time budget exhausted"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 91,
+     "tokens_out": 86,
+     "tokens_reasoning": 45,
+     "latency_ms": 828,
+     "cost_usd": 0.0001305,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-005",
+   "status": "done",
+   "answer": "The sentiment is positive because despite initial negative experiences, the reviewer expresses satisfaction with the current product performance and delivery.\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003646,
+   "savings_usd": 0.003646,
+   "latency_ms": 139161,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 111,
+     "tokens_out": 27,
+     "tokens_reasoning": null,
+     "latency_ms": 10770,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-007",
+   "status": "done",
+   "answer": "The sentiment is neutral. The reviewer is providing a factual summary of their experience, without expressing a strong opinion or emotion.\n\nANSWER: neutral",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003534,
+   "savings_usd": 0.003534,
+   "latency_ms": 146405,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 98,
+     "tokens_out": 29,
+     "tokens_reasoning": null,
+     "latency_ms": 12740,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-008",
+   "status": "done",
+   "answer": "The sentiment is mixed because the reviewer expresses both positive feelings about the design and negative feelings about the comfort.\nANSWER: mixed",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00355,
+   "savings_usd": 0.00355,
+   "latency_ms": 132772,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 100,
+     "tokens_out": 26,
+     "tokens_reasoning": null,
+     "latency_ms": 9923,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-010",
+   "status": "done",
+   "answer": "The sentiment is neutral because the user simply states the tool functions as described and expresses uncertainty about its value, without indicating any positive or negative feelings.\nANSWER: neutral",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00372,
+   "savings_usd": 0.00372,
+   "latency_ms": 125992,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 122,
+     "tokens_out": 34,
+     "tokens_reasoning": null,
+     "latency_ms": 12500,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-014",
+   "status": "done",
+   "answer": "The sentiment is negative. The tweet expresses frustration and annoyance with the software update, using a sarcastic tone to convey the speaker's dissatisfaction.\n\nANSWER: negative",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003618,
+   "savings_usd": 0.003618,
+   "latency_ms": 119793,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 100,
+     "tokens_out": 33,
+     "tokens_reasoning": null,
+     "latency_ms": 6960,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-016",
+   "status": "done",
+   "answer": "The sentiment is negative. The reviewer explicitly states that the service is \"nonexistent\", indicating a complete lack of assistance, which is a strongly negative experience.\n\nANSWER: negative",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003632,
+   "savings_usd": 0.003632,
+   "latency_ms": 97336,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 97,
+     "tokens_out": 36,
+     "tokens_reasoning": null,
+     "latency_ms": 7534,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-018",
+   "status": "done",
+   "answer": "The sentiment is mixed because the review expresses both a positive experience with the food and a negative experience with the service.\nANSWER: mixed",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003558,
+   "savings_usd": 0.003558,
+   "latency_ms": 77982,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 103,
+     "tokens_out": 28,
+     "tokens_reasoning": null,
+     "latency_ms": 10702,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-020",
+   "status": "done",
+   "answer": "Neutral - The statement simply provides factual information about a bus route schedule without expressing any emotion or opinion.\nANSWER: neutral",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003536,
+   "savings_usd": 0.003536,
+   "latency_ms": 77623,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 100,
+     "tokens_out": 25,
+     "tokens_reasoning": null,
+     "latency_ms": 9583,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-021",
+   "status": "done",
+   "answer": "The sentiment is positive because the customer expresses gratitude and uses enthusiastic language (\"amazing\") regarding the refund.\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00356,
+   "savings_usd": 0.00356,
+   "latency_ms": 74891,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 106,
+     "tokens_out": 25,
+     "tokens_reasoning": null,
+     "latency_ms": 10008,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-024",
+   "status": "done",
+   "answer": "The sentiment is negative. The reviewer's use of the word \"awful\" to describe the quality of the jacket indicates a strong negative opinion.\n\nANSWER: negative",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003544,
+   "savings_usd": 0.003544,
+   "latency_ms": 72655,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 96,
+     "tokens_out": 34,
+     "tokens_reasoning": null,
+     "latency_ms": 6501,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-025",
+   "status": "done",
+   "answer": "Mixed - The review expresses both strong positive feelings about the technical aspects and a significant negative feeling about the narrative, indicating a conflicted sentiment.\nANSWER: mixed",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003678,
+   "savings_usd": 0.003678,
+   "latency_ms": 75046,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 109,
+     "tokens_out": 32,
+     "tokens_reasoning": null,
+     "latency_ms": 11255,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-030",
+   "status": "done",
+   "answer": "Negative - The review expresses frustration and disappointment with a malfunctioning product and unresponsive customer service.\nANSWER: negative",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003556,
+   "savings_usd": 0.003556,
+   "latency_ms": 71868,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 106,
+     "tokens_out": 22,
+     "tokens_reasoning": null,
+     "latency_ms": 9322,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-031",
+   "status": "done",
+   "answer": "The sentiment is positive because the customer expresses strong enthusiasm for the blender's performance and ease of use.\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00354,
+   "savings_usd": 0.00354,
+   "latency_ms": 75079,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 107,
+     "tokens_out": 26,
+     "tokens_reasoning": null,
+     "latency_ms": 10174,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-038",
+   "status": "done",
+   "answer": "The sentiment is negative due to the explicit use of \"terrible experience\" and descriptions of significant issues like delayed delivery and damaged packaging.\nANSWER: negative",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003628,
+   "savings_usd": 0.003628,
+   "latency_ms": 79179,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 108,
+     "tokens_out": 32,
+     "tokens_reasoning": null,
+     "latency_ms": 11634,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-040",
+   "status": "done",
+   "answer": "The sentiment is positive because the user expresses happiness and satisfaction with their new phone's camera.\n\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003476,
+   "savings_usd": 0.003476,
+   "latency_ms": 73423,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 97,
+     "tokens_out": 23,
+     "tokens_reasoning": null,
+     "latency_ms": 4944,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-041",
+   "status": "done",
+   "answer": "The sentiment is neutral. The message simply reports a factual event without expressing any emotion or opinion.\n\nANSWER: neutral",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003474,
+   "savings_usd": 0.003474,
+   "latency_ms": 69022,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 96,
+     "tokens_out": 24,
+     "tokens_reasoning": null,
+     "latency_ms": 5184,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-042",
+   "status": "done",
+   "answer": "Positive - The reviewer expresses a change of opinion and excitement after a successful outcome, indicating a favorable sentiment.\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003562,
+   "savings_usd": 0.003562,
+   "latency_ms": 69499,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 113,
+     "tokens_out": 26,
+     "tokens_reasoning": null,
+     "latency_ms": 10482,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-043",
+   "status": "done",
+   "answer": "The sentiment is positive, because the message expresses a high level of satisfaction with the customer service received.\n\nANSWER: positive",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003502,
+   "savings_usd": 0.003502,
+   "latency_ms": 68961,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 102,
+     "tokens_out": 25,
+     "tokens_reasoning": null,
+     "latency_ms": 5962,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-047",
+   "status": "done",
+   "answer": "The sentiment is mixed because the reviewer enjoyed part of the film but was disappointed with the conclusion.\n\nANSWER: mixed",
+   "category": "sentiment",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003466,
+   "savings_usd": 0.003466,
+   "latency_ms": 62818,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 98,
+     "tokens_out": 24,
+     "tokens_reasoning": null,
+     "latency_ms": 5112,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "sent-050",
+   "status": "done",
+   "answer": "The sentiment is mixed due to the expression of uncertainty and a cautious wait-and-see approach.\nANSWER: mixed",
+   "category": "sentiment",
+   "difficulty": "hard",
+   "layer": "local",
+   "model": "gemma3:4b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003456,
+   "savings_usd": 0.003456,
+   "latency_ms": 63446,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:gemma3:4b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "gemma3:4b",
+     "tokens_in": 105,
+     "tokens_out": 25,
+     "tokens_reasoning": null,
+     "latency_ms": 9947,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-001",
+   "status": "done",
+   "answer": "- Hollis Energy’s annual revenue rose 6% to $2.4 billion, but net profit fell 18% to $190 million due to an $85 million charge for closing an old gas plant.\n- The company will invest $600 million in wind farms over three years and aims to cut carbon emissions by 30% by 2030.\n- Shares rose 2% after the announcement, while analysts noted debt had increased to $1.1 billion.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.002286,
+   "b1_cost_usd": 0.002286,
+   "savings_usd": 0.0,
+   "latency_ms": 2813,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 338,
+     "tokens_out": 161,
+     "tokens_reasoning": 53,
+     "latency_ms": 2812,
+     "cost_usd": 0.002286,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-002",
+   "status": "done",
+   "answer": "The central bank held its main interest rate at 4.5 percent in a seven-to-two vote, surprising some economists, as Governor Lena Karlsson cited inflation of 3.1 percent—above the 2 percent target—and wage growth of 5.4 percent. Markets now expect the first cut in September rather than June, leaving variable-rate mortgage borrowers without relief for several months, while the currency strengthened slightly against the dollar.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.003228,
+   "b1_cost_usd": 0.003228,
+   "savings_usd": 0.0,
+   "latency_ms": 4884,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 299,
+     "tokens_out": 263,
+     "tokens_reasoning": 162,
+     "latency_ms": 4882,
+     "cost_usd": 0.003228,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-003",
+   "status": "done",
+   "answer": "Researchers developed a cheaper sodium battery that kept 90% capacity after 2,000 cycles, charged to 80% in 12 minutes, but has lower energy density, so first for stationary solar storage.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0005996999999999999,
+   "b1_cost_usd": 0.00392,
+   "savings_usd": 0.0033203,
+   "latency_ms": 2733,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 215,
+     "tokens_out": 446,
+     "tokens_reasoning": 402,
+     "latency_ms": 2731,
+     "cost_usd": 0.0005996999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-005",
+   "status": "done",
+   "answer": "The old Corbett Mill, built in 1862 and closed in 1971, will reopen next spring as a museum of industrial history after a £6 million restoration funded mainly by a £4.2 million heritage lottery grant with the rest from donations, featuring working looms, restored steam engines, recordings of former mill workers, a cafe in the former boiler house, and free classroom space for school visits, and expecting 80,000 visitors in its first year.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0006207000000000001,
+   "b1_cost_usd": 0.004578,
+   "savings_usd": 0.0039572999999999995,
+   "latency_ms": 3020,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 237,
+     "tokens_out": 458,
+     "tokens_reasoning": 361,
+     "latency_ms": 3018,
+     "cost_usd": 0.0006207000000000001,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-006",
+   "status": "done",
+   "answer": "- Lumen Mobile will buy Telcor for $7.8 billion in an all-share deal, creating the country’s second-largest operator with 24 million customers.\n- The companies expect $400 million in annual cost savings within three years, with about 2,500 job losses.\n- Regulators will review the deal, which consumer groups warn could raise prices; if approved, it is expected to close within 18 months.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.002198,
+   "b1_cost_usd": 0.002198,
+   "savings_usd": 0.0,
+   "latency_ms": 2230,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 339,
+     "tokens_out": 152,
+     "tokens_reasoning": 53,
+     "latency_ms": 2229,
+     "cost_usd": 0.002198,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-015",
+   "status": "done",
+   "answer": "Rivermont has approved a new tram line from the airport to the central station, with construction starting in March and expected to take 28 months on a €410 million budget, carrying about 35,000 passengers a day and cutting the airport trip from 50 to 18 minutes, while residents along the route will be offered noise compensation during building, two existing bus routes will be withdrawn once the tram opens, environmental groups have welcomed the plan though some business owners near the central station worry about reduced footfall, and a public exhibition of the route designs opens at the town hall next week.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0005051999999999999,
+   "b1_cost_usd": 0.005046,
+   "savings_usd": 0.0045408,
+   "latency_ms": 2488,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 232,
+     "tokens_out": 363,
+     "tokens_reasoning": 242,
+     "latency_ms": 2486,
+     "cost_usd": 0.0005051999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-016",
+   "status": "done",
+   "answer": "Imani Okafor, 27, won the Haldane Prize for proving a prime-number conjecture and will donate some winnings to a programme mentoring girls in mathematics.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.004696,
+   "b1_cost_usd": 0.004696,
+   "savings_usd": 0.0,
+   "latency_ms": 4840,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 313,
+     "tokens_out": 407,
+     "tokens_reasoning": 358,
+     "latency_ms": 4838,
+     "cost_usd": 0.004696,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-020",
+   "status": "done",
+   "answer": "After an audit found inconsistent grades, an exam board will introduce double marking, third-examiner reviews and training, costing £9 million and delaying results one week.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.004874,
+   "b1_cost_usd": 0.004874,
+   "savings_usd": 0.0,
+   "latency_ms": 8874,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 302,
+     "tokens_out": 427,
+     "tokens_reasoning": 381,
+     "latency_ms": 8873,
+     "cost_usd": 0.004874,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-021",
+   "status": "done",
+   "answer": "Founded in 2015, Millbrook garden has 85 plots, 30 volunteers and over 200 people waiting. It donates produce to a food bank, hosts school visits, and will gain a grant-funded greenhouse under a ten-year lease.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.010872,
+   "b1_cost_usd": 0.010872,
+   "savings_usd": 0.0,
+   "latency_ms": 11247,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 306,
+     "tokens_out": 1026,
+     "tokens_reasoning": 963,
+     "latency_ms": 11246,
+     "cost_usd": 0.010872,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-022",
+   "status": "done",
+   "answer": "Honeybees use a waggle dance to communicate the direction and distance of food, and later research showed they also pass on flower scent information; Karl von Frisch decoded this behavior and shared a 1973 Nobel Prize for it.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00033810000000000003,
+   "b1_cost_usd": 0.004016,
+   "savings_usd": 0.0036778999999999996,
+   "latency_ms": 1662,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 231,
+     "tokens_out": 224,
+     "tokens_reasoning": 174,
+     "latency_ms": 1660,
+     "cost_usd": 0.00033810000000000003,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-023",
+   "status": "done",
+   "answer": "The Great Fire of London began in a Pudding Lane bakery on 2 September 1666 and burned for four days, destroying about 13,000 homes and 87 parish churches, including old St Paul’s Cathedral; only six deaths were officially recorded, though historians believe the true toll was higher. The fire was halted partly by blowing up houses to create firebreaks, after which Christopher Wren designed a new St Paul’s, rebuilding rules required brick or stone houses, and a 62-metre monument was built near the bakery.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.003694,
+   "b1_cost_usd": 0.003694,
+   "savings_usd": 0.0,
+   "latency_ms": 129588,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 327,
+     "tokens_out": 304,
+     "tokens_reasoning": 182,
+     "latency_ms": 129587,
+     "cost_usd": 0.003694,
+     "finish": "stop",
+     "error": null,
+     "attempts": 2,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-029",
+   "status": "done",
+   "answer": "A delayed subway line opened Saturday, costing $5.1 billion versus $3.2 billion budgeted; opposition seeks an inquiry, while the mayor cites congestion benefits.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.002306,
+   "b1_cost_usd": 0.002306,
+   "savings_usd": 0.0,
+   "latency_ms": 3056,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 323,
+     "tokens_out": 166,
+     "tokens_reasoning": 119,
+     "latency_ms": 3054,
+     "cost_usd": 0.002306,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-033",
+   "status": "done",
+   "answer": "A Pacific island nation will let 280 citizens annually migrate to a larger neighbour as seas rise, despite fears of losing young, skilled workers.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.00246,
+   "b1_cost_usd": 0.00246,
+   "savings_usd": 0.0,
+   "latency_ms": 3368,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 305,
+     "tokens_out": 185,
+     "tokens_reasoning": 144,
+     "latency_ms": 3366,
+     "cost_usd": 0.00246,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-037",
+   "status": "done",
+   "answer": "Brightfield Bakery will close its three smaller shops by the end of June to focus on its main store and online orders amid rising flour and energy costs, offering its 14 employees jobs at the main store or a partner cafe and nationwide sourdough delivery from July.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00032910000000000003,
+   "b1_cost_usd": 0.004124,
+   "savings_usd": 0.0037949,
+   "latency_ms": 2098,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 221,
+     "tokens_out": 219,
+     "tokens_reasoning": 163,
+     "latency_ms": 2096,
+     "cost_usd": 0.00032910000000000003,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-042",
+   "status": "done",
+   "answer": "Opened in 1914, the 82-kilometre Panama Canal uses gravity-fed locks to lift ships 26 metres to Gatun Lake, shortening Atlantic–Pacific journeys by about 8,000 miles. A 2016 expansion admitted neopanamax ships; 2023 drought reduced crossings.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.003398,
+   "b1_cost_usd": 0.003398,
+   "savings_usd": 0.0,
+   "latency_ms": 5451,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 319,
+     "tokens_out": 276,
+     "tokens_reasoning": 201,
+     "latency_ms": 5449,
+     "cost_usd": 0.003398,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-043",
+   "status": "done",
+   "answer": "Weekend heavy rain caused the River Teal to flood Marlby and Ostend Green, displacing about 600 people, prompting 45 boat rescues and a Red Cross volunteer-run shelter in a sports hall, closing several roads and a railway line with no deaths reported, and leading farmers to move about 300 cattle to higher fields, while water levels are expected to fall by Wednesday but a second storm could arrive Thursday.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.003016,
+   "b1_cost_usd": 0.003016,
+   "savings_usd": 0.0,
+   "latency_ms": 4795,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 303,
+     "tokens_out": 241,
+     "tokens_reasoning": 143,
+     "latency_ms": 4793,
+     "cost_usd": 0.003016,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-044",
+   "status": "done",
+   "answer": "The Marsden Foundation will distribute a $12 million scholarship fund over five years to about 300 rural students, covering tuition and an $8,000 annual living allowance for up to four years for applicants who demonstrate financial need and grew up at least 50 kilometres from a major city. The criteria reflect its finding that rural students are 40 percent less likely to attend university than urban peers, and applications open in January for study at any accredited public university in the country, with a panel of university representatives judging candidates.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.00335,
+   "b1_cost_usd": 0.00335,
+   "savings_usd": 0.0,
+   "latency_ms": 4204,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 315,
+     "tokens_out": 272,
+     "tokens_reasoning": 156,
+     "latency_ms": 4203,
+     "cost_usd": 0.00335,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-046",
+   "status": "done",
+   "answer": "After a March survey of 1,150 users found students most wanted evening access, Hartwell Library will open until 10 pm on weekdays—two hours later than before—and 6 pm on Saturdays from next month, add 40 second-floor study desks and cover £52,000 in annual staffing costs with a local council grant, while its children’s section keeps current hours and the council hopes to review attendance in a year.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.003156,
+   "b1_cost_usd": 0.003156,
+   "savings_usd": 0.0,
+   "latency_ms": 4899,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 303,
+     "tokens_out": 255,
+     "tokens_reasoning": 156,
+     "latency_ms": 4898,
+     "cost_usd": 0.003156,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-048",
+   "status": "done",
+   "answer": "- Eldervale is considering banning cars from its medieval centre, with delivery vans still allowed before 10 am; residents are roughly evenly split.\n- Supporters say pedestrian streets would cut air pollution, which exceeds legal limits on 40 days a year, and boost cafes, while opponents fear sales could fall by up to 15 percent and older residents could struggle to reach shops.\n- A six-month trial is planned for next summer, after which the town’s roughly 22,000 residents will vote.",
+   "category": "summarisation",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "kimi-k3p1-pro",
+   "cost_usd": 0.002166,
+   "b1_cost_usd": 0.002166,
+   "savings_usd": 0.0,
+   "latency_ms": 8195,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:kimi-k3p1-pro",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "kimi-k3p1-pro",
+     "tokens_in": 323,
+     "tokens_out": 152,
+     "tokens_reasoning": 38,
+     "latency_ms": 8193,
+     "cost_usd": 0.002166,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "summ-049",
+   "status": "done",
+   "answer": "Parents at Greenway Primary School voted to ban phones from the playground, with 71 percent of 312 families supporting the ban starting after the winter break, and children who need a phone to travel home can hand it in at the office in the morning.",
+   "category": "summarisation",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00048269999999999997,
+   "b1_cost_usd": 0.004094,
+   "savings_usd": 0.0036113000000000004,
+   "latency_ms": 2524,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 221,
+     "tokens_out": 347,
+     "tokens_reasoning": 294,
+     "latency_ms": 2520,
+     "cost_usd": 0.00048269999999999997,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-005",
+   "status": "done",
+   "answer": "[{\"text\": \"Georgia Smith\", \"type\": \"PERSON\"}, {\"text\": \"Georgia\", \"type\": \"LOCATION\"}, {\"text\": \"Paris\", \"type\": \"LOCATION\"}, {\"text\": \"March 2015\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.9399999999999995e-05,
+   "b1_cost_usd": 0.00354,
+   "savings_usd": 0.0035006,
+   "latency_ms": 1696,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 76,
+     "tokens_out": 56,
+     "tokens_reasoning": 0,
+     "latency_ms": 1694,
+     "cost_usd": 3.9399999999999995e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-011",
+   "status": "done",
+   "answer": "```json\n[\n  {\"text\": \"Tokyo\", \"type\": \"LOCATION\"},\n  {\"text\": \"1998\", \"type\": \"DATE\"}\n]\n```",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.345e-05,
+   "b1_cost_usd": 0.003342,
+   "savings_usd": 0.00330855,
+   "latency_ms": 1347,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 73,
+     "tokens_out": 45,
+     "tokens_reasoning": 12,
+     "latency_ms": 1346,
+     "cost_usd": 3.345e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-013",
+   "status": "done",
+   "answer": "[{\"text\": \"Oslo\", \"type\": \"LOCATION\"}, {\"text\": \"3 March 2021\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.0149999999999998e-05,
+   "b1_cost_usd": 0.003356,
+   "savings_usd": 0.00332585,
+   "latency_ms": 1325,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 91,
+     "tokens_out": 33,
+     "tokens_reasoning": 0,
+     "latency_ms": 1324,
+     "cost_usd": 3.0149999999999998e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-014",
+   "status": "done",
+   "answer": "[\n  {\"text\": \"Mount Kilimanjaro\", \"type\": \"LOCATION\"},\n  {\"text\": \"Tanzania\", \"type\": \"LOCATION\"},\n  {\"text\": \"Amina Yusuf\", \"type\": \"PERSON\"},\n  {\"text\": \"January 2022\", \"type\": \"DATE\"}\n]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.8700000000000005e-05,
+   "b1_cost_usd": 0.00364,
+   "savings_usd": 0.0035913,
+   "latency_ms": 1411,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 98,
+     "tokens_out": 68,
+     "tokens_reasoning": 0,
+     "latency_ms": 1409,
+     "cost_usd": 4.8700000000000005e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-019",
+   "status": "done",
+   "answer": "[{\"text\": \"5th May 2016\", \"type\": \"DATE\"}, {\"text\": \"David Cohen\", \"type\": \"PERSON\"}, {\"text\": \"Unilever\", \"type\": \"ORG\"}, {\"text\": \"Reliance Industries\", \"type\": \"ORG\"}, {\"text\": \"Lisbon\", \"type\": \"LOCATION\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.09e-05,
+   "b1_cost_usd": 0.003662,
+   "savings_usd": 0.0036111,
+   "latency_ms": 1382,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 86,
+     "tokens_out": 76,
+     "tokens_reasoning": 0,
+     "latency_ms": 1381,
+     "cost_usd": 5.09e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-022",
+   "status": "done",
+   "answer": "```json\n[\n  {\"text\": \"Amara Singh\", \"type\": \"PERSON\"},\n  {\"text\": \"Reliance Industries\", \"type\": \"ORG\"},\n  {\"text\": \"Sydney\", \"type\": \"LOCATION\"},\n  {\"text\": \"Yuki Sato\", \"type\": \"PERSON\"},\n  {\"text\": \"21st June 2023\", \"type\": \"DATE\"}\n]\n```",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 6.165e-05,
+   "b1_cost_usd": 0.00375,
+   "savings_usd": 0.00368835,
+   "latency_ms": 1534,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 91,
+     "tokens_out": 96,
+     "tokens_reasoning": 13,
+     "latency_ms": 1533,
+     "cost_usd": 6.165e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-023",
+   "status": "done",
+   "answer": "[\n  {\"text\": \"15 August 1947\", \"type\": \"DATE\"},\n  {\"text\": \"Jawaharlal Nehru\", \"type\": \"PERSON\"},\n  {\"text\": \"Delhi\", \"type\": \"LOCATION\"}\n]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.05e-05,
+   "b1_cost_usd": 0.003482,
+   "savings_usd": 0.0034414999999999997,
+   "latency_ms": 1560,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 90,
+     "tokens_out": 54,
+     "tokens_reasoning": 0,
+     "latency_ms": 1559,
+     "cost_usd": 4.05e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-024",
+   "status": "done",
+   "answer": "```json\n[\n  {\"text\": \"Lionel Messi\", \"type\": \"PERSON\"},\n  {\"text\": \"Inter Miami\", \"type\": \"ORG\"},\n  {\"text\": \"July 2023\", \"type\": \"DATE\"},\n  {\"text\": \"Paris Saint-Germain\", \"type\": \"ORG\"}\n]\n```",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.885e-05,
+   "b1_cost_usd": 0.003626,
+   "savings_usd": 0.00357715,
+   "latency_ms": 1354,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 89,
+     "tokens_out": 71,
+     "tokens_reasoning": 0,
+     "latency_ms": 1352,
+     "cost_usd": 4.885e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-025",
+   "status": "done",
+   "answer": "[{\"text\": \"Toronto\", \"type\": \"LOCATION\"}, {\"text\": \"2024-01-30\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.895e-05,
+   "b1_cost_usd": 0.00333,
+   "savings_usd": 0.0033010500000000003,
+   "latency_ms": 1334,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 83,
+     "tokens_out": 33,
+     "tokens_reasoning": 0,
+     "latency_ms": 1333,
+     "cost_usd": 2.895e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-026",
+   "status": "done",
+   "answer": "[{\"text\": \"Tata Steel\", \"type\": \"ORG\"}, {\"text\": \"Chennai\", \"type\": \"LOCATION\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.87e-05,
+   "b1_cost_usd": 0.003354,
+   "savings_usd": 0.0033253000000000002,
+   "latency_ms": 1328,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 88,
+     "tokens_out": 31,
+     "tokens_reasoning": 0,
+     "latency_ms": 1327,
+     "cost_usd": 2.87e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-027",
+   "status": "done",
+   "answer": "[{\"text\": \"Ford\", \"type\": \"ORG\"}, {\"text\": \"Henry Ford\", \"type\": \"PERSON\"}, {\"text\": \"Detroit\", \"type\": \"LOCATION\"}, {\"text\": \"2019\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.8700000000000006e-05,
+   "b1_cost_usd": 0.003508,
+   "savings_usd": 0.0034693,
+   "latency_ms": 1388,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 78,
+     "tokens_out": 54,
+     "tokens_reasoning": 0,
+     "latency_ms": 1387,
+     "cost_usd": 3.8700000000000006e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-029",
+   "status": "done",
+   "answer": "[{\"text\": \"Nestle\", \"type\": \"ORG\"}, {\"text\": \"Pune\", \"type\": \"LOCATION\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.735e-05,
+   "b1_cost_usd": 0.003304,
+   "savings_usd": 0.00327665,
+   "latency_ms": 1279,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 79,
+     "tokens_out": 31,
+     "tokens_reasoning": 0,
+     "latency_ms": 1278,
+     "cost_usd": 2.735e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-034",
+   "status": "done",
+   "answer": "[\n  {\"text\": \"March 3, 2021\", \"type\": \"DATE\"},\n  {\"text\": \"Kwame Mensah\", \"type\": \"PERSON\"},\n  {\"text\": \"University of Oxford\", \"type\": \"ORG\"},\n  {\"text\": \"Infosys\", \"type\": \"ORG\"},\n  {\"text\": \"Cairo\", \"type\": \"LOCATION\"}\n]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.68e-05,
+   "b1_cost_usd": 0.003724,
+   "savings_usd": 0.0036672,
+   "latency_ms": 1351,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 102,
+     "tokens_out": 83,
+     "tokens_reasoning": 0,
+     "latency_ms": 1349,
+     "cost_usd": 5.68e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-036",
+   "status": "done",
+   "answer": "[{\"text\": \"Nokia\", \"type\": \"ORG\"}, {\"text\": \"Finland\", \"type\": \"LOCATION\"}, {\"text\": \"Espoo\", \"type\": \"LOCATION\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.53e-05,
+   "b1_cost_usd": 0.003442,
+   "savings_usd": 0.0034067000000000004,
+   "latency_ms": 1346,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 92,
+     "tokens_out": 43,
+     "tokens_reasoning": 0,
+     "latency_ms": 1345,
+     "cost_usd": 3.53e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-038",
+   "status": "done",
+   "answer": "[{\"text\": \"Fatima Khan\", \"type\": \"PERSON\"}, {\"text\": \"Infosys\", \"type\": \"ORG\"}, {\"text\": \"2020-07-15\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.795e-05,
+   "b1_cost_usd": 0.003444,
+   "savings_usd": 0.00340605,
+   "latency_ms": 1407,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 93,
+     "tokens_out": 48,
+     "tokens_reasoning": 0,
+     "latency_ms": 1406,
+     "cost_usd": 3.795e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-040",
+   "status": "done",
+   "answer": "[{\"text\": \"David Cohen\", \"type\": \"PERSON\"}, {\"text\": \"Kenya\", \"type\": \"LOCATION\"}, {\"text\": \"World Bank\", \"type\": \"ORG\"}, {\"text\": \"Unilever\", \"type\": \"ORG\"}, {\"text\": \"December 12, 2019\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.13e-05,
+   "b1_cost_usd": 0.003668,
+   "savings_usd": 0.0036166999999999996,
+   "latency_ms": 1376,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 92,
+     "tokens_out": 75,
+     "tokens_reasoning": 0,
+     "latency_ms": 1375,
+     "cost_usd": 5.13e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-042",
+   "status": "done",
+   "answer": "[{\"text\": \"Chen Wei\", \"type\": \"PERSON\"}, {\"text\": \"Nestle\", \"type\": \"ORG\"}, {\"text\": \"3 March 2021\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.66e-05,
+   "b1_cost_usd": 0.00342,
+   "savings_usd": 0.0033834,
+   "latency_ms": 1309,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 84,
+     "tokens_out": 48,
+     "tokens_reasoning": 0,
+     "latency_ms": 1309,
+     "cost_usd": 3.66e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-045",
+   "status": "done",
+   "answer": "[{\"text\": \"Microsoft\", \"type\": \"ORG\"}, {\"text\": \"Cairo\", \"type\": \"LOCATION\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.5149999999999998e-05,
+   "b1_cost_usd": 0.003312,
+   "savings_usd": 0.00328685,
+   "latency_ms": 1277,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 71,
+     "tokens_out": 29,
+     "tokens_reasoning": 0,
+     "latency_ms": 1276,
+     "cost_usd": 2.5149999999999998e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-046",
+   "status": "done",
+   "answer": "[{\"text\": \"Tata Steel\", \"type\": \"ORG\"}, {\"text\": \"2020-07-15\", \"type\": \"DATE\"}]",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 2.9199999999999998e-05,
+   "b1_cost_usd": 0.00332,
+   "savings_usd": 0.0032908,
+   "latency_ms": 1292,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 78,
+     "tokens_out": 35,
+     "tokens_reasoning": 0,
+     "latency_ms": 1290,
+     "cost_usd": 2.9199999999999998e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "ner-047",
+   "status": "done",
+   "answer": "```json\n[\n  {\"text\": \"World Bank\", \"type\": \"ORG\"},\n  {\"text\": \"14 Feb 2019\", \"type\": \"DATE\"}\n]\n```",
+   "category": "ner",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.195e-05,
+   "b1_cost_usd": 0.003376,
+   "savings_usd": 0.00334405,
+   "latency_ms": 1248,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 83,
+     "tokens_out": 39,
+     "tokens_reasoning": 0,
+     "latency_ms": 1247,
+     "cost_usd": 3.195e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-002",
+   "status": "done",
+   "answer": "```python\ndef is_palindrome(s):\n    cleaned = \"\".join(c.lower() for c in s if c.isalnum())\n    return cleaned == cleaned[::-1]\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.55e-05,
+   "b1_cost_usd": 0.00359,
+   "savings_usd": 0.0035445,
+   "latency_ms": 1314,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 130,
+     "tokens_out": 52,
+     "tokens_reasoning": 16,
+     "latency_ms": 1312,
+     "cost_usd": 4.55e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-007",
+   "status": "done",
+   "answer": "The bug in the code is that it's splitting the text by a single space, which means it will only count words separated by a single space. To fix this, we should split the text by any amount of whitespace, which can be done using the `split()` function without any arguments. Here's the corrected code:\n\n```python\ndef count_words(text):\n    return len(text.split())\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004114,
+   "savings_usd": 0.004114,
+   "latency_ms": 22332,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 105,
+     "tokens_out": 81,
+     "tokens_reasoning": null,
+     "latency_ms": 10967,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-009",
+   "status": "done",
+   "answer": "```python\ndef percentage(part, whole):\n    return round(whole / part * 100, 1)\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003368,
+   "savings_usd": 0.003368,
+   "latency_ms": 25461,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 94,
+     "tokens_out": 27,
+     "tokens_reasoning": null,
+     "latency_ms": 3404,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-010",
+   "status": "done",
+   "answer": "```python\ndef digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 10\n    return total\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.705e-05,
+   "b1_cost_usd": 0.003496,
+   "savings_usd": 0.00345895,
+   "latency_ms": 1326,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 107,
+     "tokens_out": 42,
+     "tokens_reasoning": 0,
+     "latency_ms": 1326,
+     "cost_usd": 3.705e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-011",
+   "status": "done",
+   "answer": "```python\ndef get_initials(name):\n    return \"\".join(w[-1].upper() for w in name.split())\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00342,
+   "savings_usd": 0.00342,
+   "latency_ms": 28473,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 103,
+     "tokens_out": 27,
+     "tokens_reasoning": null,
+     "latency_ms": 3596,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-016",
+   "status": "done",
+   "answer": "```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003402,
+   "savings_usd": 0.003402,
+   "latency_ms": 31967,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 101,
+     "tokens_out": 31,
+     "tokens_reasoning": null,
+     "latency_ms": 3717,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-018",
+   "status": "done",
+   "answer": "```python\ndef fizzbuzz(n):\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    if n % 3 == 0:\n        return \"Fizz\"\n    if n % 5 == 0:\n        return \"Buzz\"\n    return str(n)\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.35e-05,
+   "b1_cost_usd": 0.003674,
+   "savings_usd": 0.0036205,
+   "latency_ms": 1394,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 150,
+     "tokens_out": 62,
+     "tokens_reasoning": 0,
+     "latency_ms": 1393,
+     "cost_usd": 5.35e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-019",
+   "status": "done",
+   "answer": "```python\ndef copy_grid(grid):\n    return [row.copy() for row in grid]\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00336,
+   "savings_usd": 0.00336,
+   "latency_ms": 34013,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 92,
+     "tokens_out": 21,
+     "tokens_reasoning": null,
+     "latency_ms": 2994,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-020",
+   "status": "done",
+   "answer": "```python\ndef merge_sorted(a, b):\n    i = j = 0\n    result = []\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            result.append(a[i])\n            i += 1\n        else:\n            result.append(b[j])\n            j += 1\n    result.extend(a[i:])\n    result.extend(b[j:])\n    return result\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 6.975e-05,
+   "b1_cost_usd": 0.00408,
+   "savings_usd": 0.00401025,
+   "latency_ms": 1415,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 165,
+     "tokens_out": 90,
+     "tokens_reasoning": 0,
+     "latency_ms": 1413,
+     "cost_usd": 6.975e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-026",
+   "status": "done",
+   "answer": "```python\ndef square_all(xs):\n    return [x * x for x in xs]\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003346,
+   "savings_usd": 0.003346,
+   "latency_ms": 34949,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 101,
+     "tokens_out": 21,
+     "tokens_reasoning": null,
+     "latency_ms": 3136,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-027",
+   "status": "done",
+   "answer": "```python\ndef word_frequencies(words):\n    d = {}\n    for w in words:\n        d[w] = d.get(w, 0) + 1\n    return d\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003488,
+   "savings_usd": 0.003488,
+   "latency_ms": 32549,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 110,
+     "tokens_out": 41,
+     "tokens_reasoning": null,
+     "latency_ms": 4728,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-028",
+   "status": "done",
+   "answer": "```python\ndef first_n_squares(n):\n    return [i * i for i in range(n)]\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003342,
+   "savings_usd": 0.003342,
+   "latency_ms": 24779,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 96,
+     "tokens_out": 24,
+     "tokens_reasoning": null,
+     "latency_ms": 3198,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-030",
+   "status": "done",
+   "answer": "```python\ndef binary_search(xs, target):\n    lo, hi = 0, len(xs) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if xs[mid] == target:\n            return mid\n        if xs[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 8.115000000000001e-05,
+   "b1_cost_usd": 0.004034,
+   "savings_usd": 0.00395285,
+   "latency_ms": 1532,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 181,
+     "tokens_out": 108,
+     "tokens_reasoning": 20,
+     "latency_ms": 1528,
+     "cost_usd": 8.115000000000001e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-033",
+   "status": "done",
+   "answer": "```python\ndef add_item(item, items=[]):\n    items.append(item)\n    return items\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003406,
+   "savings_usd": 0.003406,
+   "latency_ms": 22768,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 101,
+     "tokens_out": 22,
+     "tokens_reasoning": null,
+     "latency_ms": 2933,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-035",
+   "status": "done",
+   "answer": "```python\ndef moving_average(xs, k):\n    if k > len(xs):\n        return []\n    return [sum(xs[i:i + k]) / k for i in range(len(xs) - k + 1)]\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003556,
+   "savings_usd": 0.003556,
+   "latency_ms": 25994,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 106,
+     "tokens_out": 47,
+     "tokens_reasoning": null,
+     "latency_ms": 5285,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-042",
+   "status": "done",
+   "answer": "```python\ndef fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.3549999999999994e-05,
+   "b1_cost_usd": 0.003496,
+   "savings_usd": 0.00344245,
+   "latency_ms": 1926,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 147,
+     "tokens_out": 63,
+     "tokens_reasoning": 23,
+     "latency_ms": 1925,
+     "cost_usd": 5.3549999999999994e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-043",
+   "status": "done",
+   "answer": "```python\ndef remove_duplicates(xs):\n    seen = set()\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003698,
+   "savings_usd": 0.003698,
+   "latency_ms": 25570,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 110,
+     "tokens_out": 46,
+     "tokens_reasoning": null,
+     "latency_ms": 5224,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-044",
+   "status": "done",
+   "answer": "```python\ndef chunk(xs, n):\n    return [xs[i:i + n] for i in range(0, len(xs), n)]\n```",
+   "category": "code_debug",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "qwen2.5-coder:1.5b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003388,
+   "savings_usd": 0.003388,
+   "latency_ms": 28419,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:qwen2.5-coder:1.5b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "qwen2.5-coder:1.5b",
+     "tokens_in": 104,
+     "tokens_out": 32,
+     "tokens_reasoning": null,
+     "latency_ms": 3912,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-048",
+   "status": "done",
+   "answer": "```python\ndef days_in_month(year, month):\n    if month == 2:\n        leap = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0\n        return 29 if leap else 28\n    return 30 if month in (4, 6, 9, 11) else 31\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 6.429999999999999e-05,
+   "b1_cost_usd": 0.003778,
+   "savings_usd": 0.0037137000000000003,
+   "latency_ms": 1444,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 152,
+     "tokens_out": 83,
+     "tokens_reasoning": 0,
+     "latency_ms": 1443,
+     "cost_usd": 6.429999999999999e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_debug-049",
+   "status": "done",
+   "answer": "```python\ndef flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n```",
+   "category": "code_debug",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.045e-05,
+   "b1_cost_usd": 0.003782,
+   "savings_usd": 0.00374155,
+   "latency_ms": 1368,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 113,
+     "tokens_out": 47,
+     "tokens_reasoning": 0,
+     "latency_ms": 1366,
+     "cost_usd": 4.045e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-001",
+   "status": "done",
+   "answer": "Cloud is on Thursday.",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0003792,
+   "b1_cost_usd": 0.003216,
+   "savings_usd": 0.0028368,
+   "latency_ms": 2064,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 108,
+     "tokens_out": 289,
+     "tokens_reasoning": 282,
+     "latency_ms": 2062,
+     "cost_usd": 0.0003792,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-005",
+   "status": "done",
+   "answer": "If Bina were a knight, her statement \"Amit and I are both knights\" would be true, making Amit a knight — but Amit says Bina is a knave, which a knight couldn't falsely say. Contradiction.\n\nSo Bina is a knave: her statement is false (consistent), and Amit's claim \"Bina is a knave\" is true, so Amit is a knight.\n\nANSWER: knave",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 8.209999999999999e-05,
+   "b1_cost_usd": 0.003974,
+   "savings_usd": 0.0038919000000000002,
+   "latency_ms": 52302,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30065,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 104,
+     "tokens_out": 133,
+     "tokens_reasoning": 42,
+     "latency_ms": 1683,
+     "cost_usd": 8.209999999999999e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-007",
+   "status": "done",
+   "answer": "The only person who can occupy the white room, given the constraints, is **Noor**.\n\n**ANSWER: Noor**",
+   "category": "logic",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.0001047,
+   "b1_cost_usd": 0.003484,
+   "savings_usd": 0.0033793,
+   "latency_ms": 82006,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30120,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 190,
+     "tokens_out": 127,
+     "tokens_reasoning": 92,
+     "latency_ms": 1434,
+     "cost_usd": 0.0001047,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-008",
+   "status": "done",
+   "answer": "Painting is the second job.",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0001152,
+   "b1_cost_usd": 0.003206,
+   "savings_usd": 0.0030908,
+   "latency_ms": 731,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 88,
+     "tokens_out": 74,
+     "tokens_reasoning": 65,
+     "latency_ms": 730,
+     "cost_usd": 0.0001152,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-013",
+   "status": "done",
+   "answer": "Kia 2nd, Mia 3rd, Ned 1st, Lal 4th — all conditions hold.\n\nANSWER: Mia",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 7.56e-05,
+   "b1_cost_usd": 0.003344,
+   "savings_usd": 0.0032684000000000003,
+   "latency_ms": 108669,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30106,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 104,
+     "tokens_out": 120,
+     "tokens_reasoning": 90,
+     "latency_ms": 1757,
+     "cost_usd": 7.56e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-018",
+   "status": "done",
+   "answer": "Positions: Cy=1, Kofi=2, Ivan=3, Eli=4. Ivan and Eli have one person between (Kofi), Cy ahead of Eli, Kofi between them. ✓\n\nANSWER: Kofi",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 0.0001046,
+   "b1_cost_usd": 0.00354,
+   "savings_usd": 0.0034354000000000003,
+   "latency_ms": 136931,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30099,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 114,
+     "tokens_out": 175,
+     "tokens_reasoning": 127,
+     "latency_ms": 2119,
+     "cost_usd": 0.0001046,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-020",
+   "status": "done",
+   "answer": "Eshan is a knave (if knight, Dara knave → Farid knave, but Farid's claim \"Eshan is knight\" would then be true — contradiction). So Dara is a knight, meaning Eshan and Farid are the same type → Farid is a knave (consistent: his claim \"Eshan is a knight\" is false).\n\nANSWER: knave",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 0.00010609999999999999,
+   "b1_cost_usd": 0.003886,
+   "savings_usd": 0.0037799,
+   "latency_ms": 161470,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30109,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 124,
+     "tokens_out": 175,
+     "tokens_reasoning": 92,
+     "latency_ms": 1833,
+     "cost_usd": 0.00010609999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-022",
+   "status": "done",
+   "answer": "Order: Ria > Sam > Tom > Uma > Vik. Third oldest is Tom.\n\nANSWER: Tom",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 3.345e-05,
+   "b1_cost_usd": 0.003324,
+   "savings_usd": 0.00329055,
+   "latency_ms": 185891,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30087,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 93,
+     "tokens_out": 39,
+     "tokens_reasoning": 16,
+     "latency_ms": 1388,
+     "cost_usd": 3.345e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-023",
+   "status": "done",
+   "answer": "- White room: Maya or Ana, and not Maya → Ana has white.\n- Blue room: not Raj, and Ana has white → Maya.\n\nANSWER: Maya",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.85e-05,
+   "b1_cost_usd": 0.003498,
+   "savings_usd": 0.0034495,
+   "latency_ms": 212127,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30084,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 120,
+     "tokens_out": 61,
+     "tokens_reasoning": 26,
+     "latency_ms": 1453,
+     "cost_usd": 4.85e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-027",
+   "status": "done",
+   "answer": "Xena and Yusuf contradict each other, so exactly one of them is true; then Zane must be false, meaning Xena is truthful — so Yusuf took it. Check: Xena true, Yusuf false, Zane false — exactly one true. ✓\n\nANSWER: Yusuf",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 6.85e-05,
+   "b1_cost_usd": 0.003722,
+   "savings_usd": 0.0036535,
+   "latency_ms": 210648,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30086,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 110,
+     "tokens_out": 104,
+     "tokens_reasoning": 42,
+     "latency_ms": 1637,
+     "cost_usd": 6.85e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-028",
+   "status": "done",
+   "answer": "Fay is on 1. Dev must be on 2 (if 3, Eli on 4, Gia on 2 next to Fay — invalid). So Eli on 3, Gia on 4.\n\nANSWER: Gia",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 7.790000000000001e-05,
+   "b1_cost_usd": 0.003486,
+   "savings_usd": 0.0034081,
+   "latency_ms": 228915,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30099,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 126,
+     "tokens_out": 118,
+     "tokens_reasoning": 68,
+     "latency_ms": 1645,
+     "cost_usd": 7.790000000000001e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-030",
+   "status": "done",
+   "answer": "The only assignment that satisfies all the conditions is:\n\n- Red room – **Ben**\n- White room – Maya\n- Blue room – Fay\n- Yellow room – Ivan\n\nThus, the red room belongs to **Ben**.\n\n**ANSWER: Ben**",
+   "category": "logic",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00013665,
+   "b1_cost_usd": 0.003748,
+   "savings_usd": 0.00361135,
+   "latency_ms": 242913,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30101,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 207,
+     "tokens_out": 176,
+     "tokens_reasoning": 115,
+     "latency_ms": 3572,
+     "cost_usd": 0.00013665,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-031",
+   "status": "done",
+   "answer": "Order: Noor, Ivan, Dia (Ivan between Noor and Dia, behind Noor). Pia is second, so Noor must be first.\n\nANSWER: Noor",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 5.0299999999999996e-05,
+   "b1_cost_usd": 0.003478,
+   "savings_usd": 0.0034277,
+   "latency_ms": 240484,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30105,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 112,
+     "tokens_out": 67,
+     "tokens_reasoning": 29,
+     "latency_ms": 1466,
+     "cost_usd": 5.0299999999999996e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-032",
+   "status": "done",
+   "answer": "Ravi lives on floor 3.",
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.00037079999999999996,
+   "b1_cost_usd": 0.003236,
+   "savings_usd": 0.0028652,
+   "latency_ms": 1918,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding-threshold",
+   "plan": [
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "oos",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 128,
+     "tokens_out": 277,
+     "tokens_reasoning": 267,
+     "latency_ms": 1916,
+     "cost_usd": 0.00037079999999999996,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-033",
+   "status": "done",
+   "answer": "Order: Kofi, Raj, Dia, Sara, Omar (Raj between Kofi and both Dia and Sara; Sara behind Dia; Kofi ahead of Omar; Kofi not 4th, Sara not 5th).\n\nANSWER: Omar",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 8.32e-05,
+   "b1_cost_usd": 0.003622,
+   "savings_usd": 0.0035388,
+   "latency_ms": 238347,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30080,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 138,
+     "tokens_out": 125,
+     "tokens_reasoning": 73,
+     "latency_ms": 1634,
+     "cost_usd": 8.32e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-035",
+   "status": "done",
+   "answer": "The only arrangement satisfying all the conditions is:\n\n1 Lena 2 Gus 3 Sara 4 Ana 5 Pia  \n\nSo the person in fifth place is Pia.\n\n**ANSWER: Pia**",
+   "category": "logic",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.0003294,
+   "b1_cost_usd": 0.00361,
+   "savings_usd": 0.0032806,
+   "latency_ms": 242073,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30093,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 200,
+     "tokens_out": 499,
+     "tokens_reasoning": 443,
+     "latency_ms": 3165,
+     "cost_usd": 0.0003294,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-036",
+   "status": "done",
+   "answer": "The only person who can satisfy both conditions for the blue room (it must be Sara or Jia, and it cannot be Sara) is **Jia**.\n\n**ANSWER: Jia**",
+   "category": "logic",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00011834999999999999,
+   "b1_cost_usd": 0.003688,
+   "savings_usd": 0.0035696499999999997,
+   "latency_ms": 240722,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30107,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 249,
+     "tokens_out": 135,
+     "tokens_reasoning": 85,
+     "latency_ms": 1350,
+     "cost_usd": 0.00011834999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-039",
+   "status": "done",
+   "answer": "Omar must be 2nd (not 1st or 3rd). Tomas isn't 3rd, so Ana is 3rd.\n\nANSWER: Ana",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.615e-05,
+   "b1_cost_usd": 0.003364,
+   "savings_usd": 0.00331785,
+   "latency_ms": 240888,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30103,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 101,
+     "tokens_out": 62,
+     "tokens_reasoning": 26,
+     "latency_ms": 1560,
+     "cost_usd": 4.615e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-041",
+   "status": "done",
+   "answer": "The blue room belongs to Sara.  \n\n**ANSWER: Sara**",
+   "category": "logic",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.0001701,
+   "b1_cost_usd": 0.00344,
+   "savings_usd": 0.0032699,
+   "latency_ms": 240292,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no item list"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30086,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 234,
+     "tokens_out": 225,
+     "tokens_reasoning": 202,
+     "latency_ms": 1147,
+     "cost_usd": 0.0001701,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "logic-043",
+   "status": "done",
+   "answer": "Ana chose tea → Ben chose coffee → Cy chose juice. All conditions check out.\n\nANSWER: Cy",
+   "category": "logic",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "hyde/glm-5.3-flash",
+   "cost_usd": 4.81e-05,
+   "b1_cost_usd": 0.00342,
+   "savings_usd": 0.0033718999999999997,
+   "latency_ms": 240636,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "solver",
+    "api:hyde/glm-5.3-flash",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "solver",
+     "how": "pure-python",
+     "ok": false,
+     "why": "no entity header"
+    },
+    {
+     "step": "translator",
+     "model": "gemma3:4b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30104,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout after 30s"
+    },
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "hyde/glm-5.3-flash",
+     "tokens_in": 114,
+     "tokens_out": 62,
+     "tokens_reasoning": 40,
+     "latency_ms": 1496,
+     "cost_usd": 4.81e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-005",
+   "status": "done",
+   "answer": "```python\ndef next_permutation(xs):\n    \"\"\"\n    Return the lexicographically next permutation of the list `xs` as a new list.\n    If `xs` is the highest possible permutation, return the smallest (sorted ascending) permutation.\n    The input list `xs` is not modified.\n    \"\"\"\n    # Make a copy to avoid mutating the input\n    a = list(xs)\n    n = len(a)\n\n    # Edge cases: empty or single-element list\n    if n < 2:\n        return a[:]\n\n    # Step 1: Find the longest non-increasing suffix\n    i = n - 2\n    while i >= 0 and a[i] >= a[i + 1]:\n        i -= 1\n\n    # If the entire sequence is non-increasing, it's the last permutation\n    if i == -1:\n        return sorted(a)\n\n    # Step 2: Find rightmost element greater than a[i] in the suffix\n    j = n - 1\n    while a[j] <= a[i]:\n        j -= 1\n\n    # Step 3: Swap the pivot with that element\n    a[i], a[j] = a[j], a[i]\n\n    # Step 4: Reverse the suffix (which is currently in decreasing order)\n    a[i + 1:] = reversed(a[i + 1:])\n\n    return a\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.0002118,
+   "b1_cost_usd": 0.00575,
+   "savings_usd": 0.0055382,
+   "latency_ms": 3019,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 172,
+     "tokens_out": 310,
+     "tokens_reasoning": 10,
+     "latency_ms": 3018,
+     "cost_usd": 0.0002118,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-008",
+   "status": "done",
+   "answer": "```python\ndef can_partition(nums):\n    \"\"\"\n    Returns True if the list of positive integers `nums` can be split into two groups\n    (not necessarily contiguous) with equal sums, otherwise False.\n    An empty list is considered splittable (returns True).\n    \"\"\"\n    total = sum(nums)\n    # If total sum is odd, cannot partition into equal halves\n    if total % 2:\n        return False\n\n    target = total // 2\n    # Use a bitset to efficiently compute reachable sums\n    # bit i is set if sum i is achievable\n    reachable = 1  # only sum 0 is initially reachable\n    for num in nums:\n        reachable |= reachable << num\n        # Early exit if target sum becomes reachable\n        if reachable >> target & 1:\n            return True\n\n    return bool(reachable >> target & 1)\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00015585,
+   "b1_cost_usd": 0.005142,
+   "savings_usd": 0.00498615,
+   "latency_ms": 2155,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 151,
+     "tokens_out": 222,
+     "tokens_reasoning": 29,
+     "latency_ms": 2153,
+     "cost_usd": 0.00015585,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-010",
+   "status": "done",
+   "answer": "```python\ndef bmi_category(weight_kg, height_m):\n    bmi = weight_kg / (height_m ** 2)\n    if bmi < 18.5:\n        return \"underweight\"\n    elif bmi < 25:\n        return \"normal\"\n    elif bmi < 30:\n        return \"overweight\"\n    else:\n        return \"obese\"\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 8.1e-05,
+   "b1_cost_usd": 0.003828,
+   "savings_usd": 0.003747,
+   "latency_ms": 886,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 164,
+     "tokens_out": 94,
+     "tokens_reasoning": 7,
+     "latency_ms": 885,
+     "cost_usd": 8.1e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-011",
+   "status": "done",
+   "answer": "```python\ndef gcd(a: int, b: int) -> int:\n    \"\"\"\n    Returns the greatest common divisor of two non-negative integers.\n    \n    :param a: A non-negative integer.\n    :param b: A non-negative integer.\n    :return: The greatest common divisor of a and b.\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00393,
+   "savings_usd": 0.00393,
+   "latency_ms": 219708,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 100,
+     "tokens_out": 87,
+     "tokens_reasoning": null,
+     "latency_ms": 18671,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-013",
+   "status": "done",
+   "answer": "```python\ndef evaluate_rpn(tokens):\n    stack = []\n    for token in tokens:\n        if token in {\"+\", \"-\", \"*\", \"/\"}:\n            b = stack.pop()\n            a = stack.pop()\n            if token == \"+\":\n                stack.append(a + b)\n            elif token == \"-\":\n                stack.append(a - b)\n            elif token == \"*\":\n                stack.append(a * b)\n            else:\n                q = abs(a) // abs(b)\n                if (a < 0) ^ (b < 0):\n                    q = -q\n                stack.append(q)\n        else:\n            stack.append(int(token))\n    return stack[-1]\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "api",
+   "model": "deepseek-v4p1-flash",
+   "cost_usd": 0.0003318,
+   "b1_cost_usd": 0.00467,
+   "savings_usd": 0.0043381999999999995,
+   "latency_ms": 229511,
+   "escalated": true,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": null,
+     "tokens_out": null,
+     "tokens_reasoning": null,
+     "latency_ms": 30060,
+     "cost_usd": 0.0,
+     "finish": null,
+     "error": "timeout after 30s",
+     "attempts": 1,
+     "ok": false,
+     "why": "timeout"
+    },
+    {
+     "step": "api",
+     "role": "retry",
+     "model": "deepseek-v4p1-flash",
+     "tokens_in": 102,
+     "tokens_out": 251,
+     "tokens_reasoning": 109,
+     "latency_ms": 1666,
+     "cost_usd": 0.0003318,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-017",
+   "status": "done",
+   "answer": "```python\ndef count_islands(grid):\n    \"\"\"\n    Count the number of islands in a grid.\n    :param grid: List[str] where each string consists of '1' (land) and '0' (water)\n    :return: int number of islands\n    \"\"\"\n    if not grid:\n        return 0\n\n    rows, cols = len(grid), len(grid[0])\n    visited = [[False] * cols for _ in range(rows)]\n\n    def dfs(r, c):\n        stack = [(r, c)]\n        while stack:\n            x, y = stack.pop()\n            if x < 0 or x >= rows or y < 0 or y >= cols:\n                continue\n            if visited[x][y] or grid[x][y] != '1':\n                continue\n            visited[x][y] = True\n            # explore neighbors (up, down, left, right)\n            stack.append((x - 1, y))\n            stack.append((x + 1, y))\n            stack.append((x, y - 1))\n            stack.append((x, y + 1))\n\n    islands = 0\n    for i in range(rows):\n        for j in range(cols):\n            if not visited[i][j] and grid[i][j] == '1':\n                islands += 1\n                dfs(i, j)\n\n    return islands\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00020489999999999997,
+   "b1_cost_usd": 0.005786,
+   "savings_usd": 0.0055811,
+   "latency_ms": 1213,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 154,
+     "tokens_out": 303,
+     "tokens_reasoning": 7,
+     "latency_ms": 1212,
+     "cost_usd": 0.00020489999999999997,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-018",
+   "status": "done",
+   "answer": "```python\ndef count_even_digits(n: int) -> int:\n    return sum(1 for digit in str(n) if int(digit) % 2 == 0)\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00343,
+   "savings_usd": 0.00343,
+   "latency_ms": 205129,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 91,
+     "tokens_out": 39,
+     "tokens_reasoning": null,
+     "latency_ms": 8753,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-020",
+   "status": "done",
+   "answer": "```python\ndef spiral_order(matrix):\n    \"\"\"\n    Return the elements of a rectangular matrix in clockwise spiral order.\n    An empty matrix returns an empty list.\n    \"\"\"\n    if not matrix or not matrix[0]:\n        return []\n\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n    result = []\n\n    while top <= bottom and left <= right:\n        # Traverse from left to right along the top row\n        for col in range(left, right + 1):\n            result.append(matrix[top][col])\n        top += 1\n\n        # Traverse downwards along the rightmost column\n        for row in range(top, bottom + 1):\n            result.append(matrix[row][right])\n        right -= 1\n\n        # Traverse from right to left along the bottom row, if still within bounds\n        if top <= bottom:\n            for col in range(right, left - 1, -1):\n                result.append(matrix[bottom][col])\n            bottom -= 1\n\n        # Traverse upwards along the leftmost column, if still within bounds\n        if left <= right:\n            for row in range(bottom, top - 1, -1):\n                result.append(matrix[row][left])\n            left += 1\n\n    return result\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00020085,
+   "b1_cost_usd": 0.006158,
+   "savings_usd": 0.0059571500000000005,
+   "latency_ms": 1085,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 167,
+     "tokens_out": 293,
+     "tokens_reasoning": 7,
+     "latency_ms": 1083,
+     "cost_usd": 0.00020085,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-021",
+   "status": "done",
+   "answer": "```python\ndef is_power_of_two(n: int) -> bool:\n    \"\"\"\n    Returns True if the integer n is a positive power of two, else False.\n\n    Args:\n        n (int): The number to check.\n\n    Returns:\n        bool: True if n is a power of two, False otherwise.\n    \"\"\"\n    if n <= 0:\n        return False\n    return (n & (n - 1)) == 0\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003968,
+   "savings_usd": 0.003968,
+   "latency_ms": 191490,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 99,
+     "tokens_out": 95,
+     "tokens_reasoning": null,
+     "latency_ms": 17858,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-025",
+   "status": "done",
+   "answer": "```python\ndef count_char(s, ch):\n    \"\"\"\n    Counts the occurrences of a single character in a string.\n\n    Args:\n        s (str): The input string.\n        ch (str): The character to count.\n\n    Returns:\n        int: The number of occurrences of the character in the string.\n    \"\"\"\n    return s.count(ch)\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003918,
+   "savings_usd": 0.003918,
+   "latency_ms": 178131,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 87,
+     "tokens_out": 73,
+     "tokens_reasoning": null,
+     "latency_ms": 13841,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-026",
+   "status": "done",
+   "answer": "```python\ndef caesar_shift(s: str, k: int) -> str:\n    \"\"\"\n    Shift each alphabetical character in `s` forward by `k` positions,\n    wrapping around the alphabet. Case is preserved; non‑letters are left unchanged.\n    `k` may be any integer (positive, zero, or negative) and is normalized modulo 26.\n    \"\"\"\n    if not s:\n        return s\n\n    # Normalize shift to range [0, 25]\n    k = k % 26\n\n    result_chars = []\n    for ch in s:\n        if 'a' <= ch <= 'z':\n            # Compute shifted position for lowercase\n            offset = ord(ch) - ord('a')\n            new_offset = (offset + k) % 26\n            result_chars.append(chr(ord('a') + new_offset))\n        elif 'A' <= ch <= 'Z':\n            # Compute shifted position for uppercase\n            offset = ord(ch) - ord('A')\n            new_offset = (offset + k) % 26\n            result_chars.append(chr(ord('A') + new_offset))\n        else:\n            # Non‑alphabetic characters are unchanged\n            result_chars.append(ch)\n\n    return ''.join(result_chars)\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00019334999999999998,
+   "b1_cost_usd": 0.005806,
+   "savings_usd": 0.00561265,
+   "latency_ms": 1536,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 173,
+     "tokens_out": 279,
+     "tokens_reasoning": 12,
+     "latency_ms": 1534,
+     "cost_usd": 0.00019334999999999998,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-029",
+   "status": "done",
+   "answer": "```python\ndef triangle_type(a, b, c):\n    # Check for non-positive sides\n    if a <= 0 or b <= 0 or c <= 0:\n        return \"invalid\"\n    # Check triangle inequality (strict)\n    if a + b <= c or a + c <= b or b + c <= a:\n        return \"invalid\"\n    # Determine type\n    if a == b == c:\n        return \"equilateral\"\n    if a == b or a == c or b == c:\n        return \"isosceles\"\n    return \"scalene\"\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00011009999999999999,
+   "b1_cost_usd": 0.004226,
+   "savings_usd": 0.0041159,
+   "latency_ms": 994,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 174,
+     "tokens_out": 140,
+     "tokens_reasoning": 7,
+     "latency_ms": 993,
+     "cost_usd": 0.00011009999999999999,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-030",
+   "status": "done",
+   "answer": "```python\ndef roman_to_int(s: str) -> int:\n    roman_numerals = {\n        'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000\n    }\n    result = 0\n    for i in range(len(s)):\n        if i > 0 and roman_numerals[s[i]] > roman_numerals[s[i - 1]]:\n            result += roman_numerals[s[i]] - 2 * roman_numerals[s[i - 1]]\n        else:\n            result += roman_numerals[s[i]]\n    return result\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004178,
+   "savings_usd": 0.004178,
+   "latency_ms": 171215,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 104,
+     "tokens_out": 143,
+     "tokens_reasoning": null,
+     "latency_ms": 25943,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-031",
+   "status": "done",
+   "answer": "```python\ndef merge_intervals(intervals):\n    \"\"\"\n    Merge overlapping or touching intervals.\n\n    Parameters\n    ----------\n    intervals : List[List[int]]\n        A list of intervals, each represented as [start, end] with start <= end.\n        The list may be unsorted.\n\n    Returns\n    -------\n    List[List[int]]\n        A list of merged intervals sorted by start.\n    \"\"\"\n    if not intervals:\n        return []\n\n    # Sort intervals by start (and by end to stabilize equal starts)\n    intervals = sorted(intervals, key=lambda x: (x[0], x[1]))\n\n    merged = []\n    cur_start, cur_end = intervals[0]\n\n    for start, end in intervals[1:]:\n        # If intervals overlap or touch (start <= cur_end)\n        if start <= cur_end:\n            # Extend the current interval's end if needed\n            cur_end = max(cur_end, end)\n        else:\n            # No overlap; push the current interval and start a new one\n            merged.append([cur_start, cur_end])\n            cur_start, cur_end = start, end\n\n    # Append the last interval\n    merged.append([cur_start, cur_end])\n    return merged\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.00019035,
+   "b1_cost_usd": 0.006006,
+   "savings_usd": 0.00581565,
+   "latency_ms": 1227,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 185,
+     "tokens_out": 271,
+     "tokens_reasoning": 10,
+     "latency_ms": 1225,
+     "cost_usd": 0.00019035,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-032",
+   "status": "done",
+   "answer": "```python\ndef find_max_index(xs):\n    \"\"\"\n    Return the index of the first occurrence of the largest value in the list xs.\n    If xs is empty, return None.\n    \"\"\"\n    if not xs:\n        return None\n\n    max_val = xs[0]\n    max_idx = 0\n    for i, val in enumerate(xs[1:], start=1):\n        if val > max_val:\n            max_val = val\n            max_idx = i\n    return max_idx\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 9.554999999999999e-05,
+   "b1_cost_usd": 0.004154,
+   "savings_usd": 0.00405845,
+   "latency_ms": 881,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 157,
+     "tokens_out": 120,
+     "tokens_reasoning": 7,
+     "latency_ms": 879,
+     "cost_usd": 9.554999999999999e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-035",
+   "status": "done",
+   "answer": "```python\ndef decode_string(s: str) -> str:\n    stack = []\n    cur_num = 0\n    cur_str = ''\n    for c in s:\n        if c.isdigit():\n            cur_num = cur_num * 10 + int(c)\n        elif c == '[':\n            stack.append(cur_str)\n            stack.append(cur_num)\n            cur_str = ''\n            cur_num = 0\n        elif c == ']':\n            num = stack.pop()\n            prev_str = stack.pop()\n            cur_str = prev_str + num * cur_str\n        else:\n            cur_str += c\n    return cur_str\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.004468,
+   "savings_usd": 0.004468,
+   "latency_ms": 165988,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 106,
+     "tokens_out": 130,
+     "tokens_reasoning": null,
+     "latency_ms": 24029,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-036",
+   "status": "done",
+   "answer": "```python\ndef sum_of_evens(nums):\n    \"\"\"\n    Return the sum of the even integers in the iterable `nums`.\n    If `nums` is empty or contains no even integers, returns 0.\n    Non-integer items are ignored.\n    \"\"\"\n    total = 0\n    for n in nums:\n        if isinstance(n, int) and n % 2 == 0:\n            total += n\n    return total\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 8.85e-05,
+   "b1_cost_usd": 0.004032,
+   "savings_usd": 0.0039435,
+   "latency_ms": 896,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 158,
+     "tokens_out": 108,
+     "tokens_reasoning": 7,
+     "latency_ms": 894,
+     "cost_usd": 8.85e-05,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-039",
+   "status": "done",
+   "answer": "```python\ndef find_duplicates(xs):\n    \"\"\"\n    Returns a sorted list of distinct values that appear more than once in xs.\n\n    Args:\n        xs (list): The input list.\n\n    Returns:\n        list: A sorted list of duplicates.\n    \"\"\"\n    count = {}\n    for x in xs:\n        count[x] = count.get(x, 0) + 1\n    return sorted([x for x, freq in count.items() if freq > 1])\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.00406,
+   "savings_usd": 0.00406,
+   "latency_ms": 154241,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 81,
+     "tokens_out": 99,
+     "tokens_reasoning": null,
+     "latency_ms": 17484,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-040",
+   "status": "done",
+   "answer": "```python\ndef second_word(s):\n    words = s.split()\n    if len(words) < 2:\n        return \"\"\n    return words[1]\n```",
+   "category": "code_gen",
+   "difficulty": "easy",
+   "layer": "local",
+   "model": "llama3.2:3b",
+   "cost_usd": 0.0,
+   "b1_cost_usd": 0.003436,
+   "savings_usd": 0.003436,
+   "latency_ms": 145090,
+   "escalated": false,
+   "error": null,
+   "label_source": "rule",
+   "plan": [
+    "local:llama3.2:3b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "local",
+     "model": "llama3.2:3b",
+     "tokens_in": 83,
+     "tokens_out": 34,
+     "tokens_reasoning": null,
+     "latency_ms": 7116,
+     "cost_usd": 0.0,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  },
+  {
+   "id": "code_gen-047",
+   "status": "done",
+   "answer": "```python\ndef topological_order(n, edges):\n    from collections import defaultdict\n    import heapq\n\n    # Build adjacency list and indegree count\n    adj = defaultdict(list)\n    indegree = [0] * n\n    for u, v in edges:\n        adj[u].append(v)\n        indegree[v] += 1\n\n    # Min-heap for nodes with zero indegree\n    zero_heap = [i for i in range(n) if indegree[i] == 0]\n    heapq.heapify(zero_heap)\n\n    order = []\n    while zero_heap:\n        u = heapq.heappop(zero_heap)\n        order.append(u)\n        for v in adj[u]:\n            indegree[v] -= 1\n            if indegree[v] == 0:\n                heapq.heappush(zero_heap, v)\n\n    return order if len(order) == n else None\n```",
+   "category": "code_gen",
+   "difficulty": "hard",
+   "layer": "api",
+   "model": "gpt-oss-120b",
+   "cost_usd": 0.0001515,
+   "b1_cost_usd": 0.004936,
+   "savings_usd": 0.0047845000000000006,
+   "latency_ms": 1612,
+   "escalated": false,
+   "error": null,
+   "label_source": "embedding",
+   "plan": [
+    "api:gpt-oss-120b",
+    "api:deepseek-v4p1-flash"
+   ],
+   "trace": [
+    {
+     "step": "api",
+     "role": "primary",
+     "model": "gpt-oss-120b",
+     "tokens_in": 178,
+     "tokens_out": 208,
+     "tokens_reasoning": 7,
+     "latency_ms": 1609,
+     "cost_usd": 0.0001515,
+     "finish": "stop",
+     "error": null,
+     "attempts": 1,
+     "ok": true,
+     "why": ""
+    }
+   ]
+  }
+ ]
+}

@@ -134,7 +134,8 @@ async def root():
         "version": "0.1.0",
         "docs": "/docs",
         "endpoints": {
-            "complete": "POST /v1/complete",
+            "route": "POST /v1/route (hybrid local/API router)",
+            "complete": "POST /v1/complete (legacy)",
             "keys": "GET/POST/DELETE /v1/keys",
             "health": "GET /health",
         },

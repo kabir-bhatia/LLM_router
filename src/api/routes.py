@@ -21,6 +21,8 @@ from src.api.schemas import (
     CompletionResponse,
     ErrorResponse,
     HealthResponse,
+    RouteRequest,
+    RouteResponse,
     StructuredRequest,
     StructuredResponse,
 )
@@ -29,6 +31,79 @@ from src.db import APIKey, get_session
 
 # Create router for v1 API
 router = APIRouter(prefix="/v1", tags=["v1"])
+
+
+# ===================
+# Hybrid router (Phase 5): POST /v1/route
+# ===================
+
+_phase5_router = None
+
+
+def get_phase5_router():
+    """Lazily built hybrid router (policy path from router.config / ROUTER_POLICY_PATH). Overridable in tests via
+    app.dependency_overrides[get_phase5_router]."""
+    global _phase5_router
+    if _phase5_router is None:
+        from router.pipeline import build_router
+        _phase5_router = build_router()
+    return _phase5_router
+
+
+@router.post(
+    "/route",
+    response_model=RouteResponse,
+    responses={
+        401: {"model": ErrorResponse, "description": "Invalid or missing API key"},
+        503: {"model": ErrorResponse, "description": "Every step of the plan failed"},
+    },
+    summary="Route a task through the hybrid local/API router",
+    description="Classifies the task, then tries solver -> local model (validated) -> paid API per the routing policy. "
+                "Returns the answer plus category, layer, model, cost and savings vs the best single model (B1).",
+)
+async def route_task(
+    request: RouteRequest,
+    api_key: ValidatedAPIKey,
+    session: DBSession,
+    hybrid=Depends(get_phase5_router),
+) -> RouteResponse:
+    import hashlib
+    import uuid
+
+    from fastapi.concurrency import run_in_threadpool
+
+    from router.logging import RequestLogger
+    from src.db import DifficultyTag, RequestLog
+
+    res = await run_in_threadpool(hybrid.route, request.prompt)
+    request_id = uuid.uuid4().hex[:12]
+    # 1) JSONL request log (router/logging.py); a logging failure never fails the request
+    try:
+        RequestLogger(hybrid.cfg.log_path).write(res, request_id=request_id)
+    except Exception:  # noqa: BLE001
+        pass
+    # 2) existing request-log table (prompt stored as a hash only)
+    try:
+        tag = {"easy": DifficultyTag.SIMPLE, "hard": DifficultyTag.COMPLEX}.get(res.difficulty, DifficultyTag.MEDIUM)
+        if res.category == "out_of_scope":
+            tag = DifficultyTag.MEDIUM
+        tin = sum((e.get("tokens_in") or 0) for e in res.trace if e.get("step") in ("api", "local"))
+        tout = sum((e.get("tokens_out") or 0) for e in res.trace if e.get("step") in ("api", "local"))
+        session.add(RequestLog(
+            api_key_id=api_key.id, prompt_hash=hashlib.sha256(request.prompt.encode("utf-8")).hexdigest(),
+            prompt_length=len(request.prompt), difficulty_tag=tag, model_used=(res.model or "none")[:100],
+            input_tokens=tin, output_tokens=tout, estimated_cost=res.cost_usd, baseline_cost=res.b1_cost_usd,
+            cost_saved=res.savings_usd, latency_ms=res.latency_ms, cache_hit=False,
+            response_hash=hashlib.sha256(res.answer.encode("utf-8")).hexdigest() if res.answer else None,
+            error_message=res.error))
+        await session.flush()
+    except Exception:  # noqa: BLE001
+        pass
+    if res.layer == "error":
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=f"All routing steps failed: {res.error}")
+    return RouteResponse(answer=res.answer, category=res.category, difficulty=res.difficulty, layer=res.layer, model=res.model,
+                         escalated=res.escalated, cost_usd=round(res.cost_usd, 8), b1_cost_usd=round(res.b1_cost_usd, 8),
+                         savings_usd=round(res.savings_usd, 8), latency_ms=res.latency_ms, trace=res.trace)
 
 
 # ===================
@@ -43,8 +118,10 @@ router = APIRouter(prefix="/v1", tags=["v1"])
         422: {"model": ErrorResponse, "description": "Validation error"},
         500: {"model": ErrorResponse, "description": "Internal server error"},
     },
-    summary="Generate a completion",
-    description="Routes the prompt to the most cost-effective model based on complexity.",
+    summary="(legacy) Generate a completion",
+    description="LEGACY: the original three-tier Gemini difficulty router, kept for compatibility. Use POST /v1/route. "
+                "Routes the prompt to the most cost-effective model based on complexity.",
+    deprecated=True,
 )
 async def create_completion(
     request: CompletionRequest,
@@ -208,7 +285,8 @@ async def create_completion(
         422: {"model": ErrorResponse, "description": "Validation error"},
         500: {"model": ErrorResponse, "description": "Internal server error"},
     },
-    summary="Generate structured JSON output",
+    summary="(legacy) Generate structured JSON output",
+    deprecated=True,
     description="Returns guaranteed structured JSON conforming to the provided schema using Gemini Flash.",
 )
 async def create_structured_output(

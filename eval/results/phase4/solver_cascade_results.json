@@ -1,0 +1,362 @@
+{
+ "math-003": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "537"
+ },
+ "math-004": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "math-005": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "1415"
+ },
+ "math-007": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "112"
+ },
+ "math-008": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "144"
+ },
+ "math-010": {
+  "answered": true,
+  "correct": true,
+  "source": "translator:phi3.5:3.8b",
+  "answer": "10"
+ },
+ "math-011": {
+  "answered": true,
+  "correct": true,
+  "source": "translator:phi3.5:3.8b",
+  "answer": "750"
+ },
+ "math-014": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "13750"
+ },
+ "math-015": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "800"
+ },
+ "math-017": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "407"
+ },
+ "math-018": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "12540"
+ },
+ "math-019": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "50"
+ },
+ "math-022": {
+  "answered": true,
+  "correct": true,
+  "source": "translator:phi3.5:3.8b",
+  "answer": "560"
+ },
+ "math-024": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "180"
+ },
+ "math-025": {
+  "answered": true,
+  "correct": true,
+  "source": "translator:phi3.5:3.8b",
+  "answer": "480"
+ },
+ "math-026": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "56"
+ },
+ "math-028": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "80"
+ },
+ "math-030": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "5250"
+ },
+ "math-031": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "math-032": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "1610"
+ },
+ "math-036": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "450"
+ },
+ "math-037": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "300"
+ },
+ "math-038": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "46"
+ },
+ "math-041": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "math-043": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "946"
+ },
+ "math-044": {
+  "answered": true,
+  "correct": true,
+  "source": "translator:phi3.5:3.8b",
+  "answer": "62"
+ },
+ "math-045": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "6720"
+ },
+ "math-046": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "9792"
+ },
+ "math-049": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "2040"
+ },
+ "math-050": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "1565"
+ },
+ "logic-002": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Gus"
+ },
+ "logic-003": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Pia"
+ },
+ "logic-004": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Hana"
+ },
+ "logic-006": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Fay"
+ },
+ "logic-009": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Kofi"
+ },
+ "logic-010": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Maya"
+ },
+ "logic-011": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Cy"
+ },
+ "logic-012": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Ivan"
+ },
+ "logic-014": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Hana"
+ },
+ "logic-015": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-016": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Cy"
+ },
+ "logic-017": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Ivan"
+ },
+ "logic-019": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-021": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Raj"
+ },
+ "logic-024": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Hana"
+ },
+ "logic-025": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-026": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Fay"
+ },
+ "logic-029": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-034": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-037": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-038": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Gus"
+ },
+ "logic-040": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Lena"
+ },
+ "logic-042": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Lena"
+ },
+ "logic-044": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Lena"
+ },
+ "logic-045": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Ivan"
+ },
+ "logic-046": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Ben"
+ },
+ "logic-047": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Ben"
+ },
+ "logic-048": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-049": {
+  "answered": false,
+  "correct": false,
+  "source": null,
+  "answer": null
+ },
+ "logic-050": {
+  "answered": true,
+  "correct": true,
+  "source": "pure_python",
+  "answer": "Uma"
+ }
+}

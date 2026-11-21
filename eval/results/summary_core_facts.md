@@ -1,0 +1,54 @@
+# Summary core facts (D10, round 2): please skim
+
+Each summary task has exactly 2 core facts (each ONE idea; both must be present to pass) and secondary facts (never fail a summary). Edit `eval/gen/summary_core.py` if a pair is wrong. Round 1 (first two old key facts, several sub-facts each) is superseded.
+
+- **summ-001** (test, hard): CORE: the company's revenue rose | but its profit fell because of a one-time charge  _(secondary: 600 million dollar wind investment over three years)_
+- **summ-002** (test, hard): CORE: the central bank held its interest rate | inflation is still above target so the first cut is expected later  _(secondary: rate 4.5 percent; inflation 3.1 percent, wage growth 5.4 percent)_
+- **summ-003** (test, easy): CORE: researchers built a battery that uses sodium instead of lithium | its lower energy density means it suits stationary storage first  _(secondary: keeps 90 percent of capacity after 2,000 cycles)_
+- **summ-004** (dev, hard): CORE: snow leopard numbers appear to have risen | the rise may partly reflect better counting  _(secondary: 3,200 counted versus 2,500; herder compensation halved revenge killings; climate change shrinks their habitat)_
+- **summ-005** (test, easy): CORE: the old mill will reopen as a museum of industrial history | the restoration is funded mostly by a heritage lottery grant  _(secondary: 6 million pound restoration; reopens next spring)_
+- **summ-006** (test, hard): CORE: Lumen Mobile will buy Telcor | regulators will review the deal and consumer groups fear higher prices  _(secondary: 7.8 billion dollars in shares; 400 million dollars a year savings, about 2,500 jobs go)_
+- **summ-007** (dev, easy): CORE: an update fixes a security flaw in the Chatly app | users should install the new version  _(secondary: no evidence the flaw was exploited)_
+- **summ-008** (dev, easy): CORE: the orchestra will play all nine Beethoven symphonies | over three evenings in July  _(secondary: conductor Ana Ribeiro; tickets from 18 pounds)_
+- **summ-009** (dev, hard): CORE: a robot sorts household waste accurately and faster than a person | its accuracy falls for dirty or crushed items  _(secondary: 94 percent accuracy, 60 items a minute; costs 180,000 euros, payback about five years)_
+- **summ-010** (dev, hard): CORE: a 1494 treaty divided newly found lands between Spain and Portugal | it explains why Brazil speaks Portuguese  _(secondary: the line lay 370 leagues west of the Cape Verde islands)_
+- **summ-011** (dev, hard): CORE: a 400-year-old oak was illegally cut down | a reward is offered for information  _(secondary: a sapling from its acorns will be planted)_
+- **summ-012** (dev, hard): CORE: drones now spray vineyards | unions fear job losses while growers say they are short of workers  _(secondary: 20 hectares a day and 30 percent less pesticide; 25,000 euros each, subsidy covers half)_
+- **summ-013** (dev, hard): CORE: working from home three days a week raised job satisfaction | mostly-remote junior staff were less likely to be promoted  _(secondary: 12 percent higher satisfaction, productivity unchanged; 20 percent less likely; recommends hybrid schedules for new hires)_
+- **summ-014** (dev, easy): CORE: Daniel Okoye won the marathon in a course record time | the race raised large sums for children's hospitals  _(secondary: 2 hours 9 minutes; 14,000 runners)_
+- **summ-015** (test, easy): CORE: the city is building a tram line from the airport to the central station | construction takes over two years  _(secondary: budget 410 million euros; starts in March)_
+- **summ-016** (test, hard): CORE: Imani Okafor won the prize for proving a conjecture about primes | she will donate part of the prize to mentor girls in mathematics  _(secondary: 100,000 dollar prize)_
+- **summ-017** (dev, easy): CORE: the ferry is suspended for ten days in September while the pier is rebuilt | a replacement bus makes the journey longer  _(secondary: bus every 30 minutes adds about 40 minutes; 3.5 million pound project)_
+- **summ-018** (dev, easy): CORE: the council will plant thousands of trees along the main roads | critics would rather the money fixed potholes  _(secondary: 800,000 pound scheme; council says trees reduce heat and flooding)_
+- **summ-019** (dev, easy): CORE: the Silk Road was a network of trade routes linking China and the Mediterranean | it declined as sea routes and Ottoman control took over  _(secondary: carried goods, ideas and diseases)_
+- **summ-020** (test, hard): CORE: an audit found essay marking was inconsistent | two examiners will mark each essay from next year  _(secondary: costs 9 million pounds, results about a week later)_
+- **summ-021** (test, easy): CORE: a community garden was built on a disused car park | it donates surplus produce to a food bank  _(secondary: 85 plots, started in 2015; 12,000 pound grant for a greenhouse)_
+- **summ-022** (test, easy): CORE: honeybees signal where food is with a waggle dance | the dance's angle shows direction and its length shows distance  _(secondary: decoded by Karl von Frisch, Nobel Prize 1973)_
+- **summ-023** (test, hard): CORE: the Great Fire of London began in a bakery on Pudding Lane | it destroyed thousands of homes and churches  _(secondary: Wren designed a new St Paul's, rebuilding rules required brick or stone)_
+- **summ-024** (dev, easy): CORE: peanut sauce jars were recalled | an allergen not listed on the label was found  _(secondary: 120,000 jars; full refund available)_
+- **summ-025** (dev, hard): CORE: a space telescope has found dozens of planets, some Earth-sized in the habitable zone | flares from red stars may strip their atmospheres  _(secondary: mission extended by three years; follow-up telescope in 2031)_
+- **summ-026** (dev, easy): CORE: a charity collected twice as many coats as last year | the coats will be given out at community centres  _(secondary: 8,400 coats; from 1 November; still needs Saturday volunteers)_
+- **summ-027** (dev, hard): CORE: a new scheme uses separate bins for paper, glass and food waste | a pilot raised recycling rates  _(secondary: from 31 to 52 percent; complaints about bins and smells; 90,000 homes by 2026)_
+- **summ-028** (dev, easy): CORE: a 15-minute walk after lunch | workers had fewer afternoon energy slumps  _(secondary: 20 percent fewer slumps; 2,400 workers over eight weeks)_
+- **summ-029** (test, hard): CORE: the subway opened after years of delays | it cost far more than budgeted  _(secondary: 17 km with 14 stations)_
+- **summ-030** (dev, easy): CORE: scientists mapped the Atlantic cod genome | more work is needed before it guides policy  _(secondary: 1,100 fish from 14 locations; genes linked to growth and cold tolerance)_
+- **summ-031** (dev, hard): CORE: a warehouse fire destroyed about 2 million dollars of electronics | no one was injured  _(secondary: 18 homes evacuated; started near the forklift battery charging area, cause unknown)_
+- **summ-032** (dev, easy): CORE: southern Spain had record June heat above 44 degrees | the heat should ease at the weekend  _(secondary: red alerts in six provinces)_
+- **summ-033** (test, hard): CORE: a small island nation lets its citizens migrate because of rising seas | critics fear it will drain young skilled people  _(secondary: 280 people a year; residency, work rights and healthcare)_
+- **summ-034** (dev, hard): CORE: the new migraine drug cut migraine days more than placebo | the trial was short and excluded people over 65  _(secondary: 4.2 fewer days versus 1.9; mild nausea and fatigue in 7 percent; approval to be sought next year)_
+- **summ-035** (dev, hard): CORE: annual rent rises are capped at 3 percent | landlords must give much longer notice before ending a contract  _(secondary: takes effect in January, reviewed after two years)_
+- **summ-036** (dev, easy): CORE: new non-stop flights between Lisbon and Cape Town start in October | the service runs several times a week  _(secondary: about 11 hours; fares from 389 euros)_
+- **summ-037** (test, easy): CORE: the bakery is closing its three smaller shops | because rising costs cut its profits  _(secondary: focus on the main store and online orders)_
+- **summ-038** (dev, easy): CORE: the government will make a one-off heating payment to households | charities say it is smaller than last year's and misses some pensioners  _(secondary: 1.2 million households, paid in November; costs 180 million pounds)_
+- **summ-039** (dev, hard): CORE: diverting rivers to irrigate cotton shrank the Aral Sea | the fishing industry ended and toxic dust spread  _(secondary: about 90 percent lost; 2005 dam helped the northern part recover, the south stays dry)_
+- **summ-040** (dev, hard): CORE: a closed railway will partly reopen | more money is still needed to rebuild the bridge  _(secondary: only 9 of 24 kilometres at first; closed in 1966)_
+- **summ-041** (dev, hard): CORE: the first kidney transplant was between identical twins | cyclosporine later allowed transplants from unrelated donors  _(secondary: in 1954; more than 90,000 transplants a year, waiting list longer)_
+- **summ-042** (test, easy): CORE: the Panama Canal opened in 1914 and shortened the sea journey | drought has reduced crossings  _(secondary: saves about 8,000 miles; 2016 expansion with larger locks)_
+- **summ-043** (test, easy): CORE: river flooding forced hundreds of people from their homes | no deaths have been reported  _(secondary: 45 rescued by boat; a second storm could arrive on Thursday)_
+- **summ-044** (test, hard): CORE: a foundation is funding scholarships for rural students | because rural students are much less likely to attend university  _(secondary: 12 million dollars over five years; 8,000 dollar allowance for about 300 students)_
+- **summ-045** (dev, easy): CORE: a faint radio signal was detected from a very distant galaxy | the galaxy forms stars much faster than the Milky Way  _(secondary: 8 billion light-years away; about 200 times faster)_
+- **summ-046** (test, easy): CORE: the library will stay open later on weekday evenings | paid for by a council grant  _(secondary: 52,000 pounds a year; 40 new study desks)_
+- **summ-047** (dev, hard): CORE: Voss defends her record on unemployment | Rhee promises a higher minimum wage
+- **summ-048** (test, hard): CORE: the town is considering banning cars from its medieval centre | supporters cite pollution while opponents fear lost sales  _(secondary: six-month trial next summer, then a vote)_
+- **summ-049** (test, easy): CORE: parents voted to ban phones from the playground | children who need a phone can hand it in at the office  _(secondary: 71 percent of 312 families in favour)_
+- **summ-050** (dev, easy): CORE: Fleming noticed that a mould killed bacteria | it later became a usable drug that saved soldiers  _(secondary: noticed in 1928; Florey and Chain made it a drug from 1940)_

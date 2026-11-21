@@ -1,0 +1,67 @@
+{
+ "features + category": {
+  "accuracy": 0.7541666666666667,
+  "per_category": {
+   "factual": 0.8,
+   "math": 0.9333333333333333,
+   "sentiment": 0.5333333333333333,
+   "summarisation": 0.5333333333333333,
+   "ner": 0.8666666666666667,
+   "code_debug": 0.7333333333333333,
+   "logic": 0.9,
+   "code_gen": 0.7333333333333333
+  }
+ },
+ "embedding + category": {
+  "accuracy": 0.5458333333333333,
+  "per_category": {
+   "factual": 0.5333333333333333,
+   "math": 0.6666666666666666,
+   "sentiment": 0.4666666666666667,
+   "summarisation": 0.36666666666666664,
+   "ner": 0.6666666666666666,
+   "code_debug": 0.5,
+   "logic": 0.6666666666666666,
+   "code_gen": 0.5
+  }
+ },
+ "features + embedding + category": {
+  "accuracy": 0.5625,
+  "per_category": {
+   "factual": 0.5,
+   "math": 0.7666666666666667,
+   "sentiment": 0.5,
+   "summarisation": 0.36666666666666664,
+   "ner": 0.6,
+   "code_debug": 0.5666666666666667,
+   "logic": 0.7,
+   "code_gen": 0.5
+  }
+ },
+ "per-category models, features only": {
+  "accuracy": 0.7875,
+  "per_category": {
+   "factual": 0.7333333333333333,
+   "math": 0.9333333333333333,
+   "sentiment": 0.6,
+   "summarisation": 0.8,
+   "ner": 0.9,
+   "code_debug": 0.7333333333333333,
+   "logic": 0.9333333333333333,
+   "code_gen": 0.6666666666666666
+  }
+ },
+ "majority baseline": {
+  "accuracy": 0.5,
+  "per_category": {
+   "factual": 0.5,
+   "math": 0.5,
+   "sentiment": 0.5,
+   "summarisation": 0.5,
+   "ner": 0.5,
+   "code_debug": 0.5,
+   "logic": 0.5,
+   "code_gen": 0.5
+  }
+ }
+}

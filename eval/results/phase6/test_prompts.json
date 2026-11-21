@@ -1,0 +1,642 @@
+[
+ {
+  "id": "fact-001",
+  "prompt": "What was the Peace of Westphalia (1648) known for?"
+ },
+ {
+  "id": "fact-004",
+  "prompt": "quick question - what is the difference between nominal and real interest rates?"
+ },
+ {
+  "id": "fact-005",
+  "prompt": "quick question - what is opportunity cost?"
+ },
+ {
+  "id": "fact-006",
+  "prompt": "What is a black hole?"
+ },
+ {
+  "id": "fact-008",
+  "prompt": "What is a hash function, and why is that useful for storing passwords?"
+ },
+ {
+  "id": "fact-011",
+  "prompt": "quick question - what is the difference between correlation and causation?"
+ },
+ {
+  "id": "fact-014",
+  "prompt": "What were the main causes of the 2008 global financial crisis?"
+ },
+ {
+  "id": "fact-016",
+  "prompt": "quick question - what is the difference between TCP and UDP?"
+ },
+ {
+  "id": "fact-020",
+  "prompt": "What causes the seasons on Earth?"
+ },
+ {
+  "id": "fact-024",
+  "prompt": "quick question - what do mitochondria do in a cell?"
+ },
+ {
+  "id": "fact-027",
+  "prompt": "How do mRNA vaccines work?"
+ },
+ {
+  "id": "fact-029",
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. What is encryption?"
+ },
+ {
+  "id": "fact-031",
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. What is the difference between weather and climate?"
+ },
+ {
+  "id": "fact-035",
+  "prompt": "What was the French Revolution?"
+ },
+ {
+  "id": "fact-042",
+  "prompt": "What does the CAP theorem state?"
+ },
+ {
+  "id": "fact-045",
+  "prompt": "Explain what photosynthesis is."
+ },
+ {
+  "id": "fact-046",
+  "prompt": "quick question - what does DNS do?"
+ },
+ {
+  "id": "fact-047",
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. Explain the water cycle."
+ },
+ {
+  "id": "fact-049",
+  "prompt": "What is a dividend?"
+ },
+ {
+  "id": "fact-050",
+  "prompt": "I'm writing a short explainer and I want to be sure I get this right. Why does ice float on liquid water?"
+ },
+ {
+  "id": "math-001",
+  "prompt": "drove 90 km doing 30 km/h, then 60 km at 30 km/h. total time on the road in hours?"
+ },
+ {
+  "id": "math-002",
+  "prompt": "For the logbook: the first stretch was 270 km at 30 km/h, the second 270 km at 90 km/h. What was the average speed over the full distance, km/h?"
+ },
+ {
+  "id": "math-006",
+  "prompt": "A salary of ₹50,000 is spent as follows: 30% on rent, then 20% of what remains on food. How many rupees are left after rent and food?"
+ },
+ {
+  "id": "math-009",
+  "prompt": "Given test scores 55, 59, 97, find the score on test 4 that makes the mean of all 4 scores equal 72."
+ },
+ {
+  "id": "math-012",
+  "prompt": "A tank is filled by pipe A alone in 6 hours and by pipe B alone in 3 hours. With both pipes open together, how many minutes does it take to fill the empty tank?"
+ },
+ {
+  "id": "math-013",
+  "prompt": "For the logbook: the first stretch was 60 km at 60 km/h, the second 180 km at 60 km/h. What was the average speed over the full distance, km/h?"
+ },
+ {
+  "id": "math-016",
+  "prompt": "Two positive integers have a greatest common divisor of 5 and a least common multiple of 60. One of them is 15. What is the other?"
+ },
+ {
+  "id": "math-020",
+  "prompt": "A town of 8,000 people grows 5% in one year and another 5% the next year. What is its population after the two years?"
+ },
+ {
+  "id": "math-021",
+  "prompt": "You have 30 litres of a 20% acid solution. How many litres of pure acid must be added to make it a 40% solution?"
+ },
+ {
+  "id": "math-023",
+  "prompt": "A faulty clock gains exactly 3 minutes every hour. It is set to the correct time at 8:00 am. When the true time is 2:00 pm, how many minutes ahead of the true time does the clock show?"
+ },
+ {
+  "id": "math-027",
+  "prompt": "Margin check for the month-end sheet: jacket cost ₹850, price tag = cost + 20%, then we ran a 25% off sale on the tag price. Net profit per jacket in rupees (negative if loss)?"
+ },
+ {
+  "id": "math-029",
+  "prompt": "hey, a train does the first 120 km at 60 km/h and the next 120 km at 40 km/h. what's its average speed over the whole 240 km?"
+ },
+ {
+  "id": "math-033",
+  "prompt": "The sum of three consecutive even numbers is 78. What is the largest of the three?"
+ },
+ {
+  "id": "math-034",
+  "prompt": "two numbers add up to 91 and differ by 5. which one's the bigger one?"
+ },
+ {
+  "id": "math-035",
+  "prompt": "Cost price ₹400, markup 25%. State the markup amount in rupees."
+ },
+ {
+  "id": "math-039",
+  "prompt": "Asha is 3 times as old as Asha's daughter. In 6 years Asha will be 2 times as old as the daughter will be then. How old is the daughter now?"
+ },
+ {
+  "id": "math-040",
+  "prompt": "After a 20% discount, a phone costs ₹24,000. What was its price before the discount?"
+ },
+ {
+  "id": "math-042",
+  "prompt": "A student scored 68, 94, 68 in her first 3 tests. What must she score in the next test so that her average over all 4 tests is exactly 72?"
+ },
+ {
+  "id": "math-047",
+  "prompt": "In how many different ways can a committee of 3 people be chosen from a group of 8 people?"
+ },
+ {
+  "id": "math-048",
+  "prompt": "₹5,000 is deposited at 5% simple interest per year. What is the total amount after 3 years?"
+ },
+ {
+  "id": "sent-005",
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'After my last two disappointing orders from this brand I was ready to complain again. Instead, the new kettle works flawlessly and arrived a day early.'"
+ },
+ {
+  "id": "sent-007",
+  "prompt": "Is this message positive, negative, mixed or neutral? Explain briefly.\n\n\"Review summary: 3 out of 5 stars across 120 verified purchases.\""
+ },
+ {
+  "id": "sent-008",
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I love the design of this chair and hate sitting in it for more than ten minutes.'"
+ },
+ {
+  "id": "sent-010",
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThe tool does what the documentation says. I haven't tried the alternatives, so I can't say whether it's worth the price.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence."
+ },
+ {
+  "id": "sent-014",
+  "prompt": "Is this tweet positive, negative, mixed or neutral? Explain briefly.\n\n\"Oh great, another software update that deletes my settings. Exactly what I needed on a Monday.\""
+ },
+ {
+  "id": "sent-016",
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"I wouldn't call the service 'helpful'. I'd call it nonexistent.\""
+ },
+ {
+  "id": "sent-018",
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThe pizza was delicious but the service was painfully slow.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence."
+ },
+ {
+  "id": "sent-020",
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Bus route 42 runs every 20 minutes between the station and the airport.'"
+ },
+ {
+  "id": "sent-021",
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nThank you so much for the quick refund, you guys are amazing.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence."
+ },
+ {
+  "id": "sent-024",
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"The seams ripped the first time I wore the jacket. Awful quality.\""
+ },
+ {
+  "id": "sent-025",
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'The acting was superb and the cinematography breathtaking, but I walked out feeling I'd wasted three hours on a story that went nowhere.'"
+ },
+ {
+  "id": "sent-030",
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I really wanted to like this vacuum. Two weeks in, the motor is already dying and the company ignores my emails.'"
+ },
+ {
+  "id": "sent-031",
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nAbsolutely loved this blender. Smoothies come out silky and cleanup takes seconds.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence."
+ },
+ {
+  "id": "sent-038",
+  "prompt": "We're triaging customer feedback. Here is one entry:\n\nTerrible experience. The package arrived two weeks late and the box was crushed.\n\nTag its overall sentiment (positive / negative / mixed / neutral) and say why in a sentence."
+ },
+ {
+  "id": "sent-040",
+  "prompt": "Is this tweet positive, negative, mixed or neutral? Explain briefly.\n\n\"Just got my new phone and the camera is incredible. So happy with it!\""
+ },
+ {
+  "id": "sent-041",
+  "prompt": "Is this message positive, negative, mixed or neutral? Explain briefly.\n\n\"I ordered the blue model, size medium, and it arrived on Tuesday.\""
+ },
+ {
+  "id": "sent-042",
+  "prompt": "Classify the sentiment of this review as positive, negative, mixed or neutral, then give a one-line reason: 'I came in sceptical about the 'miracle' cleaning spray. It took off a stain I'd given up on years ago. Consider me converted.'"
+ },
+ {
+  "id": "sent-043",
+  "prompt": "what's the vibe of this message - positive, negative, mixed, or neutral? \"Best customer service I've had in years - they fixed my issue in five minutes!\""
+ },
+ {
+  "id": "sent-047",
+  "prompt": "Is this review positive, negative, mixed or neutral? Explain briefly.\n\n\"I enjoyed the first half of the film, though the ending was a letdown.\""
+ },
+ {
+  "id": "sent-050",
+  "prompt": "Classify the sentiment of this message as positive, negative, mixed or neutral, then give a one-line reason: 'Not sure yet whether the new policy is good or bad; we'll see how it plays out next quarter.'"
+ },
+ {
+  "id": "summ-001",
+  "prompt": "Here's an article my manager sent me. Can you summarise it as exactly 3 bullet points (each line starting with '- ')? I only have a minute.\n\nHollis Energy reported annual revenue of 2.4 billion dollars, up 6 percent from last year, but net profit fell 18 percent to 190 million dollars because of a one-time charge of 85 million dollars linked to closing an old gas plant. Chief executive Priya Anand said the company will invest 600 million dollars in wind farms over three years and expects to cut carbon emissions by 30 percent by 2030. Shares rose 2 percent after the announcement, although analysts noted that debt has increased to 1.1 billion dollars. The company, founded in 1952, supplies electricity to 3.4 million customers across three states. The old gas plant, built in 1978, had been due to close for several years. The chief executive also said the company would publish a detailed climate report next spring and meet investors in Chicago in June."
+ },
+ {
+  "id": "summ-002",
+  "prompt": "Summarise the following text in exactly two sentences:\n\nLast week the central bank held its main interest rate at 4.5 percent, surprising some economists who had expected a cut. Governor Lena Karlsson said inflation, now at 3.1 percent, is falling but remains above the 2 percent target, and that wage growth of 5.4 percent could keep prices rising. Markets now expect the first cut in September rather than June. Mortgage lenders said the decision means borrowers on variable-rate deals will see no relief for several months. The governor spoke at a press conference in the capital on Thursday after a vote of seven to two within the monetary policy committee. The bank raised rates eleven times between 2022 and 2023 to deal with an inflation peak above 9 percent. The currency strengthened slightly against the dollar after the announcement."
+ },
+ {
+  "id": "summ-003",
+  "prompt": "Summarise the following text in no more than 35 words:\n\nResearchers have developed a battery made from sodium instead of lithium, which is cheaper and more abundant. In tests, the cell kept 90 percent of its capacity after 2,000 charge cycles and charged to 80 percent in 12 minutes. Its energy density is still about 30 percent lower than a typical lithium-ion cell, so the team expects it to be used first in stationary storage for solar farms rather than in cars. Sodium is found in common salt and is available almost everywhere, whereas lithium is mined mainly in a few countries and its price has swung widely in recent years. The research was led by a team at a technical university in Sweden, and a start-up has already licensed the design for production."
+ },
+ {
+  "id": "summ-005",
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly one sentence? I only have a minute.\n\nThe old Corbett Mill, built in 1862, will reopen next spring as a museum of industrial history after a 6 million pound restoration. The project is funded mainly by a heritage lottery grant covering 4.2 million pounds, with the rest raised by donations. Visitors will see working looms, restored steam engines and recordings of former mill workers. The museum expects 80,000 visitors in its first year. The mill once employed 900 people and produced woollen cloth that was exported across Europe. It closed in 1971 and stood empty for decades, and a fire in 1998 damaged one wing. The new museum will include a cafe in the former boiler house and a classroom space for school visits, which will be free of charge."
+ },
+ {
+  "id": "summ-006",
+  "prompt": "Here's an article my manager sent me. Can you summarise it as exactly 3 bullet points (each line starting with '- ')? I only have a minute.\n\nLumen Mobile has agreed to buy rival Telcor for 7.8 billion dollars in an all-share deal that would create the country's second-largest operator with 24 million customers. The companies say the merger will save 400 million dollars a year in costs within three years, with about 2,500 jobs expected to go. Regulators, who blocked a similar deal in 2019, will review the agreement, and consumer groups warn it could raise prices. Telcor shareholders will receive 0.6 Lumen shares for each Telcor share. Lumen Mobile, founded in 2003, currently has 14 million customers and is led by chief executive Daniel Ito, who would remain in charge of the combined firm. Telcor, which has 10 million customers, has struggled with falling revenues in recent years. The deal is expected to close within 18 months if approved."
+ },
+ {
+  "id": "summ-015",
+  "prompt": "Summarise the following text in exactly one sentence:\n\nThe city of Rivermont has approved a new tram line connecting the airport to the central station. Construction will start in March and is expected to take 28 months, with a total budget of 410 million euros. Officials say the line will carry about 35,000 passengers a day and cut the airport trip from 50 minutes to 18. Residents along the route will be offered compensation for noise during the building phase, and two existing bus routes will be withdrawn once the tram opens. The current airport bus is often delayed by traffic on the ring road, and taxi fares for the same trip average 32 euros. Environmental groups have welcomed the plan, though some business owners near the central station worry that building work will reduce footfall. A public exhibition of the route designs opens at the town hall next week."
+ },
+ {
+  "id": "summ-016",
+  "prompt": "Here's an article my manager sent me. Can you summarise it in no more than 25 words? I only have a minute.\n\nThe Haldane Prize for young mathematicians was awarded this year to Imani Okafor, 27, for proving a long-standing conjecture about patterns in prime numbers. Her proof, 62 pages long and posted online in March, was checked by three independent teams over four months. Okafor said she worked on the problem during evenings while teaching school, and she plans to donate part of the 100,000 dollar prize to a programme that mentors girls in mathematics. The prize, named after a pioneering statistician, is awarded every two years to a mathematician under 30. Okafor studied at a university in Lagos and completed a doctorate in Cambridge before returning to teaching. Her result concerns the gaps between consecutive primes and builds on earlier work by several leading researchers."
+ },
+ {
+  "id": "summ-020",
+  "prompt": "A national exam board has changed how it marks essays after an audit found that two different examiners gave grades that differed by more than one level on 18 percent of scripts. From next year every essay will be marked by two examiners, and a third will be called in if they disagree. The change will cost 9 million pounds and delay results by about one week. Teachers' unions welcomed the review but said pupils should not pay for the board's errors. The board, which serves about 600,000 students each summer, carried out the audit after complaints from schools in the north of the country. Examiners are mostly serving teachers who mark scripts in the evenings, and the board will also give them new training on grade boundaries. The education department said it would monitor the changes closely.\n\nTL;DR in no more than 25 words, please."
+ },
+ {
+  "id": "summ-021",
+  "prompt": "Summarise the following text in no more than 35 words:\n\nThe Millbrook community garden, started in 2015 on a disused car park, now has 85 plots and a waiting list of more than 200 people. Members grow vegetables and herbs, and surplus produce is donated weekly to a food bank, which received 1.4 tonnes last year. A new greenhouse, paid for by a 12,000 pound grant, will let the garden start seedlings earlier in the year. The council has agreed to renew its lease for another ten years. The garden is run by 30 volunteers who meet every Wednesday morning, and new members pay 25 pounds a year. A beekeeping group keeps four hives on the roof of the tool shed. Schools visit in the spring term to learn about growing food, and the garden has won a regional award for community projects."
+ },
+ {
+  "id": "summ-022",
+  "prompt": "Honeybees communicate the location of food through a waggle dance. A forager that finds nectar returns to the hive and dances on the comb: the angle of the dance relative to vertical shows the direction of the food relative to the sun, and the length of the waggle shows the distance. Other bees follow the dancer and fly out to the flowers. The behaviour, decoded by Karl von Frisch in the 1940s, earned him a Nobel Prize in 1973. A typical hive holds between 20,000 and 60,000 bees, and only a small share of them are foragers at any one time. Researchers later showed that the dancing bees also pass on information about the scent of the flowers. Von Frisch shared the prize with two other scientists who studied animal behaviour.\n\nTL;DR in exactly one sentence, please."
+ },
+ {
+  "id": "summ-023",
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly two sentences? I only have a minute.\n\nThe Great Fire of London began on 2 September 1666 in a bakery on Pudding Lane and burned for four days. Because most houses were built of timber and packed closely together, the fire spread quickly, destroying about 13,000 homes and 87 parish churches, including the old St Paul's Cathedral. Only six deaths were officially recorded, though historians think the true toll was higher. Afterwards Christopher Wren designed a new St Paul's, and rebuilding rules required houses to be made of brick or stone. The diarist Samuel Pepys buried his wine and a wheel of Parmesan cheese in his garden to protect them and wrote a vivid account of the fire. King Charles II and his brother helped fight the flames, and the fire was finally halted partly by blowing up houses to create firebreaks. A monument, 62 metres tall, was later built near the bakery."
+ },
+ {
+  "id": "summ-029",
+  "prompt": "Here's an article my manager sent me. Can you summarise it in no more than 25 words? I only have a minute.\n\nThe new subway line opened on Saturday after eight years of delays. Originally budgeted at 3.2 billion dollars, it ended up costing 5.1 billion, which the transport authority blames on tunnelling through unexpected rock and on redesigns after a safety review. The line runs 17 kilometres with 14 stations and is expected to carry 200,000 riders a day. Opposition politicians called for an inquiry into the overspend, but the mayor says the project will pay back through reduced congestion. The line connects the airport in the north with the university district in the south and has a transfer to the existing blue line. Trains are driverless and run every three minutes at peak times. Tickets for the first week are free, and the transport authority expects the opening to be followed by a long period of fine-tuning."
+ },
+ {
+  "id": "summ-033",
+  "prompt": "In 2023, a small island nation in the Pacific signed a deal with a larger neighbour that lets 280 of its citizens migrate each year as climate change raises sea levels. The agreement guarantees residency, work rights and access to healthcare. Government leaders on the island say the deal is a last resort and insist that the country will remain a state even if its land is submerged. Critics argue that it could encourage the departure of young, skilled people, leaving an ageing population behind. The island nation has about 11,000 people and its highest point is only five metres above sea level. Places are awarded by ballot to citizens aged 18 to 50, and applicants must have a job offer in the neighbouring country. The deal followed three years of negotiations and a visit by the prime minister to the larger nation's capital.\n\nTL;DR in no more than 25 words, please."
+ },
+ {
+  "id": "summ-037",
+  "prompt": "Brightfield Bakery announced on Monday that it will close its three smaller shops by the end of June and focus on its main store and online orders. The owner, Maria Castillo, said rising flour and energy costs had cut profits by almost half since 2022. Around 14 employees will be offered jobs at the main store or at a partner cafe. Customers will be able to order the bakery's best-selling sourdough for nationwide delivery from July. The bakery was founded in 1987 by Castillo's parents and became known for its cinnamon rolls and rye loaves. Its smaller shops are in two suburbs and a railway station, and the rents on those sites rose sharply last year. Castillo said she would keep the recipes unchanged and thanked customers for their loyalty.\n\nTL;DR in exactly one sentence, please."
+ },
+ {
+  "id": "summ-042",
+  "prompt": "Condense this passage in no more than 35 words. Keep only facts stated in the text.\n\n\"The Panama Canal opened in 1914 and shortened the sea journey between the Atlantic and Pacific oceans by about 8,000 miles. It uses a system of locks to lift ships 26 metres above sea level to Gatun Lake. An expansion completed in 2016 added a third set of locks that allows much larger vessels, called neopanamax ships, to pass. About 14,000 vessels use the canal each year, and drought in 2023 forced authorities to reduce daily crossings. Each lock chamber in the original canal is 33.5 metres wide and fills with water by gravity, using no pumps. Tolls vary with ship size, and the largest container ships can pay over 800,000 dollars for one crossing. The canal is 82 kilometres long and was built by the United States after an earlier French attempt failed.\""
+ },
+ {
+  "id": "summ-043",
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"Heavy rain over the weekend caused the River Teal to burst its banks in two towns, forcing about 600 people from their homes. Emergency crews rescued 45 residents by boat, and a temporary shelter was opened in a sports hall. The weather service expects the water level to fall by Wednesday, but it warned that a second storm could arrive on Thursday. No deaths have been reported, although several roads and a railway line remain closed. The two towns, Marlby and Ostend Green, lie on low ground where the river has flooded twice before, in 1998 and 2012. The shelter provides blankets, hot meals and a children's play area, run by volunteers from the Red Cross. Local farmers have also moved about 300 cattle to higher fields to keep them safe.\""
+ },
+ {
+  "id": "summ-044",
+  "prompt": "Here's an article my manager sent me. Can you summarise it in exactly two sentences? I only have a minute.\n\nThe Marsden Foundation announced a 12 million dollar scholarship fund for students from rural areas, to be distributed over five years. Each scholarship covers tuition and a living allowance of 8,000 dollars a year for up to four years, and about 300 students are expected to benefit in total. Applicants must show financial need and have grown up at least 50 kilometres from a major city. The foundation says it chose the criteria after finding that rural students are 40 percent less likely to attend university than urban peers. The foundation was set up by a retired shipping executive, Elias Marsden, in 1998 and has already given away 60 million dollars to education projects. Applications open in January and will be judged by a panel of university representatives. Scholarship holders may study at any accredited public university in the country."
+ },
+ {
+  "id": "summ-046",
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"The Hartwell Library has extended its opening hours after a survey showed that students most wanted evening access. From next month it will stay open until 10 pm on weekdays, two hours later than before, and until 6 pm on Saturdays. The extra staffing will cost 52,000 pounds a year and be paid for by a grant from the local council. The library will also add 40 study desks on its second floor. The library, which opened in 1974, has about 600,000 books and 2,100 members who visit in person at least once a month. The survey was carried out in March and received answers from 1,150 users. A separate children's section will keep its current hours, and the council hopes to review attendance figures in a year.\""
+ },
+ {
+  "id": "summ-048",
+  "prompt": "The town of Eldervale is debating a proposal to ban cars from its medieval centre. Supporters, led by councillor Ruth Mbeki, say pedestrian streets would reduce air pollution, which currently exceeds legal limits on 40 days a year, and boost cafes. Opponents, including the traders' association, fear that sales will drop by up to 15 percent and that older residents will struggle to reach shops. A six-month trial is planned for next summer, after which residents will vote. Delivery vans would still be allowed before 10 am. Eldervale has about 22,000 residents and welcomes 800,000 visitors a year, drawn by its cathedral and medieval walls. Several other European towns, such as Ghent and Pontevedra, have already limited traffic in their centres. A survey by the local newspaper found residents roughly evenly split on the idea.\n\nTL;DR as exactly 3 bullet points (each line starting with '- '), please."
+ },
+ {
+  "id": "summ-049",
+  "prompt": "Condense this passage in exactly one sentence. Keep only facts stated in the text.\n\n\"Parents at Greenway Primary School have voted to ban phones from the playground. In a ballot of 312 families, 71 percent supported the ban, which starts after the winter break. Teachers say pupils spend break times looking at screens instead of playing, and the head teacher hopes the rule will reduce arguments linked to social media. Children who need a phone to travel home can hand it in at the office in the morning. The school has 480 pupils aged four to eleven. Staff already ask children to keep phones in their bags during lessons, but they say rules were hard to enforce during breaks. The head teacher said the ban would be reviewed after one term, and parents who disagreed were invited to a meeting in January.\""
+ },
+ {
+  "id": "ner-005",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Georgia Smith moved from Georgia to Paris in March 2015."
+ },
+ {
+  "id": "ner-011",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: The conference in Tokyo begins on 1998."
+ },
+ {
+  "id": "ner-013",
+  "prompt": "Here's a line from a news article:\n\nThe conference in Oslo begins on 3 March 2021.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-014",
+  "prompt": "Here's a line from a news article:\n\nMount Kilimanjaro in Tanzania was climbed by Amina Yusuf in January 2022.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-019",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: On 5th May 2016, David Cohen left Unilever to join Reliance Industries in Lisbon."
+ },
+ {
+  "id": "ner-022",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Amara Singh, who studied at Reliance Industries in Sydney, first met Yuki Sato on 21st June 2023."
+ },
+ {
+  "id": "ner-023",
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"On 15 August 1947, Jawaharlal Nehru addressed the nation from Delhi.\""
+ },
+ {
+  "id": "ner-024",
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Lionel Messi joined Inter Miami in July 2023 after leaving Paris Saint-Germain.\""
+ },
+ {
+  "id": "ner-025",
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"The conference in Toronto begins on 2024-01-30.\""
+ },
+ {
+  "id": "ner-026",
+  "prompt": "Here's a line from a news article:\n\nTata Steel opened a new office in Chennai.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-027",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Ford announced that Henry Ford's grandson would visit Detroit in 2019."
+ },
+ {
+  "id": "ner-029",
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"Nestle opened a new office in Pune.\""
+ },
+ {
+  "id": "ner-034",
+  "prompt": "Here's a line from a news article:\n\nOn March 3, 2021, Kwame Mensah left University of Oxford to join Infosys in Cairo.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-036",
+  "prompt": "Here's a line from a news article:\n\nNokia, founded in Finland, is now headquartered in Espoo.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-038",
+  "prompt": "Here's a line from a news article:\n\nFatima Khan joined Infosys in 2020-07-15.\n\nPull out every person, organisation, location and date it mentions, with the type of each."
+ },
+ {
+  "id": "ner-040",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: After David Cohen's talk in Kenya, World Bank and Unilever signed a deal that was announced on December 12, 2019."
+ },
+ {
+  "id": "ner-042",
+  "prompt": "Extract all named entities with their types (PERSON, ORG, LOCATION, DATE) from: 'Chen Wei joined Nestle in 3 March 2021.'"
+ },
+ {
+  "id": "ner-045",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Microsoft opened a new office in Cairo."
+ },
+ {
+  "id": "ner-046",
+  "prompt": "Tag the people, organisations, places and dates in this sentence: Tata Steel announced its quarterly results on 2020-07-15."
+ },
+ {
+  "id": "ner-047",
+  "prompt": "who/what/where/when is mentioned here? list the entities and their types: \"World Bank announced its quarterly results on 14 Feb 2019.\""
+ },
+ {
+  "id": "code_debug-002",
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return True if a string reads the same forwards and backwards, ignoring case and non-alphanumeric characters.\n\n```python\ndef is_palindrome(s):\n    cleaned = \"\".join(c for c in s if c.isalnum())\n    return cleaned == cleaned[::-1]\n```\n\nCan you work out the problem and give me the corrected function?"
+ },
+ {
+  "id": "code_debug-007",
+  "prompt": "my `count_words` function is giving wrong results and i can't see why. it's supposed to count the words in a text, where words are separated by any amount of whitespace. here's the code:\n\n```python\ndef count_words(text):\n    return len(text.split(\" \"))\n```\nwhat's wrong with it?"
+ },
+ {
+  "id": "code_debug-009",
+  "prompt": "This function should return part as a percentage of whole, rounded to 1 decimal place, but it has a bug. Find and fix it:\n\n```python\ndef percentage(part, whole):\n    return round(whole / part * 100, 1)\n```"
+ },
+ {
+  "id": "code_debug-010",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the sum of the decimal digits of a non-negative integer.\n\n```python\ndef digit_sum(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 100\n    return total\n```"
+ },
+ {
+  "id": "code_debug-011",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return the uppercase initials of a full name, e.g. \"john ronald smith\" -> \"JRS\".\n\n```python\ndef get_initials(name):\n    return \"\".join(w[-1].upper() for w in name.split())\n```"
+ },
+ {
+  "id": "code_debug-016",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return n! for an integer n >= 0 (0! is 1).\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 0\n    return n * factorial(n - 1)\n```"
+ },
+ {
+  "id": "code_debug-018",
+  "prompt": "This function should return \"FizzBuzz\" if n is divisible by both 3 and 5, \"Fizz\" if by 3, \"Buzz\" if by 5, otherwise str(n), but it has a bug. Find and fix it:\n\n```python\ndef fizzbuzz(n):\n    if n % 3 == 0:\n        return \"Fizz\"\n    if n % 15 == 0:\n        return \"FizzBuzz\"\n    if n % 5 == 0:\n        return \"Buzz\"\n    return str(n)\n```"
+ },
+ {
+  "id": "code_debug-019",
+  "prompt": "This function should return an independent deep copy of a list of lists, so that changing the copy never changes the original, but it has a bug. Find and fix it:\n\n```python\ndef copy_grid(grid):\n    return [row for row in grid]\n```"
+ },
+ {
+  "id": "code_debug-020",
+  "prompt": "my `merge_sorted` function is giving wrong results and i can't see why. it's supposed to merge two already-sorted lists into one sorted list. here's the code:\n\n```python\ndef merge_sorted(a, b):\n    i = j = 0\n    result = []\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            result.append(a[i])\n            i += 1\n        else:\n            result.append(b[j])\n            j += 1\n    result.extend(a[i:])\n    return result\n```\nwhat's wrong with it?"
+ },
+ {
+  "id": "code_debug-026",
+  "prompt": "This function should return a NEW list with each element squared, without modifying the input list, but it has a bug. Find and fix it:\n\n```python\ndef square_all(xs):\n    for i in range(len(xs)):\n        xs[i] = xs[i] * xs[i]\n    return xs\n```"
+ },
+ {
+  "id": "code_debug-027",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return a dict of how many times each word appears in a list of words.\n\n```python\ndef word_frequencies(words):\n    d = {}\n    for w in words:\n        d[w] = d.get(w, 1) + 1\n    return d\n```"
+ },
+ {
+  "id": "code_debug-028",
+  "prompt": "This function should return a list of the squares of 1..n (empty list when n is 0), but it has a bug. Find and fix it:\n\n```python\ndef first_n_squares(n):\n    return [i * i for i in range(n)]\n```"
+ },
+ {
+  "id": "code_debug-030",
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the index of target in a sorted list of distinct integers, or -1 if absent.\n\n```python\ndef binary_search(xs, target):\n    lo, hi = 0, len(xs) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if xs[mid] == target:\n            return mid\n        if xs[mid] < target:\n            lo = mid\n        else:\n            hi = mid - 1\n    return -1\n```\n\nCan you work out the problem and give me the corrected function?"
+ },
+ {
+  "id": "code_debug-033",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should return a list containing item appended to the given list; if no list is given, start from a fresh empty list each call.\n\n```python\ndef add_item(item, items=[]):\n    items.append(item)\n    return items\n```"
+ },
+ {
+  "id": "code_debug-035",
+  "prompt": "This function should return the list of averages of every window of k consecutive elements (empty if k exceeds the length), but it has a bug. Find and fix it:\n\n```python\ndef moving_average(xs, k):\n    return [sum(xs[i:i + k]) / k for i in range(len(xs) - k)]\n```"
+ },
+ {
+  "id": "code_debug-042",
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should return the n-th Fibonacci number with fib(0) = 0 and fib(1) = 1, iteratively.\n\n```python\ndef fib(n):\n    a, b = 0, 1\n    for _ in range(n - 1):\n        a, b = b, a + b\n    return a\n```\n\nCan you work out the problem and give me the corrected function?"
+ },
+ {
+  "id": "code_debug-043",
+  "prompt": "I'm reviewing a teammate's pull request and a QA test is failing on this helper. The docstring says it should remove duplicates from a list while keeping the first occurrence of each element in its original order.\n\n```python\ndef remove_duplicates(xs):\n    return list(set(xs))\n```\n\nCan you work out the problem and give me the corrected function?"
+ },
+ {
+  "id": "code_debug-044",
+  "prompt": "This function should split a list into consecutive chunks of size n; the last chunk may be shorter, but it has a bug. Find and fix it:\n\n```python\ndef chunk(xs, n):\n    return [xs[i:i + n] for i in range(0, len(xs) - n, n)]\n```"
+ },
+ {
+  "id": "code_debug-048",
+  "prompt": "This function should return the number of days in a given month (1-12) of a given year, handling leap years, but it has a bug. Find and fix it:\n\n```python\ndef days_in_month(year, month):\n    if month == 2:\n        leap = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0\n        return 28\n    return 30 if month in (4, 6, 9, 11) else 31\n```"
+ },
+ {
+  "id": "code_debug-049",
+  "prompt": "Fix the bug in the following Python function.\nIntended behaviour: it should flatten arbitrarily nested lists of values into one flat list, preserving order.\n\n```python\ndef flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.append(flatten(item))\n        else:\n            result.append(item)\n    return result\n```"
+ },
+ {
+  "id": "logic-001",
+  "prompt": "Four talks - Ads, Bots, Cloud and Data - are given one per day from Monday to Thursday. Bots is not on Monday or Thursday. Ads is on an earlier day than Cloud. Data is exactly two days after Ads. Cloud is not on a day adjacent to Bots. Which talk is on Thursday?"
+ },
+ {
+  "id": "logic-005",
+  "prompt": "On an island, knights always tell the truth and knaves always lie. Amit says: \"Bina is a knave.\" Bina says: \"Amit and I are both knights.\" Is Bina a knight or a knave?"
+ },
+ {
+  "id": "logic-007",
+  "prompt": "An office has four staff - Noor, Dia, Jia and Lena - and each sits in a different coloured room (white, yellow, green, red).\n\n- The yellow room is Jia's.\n- The red room is occupied by Dia or Jia (not by anyone else).\n- The white room is occupied by Noor or Jia (not by anyone else).\n\nWhose is the white room?"
+ },
+ {
+  "id": "logic-008",
+  "prompt": "A building project has four jobs: Plumbing, Painting, Decorating and Cleaning, done one after another. Plumbing must come before Painting. Painting must come before Decorating. Cleaning is the last job. Which job is second?"
+ },
+ {
+  "id": "logic-013",
+  "prompt": "Four people queue at a counter: Kia, Lal, Mia and Ned. Lal is not first. Mia is directly behind Kia. Lal and Ned do not stand next to each other. Ned is not last. Who is third in the queue?"
+ },
+ {
+  "id": "logic-018",
+  "prompt": "Four people - Ivan, Eli, Cy and Kofi - stand in a single queue at a ticket counter.\n\n- Ivan and Eli have exactly one person between them.\n- Cy stands somewhere ahead of Eli.\n- Kofi is in the queue between Eli and Cy.\n\nWho is third in line?"
+ },
+ {
+  "id": "logic-020",
+  "prompt": "On the same island (knights always tell the truth, knaves always lie), three people speak. Dara says: \"Eshan and Farid are the same type.\" Eshan says: \"Dara is a knave.\" Farid says: \"Eshan is a knight.\" Is Farid a knight or a knave?"
+ },
+ {
+  "id": "logic-022",
+  "prompt": "Ria is older than Sam. Sam is older than Tom. Uma is younger than Tom but older than Vik. Of the five, who is the middle one in age (third oldest)?"
+ },
+ {
+  "id": "logic-023",
+  "prompt": "An office has three staff - Maya, Ana and Raj - and each sits in a different coloured room (red, white, blue). The white room isn't Maya's. The white room is occupied by Maya or Ana (not by anyone else). The blue room isn't Raj's.\n\nWhose is the blue room?"
+ },
+ {
+  "id": "logic-027",
+  "prompt": "Exactly one of three suspects took the cookie. Exactly one of their three statements is true. Xena says: \"Yusuf took it.\" Yusuf says: \"I did not take it.\" Zane says: \"Xena is lying.\" Who took the cookie?"
+ },
+ {
+  "id": "logic-028",
+  "prompt": "Four chairs stand in a row, numbered 1 to 4 from the left. Dev, Eli, Fay and Gia each sit on one. Dev is not on either end chair. Eli sits on the chair immediately to the right of Dev. Fay is on chair 1. Gia does not sit next to Fay. Who is on chair 4?"
+ },
+ {
+  "id": "logic-030",
+  "prompt": "An office has four staff - Fay, Ben, Ivan and Maya - and each sits in a different coloured room (red, blue, yellow, white).\n\n- Ivan is not in the red room.\n- The red room is occupied by Ben or Ivan (not by anyone else).\n- The white room is occupied by Ben or Maya (not by anyone else).\n- The blue room is occupied by Fay or Maya (not by anyone else).\n\nWhose is the red room?"
+ },
+ {
+  "id": "logic-031",
+  "prompt": "Four people - Noor, Ivan, Dia and Pia - stand in a single queue at a ticket counter.\n\n- Ivan is behind Noor in the queue.\n- Pia is second in line.\n- Ivan is in the queue between Noor and Dia.\n\nWho is first in line?"
+ },
+ {
+  "id": "logic-032",
+  "prompt": "Five colleagues - Ravi, Sia, Tej, Uday and Vera - live on different floors (1 to 5) of a building. Ravi lives neither on the top floor nor on the ground floor. Sia lives higher than Ravi. Tej lives exactly two floors below Sia. Uday lives on floor 1. Vera lives higher than Sia. Who lives on floor 3?"
+ },
+ {
+  "id": "logic-033",
+  "prompt": "Five people - Kofi, Raj, Omar, Dia and Sara - stand in a single queue at a ticket counter. Raj is in the queue between Kofi and Dia. Kofi stands somewhere ahead of Omar. Sara is not fifth in line. Raj is in the queue between Kofi and Sara. Sara is behind Dia in the queue. Kofi is not fourth in line.\n\nWho is fifth in line?"
+ },
+ {
+  "id": "logic-035",
+  "prompt": "Five people - Ana, Lena, Gus, Pia and Sara - stand in a single queue at a ticket counter.\n\n- Gus is not fourth in line.\n- Gus is not first in line.\n- Pia is not first in line.\n- Gus stands somewhere ahead of Ana.\n- Sara is not fourth in line.\n- Sara is in the queue between Gus and Pia.\n- Pia is not fourth in line.\n\nWho is fifth in line?"
+ },
+ {
+  "id": "logic-036",
+  "prompt": "An office has five staff - Sara, Fay, Jia, Eli and Ben - and each sits in a different coloured room (green, white, yellow, red, blue).\n\n1. The green room is occupied by Sara or Eli (not by anyone else).\n2. The white room isn't Sara's.\n3. The white room isn't Ben's.\n4. The red room is occupied by Fay or Ben (not by anyone else).\n5. The red room is occupied by Sara or Fay (not by anyone else).\n6. The blue room is occupied by Sara or Jia (not by anyone else).\n7. The blue room isn't Sara's.\n\nWhose is the blue room?"
+ },
+ {
+  "id": "logic-039",
+  "prompt": "Three people - Tomas, Omar and Ana - stand in a single queue at a ticket counter. Omar is not third in line. Omar is not first in line. Tomas is not third in line.\n\nWho is third in line?"
+ },
+ {
+  "id": "logic-041",
+  "prompt": "An office has five staff - Ivan, Sara, Eli, Maya and Cy - and each sits in a different coloured room (white, blue, red, yellow, green).\n\n- The green room isn't Sara's.\n- The blue room isn't Ivan's.\n- The red room is occupied by Eli or Cy (not by anyone else).\n- The green room is occupied by Sara or Maya (not by anyone else).\n- The yellow room is occupied by Eli or Cy (not by anyone else).\n- The red room is occupied by Ivan or Cy (not by anyone else).\n\nWhose is the blue room?"
+ },
+ {
+  "id": "logic-043",
+  "prompt": "Ana, Ben and Cy each chose a different drink: tea, coffee or juice. If Ana chose tea, then Ben chose coffee. Ana did not choose coffee. Ben did not choose juice. Cy did not choose tea. If Ben chose tea, then Cy chose juice. Who chose juice?"
+ },
+ {
+  "id": "code_gen-005",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `next_permutation(xs)`; it returns the lexicographically next permutation of the list xs as a NEW list; if xs is already the largest permutation, returns the smallest one (ascending order); the input is not modified. Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-008",
+  "prompt": "need a python function `can_partition(nums)` - it returns True if the list of positive integers nums can be split into two groups (not necessarily contiguous) with equal sums, else False; an empty list can be split (True). can you write it?"
+ },
+ {
+  "id": "code_gen-010",
+  "prompt": "Write a Python function `bmi_category(weight_kg, height_m)` that computes BMI = weight_kg / height_m**2 and returns \"underweight\" if BMI < 18.5, \"normal\" if BMI < 25, \"overweight\" if BMI < 30, otherwise \"obese\"."
+ },
+ {
+  "id": "code_gen-011",
+  "prompt": "need a python function `gcd(a, b)` - it returns the greatest common divisor of two non-negative integers (gcd(0, n) is n; gcd(0, 0) is 0). can you write it?"
+ },
+ {
+  "id": "code_gen-013",
+  "prompt": "Implement `evaluate_rpn(tokens)` in Python. It evaluates a reverse Polish notation expression given as a list of string tokens (integers and + - * /); division truncates toward zero; returns an int."
+ },
+ {
+  "id": "code_gen-017",
+  "prompt": "Implement `count_islands(grid)` in Python. It counts the islands in a grid given as a list of strings of \"1\" (land) and \"0\" (water); an island is a maximal group of land cells connected horizontally or vertically (not diagonally)."
+ },
+ {
+  "id": "code_gen-018",
+  "prompt": "Implement `count_even_digits(n)` in Python. It returns how many digits of the non-negative integer n are even (0 counts as even; count_even_digits(0) is 1)."
+ },
+ {
+  "id": "code_gen-020",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `spiral_order(matrix)`; it returns the elements of a rectangular matrix (list of equal-length rows) in clockwise spiral order starting at the top-left corner; an empty matrix gives an empty list. Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-021",
+  "prompt": "need a python function `is_power_of_two(n)` - it returns True if the integer n is a positive power of two (1, 2, 4, 8, ...), else False. can you write it?"
+ },
+ {
+  "id": "code_gen-025",
+  "prompt": "need a python function `count_char(s, ch)` - it counts how many times the single character ch occurs in the string s (case-sensitive). can you write it?"
+ },
+ {
+  "id": "code_gen-026",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `caesar_shift(s, k)`; it shifts each letter of s forward by k positions in the alphabet (wrapping around z -> a), preserving case and leaving non-letters unchanged; k may be larger than 26. Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-029",
+  "prompt": "Write a Python function `triangle_type(a, b, c)` that classifies a triangle by its side lengths: returns \"invalid\" if any side is <= 0 or the sides violate the triangle inequality (a degenerate triangle, where two sides sum exactly to the third, is invalid), otherwise \"equilateral\", \"isosceles\" or \"scalene\"."
+ },
+ {
+  "id": "code_gen-030",
+  "prompt": "Write a Python function `roman_to_int(s)` that converts a valid Roman numeral string (I, V, X, L, C, D, M with subtractive pairs like IV, IX, XL, XC, CD, CM) to an integer."
+ },
+ {
+  "id": "code_gen-031",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `merge_intervals(intervals)`; it merges overlapping or touching intervals (each a [start, end] list with start <= end; [1,3] and [3,5] touch and merge) and returns the merged intervals sorted by start; the input may be unsorted. Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-032",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `find_max_index(xs)`; it returns the index of the FIRST occurrence of the largest value in the list xs, or None if xs is empty. Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-035",
+  "prompt": "Write a Python function `decode_string(s)` that decodes strings of the form k[encoded] meaning encoded repeated k times, with nesting allowed (\"3[a2[c]]\" -> \"accaccacc\"); letters outside brackets are kept; k can have several digits."
+ },
+ {
+  "id": "code_gen-036",
+  "prompt": "I'm building a small utility module and I need one more helper. Please write the Python function `sum_of_evens(nums)`; it returns the sum of the even integers in the list nums (0 for an empty list or if there are none). Edge cases matter, so please handle them."
+ },
+ {
+  "id": "code_gen-039",
+  "prompt": "Implement `find_duplicates(xs)` in Python. It returns a sorted list (ascending) of the distinct values that appear more than once in xs."
+ },
+ {
+  "id": "code_gen-040",
+  "prompt": "Write a Python function `second_word(s)` that returns the second whitespace-separated word of s, or the empty string if s has fewer than two words."
+ },
+ {
+  "id": "code_gen-047",
+  "prompt": "need a python function `topological_order(n, edges)` - it given n nodes numbered 0..n-1 and a list of directed edges (u, v) meaning u must come before v, returns a topological order as a list; when several nodes are available, always pick the smallest node number first; returns None if the graph has a cycle. can you write it?"
+ }
+]
